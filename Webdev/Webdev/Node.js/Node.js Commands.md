@@ -1,0 +1,2 @@
+To begin a node js project do the following
+1. npm init (creates a file with all of our node content). We want to create a package.json file. We can also just do **npm init -y** to flag all of our questions with yes automatically. Our main file is by default index.js 

@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "300226c93b25a379",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fd9c71102a6af75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d789bb7fc8fbabc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Probability Functions/Multivariate Distributions/Joint Distributions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Joint Distributions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "91087b935b1b0ac4",
+    "type": "split",
+    "children": [
+      {
+        "id": "47458a17e5231980",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e4b8ae2f846ef5c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f5263d012f85332a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2eba408577c1b1ba",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "0891b2ac5ebede84",
+    "type": "split",
+    "children": [
+      {
+        "id": "319a7274a57e3854",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f21adf4c3818aa2b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b1248f7f37f99c7c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1401c73e72e3d8db",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "31a84be472038131",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d789bb7fc8fbabc7",
+  "lastOpenFiles": [
+    "Baye's Rule.md",
+    "Probability Functions/Multivariate Distributions/Joint Distributions.md",
+    "Probability Functions/Joint Distributions/Untitled.md",
+    "Probability Functions/Joint Distributions/Untitled",
+    "Probability Functions/Multivariate Distributions",
+    "Probability Functions/Continuous Distributions/Normal Distribution.md",
+    "Probability Functions/Discrete Distributions/Poisson Distribution.md",
+    "Probability Functions/Types of Probability Functions/Moment Generating Function.md",
+    "Probability Functions/Discrete Distributions/Hypergeometric Distribution.md",
+    "Probability Functions/Continuous Distributions/Exponential Distribution.md",
+    "Probability Functions/Discrete Distributions/Geometric Distribution.md",
+    "Probability Functions/Discrete Distributions/Binomial Distribution.md",
+    "Probability Functions/Discrete Distributions/Bernouli Trial.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Probability Functions/Variance.md",
+    "Misc/Problems in Probability/Laplace's Rule of Succession.md",
+    "Misc/Problems in Probability",
+    "Probability Functions/Continuous Distributions/Uniform Distribution.md",
+    "Probability Functions/Expected Value.md",
+    "Pasted image 20250823080450.png",
+    "1_empirical-rule.webp",
+    "Pasted image 20250821061200.png",
+    "Normal_Distribution_PDF.svg.png",
+    "Independent Random Variables.md",
+    "Probability Functions/Types of Probability Functions/Probability Density Function.md",
+    "Probability Functions/Types of Probability Functions/Continuous Distributions.md",
+    "maxresdefault.jpg",
+    "Probability Functions/Continuous Distributions",
+    "Probability Functions/Types of Probability Functions/Discrete Distributions.md",
+    "Linearity.md",
+    "Probability Functions/Types of Probability Functions/Cumulative Density Functions.md",
+    "Probability Functions/Types of Probability Functions/Probability Mass Function.md",
+    "CDF_normal_male.webp",
+    "Misc/Untitled.md",
+    "Misc",
+    "Probability Functions/Discrete Distributions/Negative Binomial Distribution.md",
+    "Pasted image 20250814001536.png",
+    "Counting/Permutations Combinations and Basic Counting Rules.md",
+    "Probability Functions/Sample Space.md",
+    "unnamed.png",
+    "Probability Functions/Types of Probability Functions",
+    "Probability Functions/Sampling",
+    "Untitled",
+    "Pasted image 20250811173504.png"
+  ]
+}

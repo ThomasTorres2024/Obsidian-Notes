@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "aaa15ad10b1de37e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d8ff994f204167a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f8a2ceeb8f3fb0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Integration/Multivariable Integration/Change of Variables.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Change of Variables"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "918ca0eeb8dfa733",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb25720ecc4f9097",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "602f8cb894d2825d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f502e0d895c2726b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "jacobian",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "933e350d1733aaf8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "25fc15dbc12ae89c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b680ee47f11af2a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6a87d85de301a7e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Derivatives/Partial Derivatives/Gradient.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Gradient"
+            }
+          },
+          {
+            "id": "7cbc8a9a14df1542",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Derivatives/Partial Derivatives/Gradient.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Gradient"
+            }
+          },
+          {
+            "id": "e4dde12234ca3d33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "05f610344a498c26",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Integration/Double Integrals and Volume.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Double Integrals and Volume"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9f8a2ceeb8f3fb0a",
+  "lastOpenFiles": [
+    "Derivatives/Partial Derivatives/Gradient.md",
+    "Derivatives/Partial Derivatives/The Directional Derivative.md",
+    "Partial Derivative.md",
+    "Integration/Multivariable Integration/Spherical Coordinates.md",
+    "Integration/Multivariable Integration/Triple Integrals.md",
+    "Integration/Multivariable Integration/Polar Coordinate Integration.md",
+    "Integration/Multivariable Integration/Integrating with Polar Coordinates.md",
+    "Integration/Multivariable Integration/Double Integrals.md",
+    "Integration/Multivariable Integration/Cylindrical Coordinates.md",
+    "Integration/Multivariable Integration/Change of Variables.md",
+    "Geometry and Multivariable Functions/The Geometry of Planes.md",
+    "Geometry and Multivariable Functions/Non-Independent Variables.md",
+    "Derivatives/Partial Derivatives/Multivariable Chain Rule.md",
+    "Derivatives/Partial Derivatives/Optimization/Second Derivative Test.md",
+    "Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
+    "Derivatives/Partial Derivatives/Optimization/Optimization with Derivatives.md",
+    "Derivatives/Partial Derivatives/Optimization/Hessian Matrix.md",
+    "Integration/Integration Formulas/Sine and Cosine Formulas.md",
+    "Integration/Integration Formulas/Untitled.md",
+    "Integration/Integration Formulas/Integrals to Memorize.md",
+    "Integration/Integration Formulas/Hyperbolic Functions.md",
+    "Vector Fields/Surface Integrals/The Divergence Theorem.md",
+    "Vector Fields/Surface Integrals/Surface Integral.md",
+    "Vector Fields/Vector Field.md",
+    "Vector Fields/Simply Connected.md",
+    "Vector Fields/Laplacian.md",
+    "Integration/Integration Tricks",
+    "Integration/Multivariable Integration",
+    "Integration/Integration Formulas",
+    "Integration",
+    "Functions",
+    "Pasted image 20250629222726.png",
+    "Line-integral.png",
+    "Pasted image 20250703010539.png",
+    "Pasted image 20250703000303.png",
+    "Vector Fields/Surface Integrals",
+    "Pasted image 20250701024940.png",
+    "Pasted image 20250701024659.png",
+    "Pasted image 20250701023948.png",
+    "Pasted image 20250630225600.png",
+    "Pasted image 20250630221955.png",
+    "Pasted image 20250630220551.png",
+    "Vector Fields/Line Integrals",
+    "Derivatives/Partial Derivatives/Optimization",
+    "$",
+    "Vector Fields"
+  ]
+}
