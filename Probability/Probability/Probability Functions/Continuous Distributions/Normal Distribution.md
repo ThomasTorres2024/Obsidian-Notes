@@ -91,4 +91,11 @@ There is a bit of mismatch going on here that we want to be able to resolve, we 
  $$=\frac{2n!}{2^n\cdot n!}$$
  In total we get that:
  $$M(t)=\frac{(2n)!}{2^n \cdot n!}$$
- 
+ ---
+# Sum of Independent Normal Distributions
+Let $X$ ~ $N(\mu_{1},\sigma_{1}^2)$ and $Y$ ~ $N(\mu_{2},\sigma_{2}^2)$, then $X+Y$ ~ $N(\mu_{1}+\mu_{2},\sigma_{1}^2+\sigma_{2}^2)$:
+
+#### (Proof)
+Using the [[Moment Generating Function]] of the [[Normal Distribution]]:
+$$\mathbb{E}[e^{t(x+y)}]=e^{\mu_{1}t+\frac{1}{2}\sigma_{1}^2t^2} \cdot e^{\mu_{2}t+\frac{1}{2}\sigma_{2}^2t^2} = e^{t(\mu_{1}+\mu_{2})+\frac{t^2}{2}(\sigma_{1}^2 + \sigma_{2}^2)}$$
+Since this MGF is that of $N(\mu_{1}+\mu_{2},\sigma_{1}^2+\sigma_{2}^2)$, we can conclude that $X+Y$ ~ $N(\mu_{1}+\mu_{2},\sigma_{1}^2+\sigma_{2}^2)$. 

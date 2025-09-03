@@ -62,4 +62,15 @@ $$f_{x}(x) = \int f(x,y) dy = \int_{\sqrt{1-x^2}}^{\sqrt{1-x^2}} \frac{1}{\pi}dy
 We can see that our [[Marginal Distribution]]s are not uniform. By symmetry we have that our conditional distribution for $y$ is:
 $$f_{y}(y) = \frac{2\sqrt{1-y^2}}{\pi} : -1 \leq y \leq 1$$
 We can also find the conditional distribution given that $-\sqrt{1-x^2}\leq y \leq \sqrt{1-x^2}$ and that $x \in [0,1]$, then we have that:
-$$f_{y|x}$$
+$$f_{y|x} = \frac{\frac{1}{\pi}}{\frac{2}{\pi} \sqrt{1-x^2}}=\frac{2}{\sqrt{1-x^2}}$$
+It is important to see here if $f_{x,y}(x,y)\neq f_{x}(x) f_{y}(y)$ it follows that our variables are not independent. If we learn more from our distribution, that is our conditional distribution is not equal to the distribution itself, it follows that our distribution is not independent, and is in fact dependent. 
+
+---
+# Joint [[LOTUS]]
+To do [[LOTUS]] on a function of more than one variable, $f(x,y)$ for $X,Y$, let $g(x,y)$ be a real valued function of $X,Y$. It follows that:
+$$\mathbb{E}[g(X,Y)] = \int_{-\infty}^\infty \int_{-\infty}^\infty g(x,y) f(x,y)dxdy$$
+We have that if $X$ and $Y$ are independent variables, then:
+$$\mathbb{E}[XY]=\mathbb{E}[X] \cdot \mathbb{E}[Y]$$
+Which is also to say that $X$ and $Y$ are [[uncorrelated]] variables. We can prove this result in the continuous case using [[LOTUS]]:
+$$\mathbb{E}[XY] = \int_{-\infty}^\infty \int_{-\infty}^\infty XY f_{x}(x)f_{y}(y)dxdy=\mathbb{E}[x]\int_{-\infty}^\infty Yf_{y}(y)dy = \mathbb{E}[X] \cdot \mathbb{E}[Y]$$
+We can do this because we can express $f(x,y)=f_{x}(x)f_{y}(y)$ since we know that $X$ and $Y$ are independent. 
