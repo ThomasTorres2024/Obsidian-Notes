@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "file": "Linear Algebra/Orthogonality/Orthogonal Complements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Symetric Matrix"
+              "title": "Orthogonal Complements"
             }
           }
         ]
@@ -171,13 +171,13 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Linear Algebra/Orthogonality/Orthogonal Decomposition.md",
     "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
+    "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
     "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
     "Linear Algebra/Vector Spaces/Rank.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
-    "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
-    "Linear Algebra/Orthogonality/Orthogonal Decomposition.md",
     "Linear Algebra/Orthogonality/Orthogonal Complements.md",
     "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
