@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "72cf9339271538df",
+    "type": "split",
+    "children": [
+      {
+        "id": "62c22f7c322402ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0f1a6e748fcc66b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Symetric Matrix"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9c8a0dde70215792",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d714095c3433b9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15b3c82ff989a618",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1b2305510a44a5eb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ede80b3489d40985",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7b407f2affbc0182",
+    "type": "split",
+    "children": [
+      {
+        "id": "594a995f28bedc88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bf2d338d3fa9590",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Symetric Matrix"
+            }
+          },
+          {
+            "id": "f7f82192a3e93bc3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Symetric Matrix"
+            }
+          },
+          {
+            "id": "f2a5023faeddd71c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2ed04f518ab9e9b4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Symetric Matrix"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c0f1a6e748fcc66b",
+  "lastOpenFiles": [
+    "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
+    "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+    "Linear Algebra/Vector Spaces/Rank.md",
+    "Linear Algebra/Pasted image 20250903085542.png",
+    "Linear Algebra/Pasted image 20250903090054.png",
+    "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
+    "Linear Algebra/Orthogonality/Orthogonal Decomposition.md",
+    "Linear Algebra/Orthogonality/Orthogonal Complements.md",
+    "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
+    "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
+    "Linear Algebra/Matrices/Matrix Operations"
+  ]
+}
