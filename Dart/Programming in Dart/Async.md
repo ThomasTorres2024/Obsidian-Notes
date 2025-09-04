@@ -80,3 +80,14 @@ void main() async {
 
 ```
 We synchronously count awaiting the order, and when it's up we get our order back.
+
+We can handle errors by using a try catch clause:
+```dart
+try {
+  print('Awaiting user order...');
+  var order = await fetchUserOrder();
+} catch (err) {
+  print('Caught error: $err');
+}
+```
+This is pretty similar to try catch in all the other high level languages I've programed in. 
