@@ -11,3 +11,6 @@ A matrix which is [[Hermitian]] is like a [[Symmetric Matrix]], which is to say 
 $$A^H=A$$
 If a real matrix is [[Hermitian]] it is also [[Symmetric Matrix]]. Much like for the case of a [[Symmetric Matrix]], we have that:
 $$(AB)^H=B^HA^H$$
+---
+# Spectral Theorem for Hermitian Matrices
+Spectral theorem states that for an $n \times n$ Hermitian matrix $A$, it follows that 

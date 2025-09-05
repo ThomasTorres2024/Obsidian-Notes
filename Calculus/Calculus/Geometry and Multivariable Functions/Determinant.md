@@ -1,0 +1,16 @@
+---
+title: Determinant
+---
+In the two by two case, for a 2x2 matrix we have that its determinant is:
+$$\text{det}\left(\begin{bmatrix} a & b\\ c& d \end{bmatrix} \right)=ad-cb$$
+We also use bars around a matrix to denote the determinant around a matrix, and in the context of the MTH 437 course is not absolute value. 
+
+We can compute higher dimensional matrices by using the cofactor expansion by computing the sum of the determinant of correctly signed minor matrices. 
+
+We can also use any row or column to iterate over in order to compute our determinant. Any even valued iteration in our expansion will have a negative sign in front of it. 
+
+---
+# Properties of the Determinant 
+
+Column swaps correspond to introducing a negative sign to our determinant:
+$$[A_{1},A_{2},A_{3}]=-[]$$

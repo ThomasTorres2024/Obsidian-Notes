@@ -1,0 +1,1 @@
+We have Flutter/Dart for mobile deveopment, it is cross platform. Some other languages for mobile are swift for iOS, Java/Kotlin for android, react native/js, and low code like thunkable. Flutter/Dart can compile natively and run across different devices. 

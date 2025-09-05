@@ -24,3 +24,11 @@ We support 2 operations with vector spaces, [[vector addition]] and [[scalar mul
 In the case of $\mathbb{R}^2$, we have a standard basis of $[\hat{i},\hat{j}]$ and for $\mathbb{R}^3$ we have $\hat{i},\hat{j},\hat{k}$. 
 
 Any element $\vec{v} \in V$ is a linear combination of elements from that space, so it follows that we can break down any item from a vector space into how much we scale the elements in the [[basis]] of our [[Vector Spaces]]. 
+
+--- 
+# Parallelogram Rule for Addition and Triangle Rule 
+When adding vectors, $\vec{a},\vec{b}$ tip to tail we end up forming a parallelogram in the non-degenerate case, e.g. where the [[determinant]] $\neq 0$. If we halve the diagram and do not add on all sides, we get a triangle, where the longest length is $\vec{b}+\vec{a}$:
+
+![[Pasted image 20250905090655.png]]
+
+Since $\text{det}(A)=$ the area of the rectangle spanned by the two vectors, by doing $\frac{1}{2}\text{det}(A)$ we obtain the area of the triangle involved. There is also a nice connection between this idea and the [[cross product]] and its respective identities. 
