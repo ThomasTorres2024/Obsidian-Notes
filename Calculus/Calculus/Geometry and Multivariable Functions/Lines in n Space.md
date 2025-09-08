@@ -1,6 +1,8 @@
 ---
 title: Lines in n Space
 ---
+# Lines in $n$ Space
+
 We need to be able to generalize the notion of a line between cases where we can visualize in 1,2 and 3 dimensions. We have to be able to algebraically and analytically approach higher dimensional lines. We can do this by describing lines using vectors and examining the general structure of lines in both 2 and 3 dimensions. Let us consider $l(t) : \mathbb{R} \to \mathbb{R}^2$
 $$l(t) = (x_{0},y_{0}) + t(a,b) = (x_{0}+ta,y_{0}+tb) \Longleftrightarrow x_{0}+t\vec{v}$$
 It is important to make some observations about the notation we are using and to stay consistent in said notation. Our function on the left consists of points, we have something that is scaled by $t$, that we consider our [[Direction Vector]], and a point that we add to our direction vector to move it from the origin to elsewhere in the plane. 
@@ -25,3 +27,16 @@ $$\Longleftrightarrow \frac{x-x_{0}}{a}=\frac{y-y_{0}}{b}=\frac{z-z_{0}}{c}$$
 The 2nd step is obtained by component wise addition of our elements. It is clear to see that when we do [[vector addition]] on our elements, that we will get everything in the piecewise equation. 
 
 The last step we obtain by rearranging each side, and expressing everything in terms of $t$. When we do this, we get the last result.
+
+---
+# Checking if Two Lines Intersect
+We can equate the components of two lines and check to see if the components are equal given that we use the same $t$ and $s$ for the two lines in question. If the components differ, then the lines do not intersect, however if the lines do not differ and we get a solution, then it follows that our lines must intersect somewhere. 
+
+---
+# Lines Forming Planes 
+We can define the plane formed by $v=s\vec{a}+t\vec{b}$ where $\vec{a}$ and $\vec{b}$ are direction vectors. If they are linearly independent, they will form a plane.  One "cell" on this plane is a parallelogram. We can determined what points lie within this parallelogram by considering the set of all points which lie within $0 \leq s \leq 1$ and $0 \leq t \leq 1$. 
+
+![[Pasted image 20250907152708.png]]
+
+We can further use the [[Cross Product]] in order to determine the plane equation.
+![[Pasted image 20250907152747.png]]

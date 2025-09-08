@@ -56,7 +56,11 @@ For $\vec{x},\vec{y}$ we have that:
 $$\| x + y\| \leq \|x\| + \|y\|$$
 This is to say that for any given side in a triangle, that the sum of the other two sides is always greater than or equal to it, and only equal in the case where the vectors added are  [[Linearly Dependent]]. 
 
-We can prove this result using the [[Cauchy-Schwarz Inequality]], and is connected to it. 
+We can prove this result using the [[Cauchy-Schwarz Inequality]], and is connected to it:
+$$\|x+y\|=\|x\|^2+2(x\cdot y)+\|y\|^2$$
+Again by [[Cauchy-Schwarz Inequality]] we have that:
+$$\|x\|^2 +2(x \cdot y) + \|y\|^2 \leq \|x\|^2+2\|x\|\|y\| + \|y\|^2$$
+Which gives us the triangle inequality as stated above.
 
 ---
 # Orthogonal Projection
