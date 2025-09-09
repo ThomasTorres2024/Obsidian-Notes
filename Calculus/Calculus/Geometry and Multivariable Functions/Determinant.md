@@ -17,3 +17,13 @@ $$[\vec{a}_{1},\vec{a}_{2},\vec{a}_{3}]=-[\vec{a}_{2},\vec{a}_{1},\vec{a}_{3}]$$
 2. If a column contains $c$, we can factor it out: $$[c\cdot\vec{a}_{1},\vec{a}_{2},\vec{a}_{3}]=c\cdot[\vec{a}_{1},\vec{a}_{2},\vec{a}_{3}]$$
 3. Addition of columns does not change the determinant:
 $$[\vec{a}_{1}+\vec{a}_{2},\vec{a}_{2},\vec{a}_{3}]=[\vec{a}_{1},\vec{a}_{2},\vec{a}_{3}]$$
+#### (Proof) $\left|\text{det} \left(\begin{bmatrix} v_{1} & v_{2} \\ u_{1} & u_{2}  \end{bmatrix} \right) \right| = \text{Area of the Parallelogram Formed by } \vec{v},\vec{u}$:
+We know that the magnitude of the [[Cross Product]] has an area equivalent to that of the parallelogram formed by vectors $\vec{v}$ and $\vec{u}$:
+$$\| \vec{u} \times \vec{v} \| = \| \langle0,0,\hat{k}  \rangle \| = \left|\text{det} \left(\begin{bmatrix} v_{1} & v_{2} \\ u_{1} & u_{2}  \end{bmatrix} \right) \right|$$
+
+---
+# The [[Triple Product]]
+The triple product is a scalar valued function for the given vectors, $\vec{x}$,$\vec{y}$,$\vec{z} \in \mathbb{R}^3$:
+$$(\vec{x} \times \vec{y}) \cdot \vec{z} = z_{1} \left|\text{det} \left(\begin{bmatrix} x_{2} & y_{2} \\ x_{3} & y_{3}  \end{bmatrix} \right) \right| - z_{2} \left|\text{det} \left(\begin{bmatrix} x_{1} & y_{1} \\ x_{3} & y_{3}  \end{bmatrix} \right) \right| + z_{3} \left|\text{det} \left(\begin{bmatrix} x_{1} & y_{1} \\ x_{2} & y_{2}  \end{bmatrix} \right) \right| $$
+$$=\text{det}\left( \begin{bmatrix} x_{1}&x_{2} & x_{3} \\ y_{1} & y_{2} & y_{3}\\ z_{1} & z_{2} & z_{3} \end{bmatrix} \right)$$
+Geometrically, we are determining how much the vector $\vec{z}$ aligns with the vector which is orthogonal to both $\vec{x}$ and $\vec{y}$. 

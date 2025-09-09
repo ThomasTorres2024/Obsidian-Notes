@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Geometry and Multivariable Functions/Cross Product.md",
+                "file": "Calculus/Geometry and Multivariable Functions/Determinant.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross Product"
+              "title": "Determinant"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
+    "Calculus/Geometry and Multivariable Functions/Cross Product.md",
     "Calculus/Geometry and Multivariable Functions/Determinant.md",
     "Calculus/Geometry and Multivariable Functions/Dot Product.md",
     "Homework/Untitled.md",
@@ -178,7 +179,6 @@
     "Calculus/Geometry and Multivariable Functions/Lines in n Space.md",
     "Pasted image 20250907152747.png",
     "Pasted image 20250907152708.png",
-    "Calculus/Geometry and Multivariable Functions/Cross Product.md",
     "Calculus/Vector Fields/Conservative Field.md",
     "Calculus/Geometry and Multivariable Functions/Vectors.md",
     "Pasted image 20250905090655.png"
