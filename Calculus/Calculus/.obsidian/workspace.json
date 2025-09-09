@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5d8ff994f204167a",
+        "id": "bf928f17b984ecfa",
         "type": "tabs",
         "children": [
           {
-            "id": "9f8a2ceeb8f3fb0a",
+            "id": "ad759e1322f87a9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Integration/Multivariable Integration/Change of Variables.md",
+                "file": "Geometry and Multivariable Functions/Lines in n Space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Change of Variables"
+              "title": "Lines in n Space"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jacobian",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,8 +170,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f8a2ceeb8f3fb0a",
+  "active": "ad759e1322f87a9d",
   "lastOpenFiles": [
+    "Geometry and Multivariable Functions/Dot Product.md",
+    "Geometry and Multivariable Functions/The Geometry of Planes.md",
+    "Geometry and Multivariable Functions/Plane.md",
+    "Geometry and Multivariable Functions/Non-Independent Variables.md",
+    "Geometry and Multivariable Functions/Cross Product.md",
+    "Untitled 2.base",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Geometry and Multivariable Functions/Lines in n Space.md",
+    "Geometry and Multivariable Functions/Determinant.md",
+    "Integration/Multivariable Integration/Change of Variables.md",
     "Derivatives/Partial Derivatives/Gradient.md",
     "Derivatives/Partial Derivatives/The Directional Derivative.md",
     "Partial Derivative.md",
@@ -182,9 +192,6 @@
     "Integration/Multivariable Integration/Integrating with Polar Coordinates.md",
     "Integration/Multivariable Integration/Double Integrals.md",
     "Integration/Multivariable Integration/Cylindrical Coordinates.md",
-    "Integration/Multivariable Integration/Change of Variables.md",
-    "Geometry and Multivariable Functions/The Geometry of Planes.md",
-    "Geometry and Multivariable Functions/Non-Independent Variables.md",
     "Derivatives/Partial Derivatives/Multivariable Chain Rule.md",
     "Derivatives/Partial Derivatives/Optimization/Second Derivative Test.md",
     "Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
@@ -193,12 +200,6 @@
     "Integration/Integration Formulas/Sine and Cosine Formulas.md",
     "Integration/Integration Formulas/Untitled.md",
     "Integration/Integration Formulas/Integrals to Memorize.md",
-    "Integration/Integration Formulas/Hyperbolic Functions.md",
-    "Vector Fields/Surface Integrals/The Divergence Theorem.md",
-    "Vector Fields/Surface Integrals/Surface Integral.md",
-    "Vector Fields/Vector Field.md",
-    "Vector Fields/Simply Connected.md",
-    "Vector Fields/Laplacian.md",
     "Integration/Integration Tricks",
     "Integration/Multivariable Integration",
     "Integration/Integration Formulas",
@@ -215,9 +216,6 @@
     "Pasted image 20250630225600.png",
     "Pasted image 20250630221955.png",
     "Pasted image 20250630220551.png",
-    "Vector Fields/Line Integrals",
-    "Derivatives/Partial Derivatives/Optimization",
-    "$",
-    "Vector Fields"
+    "Vector Fields/Line Integrals"
   ]
 }

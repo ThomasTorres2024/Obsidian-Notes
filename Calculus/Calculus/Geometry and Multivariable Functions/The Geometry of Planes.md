@@ -94,3 +94,4 @@ If $P_{3}$ is coplanar with either $P_{1}$ or $P_{2}$ then $\vec{N}_{3}  \perp \
 
 - If $\text{det}(A) \neq 0$ then $\exists! \vec{x}=A^{-1}\vec{b}$ 
 - If $\text{det}(A) \neq 0$ then there is either infinitely many solutions or a single one 
+
