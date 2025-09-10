@@ -11,10 +11,12 @@
             "id": "3e0fd37e3d0c9942",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20250908223340.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250908223340"
             }
           }
         ]
@@ -164,11 +166,11 @@
   },
   "active": "3e0fd37e3d0c9942",
   "lastOpenFiles": [
-    "Machine Learning/Ockham's Razor in Machine Learning.md",
-    "Pasted image 20250908223340.png",
     "Overfitting.svg",
     "Machine Learning Problems/Classification.md",
+    "Machine Learning/Ockham's Razor in Machine Learning.md",
     "Machine Learning/Machine Learning.md",
+    "Pasted image 20250908223340.png",
     "Machine Learning Problems"
   ]
 }

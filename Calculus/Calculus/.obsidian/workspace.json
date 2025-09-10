@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Geometry and Multivariable Functions/Lines in n Space.md",
+                "file": "Geometry and Multivariable Functions/Plane.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lines in n Space"
+              "title": "Plane"
             }
           }
         ]
@@ -172,16 +172,19 @@
   },
   "active": "ad759e1322f87a9d",
   "lastOpenFiles": [
+    "maxresdefault.jpg",
+    "Geometry and Multivariable Functions/Determinant.md",
+    "volume_parallelepiped.png",
+    "parallelogram.md",
     "Geometry and Multivariable Functions/Dot Product.md",
+    "Geometry and Multivariable Functions/Cross Product.md",
+    "Geometry and Multivariable Functions/Lines in n Space.md",
     "Geometry and Multivariable Functions/The Geometry of Planes.md",
     "Geometry and Multivariable Functions/Plane.md",
     "Geometry and Multivariable Functions/Non-Independent Variables.md",
-    "Geometry and Multivariable Functions/Cross Product.md",
     "Untitled 2.base",
     "Untitled 1.base",
     "Untitled.base",
-    "Geometry and Multivariable Functions/Lines in n Space.md",
-    "Geometry and Multivariable Functions/Determinant.md",
     "Integration/Multivariable Integration/Change of Variables.md",
     "Derivatives/Partial Derivatives/Gradient.md",
     "Derivatives/Partial Derivatives/The Directional Derivative.md",
@@ -199,7 +202,6 @@
     "Derivatives/Partial Derivatives/Optimization/Hessian Matrix.md",
     "Integration/Integration Formulas/Sine and Cosine Formulas.md",
     "Integration/Integration Formulas/Untitled.md",
-    "Integration/Integration Formulas/Integrals to Memorize.md",
     "Integration/Integration Tricks",
     "Integration/Multivariable Integration",
     "Integration/Integration Formulas",
@@ -215,7 +217,6 @@
     "Pasted image 20250701023948.png",
     "Pasted image 20250630225600.png",
     "Pasted image 20250630221955.png",
-    "Pasted image 20250630220551.png",
     "Vector Fields/Line Integrals"
   ]
 }
