@@ -79,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming in Dart/Async.md",
+                "file": "Programming in Dart/Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Async"
+              "title": "Functions"
             }
           }
         ],
@@ -238,8 +238,8 @@
   },
   "active": "a9d8e6dfdaa305df",
   "lastOpenFiles": [
-    "Programming in Dart/Iterables.md",
     "Programming in Dart/Async.md",
+    "Programming in Dart/Iterables.md",
     "Programming in Dart/Functions.md",
     "Programming in Dart/Control Flow.md",
     "Programming in Dart/Variables in Dart.md",

@@ -8,3 +8,5 @@ gcc -wall -std=c11 dir/cfile.c -o scripts/name
 If we are in a folder, and we want to move back up, we would add two dots in front our current directory to navigate out of it, and back into the main directory
 
 ```gcc -wall -std=c11 ../dir/cfile.c -o scripts/name ```
+
+gcc -Wall -std=c11 programs/prog01v1.c -o a.exe  

@@ -11,10 +11,14 @@
             "id": "c0f1a6e748fcc66b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Schur's Triangularization"
             }
           }
         ]
@@ -165,10 +169,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "c0f1a6e748fcc66b",
+  "active": "15b3c82ff989a618",
   "lastOpenFiles": [
-    "Linear Algebra/Matrices/Special Matrices/Normal Matrices and Spectral Theorem Proof.md",
+    "Linear Algebra/Linear Transformations/Linear Transformations.md",
+    "Linear Algebra/Linear Transformations/The Four Fundamental Subspaces.md",
+    "Linear Algebra/Vector Spaces/Vector Spaces and Vector Subspaces.md",
+    "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
+    "Linear Algebra/Numerical Analysis",
     "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
+    "Linear Algebra/Matrices/Special Matrices/Normal Matrices and Spectral Theorem Proof.md",
     "Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
     "Linear Algebra/Matrix Factorizations/SVD/Single Value Decomposition.md",
     "Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
@@ -183,7 +192,6 @@
     "Linear Algebra/Vector Spaces/Rank.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
-    "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Linear Algebra/Matrices/Matrix Operations"
   ]
 }

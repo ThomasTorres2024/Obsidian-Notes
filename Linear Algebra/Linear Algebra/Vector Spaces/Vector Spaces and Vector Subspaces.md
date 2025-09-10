@@ -11,7 +11,14 @@ A vector subspace $\mathcal{V}$ is a set which consists of elements known as vec
 
 More formally we can think of a vector space as a group with an associated addition and scalar multiplication operation over a field. 
 
-All of the properties a vector subspace must satisfy are the folowing:
+A vector space can be described as the [[span]] of the set of $n$ vectors. This forms a [[Vector Subspace]]. For vector spaces $\mathcal{S}_{1}$ and $\mathcal{S}_{2}$, then :
+* $S_{1} \cap S_{2}$ is a [[Vector Subspace]]
+* $S_{1} \oplus S_{2}$ is a [[Vector Subspace]]
+* $S_{1} \cup S_{2}$ is not necessarily a [[Vector Subspace]], and it typically is not
+
+We can say that two subspaces are [[Complementary Subspaces]] if:
+$$S_{1} \oplus S_{2} = \mathbb{R}^n \text{ and } S_{1} \cap S_{2} = \{ \}$$
+The [[dimension]] of a [[vector space]] is the number of vectors in the [[basis]]. 
 
 ---
 

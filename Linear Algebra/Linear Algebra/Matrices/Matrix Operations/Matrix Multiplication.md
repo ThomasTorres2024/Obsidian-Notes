@@ -8,6 +8,7 @@ Let $a_{j}$ by the $j$th column of the matrix $A \in \mathbb{R}^{m \times n}$ an
 $$\vec{b}=A\vec{x}=\sum_{j=1}^n \vec{a}_{j} \cdot x_{j}$$
 Which is to say that we are scaling each column in $A$ by each corresponding $j$th entry in $\vec{x}$ and summing them together to obtain our result. 
 
+We can think of the [[Matrix Vector Product]] as a [[linear combination]] of the rows of a matrix.
 #### (Example) [[Vandermonde Matrix]]
 We can use Vanermonde Matrices to represent polynomials. If we let $p$ and $q$ both be polynomials of degree $< n$ and also consider the fixed set of numbers $\{x_{1},x_{2},\cdots,x_{m} \}$. 
 

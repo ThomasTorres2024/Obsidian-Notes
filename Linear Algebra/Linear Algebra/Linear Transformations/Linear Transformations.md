@@ -81,6 +81,8 @@ For a matrix $A \in \mathbb{R}^{m \times n}$ we define the following:
 3. $\text{dim}(\mathcal{N}(A))$ is the nullity of $A$, which is the number of columns in $A$ that are linearly dependent 
 4. $\text{dim}(\mathcal{N}(A^T))$ is the nullity of $A$, which is the number of rows in $A^T$ that are linearly dependent 
 
+We
+
 The rank nullity theorem relates the number of columns and rows that are in their respective row space and null space to the total size of the matrix. In our matrix $A$, it follows that:
 
 $$\text{dim}(\mathcal{R}(A))+\text{dim}(\mathcal{N}(A))=n$$
@@ -98,3 +100,7 @@ The rank nullity theorem extends itself beyond matrix vector products and to lin
 It follows that:
 
 $$\text{dim}(\mathcal{R(L)})+\text{dim}(\mathcal{N(L)})=\text{dim}(\mathcal{V})$$
+---
+Another way we can think of this is that the rank and the dimension of $N(A^T)$ is equal to the total number of columns, and the rank plus the dimension of $N(A)$ gives the number of rows. 
+
+A matrix is said to be [[full rank]] if $\text{rank}(A)=\text{min}(n,m)$. 

@@ -1,52 +1,55 @@
 {
   "main": {
-    "id": "dc0194ca1ef59eb7",
+    "id": "6880a458de56d2a5",
     "type": "split",
     "children": [
       {
-        "id": "99886af6e266f507",
+        "id": "8ff8f7aac80e26a0",
         "type": "tabs",
         "children": [
           {
-            "id": "8fa65bb39ff252ad",
+            "id": "b8696aa4e0094003",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/Compilation.md",
+                "file": "Suitesparse Matrices Collection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Compilation"
+              "title": "Suitesparse Matrices Collection"
             }
           },
           {
-            "id": "98f1616a8da1935b",
+            "id": "dd14616bd0b21e4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Virtualization Introduction.md",
+                "file": "Matrix Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Virtualization Introduction"
+              "title": "Matrix Commands"
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "18f3be423a591665",
+        "type": "tabs",
+        "children": [
           {
-            "id": "f92bcdda62ee720a",
+            "id": "953bcc6c0ecb938d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Organization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Computer Organization"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -55,15 +58,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1252a3c1e206c5e1",
+    "id": "2b9e895eb0b53639",
     "type": "split",
     "children": [
       {
-        "id": "05a01bc7738a8428",
+        "id": "70bb28fbdc84061e",
         "type": "tabs",
         "children": [
           {
-            "id": "3c1cee2d2963fbab",
+            "id": "8745d76e06029642",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -76,7 +79,7 @@
             }
           },
           {
-            "id": "9b5c65337e7a8d2c",
+            "id": "0fb373b8a287833c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -93,7 +96,7 @@
             }
           },
           {
-            "id": "5306a4bfcbea0bdd",
+            "id": "fd8de019cbb76bae",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -106,22 +109,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "105ab13558a5f261",
+    "id": "73e7aa1854f9fff0",
     "type": "split",
     "children": [
       {
-        "id": "4781f4fa7fabc206",
+        "id": "9e8aa8ee5ab7b1d2",
         "type": "tabs",
         "children": [
           {
-            "id": "0f9133482a4f52d4",
+            "id": "b8161096727b94e1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Matrix Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,24 +135,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Matrix Commands"
             }
           },
           {
-            "id": "7a56a6969a42a837",
+            "id": "b39370c63801601b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Matrix Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Matrix Commands"
             }
           },
           {
-            "id": "28557b36e555be60",
+            "id": "06f5fc6e4ecb5851",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -163,17 +168,18 @@
             }
           },
           {
-            "id": "004fd9fce4d8960b",
+            "id": "de220da380adf548",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Matrix Commands.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Matrix Commands"
             }
           }
         ]
@@ -194,33 +200,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "8fa65bb39ff252ad",
+  "active": "dd14616bd0b21e4c",
   "lastOpenFiles": [
-    "Computer Organization/Computer-System Architecture.md",
-    "Computer Organization/Computer Organization.md",
-    "Computer Organization/Computer-System Architecture",
-    "Computer Organization/IO/Input and Output Structure.md",
-    "Computer Organization/IO",
-    "I/O Structure.md",
-    "I",
-    "Computer Organization/Memory",
-    "Computer Organization/Memory/Storage Structure.md",
-    "Pasted image 20250907141608.png",
-    "Random-Access Memory.md",
-    "Computer Organization/Memory/Firmware.md",
-    "Computer Organization/Operating System.md",
-    "Computer Organization/Interrupts/Interrupts.md",
-    "Pasted image 20250907085708.png",
-    "Maskable-and-Non-Maskable-interrupts.jpg",
-    "Computer Organization",
-    "Computer Organization/Interrupts",
-    "Computer Organization/Interrupts/Watch Dog Timer.md",
-    "Virtualization/Virtualization Introduction.md",
-    "Pasted image 20250907013645.png",
-    "Pasted image 20250905182150.png",
-    "C/Compilation.md",
-    "Virtualization",
-    "Welcome.md",
-    "C"
+    "Suitesparse Matrices Collection.md",
+    "Matrix Commands.md"
   ]
 }

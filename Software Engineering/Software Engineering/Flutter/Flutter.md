@@ -25,3 +25,23 @@ To run our app, all we need to do is to type ```flutter run```.
 The command, ```prima reset```, will reload our app and get to reload files. Prima is the service that does all the work here. 
 
 ```prima shutdown``` Saves the work and then it starts it back up
+
+---
+# Stateful/Stateless Widgets
+what is the role of GIt?
+what is the role of github?
+
+Flutter - crossplatform apps 
+
+---
+# Callback Functions in Flutter
+Callback functions are functions that are executed when a button is pressed. 
+
+When we add const in front of a widget a lot of the work we would usually put in for resetting an application, so our code renders more efficiently. 
+
+Flutter has a single navigator object manages what displays on the screen using a [[Stack]] to display what is there. The show welcome screen thus pushes the screen onto the stack. We can also pop items from navigator if needed. 
+
+We have a setState() method which tells flutter that a widget needs to be updates on screen, which has the previous widget go away and render the next widget very quickly. 
+
+Buttons in flutter are "disabled" if their onPressed is null or onLongPress are also null. 
+

@@ -5,6 +5,12 @@ draft: "false"
 ---
 # The Four Fundamental Subspaces 
 
+The range of $A$ is also the set of all [[linear combination]]s of the columns of $A$, so they are equivalent to the [[Column space]] of $A$. 
+
+The [[Nullspace]] of $A$ consists of all $\vec{x}$ such that $A\vec{x}=\vec{0}$. 
+
+---
+
 For a given linear transformation $A : \mathbb{R}^m \rightarrow \mathbb{R}^n$, we can say that $A$  has the associated subspaces that are defined by:
 $$\mathcal{R}(A) = \{ \vec{x} \in \mathbb{R}^m : A\vec{x}=\vec{w}, \forall \vec{w}\in \mathbb{R}^n \}=\{A\vec{x}:\vec{x}\in\mathbb{R}^n\}$$
 $$\mathcal{N}(A) = \{ \vec{x} \in \mathbb{R}^m : A\vec{x}=\vec{0}\}$$
