@@ -1,0 +1,3 @@
+Github is a place to host our codebases. If you connect to the internet, you can share your project with anyone that is on the team. We have public repos, that anyone can go to, and private ones that require invitations to join and work with. 
+
+GitHub contains the master branch. We push and pull from Git. When we pull something from a repo, we take the newest update from GitHub. When we push a file back we update it. 

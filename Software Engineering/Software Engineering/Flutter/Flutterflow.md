@@ -1,0 +1,1 @@
+Flutteflow has live collaborative features, but also the same git stand alone aspects. 
