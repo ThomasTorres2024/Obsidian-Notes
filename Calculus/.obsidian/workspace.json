@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Geometry and Multivariable Functions/Determinant.md",
+                "file": "Calculus/Geometry and Multivariable Functions/Plane.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Determinant"
+              "title": "Plane"
             }
           }
         ]
@@ -171,12 +171,12 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
+    "Calculus/Geometry and Multivariable Functions/Determinant.md",
     "Calculus/Untitled.base",
     "Calculus/Untitled 2.base",
     "Calculus/Untitled 1.base",
     "Calculus/Geometry and Multivariable Functions/Plane.md",
     "Calculus/Geometry and Multivariable Functions/Cross Product.md",
-    "Calculus/Geometry and Multivariable Functions/Determinant.md",
     "Calculus/Geometry and Multivariable Functions/Dot Product.md",
     "Homework/Untitled.md",
     "Homework",
