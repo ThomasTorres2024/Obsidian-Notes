@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Geometry and Multivariable Functions/Plane.md",
+                "file": "Calculus/Limits/Limit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plane"
+              "title": "Limit"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4a2671d6dbfabde1",
@@ -171,11 +172,20 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
+    "Calculus/Limits/Multivariable Limit.md",
+    "Calculus/Limits/Limit.md",
+    "Pasted image 20250912132205.png",
+    "Pasted image 20250912125121.png",
+    "Pasted image 20250912124004.png",
+    "Pasted image 20250912123803.png",
+    "Calculus/Derivatives/Differentiation/Differentiation.md",
+    "Calculus/Limits",
+    "Calculus/Geometry and Multivariable Functions/Plane.md",
+    "Calculus/Derivatives/Differentiation",
     "Calculus/Geometry and Multivariable Functions/Determinant.md",
     "Calculus/Untitled.base",
     "Calculus/Untitled 2.base",
     "Calculus/Untitled 1.base",
-    "Calculus/Geometry and Multivariable Functions/Plane.md",
     "Calculus/Geometry and Multivariable Functions/Cross Product.md",
     "Calculus/Geometry and Multivariable Functions/Dot Product.md",
     "Homework/Untitled.md",
