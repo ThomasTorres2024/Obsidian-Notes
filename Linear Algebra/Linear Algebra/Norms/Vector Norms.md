@@ -55,4 +55,27 @@ One common problem is constrained optimization using norms. For instance, if we 
 For $L1$ the following optimization is known as [[Basis Pursuit]]:
 $$\text{min}(\|\vec{x}||_{1}) \text{ such that: } A\vec{x}=\vec{b}$$
 For $L2$ the following optimization is known as [[Ridge Regression]] which is similar to [[Least Squares]]
-$$\text{min}(\|\vec{x}||_{2}) \text{ such that: } A\vec{x}=\vec{b}$$
+$$\text{min}(\|\vec{x}||_{2}) \text{ such that: } A\vec{x}=\vec{b}$$---
+# Important [[p-norms]]
+Some of the most important $p$ norms are the Euclidean or 2 norm, the 1 norm or Manhattan distance, and the infinity norm. We can use the [[Squeeze Theorem]] to verify that the value of the infinity norm turns out to be the greatest $|x_{i}|$ in a vector $\vec{x}$, which is to say the absolute value of the greatest component.
+
+Also, if $\leq 0 < p < 1$, then $p$ begins to violate the [[Triangle Inequality]], and we lose the property of being a norm. 
+
+#### Weighted P-Norms
+Weighted P-Norms are a generalization of typical [[p-norms]], which instead of weighing each element as 1 when we do a sum over our elements, that is by just considering $|x_{i}|^p$ raw, we apply weights to different components in order to weigh them differently.  Each weight in our weight matrix is given by $w_{i}$, where $W$ is a [[diagonal matrix]] where each $i$ component has the property that $w_{i} \neq 0$.
+
+We denote weighted p norms via $\|\vec{x}\|_{w}=\|W\vec{x} \|$ Our weighted [[p-norms]] is as such:
+$$\|\vec{x}\|_{W}=\left( \sum_{i=1}^n |w_{i} x_{i}| \right)^{\frac{1}{p}}$$
+Note that we can give a weighted 2 norm via the following [[Matrix Norm]] for a vector:
+$$\|\vec{x}\|=\sqrt{\vec{x}^TA\vec{x}}$$
+If we have a weight matrix $W$, then $A=W^2.$ 
+
+---
+# Orthogonality
+Note that orthogonality actually preserves vector norms. That is to say, for orthogonal transformation, not necessarily an [[orthogonal matrix]], it is the case that $\|Q\vec{x}\| = \|\vec{x}\|_{2}$, which is to say that the magnitude of $\vec{x}$ remains unchanged under orthogonal transformation. 
+
+---
+# Equivalence of Norms
+All norms are equivalent, meaning that for $c_{1}$ and $c_{2}$ we can express, for $\vec{x} \in V$ where $V$ is a [[vector space]]:
+$$c_{1}\|\vec{x}\|_{\alpha} \leq \|\vec{x}\|_{\beta} \leq c_{2} \|\vec{x}\|_{\alpha}$$
+Where $0<c_{1}\leq c_{2}$. 

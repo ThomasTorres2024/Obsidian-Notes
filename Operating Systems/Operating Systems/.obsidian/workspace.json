@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/Compilation.md",
+                "file": "Computer Organization/Operating System Structures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Compilation"
+              "title": "Operating System Structures"
+            }
+          },
+          {
+            "id": "86067264db02619c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Time.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Time"
+            }
+          },
+          {
+            "id": "678fdadc0865f38d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Processes/Processes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Processes"
             }
           },
           {
@@ -49,7 +77,8 @@
               "title": "Computer Organization"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,8 +223,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "8fa65bb39ff252ad",
+  "active": "678fdadc0865f38d",
   "lastOpenFiles": [
+    "Processes/States of a Process (through its lifetime.md",
+    "Computer Organization/Operating System Structures.md",
+    "Computer Organization/Kernel.md",
+    "Processes",
+    "Processes/Processes.md",
+    "Time.md",
+    "C/Compilation.md",
     "Computer Organization/Computer-System Architecture.md",
     "Computer Organization/Computer Organization.md",
     "Computer Organization/Computer-System Architecture",
@@ -218,7 +254,6 @@
     "Virtualization/Virtualization Introduction.md",
     "Pasted image 20250907013645.png",
     "Pasted image 20250905182150.png",
-    "C/Compilation.md",
     "Virtualization",
     "Welcome.md",
     "C"

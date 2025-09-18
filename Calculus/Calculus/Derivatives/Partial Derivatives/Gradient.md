@@ -24,7 +24,7 @@ Let us then take the derivative of the level curve with respect to time. From th
 $$\dfrac{dw}{dt}=\dfrac{\partial f}{\partial x} \dfrac{dx}{dt}+\dfrac{\partial f}{\partial y} \dfrac{dz}{dt}+\dfrac{\partial f}{\partial z} \dfrac{dx}{dt}=0$$
 Since $c$ is a constant function, its derivative is zero. And since the level curve is equal to a constant, its derivative must always be zero. 
 
-Notice that we can express our in terms of a [[dot product]] between our function $\dfrac{d}{dt}\vec{r}(t)$ and $\nabla w$:
+Notice that we can express our in terms of a [[Dot Product]] between our function $\dfrac{d}{dt}\vec{r}(t)$ and $\nabla w$:
 $$\dfrac{dw}{dt}=\nabla w \cdot \dfrac{dw}{dt}\vec{r}(t)=0$$
 We should also note that since we have a dot product, we are establishing a fact also about the two vectors involved. We are essentially saying that the gradient vector is orthogonal to the tangent vector at a point.
 

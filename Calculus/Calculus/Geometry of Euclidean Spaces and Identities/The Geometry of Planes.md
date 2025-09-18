@@ -17,7 +17,7 @@ v_{11} & v_{12} & v_{13} & 0 \\
 v_{21} & v_{22} & v_{23} &  0  \\
 \end{array}\right] \right)$$
 
-This seems to be analogous to computing the [[cross product]], it is less efficient in my personal belief but it works just fine. 
+This seems to be analogous to computing the [[Cross Product]], it is less efficient in my personal belief but it works just fine. 
 
 We know that $$\vec{N} \cdot \vec{v}_{1} = \vec{N} \cdot \vec{v}_{2} = \vec{0}$$
 
@@ -77,7 +77,7 @@ In the case that all planes intersect in some way, our potential solutions to th
  * If $P_{3}$ is not parallel to $P_{1} \cap P_{2}$, then $P_{1} \cap P_{2} \subseteq P_{3}$, then $\vec{x}$ has infinitely many solutions where any point in $P_{2} \cap P_{1}$ is a solution to the system , which could be a plane or a line 
 * If $P_{3}$ is parallel to $P_{1} \cap P_{2}$ then $\not \exists \vec{x}$ that satisfies our system 
 
-We can reconnect the ideas with the [[determinant]] and solving a linear system. We are guaranteed a linear solution if $A^{-1}$ exists, which means that the determinant of our system is non-zero. 
+We can reconnect the ideas with the [[Determinant]] and solving a linear system. We are guaranteed a linear solution if $A^{-1}$ exists, which means that the determinant of our system is non-zero. 
 
 For the homogeneous case, we are guaranteed to have a solution. That is to say there is always a solution for: 
 

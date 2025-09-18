@@ -13,7 +13,7 @@ The second partial derivative is expressed by the symmetric matrix known as the 
 $$\nabla^2f= \begin{bmatrix} f_{xx} & f_{xy}\\f_{yx} & f_{yy} \end{bmatrix}=\mathcal{H}$$
 The third partial derivative is expressed as a rank 3 [[tensor]]. 
 
-The Hessian matrix and its associated trace and [[determinant]] are interesting quantities that we want to consider:
+The Hessian matrix and its associated trace and [[Determinant]] are interesting quantities that we want to consider:
 
 $$\text{det}(\mathcal{H})=f_{xx}f_{yy}-f_{xy}^2$$
 $$\text{trace}(\mathcal{H})=f_{xx}+f_{yy}$$

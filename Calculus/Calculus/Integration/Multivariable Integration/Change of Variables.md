@@ -24,7 +24,7 @@ We can think of our transformation from $x$ and $y$ to $v$ and $u$ to be a trans
 ![[Pasted image 20250627034648.png]]
 The rate of change is the same everywhere, so the position we begin with for our coordinates does not actually modify the resulting 
 
-We can examine where the transformation sends our basis vectors, and compute the [[determinant]] of the transformation and see how much our area has been scaled by. We then need to divide our differential by the amount that the area is scaled by. 
+We can examine where the transformation sends our basis vectors, and compute the [[Determinant]] of the transformation and see how much our area has been scaled by. We then need to divide our differential by the amount that the area is scaled by. 
 
 Let us call our scaled matrix $A$, we would get that $\text{det}(A)=5$, so our integral would be:
 $$\int \int _{R_{x,y}}\cdots dxdy = \int \int_{R_{u.v}} \cdots \dfrac{1}{5}dudv$$

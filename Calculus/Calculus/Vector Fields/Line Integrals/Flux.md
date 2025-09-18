@@ -128,7 +128,7 @@ We want to be able to express $\vec{n}(t)$ in terms of the components of $\vec{r
 $$\vec{r}'(t)=x'(t)\hat{i}+y'(t)\hat{j}$$
 We can also see that $\vec{n}(t)=-y'(t)\hat{i}+x(t)\hat{j}$ simply by inspection, since the dot product between the two results in zero, meaning they are orthogonal and $\vec{n}(t)$ is a normal vector. 
 
-We can also do this via the determinant method and [[cross product]]. We know that $\hat{k}$ is orthogonal to $\vec{r}'(t)$ since $\hat{k}$ is in the third dimension sticking upward and our other vectors are flat. We can compute the determinant between $\vec{r}'(t)$ and $\hat{k}$ which gives us:
+We can also do this via the determinant method and [[Cross Product]]. We know that $\hat{k}$ is orthogonal to $\vec{r}'(t)$ since $\hat{k}$ is in the third dimension sticking upward and our other vectors are flat. We can compute the determinant between $\vec{r}'(t)$ and $\hat{k}$ which gives us:
 $$\text{det}\left(\begin{bmatrix} \hat{i} & \hat{j} & \hat{k} \\ x'(t) & y'(t) & 0
 \\ 0 & 0 & 1 \end{bmatrix} \right)=\hat{i}y'(t)-\hat{j}x'(t)$$
 Which would give us the following vector for $\vec{n}(t)=\begin{bmatrix}y'(t)& -x'(t) \end{bmatrix}^T$. We can express out resulting flux integral as:  

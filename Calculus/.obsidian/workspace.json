@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Limits/Limit.md",
+                "file": "Calculus/Vector Fields/Line Integrals/Flux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Limit"
+              "title": "Flux"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4a2671d6dbfabde1",
@@ -172,29 +171,41 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
-    "Calculus/Limits/Multivariable Limit.md",
+    "Calculus/Vector Fields/Line Integrals/Divergence.md",
+    "Calculus/Vector Fields/Laplacian.md",
+    "Calculus/Vector Fields/Gradient Field.md",
+    "Calculus/Vector Fields/Flow Integrals and Circulation.md",
+    "Calculus/Vector Fields/Line Integrals/Fundamental Theorem of Calculus for Line Integrals.md",
+    "Calculus/Vector Fields/Line Integrals/Flux.md",
+    "Calculus/Multivariable Functions/Multivariable Functions.md",
+    "Pasted image 20250912174753.png",
+    "Pasted image 20250912174239.png",
+    "Pasted image 20250912174119.png",
     "Calculus/Limits/Limit.md",
+    "Calculus/Multivariable Functions",
+    "Multivariable Functions",
+    "Calculus/Limits/Multivariable Limit.md",
     "Pasted image 20250912132205.png",
     "Pasted image 20250912125121.png",
     "Pasted image 20250912124004.png",
     "Pasted image 20250912123803.png",
     "Calculus/Derivatives/Differentiation/Differentiation.md",
     "Calculus/Limits",
-    "Calculus/Geometry and Multivariable Functions/Plane.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Plane.md",
     "Calculus/Derivatives/Differentiation",
-    "Calculus/Geometry and Multivariable Functions/Determinant.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Determinant.md",
     "Calculus/Untitled.base",
     "Calculus/Untitled 2.base",
     "Calculus/Untitled 1.base",
-    "Calculus/Geometry and Multivariable Functions/Cross Product.md",
-    "Calculus/Geometry and Multivariable Functions/Dot Product.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Cross Product.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Dot Product.md",
     "Homework/Untitled.md",
     "Homework",
-    "Calculus/Geometry and Multivariable Functions/Lines in n Space.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Lines in n Space.md",
     "Pasted image 20250907152747.png",
     "Pasted image 20250907152708.png",
     "Calculus/Vector Fields/Conservative Field.md",
-    "Calculus/Geometry and Multivariable Functions/Vectors.md",
+    "Calculus/Geometry of Euclidean Spaces and Identities/Vectors.md",
     "Pasted image 20250905090655.png"
   ]
 }

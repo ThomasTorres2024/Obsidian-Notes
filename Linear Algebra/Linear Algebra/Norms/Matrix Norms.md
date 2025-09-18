@@ -10,7 +10,7 @@ $$\| \cdot \| : \mathbb{F}^{m \times n} \rightarrow \mathbb{R}$$All matrix norms
 2. $\| A \| = 0 \Longleftrightarrow A = 0^{m \times n}$
 3. $\| \alpha A \|=|a| \| A \|$ for $a \in \mathbb{F}$
 4. $\| A +B \| \geq \| A\| + \| B \|$ The triangle equality for matrices.
-5. $\|A \cdot B \| \leq \| A\| \cdot \| B \|$ Sub multiplicative Rule.
+5. $\|A \cdot B \| \leq \| A\| \cdot \| B \|$ Sub multiplicative Rule. (Note this is a generalization of the [[Cauchy-Schwarz Inequality]])
 
 ---
 # Matrix $p$ Norms
@@ -44,3 +44,13 @@ We denote the nuclear norm of a matrix $A$ by $\| A\|_{N}$. This is also useful 
 
 All we do here is to sum the [[singular value]]s of our matrix:
 $$\|A \|_{N}=\sum_{i=1}^n\sigma_{i}=\sigma_{1}+\sigma_{2}+\cdots+\sigma_{n}$$
+---
+# Norms Induced by Vectors
+We can find [[Matrix Norms]] by using a vector as well. We can derive our notion of the size of a matrix from the size of vectors. The matrix norm is defined as the following between matrix norms on $p$ and $q$ on the domain and range of $A\in \mathbb{R}^{m \times n}$:
+$$\|A\vec{x}\|_{p} \leq C\|\vec{x}\|_{q}$$
+$C \in \mathbb{R}$ is the smallest number for which the above equality holds for any $\vec{x} \in \mathbb{R}^n$ where $\vec{x} \neq \vec{0}$. We think of this as the maximum factor by which $A$ is able to stretch the vector $\vec{x}$. We have that:
+![[Pasted image 20250918103351.png]]
+
+For instance, the induced vector norm of $1, \|A\|_{1}$ is given by:
+$$\|A\|_{1}= \sup_{\vec{x} \in \mathbb{R}^n, \|\vec{x}\|_{1}=1} \|A\vec{x}\|_{1}$$
+Which is equivalent to saying the maximum of 1 norm of column vectors of $A$. Which is equivalent to saying the maximum sum of the columns 

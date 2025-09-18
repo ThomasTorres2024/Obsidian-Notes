@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
+                "file": "Linear Algebra/Norms/Matrix Norms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Schur's Triangularization"
+              "title": "Matrix Norms"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -169,8 +170,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "15b3c82ff989a618",
+  "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Pasted image 20250918103351.png",
+    "Linear Algebra/Norms/Vector Norms.md",
+    "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
     "Linear Algebra/Linear Transformations/Linear Transformations.md",
     "Linear Algebra/Linear Transformations/The Four Fundamental Subspaces.md",
     "Linear Algebra/Vector Spaces/Vector Spaces and Vector Subspaces.md",

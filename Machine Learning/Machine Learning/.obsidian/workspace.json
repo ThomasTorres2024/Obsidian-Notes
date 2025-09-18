@@ -11,10 +11,14 @@
             "id": "7f6d2ee6be562158",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Algorithms/K-nn.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "K-nn"
             }
           }
         ]
@@ -167,7 +171,32 @@
   },
   "active": "7f6d2ee6be562158",
   "lastOpenFiles": [
-    "Key Terminology.md",
-    "Machine Learning.md"
+    "Algorithms/K-means.md",
+    "Pasted image 20250917171747.png",
+    "Pasted image 20250917171556.png",
+    "Pasted image 20250917162141.png",
+    "Pasted image 20250917161902.png",
+    "Pasted image 20250917154144.png",
+    "Pasted image 20250917153805.png",
+    "Algorithms/K-nn.md",
+    "Python/Pytorch.md",
+    "Algorithms",
+    "Poor Quality Data/Imbalanced Data.md",
+    "Python",
+    "Performance Metrics/Evaluation Metrics.md",
+    "Poor Quality Data",
+    "Performance Metrics/ROC curve.md",
+    "Pasted image 20250917144909.png",
+    "Pasted image 20250917144754.png",
+    "Pasted image 20250917143721.png",
+    "Performance Metrics/Cross Validation.md",
+    "Pasted image 20250917134918.png",
+    "Machine Learning Overview/Key Terms in Machine Learning.md",
+    "Performance Metrics",
+    "Machine Learning Overview/Principles",
+    "Machine Learning Overview/Machine Learning.md",
+    "Machine Learning Overview",
+    "Machine Learning Overview/Principles/Ockham's Razor in Machine Learning.md",
+    "Key Terminology.md"
   ]
 }

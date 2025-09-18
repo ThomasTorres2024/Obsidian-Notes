@@ -10,7 +10,7 @@ It turns out that we can express $\vec{n} \cdot dS$ as $\langle -f_{x},-f_{y},1 
 
 We will consider a small slice of the $xy$ plane, starting at some point $(x,y)$. We then consider some small step away from this point $\Delta x$ and another $\Delta y$. 
 
-We can observe on the graph that these two points get mapped to two vectors along our surface $S$, giving the vectors $\vec{u}$ and $\vec{v}$. We have previously established that the magnitude of the [[cross product]] gives us the area spanned by a parallelogram constructed out of these two vectors. 
+We can observe on the graph that these two points get mapped to two vectors along our surface $S$, giving the vectors $\vec{u}$ and $\vec{v}$. We have previously established that the magnitude of the [[Cross Product]] gives us the area spanned by a parallelogram constructed out of these two vectors. 
 
 It turns out that the cross product also gives us the [[normal vector]] to the surface at that point, but just scaled up by some amount:
 $$\vec{u} \times \vec{v} = \Delta S \cdot \vec{n}$$

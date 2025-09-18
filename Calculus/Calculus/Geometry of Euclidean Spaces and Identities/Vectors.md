@@ -27,8 +27,8 @@ Any element $\vec{v} \in V$ is a linear combination of elements from that space,
 
 --- 
 # Parallelogram Rule for Addition and Triangle Rule 
-When adding vectors, $\vec{a},\vec{b}$ tip to tail we end up forming a parallelogram in the non-degenerate case, e.g. where the [[determinant]] $\neq 0$. If we halve the diagram and do not add on all sides, we get a triangle, where the longest length is $\vec{b}+\vec{a}$:
+When adding vectors, $\vec{a},\vec{b}$ tip to tail we end up forming a parallelogram in the non-degenerate case, e.g. where the [[Determinant]] $\neq 0$. If we halve the diagram and do not add on all sides, we get a triangle, where the longest length is $\vec{b}+\vec{a}$:
 
 ![[Pasted image 20250905090655.png]]
 
-Since $\text{det}(A)=$ the area of the rectangle spanned by the two vectors, by doing $\frac{1}{2}\text{det}(A)$ we obtain the area of the triangle involved. There is also a nice connection between this idea and the [[cross product]] and its respective identities. 
+Since $\text{det}(A)=$ the area of the rectangle spanned by the two vectors, by doing $\frac{1}{2}\text{det}(A)$ we obtain the area of the triangle involved. There is also a nice connection between this idea and the [[Cross Product]] and its respective identities. 
