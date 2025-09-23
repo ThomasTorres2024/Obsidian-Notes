@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Randomization Algorithms/Quicksort.md",
+                "file": "Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quicksort"
+              "title": "Directed Acyclic Graph"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -170,9 +171,12 @@
   },
   "active": "6d8c40b74949e9e3",
   "lastOpenFiles": [
+    "Graph Algorithms/Graphs Info/Graph.md",
+    "Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
+    "Graph Algorithms/Graphs Info/Adjacency List.md",
+    "Randomization Algorithms/Quicksort.md",
     "Pasted image 20250813015426.png",
     "Las Vegas Algorithms.md",
-    "Randomization Algorithms/Quicksort.md",
     "Sorted Array.md",
     "Randomization Algorithms/Probabilistic Algorithm.md",
     "Randomization Algorithms/Monte Carlo Matrix Multiplication Algorithm.md",
@@ -201,10 +205,7 @@
     "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Dijkstra's Method.md",
     "Graph Algorithms/Graphs Info/Graph Isomorphism.md",
     "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Breadth First Search.md",
-    "Graph Algorithms/Graphs Info/Graph.md",
     "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Bellman-Ford.md",
-    "Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
-    "Graph Algorithms/Graphs Info/Adjacency List.md",
     "Pasted image 20250729005531.png",
     "Pasted image 20250729005342.png",
     "Pasted image 20250729005306.png",
@@ -214,7 +215,6 @@
     "Graph Algorithms/Trees",
     "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms",
     "Graph Algorithms/Pathfinding Algorithms",
-    "Pasted image 20250720003039.png",
     "Graph Algorithms/Graphs Info"
   ]
 }

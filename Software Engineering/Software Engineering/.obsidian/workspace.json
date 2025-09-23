@@ -166,7 +166,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "firebase",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,7 +187,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -284,8 +285,9 @@
   },
   "active": "fbe6e607b97d468c",
   "lastOpenFiles": [
-    "JSON.md",
+    "Backend/Backend Development.md",
     "Backend/Databases/Firebase.md",
+    "JSON.md",
     "Backend/Databases",
     "Backend",
     "Github.md",
@@ -295,7 +297,6 @@
     "Fullstack Development.md",
     "Flutter",
     "Front End Programming.md",
-    "Background.md",
-    "Backend/Backend Development.md"
+    "Background.md"
   ]
 }
