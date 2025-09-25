@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Processes/Processes.md",
+                "file": "CSC 412/Raw Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processes"
+              "title": "Raw Notes"
             }
           },
           {
@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "processes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 423.5
   },
   "right": {
     "id": "105ab13558a5f261",
@@ -151,6 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CSC 412/Raw Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +161,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Raw Notes"
             }
           },
           {
@@ -209,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -225,15 +226,22 @@
   },
   "active": "678fdadc0865f38d",
   "lastOpenFiles": [
-    "Processes/States of a Process (through its lifetime.md",
-    "Computer Organization/Operating System Structures.md",
-    "Computer Organization/Kernel.md",
-    "Processes",
     "Processes/Processes.md",
+    "CSC 412/Raw Notes.md",
+    "CSC 412",
+    "Processes/Process Control Block.md",
+    "Computer Organization/Kernel.md",
     "Time.md",
-    "C/Compilation.md",
+    "Scheduler",
     "Computer Organization/Computer-System Architecture.md",
     "Computer Organization/Computer Organization.md",
+    "Computer Organization/Operating System.md",
+    "Pasted image 20250923132306.png",
+    "Pasted image 20250923092732.png",
+    "Processes/States of a Process (through its lifetime.md",
+    "Computer Organization/Operating System Structures.md",
+    "Processes",
+    "C/Compilation.md",
     "Computer Organization/Computer-System Architecture",
     "Computer Organization/IO/Input and Output Structure.md",
     "Computer Organization/IO",
@@ -244,7 +252,6 @@
     "Pasted image 20250907141608.png",
     "Random-Access Memory.md",
     "Computer Organization/Memory/Firmware.md",
-    "Computer Organization/Operating System.md",
     "Computer Organization/Interrupts/Interrupts.md",
     "Pasted image 20250907085708.png",
     "Maskable-and-Non-Maskable-interrupts.jpg",
@@ -255,7 +262,6 @@
     "Pasted image 20250907013645.png",
     "Pasted image 20250905182150.png",
     "Virtualization",
-    "Welcome.md",
-    "C"
+    "Welcome.md"
   ]
 }

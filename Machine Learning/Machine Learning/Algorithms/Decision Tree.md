@@ -37,9 +37,13 @@ If we have more leaves, or something more flexible, then we are able to learn mo
 #### Preventing Overfitting 
 One way we can prevent [[Overfitting]] is by removing irrelevant features. If we know that certain features are not very relevant, we can remove them. We can increase the size of the dataset too. We can also use thresholds or some kind of statistical measure in order to stop our training early, if we get to 0.9 accuracy we might be able to stop then and there. This process is known as [[Bounding]]. We also have post-training pruning, which removes branches that are not very significant to performance if they do not add very much [[Information Gain]]. 
 
+It turns out that we can always get 0% testing error as long as we do not have repeat entries, and we can continue to split ad infinitum. 
+
+If our tree is too small, we likely have errors in our training set. If our tree is deep, then we likely will have an awful test score. Finding an optimal tree is again [[NP-Hard]]. The more data we get, we get exponential growth. T
 #### Learning Goals for [[Decision Tree]]
 We generally want to look for smaller [[Decision Tree]]s that are consistent with the training data. These are likely to be [[Generalizeable]] to other datasets. 
 
+We are looking for a tree that maximizes our test score with the fewest number of possible branches. Such a tree is almost certainly generalizeable. 
 #### Finding DTs 
 DTs are hard to fine, this is an [[NP-Hard]] problem. We need to use heuristics in order to find a good tree. There is no known polynomial time algorithm for finding a good tree. 
 

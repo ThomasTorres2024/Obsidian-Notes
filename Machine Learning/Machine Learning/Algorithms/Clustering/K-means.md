@@ -103,4 +103,4 @@ The elbow method is also extremely important and useful. We can use it to find t
 
 ![[Pasted image 20250917171747.png]]
 
-As $k\to\infty$, our centroids will tend to look more and more like our actual points, and eventually we get a distance of $0$ there, but that is completely useless.
+As $k\to\infty$, our centroids will tend to look more and more like our actual points, and eventually we get a distance of $0$ there, but that is completely useless. We are looking for the point of diminishing returns. We are looking for a "kink", a point at which we have a concavity change.

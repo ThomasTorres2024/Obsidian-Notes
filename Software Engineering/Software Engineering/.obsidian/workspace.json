@@ -111,12 +111,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backend/Databases/Firebase.md",
+                "file": "APIS/API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firebase"
+              "title": "API"
+            }
+          },
+          {
+            "id": "8df772d412d59002",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cloud Functions"
             }
           },
           {
@@ -134,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -166,7 +180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "firebase",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,8 +201,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -283,10 +296,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "fbe6e607b97d468c",
+  "active": "8df772d412d59002",
   "lastOpenFiles": [
-    "Backend/Backend Development.md",
+    "APIS/API.md",
+    "Cloud Functions.md",
     "Backend/Databases/Firebase.md",
+    "APIS",
+    "Backend/Backend Development.md",
     "JSON.md",
     "Backend/Databases",
     "Backend",

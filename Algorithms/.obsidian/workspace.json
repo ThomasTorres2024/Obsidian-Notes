@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
+                "file": "Graph Algorithms/Trees/Tree.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Directed Acyclic Graph"
+              "title": "Tree"
             }
           }
         ]
@@ -169,10 +169,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d8c40b74949e9e3",
+  "active": "824cc0e2b0b07c5f",
   "lastOpenFiles": [
-    "Graph Algorithms/Graphs Info/Graph.md",
+    "Graph Algorithms/Pathfinding Algorithms/Topological Sort.md",
+    "Graph Algorithms/Pathfinding Algorithms/Depth First Search.md",
+    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Weighted Shortest Paths.md",
+    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Dijkstra's Method.md",
+    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/DAG Relaxation.md",
+    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Breadth First Search.md",
+    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Bellman-Ford.md",
+    "Graph Algorithms/Pathfinding Algorithms/APSP (All Pair Shortest Path) Algorithms/Johnson's Algorithm.md",
+    "Graph Algorithms/Pathfinding Algorithms/APSP (All Pair Shortest Path) Algorithms/APSP.md",
     "Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
+    "Graph Algorithms/Graphs Info/Graph.md",
     "Graph Algorithms/Graphs Info/Adjacency List.md",
     "Randomization Algorithms/Quicksort.md",
     "Pasted image 20250813015426.png",
@@ -191,27 +200,19 @@
     "Pasted image 20250810052054.png",
     "Pasted image 20250810044057.png",
     "Pasted image 20250810043717.png",
-    "Graph Algorithms/Pathfinding Algorithms/APSP (All Pair Shortest Path) Algorithms/Johnson's Algorithm.md",
     "Graph Algorithms/Trees/Untitled",
     "Algorithmic Complexity",
     "Dynamic Programming",
-    "Graph Algorithms/Pathfinding Algorithms/APSP (All Pair Shortest Path) Algorithms/APSP.md",
     "Pasted image 20250807001520.png",
-    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/DAG Relaxation.md",
     "Interfaces/Set.md",
     "Graph Algorithms/Pathfinding Algorithms/Prims Algorithm.md",
     "Comparison Sorting.md",
     "Graph Algorithms/Pathfinding Algorithms/APSP (All Pair Shortest Path) Algorithms",
-    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Dijkstra's Method.md",
     "Graph Algorithms/Graphs Info/Graph Isomorphism.md",
-    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Breadth First Search.md",
-    "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Bellman-Ford.md",
     "Pasted image 20250729005531.png",
     "Pasted image 20250729005342.png",
     "Pasted image 20250729005306.png",
     "Pasted image 20250729002912.png",
-    "Graph Algorithms/Trees/Tree.md",
-    "Graph Algorithms/Trees/Tree Center.md",
     "Graph Algorithms/Trees",
     "Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms",
     "Graph Algorithms/Pathfinding Algorithms",

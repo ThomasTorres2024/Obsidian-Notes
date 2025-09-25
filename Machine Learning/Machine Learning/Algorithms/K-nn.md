@@ -1,0 +1,1 @@
+The [[Approximate Nearest Neighbors]] algorithm uses a [[KD Tree]] such that each part of the tree does overall less computations, which is nice because we can escape from having to do $O(n)$ many comparisons, or at least do a considerably smaller amount by partitioning space in some way. 

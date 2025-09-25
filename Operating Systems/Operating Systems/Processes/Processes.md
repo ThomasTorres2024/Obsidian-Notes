@@ -1,7 +1,9 @@
 ---
-title:
+title: Processes
+tags:
+draft:
 ---
-(Chapter 4)
+# Introduction to [[Processes]]
 What is a process? It's a dynamic entity, a program in action.  A [[program]] is just a dead piece of code, it is some static file. Since a process is dynamic, it has a state. The OS can infer things about the status of the process. 
 
 For a given program, it is the case that 2 or more processes can run the same program/code. We want to know things like when does a program start executing, and how long has it been launched for. There is CPU time and also user time involved here that we need to be able to express as a duration. We want to know how much memory our program is using, maybe how many files it has opened. We also have the program counter, which is the address of the line of code currently being executed. There are many other features, like pausing a process and saving its state, 
@@ -12,7 +14,7 @@ For instance, if we are stopped in the middle of the execution of an arithmetic 
 
 ASTs are recursive. In Java, Python, and C# we evaluate the left subtree recursively, and then the right recursively. In C++ we use a different way to traverses through abstract syntax trees. We evaluate each set of nodes with terminal children and do the operation. But in C++ we just want to do things quick.
 
-#### Note. Dif in Compilers In Evaluating Arithmetic Expression
+#### Difference in Compilers In Evaluating Arithmetic Expression
 say if:
 ```
 int x =6;
@@ -58,8 +60,11 @@ fopen is actually a [[C]] runtime pointer, but this runtime pointer is actually 
 
 ---
 # States of a Process Throughout its Lifetime
+Since [[Processes]] are dynamic, they have states. They can fall into one of the following states, new, ready, waiting, running, or terminated.  Our state begins as new when it is created. We have to create an id for the process, allocate memory, and our state remains as new. 
 
-Our state begins as new when it is created. We have to create an id for the process, allocate memory, and our state remains as new. 
+If a process is new, the process is being created. It is being formed or made. If a process is in the running state, its executions are being run. If a process is in the waiting state we are waiting for [[IO]] or [[Signals]]. We also have the ready state, which happens before our process is assigned to a CPU/processor. Lastly, we have the terminated state, when a process is finished executing. 
+
+![[Pasted image 20250923092732.png]]
 
 Our process then becomes ready when it is loaded into memory. It has a [[Process Control Block]] created, all it needs is [[CPU Time]]. 
 
@@ -67,11 +72,24 @@ Once the [[Processes]] get [[CPU Time]], then the program is running. We can be 
 
 One is IO, one is termination, and one is waiting. Based on the amount of time, the [[Scheduler]] may take our program and return it to the ready state. Which forces us out of a program after $n$ minutes. 
 
-* Terminate by just closing or exiting, crashing etc, maybe a seg fault. The OS needs to remove the [[Process Control Block]], update any tables, and so on and so forth. 
-* We could be doing some IO where our program is waiting on some kind of input or output. OS pulls away [[Processes]] from the [[CPU]] to do some IO. When IO is done we go back to the CPU because something could be running already.    
+* Terminate by just closing or exiting, crashing etc, maybe a seg fault. The OS needs to remove the [[Process Control Block]], update any tables, and so on and so forth. It has its own routines it needs to tends to.
+* We could be doing some IO where our program is waiting on some kind of input or output. OS pulls away [[Processes]] from the [[CPU]] to do some IO. When IO is done we go back to the CPU because something could be running already.  IO is extremely slow compared to the CPU, in fact thousands of times slower. 
+* The process can go from a running state back to ready if the [[Scheduler]] says we have been running for too long. This is when the OS will stop our process.
 
-The fairly confusing part of this is waiting. We are not waiting on the [[CPU]], we are waiting on the [[IO]]. 
+Another thing we could deal with is a higher priority process having higher precedence putting our process back to ready. The fairly confusing part of this is waiting. We are not waiting on the [[CPU]], we are waiting on the [[IO]]. 
 
 A process also can be terminated and do IO at any point. 
 
 Imagine if we have 1 [[CPU]] with 4 [[Processes]] running, $P_{1},P_{2},P_{3}$ and $P_{4}$. 
+
+---
+# [[Processes]] vs [[Thread]]s 
+When a program is compiled from its source code into native machine code, we need to be able to load our program into memory, which requires resources from the computer. The program then begins its execution.  A process again is simply a program in execution. 
+
+A [[Thread]] is a unit of execution within a process. Early on, one process had one thread, but in the modern day programs have many threads. Each process is composed of threads, threads ae separate units of execution on our processor(s). 
+
+---
+# Process Scheduling
+How does a process go through between the three main states of running, ready, and waiting? We have hundreds of devices running, and we need to be able to handle them all. We also have [[Process Synchronization]], when processes all want access to the same memory. 
+
+---
