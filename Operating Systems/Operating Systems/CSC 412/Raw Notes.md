@@ -25,3 +25,69 @@ Where does the notion of time come from on a CPU? We have oscillators that use c
 
 Classic Scheduling Algorithms
 - no premption, no io, just termination. we have a normal queue no pq, and w just seve the first elements to the cpu each time
+
+
+---
+9/30/25 
+# Process Creation
+
+Today we will cover the process ID mostly. 
+
+The user is identified with a specific number. The admin has their own number. This is uid 0 and also the root. Logging in generally means going to where the root is. Any process on our computer has two pairs of identifiers, uid and gid. 
+
+In Unix the pid continues to increase. This allows us to order processes based on this fact, we can impose a sense of age on them.
+
+All process are created by another process except for 0 are created by another process. The way that we create more processes is by forking, thus every product has a parent process, tthe id of the process that created its child processes. 
+
+In unix the boot task has PID 0
+
+The fork function is called from the parrent process It goes to the process table and generates a child process with the according information, makes a [[Process Control Block]] for it. +
+
+The first thing our program does in C is try to load into memory the values of everything initialized, bfore the first line of main is even run. 
+
+An example of a program laucnhing another program is using a basch script, we call the kernel. When we create a process everything is the same except for the process ID. THus when we copy a program we are doign this behind the scenes. 
+
+In old code it would common to write int p = fork(), nowadays we prefer pid_t because it is an unsized long whereas int can take negative values. 
+
+When we use fork, we create a child process. The parent will have the pid returned, but the child will get 0. 
+
+Immediately after we fork a process, we need to check, am I the child or am I the parent. Anything else will be wrong.  This means that we need to check if p is 0, which implies we are the child. 
+If we try and fork and we get a negative then we did something wrong, something happened.
+
+Say if we do the following:
+```
+for(int k=0; k<3;k++){
+	pid_t p=fork();
+}
+```
+We do not know which one is running, which process, this si the result of the scheduler which determjnes this for us. This generates $2^k$ many children. 
+
+Generally, process code should look like this
+```
+for(int k=0; k<3;k++){
+	pid_t p=fork();
+	
+	//if our process is bad and has a bad PID 
+	if(p<0){
+		call for hold;
+	}
+	//generally we want to call a function that handles our children with the number of other processes, k
+	else if(p == 0){
+		childFunction(k);
+	}
+	
+}
+```
+The child function should be void. It also must end with exit(0) in our child function. We don't want to return back up to our loop and continue repeating the same process. If we make our program to adapt to many many cores, then we can do multiprocessing and get more CPU time. 
+
+#(To Do) draw tree for processes creating one another
+ 
+We cannot build our program around the idea that we know what CPU our program is using ahead of time. 
+
+The exec command allows us to run programs. It flushes the parent, which in this case would be bash, and instad we can execute something else. 
+
+When we wait for children to wait we have a function for this.
+
+We also have the flush command, when we use flush, which halts the console's output since the console uses a buffer, and isn't a straight away thing. 
+
+When we create a [[Processes]], we want to 

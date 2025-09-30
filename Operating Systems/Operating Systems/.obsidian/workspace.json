@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "processes",
+                "query": "raw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -131,7 +131,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -224,7 +225,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "678fdadc0865f38d",
+  "active": "9b5c65337e7a8d2c",
   "lastOpenFiles": [
     "Processes/Processes.md",
     "CSC 412/Raw Notes.md",
