@@ -5,7 +5,7 @@ tags:
 ---
 # Projection Matrices Definition 
 
-Orthogonal projections concern themselves with taking vectors that exist in higher dimensional spaces and then bringing them down and constraining them to lower dimensional spaces. 
+Orthogonal projections concern themselves with taking vectors that exist in higher dimensional spaces and then bringing them down and constraining them to lower dimensional spaces. Another way we can think of the idea of projection is by using the physical intuition of shining light onto an object and observing its shadow, in some sense its form is being into a lower dimensional space. Projection matrices in essence perform the same operation, except with additional constraints of linearity that we would find within a matrix. 
 
 We can describe this more succinctly through a matrix equation where $P$ represents the projection matrix, and $x$ is an arbitrary vector in space. The follow properties hold:
 
@@ -24,6 +24,20 @@ Lastly, the Projection matrix is a symmetric one:
 
 $$P^T=P$$
 Since $P$ is orthogonal and a projection matrix, it follows that it is symmetric. 
+
+Our projected vector, $P\vec{v}$ and the vector $\vec{v}$ has a difference in the [[Nullspace]] of the projection matrix $P$. Consider the product $P(P\vec{v}-\vec{v})=P^2\vec{v}-P\vec{v}=P\vec{v}-P\vec{v}=\vec{0}$, and thus $P\vec{v}-\vec{v} \in Nul(P)$. 
+
+---
+# Types of Projectors 
+The projections we will speak of most are [[Orthogonal Projections]], which ensure that the difference vector between the projection of a vector and the original is orthogonal to the space it is being projected onto, which is also to say that it is a member of $N(P^T) \iff N(P)$. There are also [[Oblique Projectors]] which do not enforce this condition. 
+
+
+#### Complementary Projectors 
+If $P$ is a projector, then the matrix $I-P$ is another projection matrix because it is also idempotent. It satisfies the condition that $(I-P)^2=I-P$:
+$$(I-P)^2=I-2P+^2=I-P$$
+We can argue that this space actually projects into the [[Nullspace]] of $P$. Notice that if $P\vec{v}=\vec{0}$, that for $(I-P)\vec{v}=\vec{v}$, so we can see that $nul(P) \subseteq \text{span}({I-P}$).  Moreover, for any $\vec{x} \in \mathbb{R^n}$, it follows that:
+$$(I-P)\vec{x}=\vec{x}-P\vec{x} \in \text{Nul}(P)$$
+Which means $(I-P) \subseteq \text{Nul}(P)$, so since both [[vector space]]s are subsets of one another it follows that they are equivalent. 
 
 ---
 # Orthogonal Projections are Symmetric 
