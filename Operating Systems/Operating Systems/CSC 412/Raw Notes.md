@@ -90,4 +90,32 @@ When we wait for children to wait we have a function for this.
 
 We also have the flush command, when we use flush, which halts the console's output since the console uses a buffer, and isn't a straight away thing. 
 
-When we create a [[Processes]], we want to 
+---
+# Forking day 2 
+When a function is called its contents are put onto the stack, all of its contents are loaded into our tack memory.When execution is complete, we clear all of our stack memory and go back to main. 
+
+The fork call is another call on the stack, but instead we make a new process with its own main, own fork etc. 
+
+There are process hierarchies in unix with the ids of its children, and they also have different pids etc, they also have links to all of the sibling pointers. We have younger sibling and older sing pointers. We have a pointer from the parent to the oldest child. 
+
+The call to [[Exec()]] is similar to that of [[Fork()]], in that we insert a new command instead of cloning our current command. 
+
+
+```C
+./prog ls -la ->>
+
+//this particular one executes ls
+execvp(argv[1],argv+1)
+```
+Execvp takes in the command, and then the list of args for the new program. Here, we are giving a command, and then list of args 
+
+For instance for command:
+```
+./prog ./sum 12 20 30
+```
+(remember all things here are C style strings.)
+
+```./sum``` is essentially a pointer to a command, and the remainder are condensed into a list known as the argv list. Our argv list here would look like: 
+```
+argv={"sum","12","20","30",NULL}
+```

@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "raw",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
