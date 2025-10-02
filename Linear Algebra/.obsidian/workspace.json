@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Subspaces/Projection Matrices.md",
+                "file": "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projection Matrices"
+              "title": "Modified Gram-Schmidt Process"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 545.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -171,6 +172,11 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
+    "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
+    "Linear Algebra/Matrix Factorizations/QR Factorization.md",
+    "Linear Algebra/Subspaces/Projection Matrices.md",
+    "Pasted image 20251002103851.png",
     "Linear Algebra/Norms/Matrix Norms.md",
     "Linear Algebra/Orthogonality/Projections/e.md",
     "Linear Algebra/Orthogonality/Projections",
@@ -194,7 +200,6 @@
     "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
     "Linear Algebra/Orthogonality/Orthogonal Complements.md",
     "Linear Algebra/Orthogonality/Orthogonal Decomposition.md",
-    "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
     "Linear Algebra/Vector Spaces/Rank.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
