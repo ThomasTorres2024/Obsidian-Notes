@@ -68,3 +68,15 @@ Rashomon sets are the set of all good models given some constraints. The Rashomo
 If we look at all possible decision trees within a set, we have a good way to see what the most important variable is. Originally this idea was for [[Decision Tree]]s because we have some random chance there and can make equivalent trees quite easily. 
 
 We have similar problems for [[Neural Nets]], so the space of [[Rashomon Sets]] is a set which is considerably longer. For [[Decision Tree]]s in a 10,000 entry Data table, we can compute them in a week. But for [[Rashomon Sets]] on [[Neural Nets]], we have to literally sample from the data. 
+
+---
+# Model Selection
+Model selection gives a set of $1-n$ many models in the set $F$. These models have different parameters. People often just pick the highest accuracy one, there are risks of [[Overfitting]] or [[Underfitting]], or performing well. We thus have [[Hyperparameter Tuning]], which takes parameters for our models and them optimizing them.
+
+For [[Decision Tree]]s this would include the total number of branches. We have grid search and random search as well as some Bayesian thing?
+
+A model $F$ has perfectly learned the testing data provided. Again this doesn't really apply to [[Neural Nets]].
+
+[[Underfitting]] is if a model is too simple to catch all of the necessary structure of the data. For isntance if we want to fit a quadratic curve with a linear model. It may mean taht we have too little training or the wrong type of data. For instance how many [[Epoch]]s have we done. An [[Epoch]] is roughly how many times we've iterated over the [[training set]]. 
+
+The [[training set]] is the data we are using to train a model. Real tests need us to really set aside our information, and then use it at the end to report final numbers. A common machine learning problem is overfitting to already public models. This is very hard to do when we need to get a test number as high as everyone else's. If we are a business and the only people with the data, never give our data to anyone esle.
