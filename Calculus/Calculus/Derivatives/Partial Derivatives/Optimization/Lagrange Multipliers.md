@@ -102,3 +102,8 @@ The method does not tell us if our solution(s) are a minimum, or a maximum. We c
 
 We have good reason to believe these are minimums, so it follows that we can use these. 
 
+---
+# Determining Maximums and Minimums with [[Lagrange Multipliers]]
+[[Lagrange Multipliers]] can only be applied when we have a function $f : C \subseteq \mathbb{R}^n \to \mathbb{R}^m$ where $C$ is a [[closed]] and [[bounded]] set over $C$ and $f$ is continuous along $C$, that is to say when the [[Extreme Value Theorem]] is satisfied. If we are given that $C$ is just a boundary, all we need to do is compute the search function and constraint, $g(x,y,z,...)=c$ and $f$ and obtain:
+$$\nabla f = \lambda \nabla g$$
+We also obtain an additional equation that comes from the constraint, and have $n+1$ unknowns with $n+1$ equations and should theoretically be able to solve the system. We can then compute the function along the critical points of the boundary, and then the point which results in the highest $f$ along the constraint must be the max, and the lowest $f$ along the constraint must be the min. [[Lagrange Multipliers]] guarantee us a minimum and a maximum, meaning that from any given Lagrange problem we have 2 possible results. To reiterate, the minimum is lower than all other values in the set, and the maximum is the highest compared to all values in thes et. 

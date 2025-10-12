@@ -27,20 +27,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Time.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Time"
-            }
-          },
-          {
-            "id": "678fdadc0865f38d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "CSC 412/Raw Notes.md",
                 "mode": "source",
                 "source": false
@@ -110,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "raw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 423.5
+    "width": 200
   },
   "right": {
     "id": "105ab13558a5f261",
@@ -225,14 +211,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "678fdadc0865f38d",
+  "active": "98f1616a8da1935b",
   "lastOpenFiles": [
-    "Processes/Processes.md",
     "CSC 412/Raw Notes.md",
+    "Computer Organization/Operating System Structures.md",
+    "Time.md",
+    "Virtualization/Virtualization Introduction.md",
+    "Computer Organization/Interrupts/Interrupts.md",
+    "Processes/Processes.md",
     "CSC 412",
     "Processes/Process Control Block.md",
     "Computer Organization/Kernel.md",
-    "Time.md",
     "Scheduler",
     "Computer Organization/Computer-System Architecture.md",
     "Computer Organization/Computer Organization.md",
@@ -240,7 +229,6 @@
     "Pasted image 20250923132306.png",
     "Pasted image 20250923092732.png",
     "Processes/States of a Process (through its lifetime.md",
-    "Computer Organization/Operating System Structures.md",
     "Processes",
     "C/Compilation.md",
     "Computer Organization/Computer-System Architecture",
@@ -253,13 +241,11 @@
     "Pasted image 20250907141608.png",
     "Random-Access Memory.md",
     "Computer Organization/Memory/Firmware.md",
-    "Computer Organization/Interrupts/Interrupts.md",
     "Pasted image 20250907085708.png",
     "Maskable-and-Non-Maskable-interrupts.jpg",
     "Computer Organization",
     "Computer Organization/Interrupts",
     "Computer Organization/Interrupts/Watch Dog Timer.md",
-    "Virtualization/Virtualization Introduction.md",
     "Pasted image 20250907013645.png",
     "Pasted image 20250905182150.png",
     "Virtualization",

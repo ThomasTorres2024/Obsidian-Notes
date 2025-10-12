@@ -12,15 +12,15 @@ In the case of multivariable calculus for a function of $\mathbb{R}^n$, we must 
 
 We will restrict ourselves first to the case where we have a function $f : \mathbb{R}^2 \rightarrow \mathbb{R}$ and consider how we can find the lowest point or highest point along the function. 
 
-In single variable calculus we try to find the coordinate $c$ at which some function $y(x) : \mathbb{R \rightarrow R}$ satisfies $y'(c) =0$. The point $(c,y(c))$ is a [[critical point]] of the function, the point at which the function stops changing.
+In single variable calculus we try to find the coordinate $c$ at which some function $y(x) : \mathbb{R \rightarrow R}$ satisfies $y'(c) =0$. The point $(c,y(c))$ is a [[critical point]] of the function, the point at which the function stops changing and obtains a horizontal tangent line. 
 
-We run a concavity test on $y''(c)$ to determine if the function is increasing, decreasing, or neither.
-
+We run a concavity test on $y''(c)$ to determine if the function is increasing, decreasing, or neither. 
 ### Multivariable Calculus Extension of Optimization of a Function
 We can analogously apply a second rule for a function of two variables given by $g(x,y) : \mathbb{R^2 \rightarrow R}$.
 
 We would find the points $(x_{0},y_{0})$ such that our partial derivatives of our surface $g$, satisfy:
-$$\dfrac{\partial}{\partial x} g(x,y)|_{(x_{0},y_{0})}=g_{x}(x_{0},y_{0})=0$$  $$\dfrac{\partial}{\partial y} g(x,y)|_{(x_{0},y_{0})}=g_{y}(x_{0},y_{0})=0$$ 
+$$\dfrac{\partial}{\partial x} g(x,y)|_{(x_{0},y_{0})}=g_{x}(x_{0},y_{0})=0$$  $$\dfrac{\partial}{\partial y} g(x,y)|_{(x_{0},y_{0})}=g_{y}(x_{0},y_{0})=0$$Which is equivalent to saying $\nabla g = \vec{0}$.  
+
 Effectively, we are solving for a flat/horizontal tangent plane on the surface $g$. The tangent plane should never move at all with respect to $x$, and should not move at all with respect to $y$. This is related to the fact that the tangent line of a function which is optimized is also flat, meaning that it has accumulated the maximum amount of change that a function allows up to a point. 
 
 In turn our function for a tangent plane is really just $z=z_{0}$ where $z_{0}$ is a constant. 

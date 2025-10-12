@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
+                "file": "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modified Gram-Schmidt Process"
+              "title": "Householder Transformation"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "QR factorization",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,9 +172,14 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
-    "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
+    "Pasted image 20251006075759.png",
+    "Pasted image 20251006074131.png",
+    "Linear Algebra/Optimization/Least Squares.md",
+    "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
+    "Linear Algebra/Matrix Factorizations/QR Factorization",
     "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization.md",
+    "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
+    "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Subspaces/Projection Matrices.md",
     "Pasted image 20251002103851.png",
     "Linear Algebra/Norms/Matrix Norms.md",
@@ -199,8 +204,6 @@
     "Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrices.md",
     "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
     "Linear Algebra/Orthogonality/Orthogonal Complements.md",
-    "Linear Algebra/Orthogonality/Orthogonal Decomposition.md",
-    "Linear Algebra/Vector Spaces/Rank.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Matrices/Matrix Operations"

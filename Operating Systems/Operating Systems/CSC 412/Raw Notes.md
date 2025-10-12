@@ -119,3 +119,20 @@ For instance for command:
 ```
 argv={"sum","12","20","30",NULL}
 ```
+
+---
+# Memory Management 
+10/7/25
+
+Environment list environ, an array of C strings with definitions of the form name
+
+The stack pushes a [[Stack Frame]] onto the stack and stores all of the local variables of a function. 
+
+
+
+
+
+
+
+
+

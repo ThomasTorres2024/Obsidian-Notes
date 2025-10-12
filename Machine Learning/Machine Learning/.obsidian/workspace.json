@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "raw",
+                "query": "raw notes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,8 +172,8 @@
   },
   "active": "7f6d2ee6be562158",
   "lastOpenFiles": [
-    "Algorithms/Random Forests.md",
     "Algorithms/Dimensionality Reduction/Dimension Reduction.md",
+    "Algorithms/Random Forests.md",
     "Algorithms/Dimensionality Reduction/PCA.md",
     "Algorithms/Clustering/Hierarchical Agglomerative Clustering.md",
     "Algorithms/Dimensionality Reduction",

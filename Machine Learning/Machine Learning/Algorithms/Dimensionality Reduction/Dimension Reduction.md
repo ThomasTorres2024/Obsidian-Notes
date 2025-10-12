@@ -9,7 +9,7 @@ A vast majority of algorithms except in the last few years to tend to lose a sig
 Being able to dimensionality reduction is very hard. 
 
 ---
-This is an [[unsupervised]] method. We don't have anything we are testing against. We are searching for a [[latent structure]], or a nice potentially low dimensional structure from a high-dimensional data. Our goal is to main our structure.
+This is an [[unsupervised]] method. We don't have anything we are testing against. We are searching for a [[latent structure]], or a nice potentially low dimensional structure from a high-dimensional data. Our goal is to maintain our structure.
 
 We have basic things like feature reduction and non-linear transformation. We also have [[PCA]],[[Kernel PCA]], [[t-SNE]], [[autoencoders]], and different [[Matrix Factorizations]]. 
 
@@ -92,3 +92,40 @@ For the train validation test split, we only need to run once, instead of say k-
 K-fold is decent if we have enough 
 
 Stratified k-fold/cross validation is really mportant becaus
+
+---
+# [[Dimension Reduction]] Techniques 
+
+t-SNE 
+
+[[PaCMAP]] tries to preserve both the global and local structures of the dataset. We try to preserve both at the same time, and our way of doing it by first identifying the global structure, and then finding the local structure within it. We have a loss term for closer neighbors, and for further neighbors. The neighbors loss is bigger if the terms are closer, and the further loss is larger if points are closer. 
+
+[[LocalMap]] our goal is to make [[Dimension Reduction]] better in 2d by not moving points to be too close and to reduce it. We iteratively compare 2d and nd distance and then make adjustments based on this fact. 
+
+[[UMap]]
+Tries to keep the $k$ nearest neighbors of a point together throughout both. [[UMap]] is way better than [[t-SNE]] in runtime, and does a better job at preserving distances
+
+[[ParamRepulsor]] 
+
+[[InfoNC-tSNE]] improvement on [[t-SNE]].  Uses loss function of [[InfoNCE]] 
+
+---
+# Variable Importance 
+Measure how important a given variable is to determine a model's prediction.
+
+Variable importance is necessary when we have a lo of data with too many variables, and also when interventions are expensive/immoral
+
+I we scramble a particular column in our dataset, then we can measure how much it effects our output by computing a new output and the predicted output
+
+We can't find $g*$ generally: 
+* The function $g^*$ we are claiming that exists isn't something that we really know well, and many models may predict very well, so that makes $g*$ hard to find 
+* We also on sample a fraction of the population [[Finite Sample Bias]]
+* We can also not measure every variable here, [[Unobserved Confounding]]. For example consider the forest fires per year versus the sale of ice-cream, and how they correlate because they tend to correlate to the temperature of the year. 
+
+Find surrogate that let us avoid $g^*$, we want to be able to build up [[Variable Importance]] to $g^*$ without directly using it since such a function is impossible
+
+Each $f_{u}$ that is able to model our performance below some loss threshold is included within the [[Rashomon Sets]]. The case for population loss has a loss which we assume to be less than the loss for the [[Empirical Loss]], because there is some skewdness to our data. 
+
+We have a specific term for $\epsilon_{n}$, which is inversely proportional to $n$, which so as $n\to \infty$, our $\epsilon_{n}$ decreases. 
+
+We want to look at the variable importance for each $f_{u}$. We also have a way to bound the probability of these models when we scramble them We can still get estimate bounds for 
