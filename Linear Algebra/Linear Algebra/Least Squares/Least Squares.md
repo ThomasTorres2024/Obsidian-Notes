@@ -29,6 +29,11 @@ For general least square problems, $A \in \mathbb{R}^{m \times n}$, where $m \ge
 
 In total, the least squares problem is essentially a minimization of the squared norm of $\vec{e}$. 
 
+### Interpretation Via [[Projection Matrices]]:
+Another interesting consideration here is the use of [[Projection Matrices]]. We know that $P\vec{b} \in R(A)$, so that guarantees that $\exists \vec{x}:A\vec{x}=\vec{b}$. This indicates that the residual $r=\vec{b}-A\vec{x}$, $r \perp A\vec{x}$, which is to say the residual must be perpendicular to the best approximation that we can give to the solution.  
+
+If $r \perp R(A)$, then $r \in N(A^H)$, so $A^Hr=\vec{0}$. Which then allows us to obtain $A^HAx=A^Hb$. This gives the [[normal equation]]s which can be solved in a nice and easy way iff $A$ is full rank. This ensures that our solution of $x$ is unique, but if $A$ is not full rank, then we need to impose a set of additional constraints on $x$ in order to get back a unique solution. 
+
 ---
 
 # Solution via Full QR Decomposition 

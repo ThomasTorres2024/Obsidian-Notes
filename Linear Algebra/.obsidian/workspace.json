@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
+                "file": "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Householder Transformation"
+              "title": "Different Approaches to Solve Least Squares"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "QR factorization",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,21 +172,30 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Pasted image 20251013160439.png",
+    "Pasted image 20251013155712.png",
+    "Pasted image 20251013155036.png",
+    "Linear Algebra/Least Squares/Least Squares.md",
+    "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
+    "Linear Algebra/Least Squares/Untitled",
+    "Linear Algebra/Norms/Vector Norms.md",
+    "Linear Algebra/Norms/Matrix Norms.md",
+    "Linear Algebra/Welcome.md",
+    "Linear Algebra/Rank.md",
+    "Linear Algebra/Geometry Formulas With Linea.md",
+    "Linear Algebra/Disclaimer.md",
+    "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
     "Pasted image 20251006075759.png",
     "Pasted image 20251006074131.png",
-    "Linear Algebra/Optimization/Least Squares.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization",
     "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
     "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Subspaces/Projection Matrices.md",
     "Pasted image 20251002103851.png",
-    "Linear Algebra/Norms/Matrix Norms.md",
     "Linear Algebra/Orthogonality/Projections/e.md",
     "Linear Algebra/Orthogonality/Projections",
     "Pasted image 20250918103351.png",
-    "Linear Algebra/Norms/Vector Norms.md",
     "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
     "Linear Algebra/Linear Transformations/Linear Transformations.md",
     "Linear Algebra/Linear Transformations/The Four Fundamental Subspaces.md",
@@ -199,11 +208,6 @@
     "Linear Algebra/Matrix Factorizations/SVD/Single Value Decomposition.md",
     "Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
     "Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
-    "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Values, Eigen Vectors, Definition and Properties.md",
-    "Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrices.md",
-    "Linear Algebra/Orthogonality/Orthogonal Vectors.md",
-    "Linear Algebra/Orthogonality/Orthogonal Complements.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Matrices/Matrix Operations"
