@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Series and Sequences/Taylor Series.md",
+                "file": "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Taylor Series"
+              "title": "Higher Order Derivative"
             }
           },
           {
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 506.5
   },
   "right": {
     "id": "4a2671d6dbfabde1",
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Series and Sequences/Taylor Series.md",
+                "file": "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Taylor Series"
+              "title": "Backlinks for Higher Order Derivative"
             }
           },
           {
@@ -186,6 +185,7 @@
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
     "Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",
+    "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
     "Calculus/Series and Sequences/Taylor Series.md",
     "Calculus/Series and Sequences",
     "Calculus/Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
