@@ -112,4 +112,4 @@ Each basis here gives an orthonormal basis for the first $k$ vectors from $P$.
 
 The orthonormal basis we obtain from the Gram-Schmidt process is not unique. All we have to do is change the order of the vectors we cycle through, and this is enough to change our resulting matrix many times over. 
 
-QR factorization is useful in [[least squares]], and allows us to derive an expression to calculate our best fit curves. 
+QR factorization is useful in [[Least Squares]], and allows us to derive an expression to calculate our best fit curves. 
