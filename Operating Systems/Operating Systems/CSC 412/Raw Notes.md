@@ -128,9 +128,24 @@ Environment list environ, an array of C strings with definitions of the form nam
 
 The stack pushes a [[Stack Frame]] onto the stack and stores all of the local variables of a function. 
 
+---
+# 
 
+We are tasked with taking a queue of items and then having to laod them into a region of memory full of parititions. For each process we find the most suitable region and load it into memory, there is almost always some aount of wasted space. If a process cannot be loaded into a partition, it remains in the waiing staste in the queue. 
 
+If a partition is freed from memory, then we can begin to query if items in the queue can fit into an of thes blocsks. 
 
+Internal fragmentation, space wasted within a partition, so if we have a partition of 1500kb and a program only uses 900 kb, then the difference of 600kb would result in the space wasted or itnernal frag 
+
+External fragmentation - when we want to split a partition into multiple partitions so that we can combine it 
+
+Also another thing we need to check in our queue is if its fair, especially if theres a giant processing locking a small one. So we solve this maybe by multiple process lists. 
+
+Multiprogramming with variale paritions
+Once something is loaded into a block of memory it cant be shuffled around or moved at all. Here we resolve the issue of internal frag but not external, so we have a lot of additional space surrounded by our programs. 
+
+- Allocation of a free hole
+We have a coupe ways to find the blocks, we have the first fit which gets us the first accessible block, the best fit is the smallest hole that can accomodate us, worst fit looks for an exact fit and if nothing is found then we look for the biggest block that the smalle
 
 
 

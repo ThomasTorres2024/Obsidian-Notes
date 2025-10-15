@@ -26,7 +26,7 @@ Consider the [[characteristic polynomial]] of $A$ given by $P_{A}(\lambda).$ $P_
 
 We can assume that $\| \vec{v_{1}} \| =1$ since, without loss of generality, any $\vec{v_{1}} \cdot c, c \in \mathbb{C}$ is still an eigen-vector. We know that $\dfrac{\vec{v_{1}} }{\| \vec{v_{1}}\|}$ is a unit vector. 
 
-Using [[The Gram-Schmidt process]] we can convert the [[Eigen Vectors]] of $A$ to be a set of [[orthonormal]] vectors. If we run out of eigen-vectors, we can consider their [[orthogonal complement]] and add them to the matrix. 
+Using [[The Gram-Schmidt Process]] we can convert the [[Eigen Vectors]] of $A$ to be a set of [[orthonormal]] vectors. If we run out of eigen-vectors, we can consider their [[orthogonal complement]] and add them to the matrix. 
 
 In total we have $n$ vectors that we will use to construct our orthogonal matrix, $V$.
 

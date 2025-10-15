@@ -113,3 +113,9 @@ Each basis here gives an orthonormal basis for the first $k$ vectors from $P$.
 The orthonormal basis we obtain from the Gram-Schmidt process is not unique. All we have to do is change the order of the vectors we cycle through, and this is enough to change our resulting matrix many times over. 
 
 QR factorization is useful in [[Least Squares]], and allows us to derive an expression to calculate our best fit curves. 
+
+---
+# Gram-Schmidt and [[Numerical Stability]]
+It is well known that [[The Gram-Schmidt Process]] is numerically unstable, because as we continue computing we lose the property of [[orthogonal]]ity. We can somehow stabilize this using an augmented system of equations. 
+
+We obtain, $R$ and $Q^Hb$ with $Q^Hb$ being implicit. We can then backsolve for $x$ in $Rx=Q^Hb$ using an augmented system. Somehow this is stable? Doesn't really explain it?

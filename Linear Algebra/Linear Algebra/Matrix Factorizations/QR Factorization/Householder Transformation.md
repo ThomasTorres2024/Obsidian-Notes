@@ -30,6 +30,14 @@ It turns out that if $x=u-v$ then our Householder matrix can be formed using thi
 $$a_{i}=[a_{1i}, a_{2i}, a_{3i},\cdots,a_{mi}]^T$$
 It follows that we want our $v$ to be $e\cdot\alpha$ where $\|e \cdot \alpha\| = |\alpha|=v_{i}$. So we have that, $v_{i}=\pm \|a_{i}\|e_{i}$  We can choose to take the plus or minus version of $v_{i}$, and generally we choose plus to reduce the chance of numerical errors due to cancelation. 
 
+---
+# Householder Least Squares and [[Numerical Stability]]
+It turns out that when we compute the $QR$ for $A$ using house holder, and then go to do least squares with this QR it turns out we are not actually minimizing $\|Ax-b\|$ anymore, but due to errors in precision we actually have $QR$ give us the following matrix:
+$$A+\delta A$$
+So, we are minimizing the following quantity, which turns out is [[backward stable]], meaning that the following condition holds true, which is to say that the difference between the norms of the two vectors is negligible, at the level of machine precision. 
+$$\|(A+\delta A)\tilde{x}-b\|_{2}=\min\frac{\|\delta A\|}{\|A\|}=O(\epsilon_{\text{machine}})$$
+It also turns out that we are still backward stable even if we compute $Q^Hb$ implicitly or explicitly. 
 
-
+Another result is that we are backward stable even if we do column pivoting:
+$$AP=\hat{Q}\hat{R}$$
 
