@@ -129,3 +129,44 @@ Each $f_{u}$ that is able to model our performance below some loss threshold is 
 We have a specific term for $\epsilon_{n}$, which is inversely proportional to $n$, which so as $n\to \infty$, our $\epsilon_{n}$ decreases. 
 
 We want to look at the variable importance for each $f_{u}$. We also have a way to bound the probability of these models when we scramble them We can still get estimate bounds for 
+
+---
+# Logistic Regression (Alvarez Slides)
+We want to be able to model the relationship between variables using regression. It is the same idea as [[Linear Regression]] where we try and find the relationship between two variables, an input and a target variable, for instance:
+$$y=mx+c$$
+Where $x$ is the input, $M$ is the matrix of weights, and $Y$ is our output/prediction values. Our inputs and $y$ are fixed. Our goal of [[Linear Regression]] is to find the best weight matrix. In this case we assume that there is a linear relationship between the input and the target. 
+
+For instance if we have have house size vs house prices, we could assume a linear assumption because house size grows with respective to house prices. We want to predict a concrete number. 
+
+[[Logistic Regression]] is a similar idea, but we want to be able to predict a probability instead of a real number. Say we have two categories, green apples versus red apples. We want to find the decision surface that differentiates between two different classes. We are interested in lienr classifi4rs specifially. 
+
+Thes asre simple models that give us boudns between 2 types of data. Given a dataset we want to learn a decision bondary between 2 classes. Based on the features of our input we want to be able toc ategorize if our outputs will go to 1 or -1. We can go from this dataset of X,y to a learning algorithm. 
+
+we need some way of esuring that our approximation is a good one, so we want to find the best values of $M$ for the best prediction of our data. 
+Logistic regression forms the [[decision boundary]] that is linear between 2 groups of data.
+
+The sign function is a very simple function that classifies our data. We don't know what happens if $x=y$, but we wan keep the two halves separate. 
+
+If $w^Tx>0$ then we have a class 1 or + class, and if $w^Tx<0$ then we have a class 2 or $-$ class. Since we are looking for decision boundaries we are looking for functions of the form $b=w_{1}x_{1}+w_{2}x_{2}$. 
+
+THe weight matrix is initialied to random variables to begin with. 
+
+During the learning process we initialzie a random line through a binary dataset, and continue iteratios of learning until te line full bisects the two lines in an ideal set. We need to find a balance here between [[Overfitting]] and also [[Underfitting]] from our training set. Each iteration corresponds to a training cycle and then passing the back propagation back at each time. 
+
+#### [[Binary Classifier]]
+A binary classifier takes a datast $D$ which contains $x$ vectors, and the outputs for these values are either $-1$ or $1$. Here, we are modeling the tendency for a value of probability.
+
+We feed our results into the sigmoid function, here we are predicting probability, so we have a prediction that is between 0-1, so the probability. If the score is close 1 confident about model, if the model is 1/2 not confident at all. 
+
+Here we express 
+
+# Maximum Likelihood Estimation
+How do we find the best values of $W$? To find the best values of $W$, we need to sue a stats function to estimate parameters of $W$. How do we verify this is the best weight function after w have fed it through? If the score is high of our MLE then we can assume we are in a good position. 
+
+If the product of te probability estimators are close to 1 then we re good, we have the arg min that we have the negative likelihood estimation which can be fond using the negative log likelihood as well. 
+
+The lost function is always convex, it always give us the best global minimum, and need to use gradient descent or other second order methods 
+
+
+
+
