@@ -4,14 +4,14 @@
 Solutions to least squares must account for the efficiency of the algorithm being used and its numerical stability. We have to distinct cases  given $A\in\mathbb{R}^{m \times n}$, where $m \geq n$ for the system of equations given by $Ax=b$:
 
 #### Case 1. $A$ is Full Rank 
-###### Method 1.) [[normal equation]]s
+#### Method 1.) [[normal equation]]s
 This is the classical method to solve least squares and is used when $A$ has full rank. We make use of the [[Cholesky Factorization]] of $A^H A$ since this matrix is [[Positive Definite Matrix]]. Our system then reduces to solve the system of equations given by:
 $$A^HA=R^HR \implies R^HRx=A^Hb$$
 From here we compute $w=Rx$, and then solve $R^H w=A^H b$, and then back substitute $w$ back into $w=Rx$, and then solve the system for $x$:
 ![[Pasted image 20251013155036.png]]
 This algorithm costs an overall $mn^2+\frac{1}{3}n^3$ flops. 
 
-###### Method 2.) [[QR Factorization]]:
+#### Method 2.) [[QR Factorization]]:
 We can use [[Householder Transformation]]s or [[The Gram-Schmidt Process]] to convert $A$ into $A=QR$. Solving This problem then becomes a matter of solving the system $Rx=Q^Tb$, which is easy since $R$ is assumed invertible here because it is rank $n$ and $n \times n$. 
 
 More thoroughly, we need to express that $A=\hat{Q}\hat{R}$, and we must project $y$ onto the  [[Orthogonal Projector]] formed by $P=\hat{Q}\hat{Q}^H$ in order to get a solveable system. From this we obtain:
@@ -24,7 +24,16 @@ Or we can just solve it via back sub.
 
 We can also derive this expression from the normal equations listed above. The work for this algorithm costs approximately:
 $$2mn^2 -\frac{2}{3}n^3 \text{ flops }$$
-###### Method 3.) SVD 
+###### House Holder QR 
+- Backward stable, relatively efficient 
+###### [[The Gram-Schmidt Process]] (Classical)
+* Unstable, relatively efficient 
+###### [[Modified Gram-Schmidt Process]] 
+* Unstable, efficient 
+###### Augmented Gram-Schmidt Process 
+* Backward stable 
+
+#### Method 3.) SVD 
 Given the [[Reduced SVD]] of $A$ we can say $A=\hat{U} \hat{\Sigma} V^H$. We can express the projection into the range of $A$ by $P=\hat{U}\hat{U}^H$, and thus $y=Pb=\hat{U}\hat{U}^H b$. So our system of normal equations becomes:
 $$\hat{U} \Sigma V^Hx=\hat{U}\hat{U}^Hb$$
 $$\Sigma V^Hx=\hat{U}^H b$$

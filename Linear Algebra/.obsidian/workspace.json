@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
+                "file": "Linear Algebra/Least Squares/Least Squares.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Different Approaches to Solve Least Squares"
+              "title": "Least Squares"
             }
           }
         ]
@@ -172,11 +172,14 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
+    "Linear Algebra/Least Squares/Least Squares.md",
+    "Linear Algebra/Matrices/Special Matrices/Givens Matrix.md",
+    "Pasted image 20251014232100.png",
+    "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
     "Pasted image 20251013160439.png",
     "Pasted image 20251013155712.png",
     "Pasted image 20251013155036.png",
-    "Linear Algebra/Least Squares/Least Squares.md",
-    "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
     "Linear Algebra/Least Squares/Untitled",
     "Linear Algebra/Norms/Vector Norms.md",
     "Linear Algebra/Norms/Matrix Norms.md",
@@ -202,12 +205,10 @@
     "Linear Algebra/Vector Spaces/Vector Spaces and Vector Subspaces.md",
     "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Linear Algebra/Numerical Analysis",
-    "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
     "Linear Algebra/Matrices/Special Matrices/Normal Matrices and Spectral Theorem Proof.md",
     "Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
     "Linear Algebra/Matrix Factorizations/SVD/Single Value Decomposition.md",
     "Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
-    "Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Matrices/Matrix Operations"

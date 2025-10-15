@@ -34,6 +34,10 @@ Another interesting consideration here is the use of [[Projection Matrices]]. We
 
 If $r \perp R(A)$, then $r \in N(A^H)$, so $A^Hr=\vec{0}$. Which then allows us to obtain $A^HAx=A^Hb$. This gives the [[normal equation]]s which can be solved in a nice and easy way iff $A$ is full rank. This ensures that our solution of $x$ is unique, but if $A$ is not full rank, then we need to impose a set of additional constraints on $x$ in order to get back a unique solution. 
 
+The reason why we enforce orthogonality of the residual is because the residual minimizes the norm of the difference between $b$ and our best approximation since the orthogonal distance is the lowest, thus our objective function is:
+$$\text{argmin}_{x}\|b-Ax \|_{2}$$
+We can get a solution of $0$ if we using $b=Pb$, since $P$ is a projector onto the range of $A$ which implies that there is a solution vector $x$, and this in turn would be the best we can do.  
+
 ---
 
 # Solution via Full QR Decomposition 
@@ -61,7 +65,6 @@ Since $\| \hat{d} \|^2$ is a constant, we can ignore it, and just focus on minim
 However, recall that $\hat{c} \in \mathbb{R}^n$ and that also $\hat{R}\in \mathbb{R}^{n \times n}$ and has a full column rank since it has $n$ many pivots. Thus, the $\vec{x}$ we have been looking for is the solution to$\hat{R}\vec{x}=\hat{c}$ which is:
 
 $$\vec{x}=\hat{R}^{-1}\hat{c}$$
-
 ---
 
 # Solution via Normal Equations 
