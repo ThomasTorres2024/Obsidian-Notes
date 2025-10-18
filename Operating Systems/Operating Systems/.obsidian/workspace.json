@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "raw",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "105ab13558a5f261",
@@ -211,12 +212,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "98f1616a8da1935b",
+  "active": "86067264db02619c",
   "lastOpenFiles": [
+    "Virtualization/Virtualization Introduction.md",
     "CSC 412/Raw Notes.md",
     "Computer Organization/Operating System Structures.md",
     "Time.md",
-    "Virtualization/Virtualization Introduction.md",
     "Computer Organization/Interrupts/Interrupts.md",
     "Processes/Processes.md",
     "CSC 412",
