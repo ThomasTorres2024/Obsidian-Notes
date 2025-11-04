@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Least Squares/Least Squares Blur.md",
+                "file": "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/QR Algorithm without Shifts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Least Squares Blur"
-            }
-          },
-          {
-            "id": "c9cc57711fe78780",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Gram-Schmidt Process"
+              "title": "QR Algorithm without Shifts"
             }
           }
         ]
@@ -92,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5,
-    "collapsed": true
+    "width": 223.5
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -186,14 +171,28 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
+    "Pasted image 20251102153907.png",
+    "Linear Algebra/Matrix Factorizations/SVD/PCA/Eigenfaces.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/QR Algorithm without Shifts.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing Single Eigen Vectors and Eigen Values",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values",
+    "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
+    "eigen vectors.md",
+    "unitarily diagonalizable.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing Single Eigen Vectors and Eigen Values/Power Iteration.md",
+    "Linear Algebra/Matrix Factorizations/SVD/PCA",
+    "Pasted image 20251030190042.png",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing Single Eigen Vectors and Eigen Values/Rayleigh Quotient.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Abel's Theorem.md",
+    "Linear Algebra/Disclaimer.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values",
+    "Linear Algebra/Least Squares/Least Squares Blur.md",
     "Pasted image 20251014232100.png",
     "Linear Algebra/Matrices/Special Matrices/Givens Matrix.md",
     "Pasted image 20251015012238.png",
     "Pasted image 20251015011907.png",
     "Pasted image 20251015011858.png",
     "Linear Algebra/Numerical Analysis/Numerical Stability.md",
-    "Linear Algebra/Least Squares/Least Squares Blur.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
@@ -207,25 +206,15 @@
     "Linear Algebra/Welcome.md",
     "Linear Algebra/Rank.md",
     "Linear Algebra/Geometry Formulas With Linea.md",
-    "Linear Algebra/Disclaimer.md",
     "Pasted image 20251006075759.png",
     "Pasted image 20251006074131.png",
     "Linear Algebra/Matrix Factorizations/QR Factorization",
     "Linear Algebra/Matrix Factorizations/QR Factorization/Modified Gram-Schmidt Process.md",
     "Linear Algebra/Subspaces/Projection Matrices.md",
-    "Pasted image 20251002103851.png",
     "Linear Algebra/Orthogonality/Projections/e.md",
     "Linear Algebra/Orthogonality/Projections",
-    "Pasted image 20250918103351.png",
     "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
-    "Linear Algebra/Linear Transformations/Linear Transformations.md",
-    "Linear Algebra/Linear Transformations/The Four Fundamental Subspaces.md",
-    "Linear Algebra/Vector Spaces/Vector Spaces and Vector Subspaces.md",
-    "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Linear Algebra/Numerical Analysis",
-    "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
-    "Linear Algebra/Matrices/Special Matrices/Normal Matrices and Spectral Theorem Proof.md",
-    "Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
     "Linear Algebra/Matrices/Matrix Operations"
   ]
 }

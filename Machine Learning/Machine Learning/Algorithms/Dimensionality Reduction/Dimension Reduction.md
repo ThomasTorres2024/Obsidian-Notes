@@ -167,6 +167,137 @@ If the product of te probability estimators are close to 1 then we re good, we h
 
 The lost function is always convex, it always give us the best global minimum, and need to use gradient descent or other second order methods 
 
+---
+# 10/20/25 - Gradient Descent
 
+Our intuition for this is to compute the gradient and take steps in the negative direction of the gradient such that each time we get closer and closer to a minimum along the graph, as eventually we expected to hit a 0. 
 
+We can determine if the hessian matrix is PD or ND at $x^*$, if it is PD then it is a local minima, if it is ND it is a local maxima of the function, which corresponds respectively to positive and negative eigen values of $H$. 
 
+This is an iterative method where each time we take some step forward each time. in t-SNE and other modern function we take iterative steps to optimizing our solution, which is a huge idea. Gradient descent is used to compute minimas. We start at some random point along our surface, and then invert the gradients sign and follow that path down and continue. 
+
+The hard part about this is the learning rate, which is critical. This is a [[hyperparameters]] of [[Gradient Descent]]. This is known as the [[learning rate]], how many steps will we end up taking? 
+
+We begin by letting $t=0$ and using an iterative formula with randomly initialized weights, $w$:
+$$w^{(t+1)}=w^{(t)}-\nu \cdot \nabla_{w}f(w^T)$$
+If the learning rate is too small then we have an overly slow convergence, step sizes are absolutely massive for the conjugate gradient method. If our size is too large, there is a good chance that we overshoot and end up going way too far. Overshooting with a neural net will produce absolute nonsense within a few epochs (traversals through the dataset). 
+
+# Stochastic Gradient Descent
+# Stochastic Gradient Descent with Momentum 
+The idea is if I walked down here already and consider this and I have some momentum here I've been here already and moved this way, then our gradient would be affected by that. The intuition is to think of a ball falling down on a gradient, which has some momentum term wile it falls.
+# Adam Optimizer 
+Variation of SGD with Momentum. The adam optimizer is commonly used. Sometimes if SGD sucks, then we should use Adam. 
+# [[Gradient Descent]] and Machine Learning
+Optimizing a [[loss functions]] is a huge problem in machine learning. We can't do it directly, so do it with this method iteratively. There are a lot of gradient based optimal solutions which can find by performing gradient descent. 
+
+Using gradient descent runs into functions which are very complex with many saddple points, local maxxes, and local mins. Real data also causes rounding error and issues. THus we are tryinh yo minimize over an unfriendly function. 
+
+Batch Gradient Descent 
+Instead of doing a gradient descent over the whole dataset, we do it by sampling the dataset, and taking a step based on that sample. The idea is we can do 1 epoch with many more gradient descents, instead of optimxing for one item. 
+
+---
+# [[Boosting]]
+10/22/25
+Boosting is an ensemble technique in machine learning, where we take multiple methods and combine them to create an overall better classifier. we want to have many classifiers that aren't very strong, but as these are combined, we create an overall stronger predicter $F$. In the case of boosting we make $f_{1}$, and then we make $f_{2}$ based on the performance of $f_{1}$, and so on until we end up producing all of the different $f$s necessary. 
+
+In bagging we create all of our functions at once instead of sequentially, that is in parallel as opposed to sequentially here. 
+
+#### Weak Learner Definition
+a classifier that needs to be better than random guessing, at least by a little, so the probability of a guessing correctly is more than 50%. The idea is if we combine many weak learners together we can create an overall strong learner together from all of this info. 
+
+Shallow decision trees, linear models, help us generate overall stronger decision boundaries, our weak learners are very fast to make, and so our model is very fast to make overall. 
+
+If we have many weak classifiers, then we can sum up the weak models performance, and overall get our resulting strong classifier. This means that each model, $h_{i}(x)$ has its own associated weight when making our decision $a_{i}$. Let $H(x)$ denote the strong classifier, then it follows that:
+
+$$H(x)=\text{sign}\left(\sum_{i=1}^Ta_{i}h_{i}(x)\right)$$
+If we are given enough info we can construct a single predictor with a very high accuracy, and this is something that we can prove mathematically. 
+
+#### Training
+We have training weights where when we are setting up our weak learners, we need to be able to weigh them based on the data they are operating on. The slideshow uses examples of linear decision boundaries. When we train our sets we ensure that their error performs above a given threshold, $\epsilon$. 
+
+We make a partition where one side is classified as one category and the other category as another set. The data that is misclassified by the decision boundary is weighted more heavily for the next function produced. We repeat the process until we have found enough classifiers. 
+
+For instance the email classifier that uses boosting would take in all of the different emails, that contain the word buy, then we make a second weak learner that goes from this and determines like if its amazon then its not spam. We train the second model based on the first one. We base off of what our first model gets wrong, and then we make a new model based on what was wrong. This is the key part of boosting. 
+
+Another point of contrast, compared to [[Random Forests]] and [[bagging]] methods, we do not evenly weight the models we produced, whereas both of these models tend to group up the weights evenly. For instance if we are making use of decision stumps, we weigh some stumps over others, 
+#### Adaboost
+
+A particularly important boosting algorithm from 1995. 
+
+One of the of the most famous algorithms for boosting. We begin by taking some kind of partition, and associating it with something in classification, and then we take another one based on what we got wrong, what we got wrong we weight higher, and then we do the same thing iteratively until we have a higher decision boundary overall. This is the training procedure that I described above essentially.
+
+Some of the weak learners we use are partitions are decision stumps (decision trees that only split on a single feature ), or linear decision boundaries, which when combined produces a nice decision boundary that isn't overly complicated due to the conditions of our learners. 
+
+We don't really overfit because of the unique features of Adaboost due to the fact that we use weak classifiers so we can't get very detailed decision boundaries, limiting our number of classifiers limits overfitting, and type of classifiers does that. 
+# Algorithm For Adaboosting
+
+Given training set $X=\{(x_{1},y_{1})\cdots(x_{m},y_{m})\}$ 
+* each $y_{i} \in \{-1,+1\}$ 
+* for $t \in \{1,2,3,\cdots,T \}$
+	* construction distribution $D_{t}$ on $\{1,\cdots,m \}$ (I believe in this stage, we are re-evaluating the weights of our data, where misclassified points gain a higher weight)
+	* Compute weak classifier $h_{t}:X\to\{-1,+1 \}$
+	* $h_{t}$ has the small error, $\epsilon_{t}$ on $D_{t}$, and is given by the probability of misclassifying a datapoint in $D_{t}$ ($e_{t}=\mathbb{P}[h_{t}(x_{i})\neq y_{i})]$
+* Lastly output the final classifier $H_{final}$
+
+We can construction our distributions of our data each time by the following algorithm. Our goal is to weigh the data points that were misclassified as higher. 
+
+#### Algorithm (Constructing $D_{t}$)
+$D_{1}(i)=1/m$ (Initialize all weights to being equally probable)
+* After at least one pass, we have some previous $D_{t}$, so we can now use this information to compute $D_{t+1}$ iteratively. 
+* $$D_{t+1}(i)=\frac{D_{t}(i)}{Z_{t}}\times \begin{cases} e^{-\alpha_{t}} & \text{ if }y_{i} \neq h_{t}(x_{i})\\e^{\alpha_{t}} & \text{ if }y_{i}=h_{t}(x_{i}) \end{cases}=\frac{D_{t}(i)\exp(-\alpha_{t}y_{i}h_{t}(x_{i}))}{Z_{t}}$$
+* Intuitively this above step means, give a higher weight to misclassified points, hence the positive $\alpha_{t}$, and the lower points aren't as important for following iterations so we opt for an $-\alpha_{t}$ in the exponent to weigh correctly classified points less. Note also that $Z_{t}$ is a positive normalization constant
+* Also $\alpha_{t}=\frac{1}{2}\ln\left(\frac{1-\epsilon_{t}}{\epsilon_{t}}\right)$
+Our final classifier makes use of the constants we just calculated, $\alpha_{t}$, so that is how we get our final weights:
+$$H_{final}(x)=\text{sign}\left( \sum_{t=1}^T \alpha_{t}h_{t}(x) \right)$$
+Here is a nice way to put it without all my exposition:
+![[Pasted image 20251023010531.png]]
+
+Here is some actual code for it:
+```python
+# generate toy dataset
+np.random.seed(42)
+X = np.random.randn(300, 2)
+y = (X[:, 0] + X[:, 1] > 0).astype(int)
+# train AdaBoost
+clf = AdaBoostClassifier(
+DecisionTreeClassifier(max_depth=1),
+n_estimators=100
+)
+clf.fit(X, y)
+```
+
+An important feature of Adaboost is that it tends to have a pretty good test error that decreases even far after the fact that its train error has gone way down. Adaboost and its structure is particularly resistant to overfitting. 
+
+# Advantages and Disadvantages 
+
+Very fast simple easy to code, no hyperparameters to tune other than $T$, the number of models. Flexible, we can use any weak learner, like decision surfaces (linear), stumps, low depth binary trees. It is very easy to implement. 
+
+Our performance depends on data and weak learners, so little data means worse results, noisy data can mean worse results since we amplify the noise. 
+
+We can fail if too weak base learners causing underfitting, or strong base learners causing overfitting, we are very susceptible to noise here, we reweight incorrect data positively so this in turn increases the importance of the noise
+
+We have gradient boosting algorithms as well on top of this that are more modern and industry standard like XGBoost, LghtGBM, and CatBoost. 
+
+---
+# Bagging 
+[[bagging]] is an [[ensemble method]] which trains many weak learners in parallel, and generally tends to produce very good results. 
+
+Produced in 1996, train man models on random susbets of the data, we want to reduce variance an ovefitting, take collective vote of everything, should be faster bc we can do models in paralell, we determine by classification voting, mean/medan if regression or 
+
+[[Bootstrapping]]
+If we have a dataset $D$, we create $n$ boot strap samples, the standard way to do this si that each amount is of size $n$, same as dataset, but we same with replacement we may have doubles or more ntries or missing potentially, which is how we go about forming the data to train our weak llearners
+
+we infer things via voting 
+
+[[Random Forests]] is a similar idea but we are taking random features of the data and random feature selection
+with random forests instead of taking all features, we take a subset, because decision trees split on features, and if we want a good variety leave out some features, especially if we use a greedy method like spliting on information 
+
+similarly we aggregate via majority vote ehre too 
+
+we can use 
+
+Final remarks with random forests and bagging, very performant, robust to outliers, we can create all decision trees at once
+
+limitations sparse data is really bad for this tree, 
+
+Create bootstrap samples 

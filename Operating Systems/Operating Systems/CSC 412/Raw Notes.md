@@ -147,7 +147,73 @@ Once something is loaded into a block of memory it cant be shuffled around or mo
 - Allocation of a free hole
 We have a coupe ways to find the blocks, we have the first fit which gets us the first accessible block, the best fit is the smallest hole that can accomodate us, worst fit looks for an exact fit and if nothing is found then we look for the biggest block that the smalle
 
+---
+# 10/16/25 More on memory management
+We can represent memory as a bitmap. For instance we could set up a schema where we have a list of our memory where each entry corresponds to if we have filled it up or not. If it is 1 then it is full, if it is 0 it is not. All we are trying to do is find a hole of the correct size. 
 
+Because we allocate $2^n$ in this general scheme, there is going to be some natural amount of internal fragmentation. There's also external fragmentation still since we may not use up everything. We waste a lot of memory storing the table, so if we have a lower amount of bits stored, we end up just wasting a lot more.
 
+It turns out that we can store our free space as a linked list in memory. Each node has either if our block has a process in its place or a hole, It has the start address, the end address, and a pointer to the next. Another advantage is that we have an automatic way of telling if we have a process or a hole.
 
+If we make an insertion, we need to be able to update the following hole, since a hole, or other process, always follows a process, and if it is a hole.
 
+If a process terminates, and its next to a hole, then the space where the process was becomes, a hole. We then add the size of the next one and get a larger hole. We then repeat this process continually until we hit a process or end the linked list traversal. 
+
+---
+
+Journaling system, if there is an error transferring files then the jounraling system takes account of this and does something. We want to be able to store all info in the instance of a crash.
+
+---
+# Interprocess Communication
+We have a few ways to communicate between dfferent programs in C:
+lock files, 
+
+We are mostly interested n working with processes that communicate with each other by passing files to each other. 
+
+#### Pipes and FIFOs
+Some of thee arliest IPC solutions Unnamed pipes are standard pipes, and are related to forking, establishes communications through related processes. Pipes are also undirectional 
+
+One is meant to read, and one is meant to write. 
+
+The pipe icon in unix is given by "|", it takeds the outpt o 1 process uses it for anothe rprocess
+
+FOr intane in ```ls | grep De ``` we take the ouput of ls and feed it into grep. 
+
+Pipes just say a number of bytes, we have to define some way to interpret the raw bytes that come in as a signal. On the receiving end we receive a block of $N$ bytes, again decodng is entirely our job here. 
+
+When we use this forking model for IPC, the parent creates the pipe. It has a writing end and a reading end. Children have copy of the pipes that we create. gh
+
+A pipe is really an array of 2 integers in C. 
+
+```
+FILE* fp=fopen(<path>,r)
+int fd=open(<path>,...)
+
+//fd is the file descriptor when our higher level function makes a low level call to C
+
+```
+pipe opens 2 files in C, one file to read from, and one file to write to 
+
+At the start of the program we should write macros to define the read end and the write end. 
+
+---
+# Pipes (Cont.) 10/23/25 
+Pipes are used like reading and writing itno files, pips are uentiely aunware of strings etc, we need a language and format that we can encoce and later decode 
+
+We send a value that comes before the value to tell its lngth or send it as a string with a ]0 char at the end 
+
+```
+int PtC[2];
+pipe(PtoC);
+
+```
+
+We make a pipe in C we make a lower level call to a file open call to open one in read and only and one at read write, these are added to a PCB. 
+
+Case if we have a writer parent that writes to many child reader processes. Our parent process has a list of all files open on its PCB. In the PCB of our $n$ child processes we have the list of the file. When one of the child processes closes, note our kernel has a list of all of the child processes that have the file open, if one of the readr terminates, it goes to the address opened up and it walks through each process, and removes the accordng one which just terminated. 
+
+When we try to write when no more readers are open then we encounter an error. 
+
+On the reading end cloe the writ end no point to write. 
+
+If our writing process 
