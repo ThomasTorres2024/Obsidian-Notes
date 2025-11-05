@@ -217,3 +217,47 @@ When we try to write when no more readers are open then we encounter an error.
 On the reading end cloe the writ end no point to write. 
 
 If our writing process 
+
+# 11/4/25 Multithreading
+Threading/multi thread, we take a process and its contents, and make it multi threaded. The single threaded process initially just has one register, one stack, versus the multithreaded process which has its own register/stack, etc. The benefit here is thread creation is much faster than fork creation, and also everything in a multi-threaded process can access the same [[Heap]]. 
+
+Multi-threaded programming is essential, its soething needed as its the only way to really speed up our code especially if there's no significant change in processor spead. 
+
+A thread has its own registers, progra counter, stack, thread ID, threads however share the same code section, the same heap, if we hit all of them with a signal like exit, then the entire process, not just the thread, gets nuked. 
+
+We have a law known as Amdahl's Law which gives us a formula for a potential increase in our programs. We can think of our program sort of in a serial way, where we have things that are only serial vs things that can occur concurrently. 
+
+We should think of this as like what fraction of our code is done in a serial way, and what way can be done in a concurrent way? 
+
+Balance
+- each thread should do about even work
+Data Splitting, data dependency 
+Does one thread rely on other threads
+DO multiple threads need the same data? synchronization
+testing and debugging issues 
+
+Is the kernel aware of threads? depends on our OS in linux, windows, etc the kernel is ware of all threads, we also have the many to many model which maps multiple kernel threads to user threads 
+- user space library
+- kernel level library
+- many threads to kernel model
+
+We have a couple main threads, POSIX, Windows, Java, and C++ threads. POSIX pthreads,Windows, and JAva. pthreads are still used but we use a lot of C++ threads nowadays 
+
+---
+# Code Samples for 11/4/25
+
+a thread is a c++ class, that came out in c++11, 
+
+A created thread must be either detached or joined. A detach thread does it's own thing we don't check for it anymore. By default, whena  thread is created it must be joint, or at the end, we need to have it join, can cause awful segfault errors. We can very easily stop threads by some boolean that causes the thread to end. 
+
+Generally better practice is passing a ptr to our thread functions specially as the threads get bigger, dont pass references to a struct to a function in c++, massive errors from thread functions are either caused by this, or by 
+
+Integration by Random Points 
+generate $n$ random points within a small region bound between $x$ min $x$ max and $y$min and $y$max. 
+We determine if we are below the curve at that point, we have around $N$ total points and $n$ underneath teh curve.
+
+We can approximate the area by:
+$$\frac{n}{N}\cdot A \approx \int f(x)dx$$
+We can use multiple threads to do multiple points altogether to add points along the region. It's important to note that we really need the 
+
+
