@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Decision Tree.md",
+                "file": "Algorithms/Dimensionality Reduction/LocalMAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Decision Tree"
+              "title": "LocalMAP"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "decision tree",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,12 +89,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "cc55527172807ed5",
@@ -188,6 +188,9 @@
   "active": "05ecf4e992508a4a",
   "lastOpenFiles": [
     "Algorithms/Dimensionality Reduction/Dimension Reduction.md",
+    "Algorithms/Dimensionality Reduction/LocalMAP.md",
+    "Algorithms/Random Forests.md",
+    "Algorithms/Decision Tree.md",
     "Performance Metrics/Cross Validation.md",
     "Machine Learning Overview/Model Selection.md",
     "Performance Metrics/Untitled.md",
@@ -204,14 +207,12 @@
     "Pasted image 20251015172552.png",
     "Pasted image 20251015164017.png",
     "Regression",
-    "Algorithms/Random Forests.md",
     "Algorithms/Dimensionality Reduction/PCA.md",
     "Algorithms/Clustering/Hierarchical Agglomerative Clustering.md",
     "Algorithms/Dimensionality Reduction",
     "Algorithms/Clustering/K-means.md",
     "Algorithms/Linear Regression.md",
     "Algorithms/Clustering",
-    "Algorithms/Decision Tree.md",
     "Algorithms/K-nn.md",
     "Information Gain.md",
     "Information Theory",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Bisection.md",
+                "file": "Linear Algebra/Numerical Analysis/Krylov Methods/Arnoldi Iteration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bisection"
+              "title": "Arnoldi Iteration"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -172,15 +171,21 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Bisection.md",
+    "Linear Algebra/Numerical Analysis/Krylov Methods/Krylov Methods.md",
+    "Linear Algebra/Numerical Analysis/Krylov Methods/Arnoldi Iteration.md",
+    "Linear Algebra/Numerical Analysis/Numerical Stability.md",
+    "Linear Algebra/Numerical Analysis/Krylov Methods",
+    "Linear Algebra/Matrix Factorizations/SVD/Computation/Computing SVD.md",
+    "Linear Algebra/Matrix Factorizations/SVD/PCA/Eigenfaces.md",
+    "Linear Algebra/Matrix Factorizations/SVD/Computation",
     "Linear Algebra/Eigen Values and Eigen Vectors/Perron-Frobenius Theorem.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Bisection.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
     "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/QR Algorithm without Shifts.md",
     "Linear Algebra/Least Squares/Least Squares.md",
     "Pasted image 20251015012238.png",
     "Pasted image 20251015011907.png",
     "Pasted image 20251015011858.png",
-    "Linear Algebra/Numerical Analysis/Numerical Stability.md",
     "Linear Algebra/Numerical Analysis",
     "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/Modified Gram-Schmidt Process.md",
@@ -206,11 +211,7 @@
     "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
     "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
-    "Linear Algebra/Subspaces/Projection Matrices.md",
-    "Linear Algebra/Orthogonality/Projections/e.md",
     "Linear Algebra/Orthogonality/Projections",
-    "Linear Algebra/Matrix Factorizations/Similarity Transformations/Schur's Triangularization.md",
-    "Linear Algebra/Linear Transformations/Linear Transformations.md",
     "Linear Algebra/Matrices/Matrix Operations"
   ]
 }

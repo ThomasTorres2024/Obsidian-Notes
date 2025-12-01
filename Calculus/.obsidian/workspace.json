@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
+                "file": "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Higher Order Derivative"
+              "title": "Parametrized Surfaces"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5
+    "width": 506.5,
+    "collapsed": true
   },
   "right": {
     "id": "4a2671d6dbfabde1",
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
+                "file": "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Higher Order Derivative"
+              "title": "Backlinks for Parametrized Surfaces"
             }
           },
           {
@@ -169,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,8 +186,10 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
-    "Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",
     "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
+    "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
+    "Calculus/Multivariable Functions/Parametrizations",
+    "Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",
     "Calculus/Series and Sequences/Taylor Series.md",
     "Calculus/Series and Sequences",
     "Calculus/Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
@@ -222,7 +226,6 @@
     "Calculus/Geometry of Euclidean Spaces and Identities/Cross Product.md",
     "Calculus/Geometry of Euclidean Spaces and Identities/Dot Product.md",
     "Homework/Untitled.md",
-    "Homework",
     "Calculus/Geometry of Euclidean Spaces and Identities/Lines in n Space.md",
     "Pasted image 20250907152747.png",
     "Pasted image 20250907152708.png",

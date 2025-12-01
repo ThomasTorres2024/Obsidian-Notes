@@ -260,4 +260,52 @@ We can approximate the area by:
 $$\frac{n}{N}\cdot A \approx \int f(x)dx$$
 We can use multiple threads to do multiple points altogether to add points along the region. It's important to note that we really need the 
 
+- Clarifying everything we nee to do, where to be at in the sections, what are the most important things, liek th methods, or like everything done there 
+- EIgenfaces question too? 
 
+
+
+TO Add:
+- ground truth clusters 
+- add pacmap/localmap to add metrics 
+
+# LWP = Thread
+Light weight processes and threads 
+
+Process Interaction
+- unaware of each other basically doomed
+- process indirectly aware, they dont know each others PID
+- processes directly aware of each other by commuication
+- Enforce mutual exlcusion, only one space have acess to a pecific resource, deadlock everything waits for one process forever
+- starcvation one or more processes never get access to anything 
+
+Readers-Writers problem
+given that we have writer processes and reader processs, sharing a shared resource. If we are reading we could have hvas many as we would like, theres no confllict here unless no one is also writing.
+
+Only 1 given writen can write for the arry If we areading, we have to block if a writen call occurs. 
+
+The Dining philosophers problem
+$N$ philosophers the algorithm here messes up if a fork is already occuped, we expect then that 
+
+Working solution, mutex, we can either release a lock or unlockm it. 
+
+Reader Writer solution
+
+---
+# Semaphore 
+Semaphore has 2 operations, down and up, these operations are atomic, none of these processes can be interrupted, for sleeping we continually put something into the ready queue until we get something which tells us to wake it up
+
+in semaphore, then we increment s, if s is still less than s, then we need to wake up one of the processes that we have put to sleep 
+
+in the producer consumer problem, we have a semaphore called empty, we have a counter and a list that is initially empty, we are interested in reserving an "empty set"
+
+```cpp
+
+while(line){
+	empty.down()
+
+}
+
+
+
+```
