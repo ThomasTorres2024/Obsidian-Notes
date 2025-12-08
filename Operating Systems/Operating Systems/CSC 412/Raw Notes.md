@@ -309,3 +309,55 @@ while(line){
 
 
 ```
+
+# Four Conditions of Deadlock
+1. mutex must be implemented
+2. hold and wait, on processing is holding at least one resource 
+3. no preemption, a process cannot be forced by another 
+
+Deadlock can be resolved by removing one of the cycles in the resource sharing graph. This is somehow undecideable? Assume that we know what processes need what to terminate. 
+
+Construct a matrix consisting of the cartiesna producs between resources detained and processes detained. We also have a requirement matrix, and a maximum array. 
+
+We can determine the total number of each resource held by summing over the columns. We cannot figure out what is blocked and unblocked using the matrices. The graph doesn't know the condition of requirement however. 
+
+# Djikstra The Banker's Algorithm 
+Construct Held and Max matrix, then write the difference between the 2. 
+
+Take account of how many total things are in the system for eeach resource This can be computed by the summing over the total resources, we can also construct the availables by doing the difference with the max we also want to determine if the current state is safe or not, to give all resoruces the resources that they require 
+
+This is one way we can avoid deadlock here. 
+
+# Solution 2.) Deadlock Prevention
+We want to argue against deadlock here 
+
+1. we cant negate mutex 
+2. 3
+3. we want to prevent circular wait condition as well
+4. circuilar wait, usually what we try to beat, impose an order for obtaining resources from our items 
+
+# Detect and Resolve 3.)
+We need to be able to resolve. We can look for a [[Cycle]] in our wait for graph, and then look for a process to possibly kill, or reallocate the resources in some manner. We have a rollback, which keeps track of the system, and goes back to some previous version of all of the processes executing in the code. 
+
+# Solution 4.) Do Nothing
+Usually user does something 
+
+---
+# Creation of POSIX shared memory Objects
+```
+
+```
+
+Last process to quit shared access, one must be the creator, and one must be the deleter. 
+
+
+---
+# Virtual Memory
+Leverage Hard Drive for CPU use virtual CPU basically 
+
+
+
+
+
+
+

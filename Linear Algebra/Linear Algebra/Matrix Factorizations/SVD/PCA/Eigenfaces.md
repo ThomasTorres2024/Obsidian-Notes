@@ -111,3 +111,27 @@ Here is the overall approach of the algorithm.
 	*  If $e_{k} < \theta_{e}$ and $\epsilon < \theta_{\epsilon}$, then classify the image as associated with individual $k$ 
 	* If the minimum distance $\epsilon_{k} > \theta_{\epsilon}$ (above threshold for class), but distance puts us in the face space $(\epsilon \leq \theta_{\epsilon})$, then we have an unknown (possible to start a new face class here)
 6. If the individual is seen already, then maybe we could add it to the original faces or recalculate eigenfaces, which makes sense as we encounter more and more individuals 
+
+# Face Detection Algorithm
+Given some larger image, $V \in \mathbb{R}^{m \times p}$ we want to be able to detect face images along it. We already have built up the mathematical infrastructure to do this, and we can simply just do a check to see if there is a face image in the image.
+
+We can have a grid that translates over different centers of the image, and then determines if there is a face there by treating the image in the grid as a face image, and computing its approximate representation with respect to the Face Space. The distance between the approximation vector and the actual vector can then be determined. We can create a density map corresponding each pixel to its approximate distance from the face space.
+
+We have another method to for detecting movement using 2 blobs, but in general this is a lot more difficult and complicated than this clear linear algebra based method. 
+
+We can do this by considering equation $\epsilon(x,y)$, which for the face image at $I(x,y)$ we need to pre-process $I(x,y)$.
+$$I(x,y)=\Gamma \implies \Gamma- \Psi = \Phi_{F}$$
+Then finally compute $\| \Phi - \Phi_{F} \|^2 = \epsilon(x,y)^2$ 
+$$= \| \Phi- \Phi_{F}\|^2 = (\Phi - \Phi_{F})^T(\Phi - \Phi_{F})$$
+$$=\|\Phi\|^2 - \| \Phi_{F}\|^2 $$
+$$ \epsilon(x,y)^2= \Phi^T(x,y)\Phi(x,y) - \sum_{i=1}^L c_{i}^2(x,y)$$
+
+
+
+
+
+
+
+
+
+

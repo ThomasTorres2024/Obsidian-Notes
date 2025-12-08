@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
+                "file": "Calculus/Integration/Multivariable Integration/Surface Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Parametrized Surfaces"
+              "title": "Surface Integrals"
             }
           },
           {
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
+                "file": "Calculus/Integration/Multivariable Integration/Surface Integrals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Parametrized Surfaces"
+              "title": "Backlinks for Surface Integrals"
             }
           },
           {
@@ -186,8 +186,9 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
-    "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
     "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
+    "Calculus/Integration/Multivariable Integration/Surface Integrals.md",
+    "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
     "Calculus/Multivariable Functions/Parametrizations",
     "Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",
     "Calculus/Series and Sequences/Taylor Series.md",
@@ -230,7 +231,6 @@
     "Pasted image 20250907152747.png",
     "Pasted image 20250907152708.png",
     "Calculus/Vector Fields/Conservative Field.md",
-    "Calculus/Geometry of Euclidean Spaces and Identities/Vectors.md",
     "Pasted image 20250905090655.png"
   ]
 }

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms/Dimensionality Reduction/LocalMAP.md",
+                "file": "Algorithms/Dimensionality Reduction/Dimension Reduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LocalMAP"
+              "title": "Dimension Reduction"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "cc55527172807ed5",
@@ -187,8 +186,8 @@
   },
   "active": "05ecf4e992508a4a",
   "lastOpenFiles": [
-    "Algorithms/Dimensionality Reduction/Dimension Reduction.md",
     "Algorithms/Dimensionality Reduction/LocalMAP.md",
+    "Algorithms/Dimensionality Reduction/Dimension Reduction.md",
     "Algorithms/Random Forests.md",
     "Algorithms/Decision Tree.md",
     "Performance Metrics/Cross Validation.md",

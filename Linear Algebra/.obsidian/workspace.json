@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Numerical Analysis/Krylov Methods/Arnoldi Iteration.md",
+                "file": "Linear Algebra/Matrix Factorizations/SVD/PCA/Eigenfaces.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arnoldi Iteration"
+              "title": "Eigenfaces"
             }
           }
         ]
@@ -74,11 +74,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -171,8 +173,9 @@
   },
   "active": "c0f1a6e748fcc66b",
   "lastOpenFiles": [
-    "Linear Algebra/Numerical Analysis/Krylov Methods/Krylov Methods.md",
+    "Linear Algebra/Vector Spaces/Isomorphic Vector Spaces.md",
     "Linear Algebra/Numerical Analysis/Krylov Methods/Arnoldi Iteration.md",
+    "Linear Algebra/Numerical Analysis/Krylov Methods/Krylov Methods.md",
     "Linear Algebra/Numerical Analysis/Numerical Stability.md",
     "Linear Algebra/Numerical Analysis/Krylov Methods",
     "Linear Algebra/Matrix Factorizations/SVD/Computation/Computing SVD.md",
@@ -210,7 +213,6 @@
     "Linear Algebra/Matrix Factorizations/QR Factorization",
     "Linear Algebra/Orthogonality/Modified Gram-Schmidt Process.md",
     "Linear Algebra/Orthogonality/The Gram-Schmidt Process.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Orthogonality/Projections",
     "Linear Algebra/Matrices/Matrix Operations"
   ]
