@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Geometry and Multivariable Functions/Plane.md",
+                "file": "Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Plane"
+              "title": "Higher Order Derivative"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "clai",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 414.5
   },
   "right": {
     "id": "25fc15dbc12ae89c",
@@ -170,8 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad759e1322f87a9d",
+  "active": "f502e0d895c2726b",
   "lastOpenFiles": [
+    "Derivatives/Function Theorems/Implicit Function Theorem.md",
+    "Derivatives/Partial Derivatives/Untitled.md",
+    "Untitled.base",
+    "Untitled.md",
+    "Derivatives/Function Theorems",
     "maxresdefault.jpg",
     "Geometry and Multivariable Functions/Determinant.md",
     "volume_parallelepiped.png",
@@ -184,7 +190,6 @@
     "Geometry and Multivariable Functions/Non-Independent Variables.md",
     "Untitled 2.base",
     "Untitled 1.base",
-    "Untitled.base",
     "Integration/Multivariable Integration/Change of Variables.md",
     "Derivatives/Partial Derivatives/Gradient.md",
     "Derivatives/Partial Derivatives/The Directional Derivative.md",
@@ -199,9 +204,6 @@
     "Derivatives/Partial Derivatives/Optimization/Second Derivative Test.md",
     "Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
     "Derivatives/Partial Derivatives/Optimization/Optimization with Derivatives.md",
-    "Derivatives/Partial Derivatives/Optimization/Hessian Matrix.md",
-    "Integration/Integration Formulas/Sine and Cosine Formulas.md",
-    "Integration/Integration Formulas/Untitled.md",
     "Integration/Integration Tricks",
     "Integration/Multivariable Integration",
     "Integration/Integration Formulas",
@@ -215,8 +217,6 @@
     "Pasted image 20250701024940.png",
     "Pasted image 20250701024659.png",
     "Pasted image 20250701023948.png",
-    "Pasted image 20250630225600.png",
-    "Pasted image 20250630221955.png",
-    "Vector Fields/Line Integrals"
+    "Pasted image 20250630225600.png"
   ]
 }

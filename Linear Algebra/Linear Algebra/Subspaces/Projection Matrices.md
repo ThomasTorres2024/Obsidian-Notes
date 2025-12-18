@@ -20,12 +20,34 @@ Meaning the application of $P$ any number of times is the same as applying it on
 Since we are losing at least one dimension by projecting onto a lower space, it follows that:
 
 $$\text{rank}(P)<n$$
-Lastly, the Projection matrix is a symmetric one:
+---
+#### Orthogonality and Projection Matrices 
+Lastly, if the  Projection matrix is orthogonal, it is a symmetric one:
 
 $$P^T=P$$
 Since $P$ is orthogonal and a projection matrix, it follows that it is symmetric. 
 
 Our projected vector, $P\vec{v}$ and the vector $\vec{v}$ has a difference in the [[Nullspace]] of the projection matrix $P$. Consider the product $P(P\vec{v}-\vec{v})=P^2\vec{v}-P\vec{v}=P\vec{v}-P\vec{v}=\vec{0}$, and thus $P\vec{v}-\vec{v} \in Nul(P)$. 
+
+We can ensure that if $P=P^T$ then the residual $r=Pv-v \perp Pv$:
+###### (My Attempt at a Proof.)
+
+$\text{Direction 1.) }P=P^H \implies r \perp Pv$
+$$P^Hr=P^H(Pv-v)=P^2v-Pv=Pv-Pv=0$$
+$$\implies r \in N(P^H) \implies r \perp Pv$$
+$\text{Direction 2.) }P=P^H \Longleftarrow r \perp Pv$
+$$(Pv)^Hr=0$$
+$$v^HP^H(Pv-v)=0$$
+$$v^HP^HPv-v^HP^Hv=0$$
+$$\implies P^HP=P \text{ (In order for both to be equal and thus 0)}$$
+But notice $P^HP$ is  a [[Symmetric Matrix]] $\implies P=P^H$. 
+Therefore if the residual vector is orthogonal then it implies the projector is a [[Symmetric Matrix]]. 
+
+---
+
+I believe another way that Projectors can be thought of are as a [[Linear Transformations]] that maps from some $\mathbb{R}^n \to \text{Span}\{P \}$, where $P \in \mathbb{R}^{n \times n}$ that enforce that any vector in $v \in (\mathbb{R}^n \cap \text{Span}\{ P\})$ satisfies $$Pv=v$$
+Which should make sense for the idea of a projection. We are trying to enforce all vectors in $\mathbb{R}^n$ to go to $P$, but every vector that already resides in $P$ should simply stay put as it is already projected down into this [[Vector Subspace]]. We can furthermore obtain the property of [[Idempotent]] (Idempotency) from this by realizing that for $$P=\{p_{1},p_{2},\cdots p_{n} \}$$
+That $Pp_{i}=p_{i} \iff P^2=P$. I feel like this is a bit more intuitive to me.   
 
 ---
 # Types of Projectors 
@@ -41,7 +63,7 @@ We can argue that this space actually projects into the [[Nullspace]] of $P$. No
 $$(I-P)\vec{x}=\vec{x}-P\vec{x} \in \text{Nul}(P)$$
 Which means $(I-P) \subseteq \text{Nul}(P)$, so since both [[vector space]]s are subsets of one another it follows that they are equivalent. We can also argue that the vector spaces are also complimentary. We can express their bases as a direct sum of one another:
 $$(I-P)=I-P$$ and we can also see that:
-$$\text{rng}(P)=\text{nul}(P) = \{ 0 \}$$
+$$\text{range}(P) \cap \text{nul}(P) = \{ 0 \}$$
 We can thus say that this project separates $\mathbb{C}^m$ into two different spaces.
 
 ###### (Theorem) Two separate subspaces have a projector from one space to the other  
@@ -66,7 +88,7 @@ Now we must show that an orthogonal projection is necessarily done by $P=P^H$. W
 For any $x \in S_{1}$, it follows that $Px=x$ because we are projecting a vector belonging to the subspace onto itself, and for any $y \in S_{2}$ it follows that $Py=0$ since all vectors in $S_{2}$ are orthogonal to those in $S_{1}$. 
 
 If we now consider an [[orthogonal matrix]] $Q$ where $Q_{j}=q_{j}$, then $PQ$ will consist of a matrix where every column after $q_{n}$ is zeroed out:
-$$PQ=\begin{bmatrix} q_{1} & q_{2} & \cdots & q_{n} & \cdots & 0 \end{bmatrix}$$
+$$PQ=\begin{bmatrix} q_{1} \bigg| & q_{2} & \bigg| \cdots & \bigg| q_{n} & \bigg| \cdots \bigg| & 0 \end{bmatrix}$$
 We can then multiple by $Q^H$ on the left and we obtain the follow diagonal matrix, $\Sigma$, where all values are zeroed out after $n$:
 $$Q^HPQ=\begin{bmatrix} e_{1} & e_{2} & e_{3} & \cdots &  e_{n} & 0 & \cdots & 0\end{bmatrix}$$
 This gives the following SVD/[[Eigen Value Decomposition]] of $P$, also note since $P$ is Hemritian it follows that $P$ always is guaranteed an [[Eigen Value Decomposition]]:
@@ -104,15 +126,6 @@ $$v=r+\sum_{i=1}^n {(q_{i}q_{i}^H)}v$$
 Where $r$ is some error vector or we can think of it as the remainder  between each component of $q$. We can express the component in $V$ thus as:
 $$y=\hat{Q}\hat{Q}^Hv$$
 ![[Pasted image 20251002103851.png]]
-
-
-
-
-
-
-
-
-
 
 ---
 # Orthogonal Projections are Symmetric 
