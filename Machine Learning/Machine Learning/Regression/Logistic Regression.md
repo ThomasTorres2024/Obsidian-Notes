@@ -69,16 +69,20 @@ $$=\arg \min_{w} \text{ } \frac{1}{n} \sum_{i=1}^n \log  \left({1+e^{-y(i)w^Tx(i
 $$w^*=\arg \min_{w} \text{ } \frac{1}{n} \sum_{i=1}^n \log  \left({1+e^{-y(i)w^Tx(i)}} \right)$$
 There is no closed form solution of this function, however the loss function is a [[Convex Function]], which means that its local minimums re global minimums. We can use [[Gradient Descent]] in order to find $w^*$. 
 
+Once $w$ has ben computed we have the hypothesis function for vector $\vec{x}$:
+$$h(x)=\frac{1}{1+e^{-w^Tx}}$$
 In turn now that we have a way to compute and solve for $w^*$, we now know $h(x)$, and so we can classify new points. we can write that:
 $$\mathbb{P}[+1|x] \geq 0.5 \implies \text{ x is +1}$$
 $$\mathbb{P}[+1|x] < 0.5 \implies \text{ x is -1}$$
 Our boundaries have the following form:
 ![[Pasted image 20251015191607.png]]
 
+The decision boundary is the curve where the hypothesis functions lad to $0.5$. Logistic regression curves are generally very sharp, and we tend to not see nearly as much in the center not as much of a different spread.
 ### Example Of a Boundary 
 ![[Pasted image 20251015191638.png]]
 # Properties of Logistic Regression
-Lost function is still convex, so we have a global minimum. We can use [[regularization]] to avoid [[Overfitting]], so we are "Robust to Overfitting". Our weights allow us to ascribe variance to certain features and is important for [[feature importance]]. Lastly, the decision boundary of our function is still linear.
+Loss function is still convex, so we have a global minimum. We can use [[regularization]] to avoid [[Overfitting]], so we are "Robust to Overfitting". Our weights allow us to ascribe variance to certain features and is important for [[feature importance]]. Lastly, the decision boundary of our function is still linear. Outputs are "probabilistic".
+
 
 
 ---

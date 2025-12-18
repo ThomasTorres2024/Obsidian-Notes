@@ -69,6 +69,8 @@ If we look at all possible decision trees within a set, we have a good way to se
 
 We have similar problems for [[Neural Nets]], so the space of [[Rashomon Sets]] is a set which is considerably longer. For [[Decision Tree]]s in a 10,000 entry Data table, we can compute them in a week. But for [[Rashomon Sets]] on [[Neural Nets]], we have to literally sample from the data. 
 
+$$$$
+
 ---
 # Model Selection
 Model selection gives a set of $1-n$ many models in the set $F$. These models have different parameters. People often just pick the highest accuracy one, there are risks of [[Overfitting]] or [[Underfitting]], or performing well. We thus have [[Hyperparameter Tuning]], which takes parameters for our models and them optimizing them.
@@ -166,6 +168,289 @@ How do we find the best values of $W$? To find the best values of $W$, we need t
 If the product of te probability estimators are close to 1 then we re good, we have the arg min that we have the negative likelihood estimation which can be fond using the negative log likelihood as well. 
 
 The lost function is always convex, it always give us the best global minimum, and need to use gradient descent or other second order methods 
+
+---
+# 10/20/25 - Gradient Descent
+
+Our intuition for this is to compute the gradient and take steps in the negative direction of the gradient such that each time we get closer and closer to a minimum along the graph, as eventually we expected to hit a 0. 
+
+We can determine if the hessian matrix is PD or ND at $x^*$, if it is PD then it is a local minima, if it is ND it is a local maxima of the function, which corresponds respectively to positive and negative eigen values of $H$. 
+
+This is an iterative method where each time we take some step forward each time. in t-SNE and other modern function we take iterative steps to optimizing our solution, which is a huge idea. Gradient descent is used to compute minimas. We start at some random point along our surface, and then invert the gradients sign and follow that path down and continue. 
+
+The hard part about this is the learning rate, which is critical. This is a [[hyperparameters]] of [[Gradient Descent]]. This is known as the [[learning rate]], how many steps will we end up taking? 
+
+We begin by letting $t=0$ and using an iterative formula with randomly initialized weights, $w$:
+$$w^{(t+1)}=w^{(t)}-\nu \cdot \nabla_{w}f(w^T)$$
+If the learning rate is too small then we have an overly slow convergence, step sizes are absolutely massive for the conjugate gradient method. If our size is too large, there is a good chance that we overshoot and end up going way too far. Overshooting with a neural net will produce absolute nonsense within a few epochs (traversals through the dataset). 
+
+# Stochastic Gradient Descent
+# Stochastic Gradient Descent with Momentum 
+The idea is if I walked down here already and consider this and I have some momentum here I've been here already and moved this way, then our gradient would be affected by that. The intuition is to think of a ball falling down on a gradient, which has some momentum term wile it falls.
+# Adam Optimizer 
+Variation of SGD with Momentum. The adam optimizer is commonly used. Sometimes if SGD sucks, then we should use Adam. 
+# [[Gradient Descent]] and Machine Learning
+Optimizing a [[loss functions]] is a huge problem in machine learning. We can't do it directly, so do it with this method iteratively. There are a lot of gradient based optimal solutions which can find by performing gradient descent. 
+
+Using gradient descent runs into functions which are very complex with many saddple points, local maxxes, and local mins. Real data also causes rounding error and issues. THus we are tryinh yo minimize over an unfriendly function. 
+
+Batch Gradient Descent 
+Instead of doing a gradient descent over the whole dataset, we do it by sampling the dataset, and taking a step based on that sample. The idea is we can do 1 epoch with many more gradient descents, instead of optimxing for one item. 
+
+---
+# [[Boosting]]
+10/22/25
+Boosting is an ensemble technique in machine learning, where we take multiple methods and combine them to create an overall better classifier. we want to have many classifiers that aren't very strong, but as these are combined, we create an overall stronger predicter $F$. In the case of boosting we make $f_{1}$, and then we make $f_{2}$ based on the performance of $f_{1}$, and so on until we end up producing all of the different $f$s necessary. 
+
+In bagging we create all of our functions at once instead of sequentially, that is in parallel as opposed to sequentially here. 
+
+#### Weak Learner Definition
+a classifier that needs to be better than random guessing, at least by a little, so the probability of a guessing correctly is more than 50%. The idea is if we combine many weak learners together we can create an overall strong learner together from all of this info. 
+
+Shallow decision trees, linear models, help us generate overall stronger decision boundaries, our weak learners are very fast to make, and so our model is very fast to make overall. 
+
+If we have many weak classifiers, then we can sum up the weak models performance, and overall get our resulting strong classifier. This means that each model, $h_{i}(x)$ has its own associated weight when making our decision $a_{i}$. Let $H(x)$ denote the strong classifier, then it follows that:
+
+$$H(x)=\text{sign}\left(\sum_{i=1}^Ta_{i}h_{i}(x)\right)$$
+If we are given enough info we can construct a single predictor with a very high accuracy, and this is something that we can prove mathematically. 
+
+#### Training
+We have training weights where when we are setting up our weak learners, we need to be able to weigh them based on the data they are operating on. The slideshow uses examples of linear decision boundaries. When we train our sets we ensure that their error performs above a given threshold, $\epsilon$. 
+
+We make a partition where one side is classified as one category and the other category as another set. The data that is misclassified by the decision boundary is weighted more heavily for the next function produced. We repeat the process until we have found enough classifiers. 
+
+For instance the email classifier that uses boosting would take in all of the different emails, that contain the word buy, then we make a second weak learner that goes from this and determines like if its amazon then its not spam. We train the second model based on the first one. We base off of what our first model gets wrong, and then we make a new model based on what was wrong. This is the key part of boosting. 
+
+Another point of contrast, compared to [[Random Forests]] and [[bagging]] methods, we do not evenly weight the models we produced, whereas both of these models tend to group up the weights evenly. For instance if we are making use of decision stumps, we weigh some stumps over others, 
+#### Adaboost
+
+A particularly important boosting algorithm from 1995. 
+
+One of the of the most famous algorithms for boosting. We begin by taking some kind of partition, and associating it with something in classification, and then we take another one based on what we got wrong, what we got wrong we weight higher, and then we do the same thing iteratively until we have a higher decision boundary overall. This is the training procedure that I described above essentially.
+
+Some of the weak learners we use are partitions are decision stumps (decision trees that only split on a single feature ), or linear decision boundaries, which when combined produces a nice decision boundary that isn't overly complicated due to the conditions of our learners. 
+
+We don't really overfit because of the unique features of Adaboost due to the fact that we use weak classifiers so we can't get very detailed decision boundaries, limiting our number of classifiers limits overfitting, and type of classifiers does that. 
+# Algorithm For Adaboosting
+
+Given training set $X=\{(x_{1},y_{1})\cdots(x_{m},y_{m})\}$ 
+* each $y_{i} \in \{-1,+1\}$ 
+* for $t \in \{1,2,3,\cdots,T \}$
+	* construction distribution $D_{t}$ on $\{1,\cdots,m \}$ (I believe in this stage, we are re-evaluating the weights of our data, where misclassified points gain a higher weight)
+	* Compute weak classifier $h_{t}:X\to\{-1,+1 \}$
+	* $h_{t}$ has the small error, $\epsilon_{t}$ on $D_{t}$, and is given by the probability of misclassifying a datapoint in $D_{t}$ ($e_{t}=\mathbb{P}[h_{t}(x_{i})\neq y_{i})]$
+* Lastly output the final classifier $H_{final}$
+
+We can construction our distributions of our data each time by the following algorithm. Our goal is to weigh the data points that were misclassified as higher. 
+
+#### Algorithm (Constructing $D_{t}$)
+$D_{1}(i)=1/m$ (Initialize all weights to being equally probable)
+* After at least one pass, we have some previous $D_{t}$, so we can now use this information to compute $D_{t+1}$ iteratively. 
+* $$D_{t+1}(i)=\frac{D_{t}(i)}{Z_{t}}\times \begin{cases} e^{-\alpha_{t}} & \text{ if }y_{i} \neq h_{t}(x_{i})\\e^{\alpha_{t}} & \text{ if }y_{i}=h_{t}(x_{i}) \end{cases}=\frac{D_{t}(i)\exp(-\alpha_{t}y_{i}h_{t}(x_{i}))}{Z_{t}}$$
+* Intuitively this above step means, give a higher weight to misclassified points, hence the positive $\alpha_{t}$, and the lower points aren't as important for following iterations so we opt for an $-\alpha_{t}$ in the exponent to weigh correctly classified points less. Note also that $Z_{t}$ is a positive normalization constant
+* Also $\alpha_{t}=\frac{1}{2}\ln\left(\frac{1-\epsilon_{t}}{\epsilon_{t}}\right)$
+Our final classifier makes use of the constants we just calculated, $\alpha_{t}$, so that is how we get our final weights:
+$$H_{final}(x)=\text{sign}\left( \sum_{t=1}^T \alpha_{t}h_{t}(x) \right)$$
+Here is a nice way to put it without all my exposition:
+![[Pasted image 20251023010531.png]]
+
+Here is some actual code for it:
+```python
+# generate toy dataset
+np.random.seed(42)
+X = np.random.randn(300, 2)
+y = (X[:, 0] + X[:, 1] > 0).astype(int)
+# train AdaBoost
+clf = AdaBoostClassifier(
+DecisionTreeClassifier(max_depth=1),
+n_estimators=100
+)
+clf.fit(X, y)
+```
+
+An important feature of Adaboost is that it tends to have a pretty good test error that decreases even far after the fact that its train error has gone way down. Adaboost and its structure is particularly resistant to overfitting. 
+
+# Advantages and Disadvantages 
+
+Very fast simple easy to code, no hyperparameters to tune other than $T$, the number of models. Flexible, we can use any weak learner, like decision surfaces (linear), stumps, low depth binary trees. It is very easy to implement. 
+
+Our performance depends on data and weak learners, so little data means worse results, noisy data can mean worse results since we amplify the noise. 
+
+We can fail if too weak base learners causing underfitting, or strong base learners causing overfitting, we are very susceptible to noise here, we reweight incorrect data positively so this in turn increases the importance of the noise
+
+We have gradient boosting algorithms as well on top of this that are more modern and industry standard like XGBoost, LghtGBM, and CatBoost. 
+
+---
+# Bagging 
+[[bagging]] is an [[ensemble method]] which trains many weak learners in parallel, and generally tends to produce very good results. 
+
+Produced in 1996, train man models on random susbets of the data, we want to reduce variance an ovefitting, take collective vote of everything, should be faster bc we can do models in paralell, we determine by classification voting, mean/medan if regression or 
+
+[[Bootstrapping]]
+If we have a dataset $D$, we create $n$ boot strap samples, the standard way to do this si that each amount is of size $n$, same as dataset, but we same with replacement we may have doubles or more ntries or missing potentially, which is how we go about forming the data to train our weak llearners
+
+we infer things via voting 
+
+[[Random Forests]] is a similar idea but we are taking random features of the data and random feature selection
+with random forests instead of taking all features, we take a subset, because decision trees split on features, and if we want a good variety leave out some features, especially if we use a greedy method like spliting on information 
+
+similarly we aggregate via majority vote ehre too 
+
+we can use 
+
+Final remarks with random forests and bagging, very performant, robust to outliers, we can create all decision trees at once
+
+limitations sparse data is really bad for this tree, 
+
+Create bootstrap samples 
+
+---
+# Feature Transformation
+If we take in a bunch of features, and we want to move them down into something more useable. For example things like the [[Z-score]] is one such algorithm that worksout pretty, feature treansformation is important significaitnyl helps out the data. 
+
+We may want to meet some of the assumptions of the algorith, liek for instacnce the sprial data and maybe a linear function, we can handle non linear relaritonships, different types li=ke DFS cale featueres appropriately. 
+
+2 basic ways of scaling, min/max scaling and standardization. Standardization makes mean 0 and standard dev 1. 
+
+Categorical transformations, one hot encodding, for every column, convert it to a vector. For is ntnace if we have red,gren,blue, we can turn these into 1,0,0 0,1,0, or 0,0,1 also label encoding. 
+
+Non linear transformations. Consider the sin example, instead of just doing least squarw fits, then we might be able to examine other featues of the data maybe the 
+non linear ts all polynomial combinations of features wkth a level of cooo compa
+
+$k$th order polymomial features, on one cariable, find the weight on x0,x1,2,xx2,x3 vanermonde marix and solve basically as we get mor and more complicated transforms we ask how does thsis change our ability to itneracte with, does adding neew featute s reall y mean that you are bettering your ttes sorethis would b liek at 
+
+Say we have data [x1,x2] but we wa ntt this dara toin terac with the diffeerent aues of the vector. 
+If we have x1,x,xq_{2}, we can find squares diff things, revealmore tendencies of our code, can exprsess more cplicated models 
+
+fit trnsroma re gpod, we take 1 set and test it vs its own validation set 
+but idea tothis to 
+
+Similar idea appies to logs gaussian elim etc 
+
+# embedding 
+take data of 1 form, then inbed it ia new spae, in ml we do thsis enerally to handle all of the data 
+
+for instance if we want t embed content from say an image, 10x10x3 into a vector field, and then 
+embed which we can generate fom nis intermdiate stat
+
+Good embeddings have simila rej=-qualiities have, simialr things, can bring them to class space 
+
+foundation model, trained ona  large dataset, USEFULIN COMPLEX ESEMANTIC AREAS, for 1 giant set, we can use a f c==nction to encapsulate an entir region 
+
+machine transls, how could we use embeddij
+
+Let $V$ be a 50,000 dikensional vector, and let $F$ lso ben, we we can encode as a 
+
+
+transform all sets of embeddings to a larger a =sifodl. If the map of  2 sentences with the same meaning map really well, then we can do  SOMETHING
+
+WE CAN ALSO unencode encoded data and also we encoden them, information sometimes is lost embedding/encoding/feature transforms are simialr 
+
+We can use kernel transformaon o signficiatny to help us and our data, especially data tha ras our daa may ive on a qadratic, but we are able to make thes with linear transformation because we used a feature transformation on them firsr 
+
+spiral set, if we transform our spiral set, and use a kernel, using different colors and stuff we get 
+a new set 
+
+# Multinomial Logistic Regression
+jUst like in [[Logistic Regression]], its a bit more complicated than that variant, DOING the same idea involving many classes, more than just 0s and 1, and we want to classifythe mnist data set 
+
+Big idea here is the functin we optiize over is the softmax function instead of the logisitc regression function 
+
+from softmwax we get unnormalized weights, all mus t be poirifved, unomrlaized pro ablities here, lastly make sure that probabilities go to one at the end \
+
+here we learn weights , and instead of just feeding only  layer to he ne, with logisitc regression
+W here is a larger vector now from weight stuff 
+instead of sticking things into th sigmpid, w throw it intn the softmax function, make it all positive and make it all sum to 1 
+
+softmax instead of sigmoid, and more classes 
+
+we predict the weight with the highest p4robability score, and the one that does the best at minimziing our loss function
+
+$$W^* =\text{argmax}_{w} \frac{1}{n} \prod_{i=1}^n$$
+We have a one hot encoding for how our labels shold be be represented. Our max here is teh probablty the highest probability of the softmax is the same as a 1 hot encoing nmber, when we misclassify take negative log of the probability of our class if we get it wrong, and overal, we want to minimize this quantit yacross the sum of all items in our set. The lowest loss option that is well tained should always have like 0.9999 accuracy for an image it is successfully trained on.
+
+When we compute our raw scores, we take the scores and then feed them into soft max. intuitively with the image classification we want to see what pixels what tendencies most ld validations Intuitively, we are finding high dimensional planes to partition our classes in a higher dime sjonal space 
+
+# Intro to Neural Networks
+-embedding artifical imge outside of manifold of natural images neural network is an embedding function of sort 
+
+how do we learn weights in a nural network? sa we are on neuron 100, outputs final prediction, compare vs real label , compare error vs on on
+
+how do we set weghts, well do it with [[[backpropagtion]]] prop forward tp start, and then info comes back, multivariable chain rule is neded, take derivative of thhe activation function, do partil in trrms of z, deriv of result by chai rule tells us
+
+
+we propagate error since the previous error ic ahnged by the first, theres a change tbat goes down the net onvery computationally expensive, so we need everything going back, trainign takes a lot of time b oft th=e. Practically once our fucntion is succesful, the we can gradjdtpkpchoice here of 0-1 for a learning rare, goes tbe same thing, we have new weights, rinse and repeat, detre=rmjnY. networks converge s=around $ e=laye
+
+---
+# Convolutional Neural Networks
+
+In a CNN we have a linear score function, $f=Wx$, which is just a linear classifier 
+
+For a 2 layer function, we do a linear score, an activation, and then a linear score again. The neuron ativation components in the middle si important, otherwise all we would be doing is 1 big linear tf. Fully connected layer, where every member of one layer can see everything, but this isn't standard, because we dont want everything to take weights,  but at the end we nave a lot of fully connected layers
+
+We need to sot of limit the number of connections we have otherwise we would be doing too many. In a layer neural network, we have that $f=W_{2}\max (0, W_{1}x)$, which is the RELU function. 
+
+We want non linearity because we want to learn complicated transformations that take us the final steps, that we can then apply linear things to to work with. RELU is generally a good choice for most problems. We choose activation functions by getting computationally efficint functions that are also differentiable. 
+$$a(W_{1}x+)$$
+W's are random initially and then they are trained. 
+
+After we fully do a run through of training, we want to know how changing thr weight changes the weight of the error function. 
+
+Forward pass, we begin by doing some activation on the first layer. We then predict based on the forward pass, and then get the loss next, the dff ebtween our predicted and actual. Then we get to the back propgation srtep, we get the weights connectng the hiden layer and the layer before it, and the layer 3 vs layer 2, and layer 1. We keep repeating this and we gew esrkkmate.
+
+Gradient descent is the enxt step, we ust update our weights with a little step. We only need 20 lines to implement this algorithm. Setting the number of layers and their size. We make our layers longer and wider. If we had an infintie number of neurons we can approximate any function given the neuroms .  Add more neurons allows us to get deeper and more interesting boundaries 
+
+Problem, weights are too big, or too many weights go to zero. A few problems, a few solutions. We have $L_{2}$ regularization, Our loss term also includes our regularization term, and a dataloss diff between learned and predition. 
+
+Back prob example:
+$$f(x,y,z)=(x+y)z$$
+$$q=x+y,q_{x}=1,q_{y}=1$$
+$$f=qz,f_{q}=z,f_{z}=q$$
+We want
+$$f_{x},f_{y},f_{z}=$$
+
+
+
+---
+# Convolutional Neural Networks 
+Convolve means that we slide and filter over all spatial lcoations within our image, instead of each pixel having a weight, we learn the unit for each, and we "convolve" across the image. 
+
+"Stride", we step by $n$ when we convolve 
+If we have a 300x300 image, and we have $n=3$, how many times are we going to be looking at the image based on this, we should be able to look at the image 100 times, vertically, and 100 times horizontally, giving us a total of $100^2=100,000$ different ways to look at it. 
+
+With this method compared to the previous method, we are learning about different regions of the image, and we do less computations overall, instead of the rasterized vector of $300^2$ different weights, which is not good 
+
+As we go down the total number of our samples increases 
+
+### Max Pooling
+Very common to make things smalle in our neural network. We pick some size in our matrix, 
+we take the largest element of an entry of our matrix and 
+
+- say we have a 22x22 img and a 5 by 5 stride, 
+We have different ways to handle handle mismatch between our stride size and the size of our windows, well it turns out that one way here is by padding stuff with 0's, 1's, it depends 
+
+How can we compute the stride given a 5 by 5 filter , and image of size 55, results in one of 
+
+With neural nets we use random weights and there we can creatte our filters, 
+NNs are pretty good at l
+
+We can think of this ting as an image encoder and decoder, where we take an input image and can prodivimg some vectors that represent the image, we can then decode it and see our reuskrs 
+
+loss = 
+
+# Transformers 
+
+Transformers begin by vectorizing all words in a sentence. This is known as tokenization. We need to be able to know the position of each word within the sequence in order to handle it. We need to incorporate positional information in these vectors. 
+
+We want our transformer to satisfy the following conditions, each unique position in our sentence should have a different value. Our algorithm should also produce some consistent underlying result and thereby be deterministic. We also need to be able to estimate distance between tokens. Models also need to be generalizable, and should work on sequences of words longer than the ones it is trained on and has encountered before. 
+
+Positional encoding satisfies all of these conditions. 
+### Positional Encoding/Embedding
+
+
+
+
+
 
 
 
