@@ -115,6 +115,10 @@ $$x=(A^HA)^{-1}Av$$
 The general projector is expressed as:
 $$P=(A^HA)^{-1}Av$$
 
+Another key fact about orthogonal projectors is that they are guaranteed to either preserve or shrink the magnitude of another vector. Mathematically this is written by $\|Px\|\leq\|x \|$. This result can be verified by using the fact that $\langle Px, Px-x \rangle=0$.
+Since $Px \perp (Px-x)$ and $x=Px-Px+x$ we can use the [[Pythagorean Theorem]] to write:
+$$\|x\|^2=\|Px\|^2+\|Px-x\|^2$$
+$$\implies \therefore \|x\| \geq \|Px\| \text{ due to properties of norms for } \|Px-x\|^2 \geq 0$$
 
 
 ---
