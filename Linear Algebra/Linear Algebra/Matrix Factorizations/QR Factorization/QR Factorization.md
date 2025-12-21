@@ -55,7 +55,77 @@ It is more preferable to have an invertible $Q$ than a $R$ for some situations, 
 Just to demonstrate that $A=QR$, we can show this by: 
 
 $$QR= [\hat{Q}|\tilde{Q}] \begin{bmatrix} \hat{R} \\ 0_{(m-n) \times m}\end{bmatrix}=\hat{Q}\hat{R}+\tilde{Q}\cdot0_{(m-n)\times m}=\hat{Q}\hat{R}=A$$
+Notice in the [[Full QR]] factorization, we have that $\tilde{Q} \perp R(A)$, since the first $n$ vectors that comprise $\hat{Q}$ satisfy $\hat{Q} \equiv R(A)$. Notice that every vector in $x \in \hat{Q}$  and every vector $v \in \tilde{Q}$ satisfies $x^Tv=0$, to the two subspaces are orthogonal due to the properties of 
+
+---
+# Nested Subspace Property 
+When we construct the QR factorization, we are constructing a basis by iteratively adding new vectors onto the basis that are linearly independent. We have a nice nested [[Vector Subspace]] property where if we add [[basis]] vectors $a_{1},a_{2},\cdots a_{n}$ it follows that:
+$$\{a_{1} \} \subseteq \{a_{1},a_{2} \} \subseteq \{a_{1},a_{2},a_{3} \} \subseteq \cdots \subseteq \} \subseteq \{a_{1},a_{2}, a_{3}, \cdots a_{n} \}$$
+
+---
+# Existence and Uniqueness
+### Theorem Every matrix $A \in \mathbb{C}^{m \times n}$ such that $m \geq n$ has a full [[QR Factorization]], and therefore a [[Reduced QR]] factorization
+Every matrix $A \in \mathbb{C}^{m \times n}$ such that $m \geq n$ has a full [[QR Factorization]], and therefore a [[Reduced QR]] factorization. If $A$ is [[linearly independent]], the [[The Gram-Schmidt Process]] allows us to argue that it has a [[QR Factorization]]. [[The Gram-Schmidt Process]] only  fails when one of the column vectors of $A$ is linearly independent, resulting in one of the vectors $q$ becoming a zero vector, which removes the possibility for a proper QR factorization. If it is given that $A$ is linearly independent this is impossible. 
+
+If $A$ is [[linearly dependent]], then in our QR factorization algorithm, one of our resulting vectors $v_{j}$ from the orthogonalization process is 0, so we begin orthogonalization again 
+some arbitrary $q_{j}$ from $Q$ again.  
+
+Full QR factorization is obviously not unique, since we can arbitrarily re-arrange the remaining vectors in $\tilde{Q}$ without affecting the resulting matrix $A$ from $A=[\hat{Q}|\tilde{Q}]R$ since all of the values from $\tilde{Q}$  are zeroed out. Another way in which the non-uniqueness of the [[QR Factorization]] can be observed by multiply some row $j$ in $R$ by $|z| \neq 0$ and column $j$ of $Q$ by $|z|^{-1}$ then we observe that we have a different QR factorization where $A=QR$, we have another QR factorization even for the reduced case. 
+
+### Theorem Every matrix $A \in \mathbb{C}^{m \times n}$ such that $m \geq n$ has a full [[QR Factorization]] that is unique when $A$ is of full rank 
+Because $A$ is of full rank, the diagonal entries from the matrix $R$ are guaranteed to be non-zero since each column vector in $A$ is linearly independent. It follows that we will get a full description using the QR factorization up to the point of the sign of each $q$ and the sign of each diagonal on $R$. Thus our QR factorization is fully described. If we fix each diagonal entry of $R$ to be zero, then we can obtain a unique QR factorization. Otherwise, we still have this difference to account for. 
+
+---
+# QR Factorization for Continuous Functions 
+There is analogue for expanding complex functions that is an extension of that of vectors. Instead of considering $\mathbb{C}^m$ we choose $L^2[-1,1]$, which consists of a [[vector space]] of complex functions on the interval $[-1,1]$. 
+
+The inner product of two functions $f,g\in L^2[-1,-1]$ then the [[inner product]] between these two functions is:
+$$\langle f, g\rangle = \int_{-1}^1\overline{f(x)}g(x)dx$$
+For example, we can consider the matrix consisting of monomials of $x^j$ where $1 \leq j \leq n:$ 
+$$
+A = \left[
+\begin{array}{c|c|c|c|c}
+\rule{0pt}{2.5ex}1 &
+\rule{0pt}{2.5ex}x &
+\rule{0pt}{2.5ex}x^2 &
+\rule{0pt}{2.5ex}\cdots &
+\rule{0pt}{2.5ex}x^{n-1}
+\end{array}
+\right]
+
+$$
+$$
+A = QR =
+\begin{bmatrix}
+q_0(x) \mid q_1(x) \mid \cdots \mid q_{n-1}(x)
+\end{bmatrix}
+\begin{bmatrix}
+r_{11} & r_{12} & \cdots & r_{1n} \\
+0      & r_{22} & \cdots & r_{2n} \\
+\vdots & 0      & \ddots & \vdots \\
+0      & \cdots & 0      & r_{nn}
+\end{bmatrix}
+$$
+
+Then we can express $A$ using a QR factorization where each $q$ is a function from an orthonormal basis of functions on $L^2[-1,1]$, and  
+
+We are able to construct an orthonormal basis of functions $q_{i}(x)$ that satisfy:
+$$\int_{-1}^1\overline{q_{i}(x)}q_{j}(x)dx= \delta_{ij} =\begin{cases} 1 \text{ if i =j}\\0 \text{ if i} \neq j \end{cases}$$
+$q_{j}$ is a polynomial of degree $j$. We can describe the [[vector space]] of polynomials using the Legendre polynomials, $P_{j}$ which have the basis given by: 
+$$P_{0}(x)=1,P_{1}(x)=x,P_{2}(x)=\frac{3x^2-1}{2},P_{3}(x)=\frac{5x^3-3x}{2}$$
+The [[Legendre Polynomials]] are a basis for the polynomials of degree $j$, but they are furthermore an [[orthogonal]] basis that spans the set of polynomials. 
+
 ---
 # Applications 
 
-We can use $QR$ factorization to compute [[Least Squares]] and to compute [[eigen values]]. 
+We can use $QR$ factorization to compute [[Least Squares]] and to compute [[eigen values]].  QR factorization is especially useful for eigen value problems, [[Krylov Methods]], and many other methods. Having an orthonormal basis is significantly more desirable than having a potentially [[ill-conditioned]] matrix. 
+
+#### Solving Ax=b with [[QR Factorization]]
+[[QR Factorization]] can be used to solve the matrix equation $Ax=b$:
+$$Ax=b \iff QRx=b \iff Rx=Q^Tb$$
+And we can use [[back-substitution]] to solve for $x$ after solving the system $Rx$. We solve the following: 
+
+1. Compute a [[QR Factorization]] of $A$, $A=QR$ 
+2. Compute $y=Q^Hb$ 
+3. Solve $Rx=y$ for $x$ 
+

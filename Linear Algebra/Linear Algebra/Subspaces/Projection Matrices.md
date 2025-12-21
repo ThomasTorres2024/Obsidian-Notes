@@ -167,4 +167,10 @@ In conclusion, all three of these projections have the same value with respect t
 
 Projection matrices will be of lower rank than full rank and are responsible for reducing a dimension. Since projection matrices are not full rank, it implies that $0$ is an eigen value of $P$, since there is a null space that is nontrivial.
 
-Since we are preserving the parallel component another eigen value is $1$. Thus the only eigen values of our projection matrix is $0$ and $1$. 
+Since we are preserving the parallel component another eigen value is $1$. Thus the only eigen values of our projection matrix is $0$ and $1$. We can prove this using the fact that $P^2 v=Pv$.
+
+Let $v$ be an eigen vector of $P$:
+$$P^2v=Pv=\lambda v \implies P(Pv)=\lambda(P v)=\lambda ^2v \implies \lambda^2 v=\lambda v$$
+$$\lambda ^2 v-\lambda v = 0 \implies \lambda^2 - \lambda = 0 \implies \lambda = 1, \lambda = 0$$
+$$\boxed{\therefore \text{eigen values of P are: } \{0,1 \}}$$
+We also know that [[algebraic multiplicities]] are given by $\text{algmult}(0)=m-r$ and $\text{algmult}(1)=r$ where $P \in \mathbb{R}^{m \times m}$ and $P$ has [[Linear Algebra/Vector Spaces/Rank|Rank]] $r$. 
