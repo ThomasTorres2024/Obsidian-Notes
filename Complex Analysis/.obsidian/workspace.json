@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "ccffa13306fbb61f",
+    "id": "d6bf6a56b7181c03",
     "type": "split",
     "children": [
       {
-        "id": "7ad051ca635e666c",
+        "id": "715852d6938539ca",
         "type": "tabs",
         "children": [
           {
-            "id": "518a899dca9e1fdd",
+            "id": "29456a6547c643e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laplace Transformations/Laplace Transform.md",
+                "file": "Complex Analysis/Complex Integration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laplace Transform"
+              "title": "Complex Integration"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d37c18a274b03f8d",
+    "id": "73f4b199fec04acf",
     "type": "split",
     "children": [
       {
-        "id": "fde31ff2f587b594",
+        "id": "77c223ed87143d25",
         "type": "tabs",
         "children": [
           {
-            "id": "4afd0aeb335a4cc6",
+            "id": "a5bb1af882acbd65",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "53f60dfdf411e74e",
+            "id": "02d052e05502cca6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "b3c085553fd218f4",
+            "id": "b9c2b9deacb45432",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,24 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "right": {
-    "id": "4b28d56f01481a08",
+    "id": "56b374475d42c827",
     "type": "split",
     "children": [
       {
-        "id": "012e765e3d7784f2",
+        "id": "82957472a47d743b",
         "type": "tabs",
         "children": [
           {
-            "id": "b9b2c4aecca852ba",
+            "id": "af6f65ef42a27edd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Existence and Uniqueness Theorem.md",
+                "file": "Complex Analysis/Complex Integration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,25 +105,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Existence and Uniqueness Theorem"
+              "title": "Backlinks for Complex Integration"
             }
           },
           {
-            "id": "80492c4c42d8bdfe",
+            "id": "847921d1184b7178",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Existence and Uniqueness Theorem.md",
+                "file": "Complex Analysis/Complex Integration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Existence and Uniqueness Theorem"
+              "title": "Outgoing links from Complex Integration"
             }
           },
           {
-            "id": "376c2d3e008f9419",
+            "id": "5365ecebaea50ff4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -138,18 +138,32 @@
             }
           },
           {
-            "id": "f230e36f7938ed0d",
+            "id": "63b6934e2d2c996f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b6b3ecfb41b4aaa2",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Existence and Uniqueness Theorem.md",
+                "file": "Complex Analysis/Complex Integration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Existence and Uniqueness Theorem"
+              "title": "Outline of Complex Integration"
             }
           }
         ]
@@ -161,27 +175,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "518a899dca9e1fdd",
+  "active": "29456a6547c643e3",
   "lastOpenFiles": [
-    "Pasted image 20251221232059.png",
-    "Pasted image 20251221231214.png",
-    "Pasted image 20251221231158.png",
-    "Pasted image 20251221220112.png",
-    "Pasted image 20251221215016.png",
-    "Theory and definitions of Differential Equations/Lipschitz Continuity.md",
-    "Laplace Transformations/Laplace Transform.md",
-    "Laplace Transformations",
-    "Theory and definitions of Differential Equations/Existence and Uniqueness Theorem.md",
-    "Untitled 1.md",
-    "Theory and definitions of Differential Equations"
+    "Pasted image 20251221231228.png",
+    "Pasted image 20251221230925.png",
+    "Pasted image 20251221230857.png",
+    "Complex Analysis/Resources",
+    "Complex Analysis/continuous.md",
+    "Complex Analysis/Complex Integration.md",
+    "Complex Analysis/Analytic Function.md"
   ]
 }
