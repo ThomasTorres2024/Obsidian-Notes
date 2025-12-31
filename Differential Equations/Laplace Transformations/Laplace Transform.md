@@ -81,3 +81,151 @@ $$\large{\mathcal{L}}\{\delta f(t) \}=\delta\large{\mathcal{L}}\{f(t)\}:\delta \
 # Limitations
 Not all functions can be neatly expressed as the sum of a finite sum of exponential functions, and require the use of infinitely many functions. 
 
+---
+# Old Laplace Transform Notes from my ODE Class of Fall 2024 (Reformat TODO)
+
+\section{The Laplace Transform}
+The Laplace transform is a transformation which converts  differential equations to algebraic equations. For differential equations which are difficult to solve, using the Laplace transform makes finding solutions for such equations very simple. The Laplace transform is an operator much like the differential operator and the integral - all of these functions take one function to the value of another function. 
+
+The Laplace transform takes a function defined in terms of t, and converts it to a new function defined in terms of F, and is typically denoted as the following:
+$$\mathcal{L}(t) = F(s)$$
+We can define the Laplace transform to be:
+$$ F(s) =  \int_{0}^{\infty} e^{-st}f(t) \,dt $$ 
+Because we are computing the integral with respect to t defined for an upper and lower bound, the resulting end function will only be in terms of S if the integral converges. 
+
+\hfill\break
+\hfill\break
+\textbf{Example}
+\hfill\break
+\hfill\break
+$$\mathcal{L}(e^{at}), t \ge =  0$$
+\[ \mathcal{L}(e^{at}), t \ge  =  \int_{0}^{\infty} e^{-st}e^{at} \,dt \] 
+\[ \mathcal{L}(e^{at}), t \ge  =  \int_{0}^{\infty} e^{t(a-s)} \,dt \] 
+$$\left[ \frac{e^{(a-s)t}}{a-s} \right]_0^\infty$$
+
+The result of the laplacee transform here is  dependent upon the values of s and a chosen. If the difference between s and a is greater than zero, than plugging 0 into this term means raising a value greater than  one by infinity, meaning it will diverge to infinity. For the difference being equal or less than zero, the value converges to:
+$$\mathcal{L}(e^{at}) =\frac{1}{s-a}$$
+
+\hfill\break
+\textbf{Laplace of the Heavyside Step Function}
+The Heavyside step function is defined  as u(t-a) such that when  t $\ge$ a, u(t-a) = 1, and for t $\le$ a, u(t-a)=0. If we are to take the laplace of this  function notice that its area from 0 to a is 0, since only at a is does u(t-a) begin to have the value of one. From a to $\infty$ we can thus write the following expression for the Laplace transform:
+$$\mathcal{L}(u(t-a)) =\int_{a}^{\infty}e^{-st}\,dt$$
+$$= \left[\frac{e^{-sa}}{-s} \right]_{a}^\infty = \frac{e^{-sa}}{s}$$
+\hfill\break
+\hfill\break
+\textbf{Laplace of $t^n$}
+\hfill\break
+\hfill\break
+
+The Laplace of the Gamma function is useful for evaluating $\mathcal{L}(t^n)$, because the gamma function and laplace are quite similar looking:
+$$F(s) = \mathcal{L}(t^n) = \int_{0}^{\infty} e^{-st}t^n\,dt$$
+$$\Gamma(a)=\int_{0}^{\infty}e^{-t}t^{a-1}dt$$
+\hfill\break
+\hfill\break
+By evaluating this integral using repeated integration by parts, we get the result that:
+$$\mathcal{L}(t^n) = \frac{(n+1)!}{e^{s+1}}$$
+
+\hfill\break
+\hfill\break
+\textbf{Linearity of the Laplace Transform}
+\hfill\break
+\hfill\break
+The Laplace Transform is given to be a linear transformation. Theorem 5.1 asserts that the transformation satisfies the property that:
+$$L(f+g) = L(f) + L(g)$$
+$$L(cf) = cL(f)$$
+Given this, the Laplace transform therefore satisfied the properties of a linear transformation
+
+The properties of linearity satisfied by this function appear to come from the fact that integrals can have constants taken out of them, satisfying the second property, and the fact that integrals and their contents can be split apart into:
+$$\int f(x)+g(x) = \int f(x) + \int g(x)$$
+Given these principles, it seems simple for these properties to be satisfied.
+
+This property can be practically used to split apart the Laplace of some given function, g(t) for instance take:
+$$L(5-3e^{-2t}) = L(5) + L(e^{-2t})$$
+$$L(5) = 5\frac{1}{s} - 3 \frac{1}{s+2} $$
+Again this principle comes from the fact that when we evaluate the integral we can split it in parts via the addition property of integrals, which is analogous to splitting up the Laplace operator's contents.
+
+\section{Existence of the Laplace Transform}
+The Laplace transform does not exist for all functions. For all of the functions involved in solving constant-coefficient equations, it is known tha the Laplace transform exists.
+This means that, if we are given a sinusoid, an exponential, a constant, or a polynomial, then the Laplace transform's integral will converge, and give us a valid result. This is the case for all piecewise functions which do not grow "too fast". To determine whether or not the Laplace Transform of a function exists if it satisfies two conditions, being piecewise continuity and exponential order. 
+\hfill\break
+\hfill\break
+\textbf{Piecewise Continuity}
+A function can be said to have piecewise continuity if for some finite number of points, the graph has "jump discontinuity," meaning that at these points, the left and right handed limits match their respective sides, but are not equal to one another. All of the function seen in the solutions to constant coefficient differential equations satisfy this property, e.g. sinusoids and exponential. 
+\hfill\break
+\hfill\break
+\textbf{Exponential Order $e^{at}$}
+The intuition for this concept is that, in some graph, after some value T in the graph, all values of t can be said to be bounded by two exponential functions. We can write this idea more formally as: 
+$$-Me^{at} \le f(t) \le Me^{at}$$
+
+Again the same functions such as sinusoids, exponentials to the form $e^t$, constants, and polynomials satisfy this relationship, however functions of the form, $e^{t^2}$ for instance will fail since at some point, $e{t^2}$ will usurp any of the functions of the form $Me^{at}$ which surround it since a is merely a constant.  
+
+\hfill\break
+\hfill\break
+The book offers a proof of this fact:
+$$F(s) = \int_{0}^{\infty}e^{-st}f(t)\,dt=\int_{0}^{T}e^{-st}f(t)\,dt + \int_{T}^{\infty}e^{-st}f(t)\,dt$$
+We know that the integral running from 0 to T converges since T is finite, and that the function is piecewise convergent. On the right integral running from T to $\infty$, we can use the integral comparison test to see if it will converge or diverge.
+
+$$ \Bigg| \int_{0}^{\infty}(e^{-st}f(t)\,dt)\ \Bigg| \le \int_{0}^{\infty}\lvert e^{-st}f(t) \,dt \rvert \le \int_{0}^{\infty}Me^{-st}e^{at}\,dt$$
+
+We can re-write the final integral in this sequence as:
+$$M\int_{0}^{\infty} e^{(-s+a)t} = \frac{e^{-t(s-a)}}{s-a}\Bigg|_{T}^{\infty} = \frac{e^{-T(s-a)}}{s-a} $$
+
+This convergence only occurs when the value of s $\ge$ a, resulting in a convergent integral and thus satisfying the test.
+
+\hfill\break
+We finally arrive at theorem 5.2, that given a function f(t) along the interval $[0,\infty)$ which is piecewise continuous and of Exponential Order, we can claim that the Laplace transform of the function exists. 
+
+\section{Properties of Certain Laplace Transforms}
+
+In a Laplace transform the value $L(t^n) = \frac{n}{s}L(t^{n-1})$ which is true via the gamma function. 
+For Laplace transforms involving the form $L(e^{at}f(t) = L(s-a)$
+
+\hfill\break
+\textbf(Theorem 5.4 Power Series with Laplace Transform)
+\hfill\break
+
+One of the key properties of Laplace transforms for practically computing them is being able to express a function and its derivatives in terms of itself. This is where the algebraic part of converting a differential equation to an algebraic equation comes into play. 
+Consider L(f'(t)) which we can apply the laplace transform to, and then use integration by parts to solve:
+
+$$L(f'(t)) = \int_{0}^{\infty} e^{-st}f(t)\,dt = e^{-st}f(t) \bigg|_{0}^{\infty} + s \int_{0}^{\infty} e^{-st}f(t) $$
+$$sL(f(t)) - f(0)$$
+Notice that this provides a relationship between the Laplace of the derivatives of f(t) and the laplace of f(t) itself. Doing this process iteratively, say applying this for f''(t), f'''(t), ... $f^{n}$(t) gets us the following result, which is essential for solving differential equations:
+$$L(f^{n}) = s^nL(f) - s^{n-1}f(0) - s^{n-2}f'(0) - s^{n-2}f''(0) - ..... - f^{n-1}(0)$$
+
+As the book says this roughly equates the process of taking the nth derivative of the function with multiplying it by s n many times.
+
+\hfill\break
+\textbf{Translation Property}
+\hfil\break
+The translation property shows that the Laplace transform's output value is shifted by some value when a function is shifted over by a as $s-a$. This happens when the function is multiplied by $e^{at}$. 
+This works since multiplying $e^{-st} \cdot e^{at}f(t) $ changes the exponential's power, and thus we can rewrite it and factor out a negative sign, in turn shifting the laplace transform down by s-a. 
+\hfill\break
+
+\section{Inverse Laplace Transform}
+The inverse Laplace transform is used to reverse the Laplace transform to express a function in terms of s in terms of t again. We often make use of partial fractions to do this
+
+\hfill\break
+\textbf{Definition of the Inverse Laplace Transform}
+\hfill\break
+The inverse Laplace transform is a way to convert a Laplace transformed function, that is a function given by F(S) to a variable in the t space, that is a function f(t). This works if F(s) = L(ft). 
+There are some functions where the Laplace transform's inverse, $L(t)^-1$ is not unique, meaning that L(f(t)) = L(g(t)), but $L^-1{f(t)} \neq L^-1(f(t))$ for f(t) and g(t) such that f(t) $\neq$ g(t). However the functions which this actually matters for are discontinuous functions which are effectively the same but just have
+different values for their points of discontinuity. Computing the Laplace transform's inverse is cumbersome and uses a contour integral over the complex numbers, and thus we stick to practically computing the value by using a table. 
+\hfill\break
+\textbf{Properties of Linearity}
+The inverse Laplace transform satisfies properties of linearity, and is given explicitly by the Bromwich integral. I haven't taken compelx analysis yet, but I think the following principles we have with normal integrals will hold under complex analysis where we can consider $\mathcal{L}^{-1}((h(s)+g(s))$ to be the same as evaluating two instances of the bromwhich integral where f(s) is chosen to be either h(s) or g(s). The same can be said for just extracting a constant out of the integral c. Therefore we get:
+
+$$\mathcal{L}^{-1}(f(s)+g(s)) = \mathcal{L^{-1}(f(s)}+\mathcal{L^{-1}(g(s)}$$
+$$\mathcal{L^{-1}(c \cdot f(s)} = c \cdot \mathcal{L^{-1}(f(s)}$$
+
+The inverse Laplace transform is given by the following integral and makes seeing these properties easier:
+$$F(S) = \frac{1}{2 \pi i} \int_{\gamma-i\infty}^{\gamma+i\infty}e^{st}f(s)\,ds$$
+
+\hfill\break
+
+\section{Solving Differential Equations with Laplace Transforms}
+In order to solve differential equations, we convert a differential equation to s, and solve for the differential equation in the s space, and then convert it back to the t space using the inverse Laplace transform. 
+
+\section{Linear Systems of Differential Equations}
+We are given a system of differential equations, where we know some functions, but have n functions that we want to solve for. We have several methods of solving these systems, one of them is by substitution. 
+
+

@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "7688c4ef18c474c2",
+    "id": "c8df83895a78e6e0",
     "type": "split",
     "children": [
       {
-        "id": "c2dafb060b7d6aaa",
+        "id": "378075738545d7e2",
         "type": "tabs",
         "children": [
           {
-            "id": "17aa2e81213d4304",
+            "id": "475ac53baf2c0d7c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Libraries/Importing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Importing"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "41d00af4cf7460be",
+    "id": "64cd39f09f079c1e",
     "type": "split",
     "children": [
       {
-        "id": "493363e878dba28d",
+        "id": "59965d1ec77afb11",
         "type": "tabs",
         "children": [
           {
-            "id": "a1f518bf1680a7c5",
+            "id": "2fbfdaa2d607ce6e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "1eeb6a3d846100a4",
+            "id": "ccab0eb525fdfba1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "095ba262a7747dd3",
+            "id": "67968815a9f60ac5",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "b78e4f91fda4c002",
+    "id": "7b0b25b56c9fbe88",
     "type": "split",
     "children": [
       {
-        "id": "0c66674291e4bd71",
+        "id": "23907bf7e0346ae2",
         "type": "tabs",
         "children": [
           {
-            "id": "c504d165b939d6f6",
+            "id": "6cdccaa4adf8e680",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Libraries/Importing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Importing"
             }
           },
           {
-            "id": "2d8f464e9cf808a4",
+            "id": "cd787289e1f83bfd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Libraries/Importing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Importing"
             }
           },
           {
-            "id": "f91820d091d88a3d",
+            "id": "a0fde5ec5e2afb60",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +137,7 @@
             }
           },
           {
-            "id": "1f9374a420814a18",
+            "id": "92509591ae4ad2dc",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +151,18 @@
             }
           },
           {
-            "id": "bf752501a5a76d2e",
+            "id": "8038c33824d535c5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Libraries/Importing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Importing"
             }
           }
         ]
@@ -176,37 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "17aa2e81213d4304",
+  "active": "475ac53baf2c0d7c",
   "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
-    "Machine Learning/Machine Learning/Neural Networks/Convolutional Neural Networks.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Bilinear Forms.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
-    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
-    "Probability/Probability/Counting/Vandermonde Identity.md",
-    "Probability/Probability/Counting/Permutations Combinations and Basic Counting Rules.md",
-    "README.md",
-    "Dart/Programming in Dart/Iterables.md",
-    "Dart/Programming in Dart/Functions.md",
-    "Dart/Programming in Dart/Dart.md",
-    "Dart/Programming in Dart/Async.md",
-    "Operating Systems/Operating Systems/Welcome.md",
-    "Linear Algebra/Linear Algebra/Welcome.md",
-    "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
-    "Differential Equations/Existence and Uniqueness Theorem.md",
-    "Calculus/Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
-    "Algorithms/Sorting/Sorting Time Complexity.md",
-    "Algorithms/Las Vegas Algorithms.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/Depth First Search.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Breadth First Search.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Bellman-Ford.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Graph.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Adjacency List.md",
-    "Machine Learning/Pasted image 20251213004320.png",
-    "Machine Learning/Pasted image 20251213004317.png",
-    "Machine Learning/Machine Learning/Neural Networks",
-    "Machine Learning/Machine Learning/Untitled"
+    "Libraries/Importing.md",
+    "Libraries"
   ]
 }

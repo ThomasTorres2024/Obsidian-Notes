@@ -83,7 +83,7 @@ $$A^TA=AA^T=I_{n}$$
 Thus, $A$ is a unitary matrix. 
 
 ---
-# A Brief Note on A=[[QR Factorization]]
+# A Brief Note on $A=QR$ [[QR Factorization]]
 
 The Gram-Schmidt process allows us to express a linearly independent basis $\mathcal{P}$ represented by the matrix $P \in \mathbb{R}^{m \times n}$ where $m \geq n$ as a product of an orthogonal set obtained through the Gram-Schmidt process, and an [[upper triangular matrix]] with positive diagonal entries that comes from constants that reverse the Gram-Schmidt process. 
 
@@ -106,6 +106,12 @@ $$\text{span}\{ \vec{q}_{1} \}=\text{span}\{\vec{p}_{1} \}$$
 $$\text{span}\{ \vec{q}_{1},\vec{q}_{2} \}=\text{span}\{\vec{p}_{1},\vec{q}_{2} \}$$
 $$\text{span}\{ \vec{q}_{1},\vec{q}_{2},\cdots,\vec{q}_{k} \}=\text{span}\{\vec{p}_{1},\vec{q}_{2}, \cdots, \vec{p}_{k} \}$$
 Each basis here gives an orthonormal basis for the first $k$ vectors from $P$. 
+
+---
+# [[The Gram-Schmidt Process]] and [[Projection Matrices]]
+We can think of each $q_{i}$ column vector in the matrix $Q$ as a projection of a column vector of $A$ onto an [[Orthogonal Projector]]. 
+$$q_{1}=\frac{P_{1}a_{1}}{\|P_{1}a_{1}\|},q_{2}=\frac{P_{2}a_{2}}{\|P_{2}a_{2}\|},\cdots, q_{n}=\frac{P_{n}a_{n}}{\|P_{n}a_{n}\|}$$
+We can think of the classical Gram-Schmidt Process as a projection onto rank one subspaces of each $q_{i}$ continually. We can sidestep the repeated work with a more numerically stable algorithm known as the [[Modified Gram-Schmidt Process]], which essentially projects onto the subspace orthogonal to the previous $j-1$ spanned vectors, and sets this to our next $q_{j}$ after normalization. 
 
 ---
 # Further Results 

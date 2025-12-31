@@ -6,15 +6,37 @@ draft: "False"
 # Introduction
 The QR algorithm without shifts makes use of the [[QR Factorization]] at each step to eventually give us the eigen values/vectors in 1 shot of a matrix, $A$, which satisfies (for the purpose of explanation here) $A=A^T$ and $A\in \mathbb{R}^{m \times m}$. We can describe the pure algorithm in the following:
 
-The pure QR algorithm goes like the following. We begin with a matrix we want to iterate over, $A$, and perform the following operations, where we let each $A^{(k)}$ be the $k$th iterate of $A$.  
+The pure QR algorithm goes like the following. We begin with a matrix we want to iterate over, $A$, and perform the following operations, where we let each $A^{(k)}$ be the $k$th iterate of $A$. 
+
 * $A^{(0)}$= A
 * for $k=1,2,\cdots$
 	* $Q^{(k)}R^{(k)}=A^{(k-1)}$ 
 	* $A^{(k)}=R^{(k)}Q^{(k)}$ 
+
 At each step, we are computing a [[QR Factorization]] of the $k$th iterate of $A$, and then we are computing a new $k$th iterate by performing a similarity transformation. Notice that the [[similarity transformation]] is obtained by doing: 
 $$Q^{(k)}R^{(k)}=A^{(k)}$$
 $$R^{(k)}=Q^{(k)^T} A^{(k)} \iff R^{(k)}Q^{(k)}=Q^{(k)^T} A^{(k)}Q^{(k)} = A^{(k+1)} $$
-As such, we obtain a new iterate (I initially had some trouble understanding that this is not the $k$th power). Under certain conditions, our factorization of the $k$th iterate actually turns into a [[Schur's Triangularization]] of the matrix $A$, and if $A$ is [[Hermitian]], then the resulting matrix actually is of diagonal form. This [[similarity transformation]] here is the same transformation taken originally when we were trying to compute a factorization that had us instead use the [[Upper Hessenberg Matrix]] form of $A$ to properly obtain its eigen values and do a similarity transformation of it. 
+Thus, for the $k$th final iteration it can be said that the following 2 matrices have the same [[eigen values]], which gives the algorithm its power:
+$$A_{0} \text{ is similiar to } A_{k}$$
+As such, we obtain a new iterate (I initially had some trouble understanding that this is not the $k$th power). Under certain conditions, our factorization of the $k$th iterate actually turns into a [[Schur's Triangularization]] of the matrix $A$, and if $A$ is [[Hermitian]], then the resulting matrix actually is of diagonal form. 
+
+This [[similarity transformation]] here is the same transformation taken originally when we were trying to compute a factorization that had us instead use the [[Upper Hessenberg Matrix]] form of $A$ to properly obtain its eigen values and do a similarity transformation of it. 
+
+What should principally happen is that for:
+$$A_{k+1}=Q^{(k)}A_{k}Q^{(k)^T}$$
+We expect that as $k \to \infty$ that $A_{k}$ tends towards an [[upper triangular matrix]], where the values underneath the diagonal tend towards 0. The diagonals thus tend towards the eigen values. 
+
+The approximation of the eigen value at index $nn$ of $A_{k}$ is also quite good.   
+
+---
+# Performance 
+The [[QR Algorithm without Shifts]] has a [[cubic convergence]]. This a fantastic feat for an algorithm. It turns out that the speed of it can be increased by using [[Shifts]]. Instead of determining the eigen values of $A_{0}$, we consider the eigen values of:
+$$A_{0}-\mu I$$
+Notice that the eigen values of this matrix are jus the eigen values of $A$ shifted by $\mu$:
+$$\det(A_{0}-\mu I-\lambda I)=\det(A_{0}-I(\mu+\lambda))$$
+This simply shifts the eigen values over by a factor of $\mu$. The eigen vectors of $A_{0}$ and $A_{0} - \mu I$ are the same also, for ev $v$:
+$$(A_{0}-\mu I)v= \lambda v- \mu v=(\lambda-\mu)v$$
+Therefore, we have the [[QR Algorithm With Shifts]] algorithm. 
 
 ---
 # Connection to [[Simultaneous Iteration]]

@@ -1,20 +1,20 @@
 {
   "main": {
-    "id": "7688c4ef18c474c2",
+    "id": "6523a9941d0057c9",
     "type": "split",
     "children": [
       {
-        "id": "c2dafb060b7d6aaa",
+        "id": "c70828456b372b8a",
         "type": "tabs",
         "children": [
           {
-            "id": "17aa2e81213d4304",
+            "id": "081bb5bc7802a610",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "41d00af4cf7460be",
+    "id": "35c4f07e036690f3",
     "type": "split",
     "children": [
       {
-        "id": "493363e878dba28d",
+        "id": "fa65db96fa4dc3fd",
         "type": "tabs",
         "children": [
           {
-            "id": "a1f518bf1680a7c5",
+            "id": "05c4ddf03621bca8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "1eeb6a3d846100a4",
+            "id": "dc8665e24de76d3c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "095ba262a7747dd3",
+            "id": "c20f8d2ab943eb4b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,15 +77,15 @@
     "width": 300
   },
   "right": {
-    "id": "b78e4f91fda4c002",
+    "id": "b39f2d880b846b7c",
     "type": "split",
     "children": [
       {
-        "id": "0c66674291e4bd71",
+        "id": "493b72653192ea24",
         "type": "tabs",
         "children": [
           {
-            "id": "c504d165b939d6f6",
+            "id": "b7cf851c0fa195a1",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -103,7 +103,7 @@
             }
           },
           {
-            "id": "2d8f464e9cf808a4",
+            "id": "2265d9cd9471ce90",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -116,7 +116,7 @@
             }
           },
           {
-            "id": "f91820d091d88a3d",
+            "id": "68436d6a83aad99c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +131,7 @@
             }
           },
           {
-            "id": "1f9374a420814a18",
+            "id": "a1a5be5ebe20d0fd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,7 +145,7 @@
             }
           },
           {
-            "id": "bf752501a5a76d2e",
+            "id": "a9c99ddea9ef6ed9",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -176,37 +176,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "17aa2e81213d4304",
-  "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
-    "Machine Learning/Machine Learning/Neural Networks/Convolutional Neural Networks.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Bilinear Forms.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
-    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
-    "Probability/Probability/Counting/Vandermonde Identity.md",
-    "Probability/Probability/Counting/Permutations Combinations and Basic Counting Rules.md",
-    "README.md",
-    "Dart/Programming in Dart/Iterables.md",
-    "Dart/Programming in Dart/Functions.md",
-    "Dart/Programming in Dart/Dart.md",
-    "Dart/Programming in Dart/Async.md",
-    "Operating Systems/Operating Systems/Welcome.md",
-    "Linear Algebra/Linear Algebra/Welcome.md",
-    "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
-    "Differential Equations/Existence and Uniqueness Theorem.md",
-    "Calculus/Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
-    "Algorithms/Sorting/Sorting Time Complexity.md",
-    "Algorithms/Las Vegas Algorithms.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/Depth First Search.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Breadth First Search.md",
-    "Algorithms/Graph Algorithms/Pathfinding Algorithms/SSSP (Single Source Shortest Path) Algorithms/Bellman-Ford.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Graph.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Directed Acyclic Graph.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Adjacency List.md",
-    "Machine Learning/Pasted image 20251213004320.png",
-    "Machine Learning/Pasted image 20251213004317.png",
-    "Machine Learning/Machine Learning/Neural Networks",
-    "Machine Learning/Machine Learning/Untitled"
-  ]
+  "active": "081bb5bc7802a610",
+  "lastOpenFiles": []
 }
