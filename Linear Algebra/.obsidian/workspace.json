@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
+                "file": "Linear Algebra/Randomized Linear Algebra/Random Matrix Multiplication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arnoldi Iteration"
+              "title": "Random Matrix Multiplication"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "krylov",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
-    "collapsed": true
+    "width": 296.5
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -172,6 +171,20 @@
   },
   "active": "99e7b9e43b79d0f1",
   "lastOpenFiles": [
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Eigen Value Problems Overview.md",
+    "Linear Algebra/Randomized Linear Algebra/Random Matrix Multiplication.md",
+    "Linear Algebra/Random Matrix Theory/Untitled",
+    "Linear Algebra/Randomized Linear Algebra",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Abel's Theorem.md",
+    "Linear Algebra/Linear Transformations/The Four Fundamental Subspaces.md",
+    "Linear Algebra/Orthogonality/Orthogonal Complements.md",
+    "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
+    "Linear Algebra/Linear Transformations/Linear Transformations.md",
+    "Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Perron-Frobenius Theorem.md",
+    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Values, Eigen Vectors, Definition and Properties.md",
+    "Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
     "Solving Systems of Equations/Traditional Solvers",
     "Solving Systems of Equations/Iterative Solvers",
     "Linear Algebra/Numerical Analysis/Numerical Stability.md",
@@ -196,25 +209,13 @@
     "Linear Algebra/Geometry Formulas With Linea.md",
     "Linear Algebra/Rank.md",
     "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/QR Algorithm without Shifts.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Eigen Value Problems Overview.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/QR Algorithm With Shifts.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/Modified Gram-Schmidt Process.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/QR Method for Computing Eigen Values.md",
-    "Linear Algebra/Vector Spaces/Rank.md",
-    "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
-    "Linear Algebra/Matrices/Determinants/Determinant.md",
     "Linear Algebra/Matrices/Determinants",
     "Pasted image 20251221033624.png",
-    "Linear Algebra/Subspaces/Projection Matrices.md",
-    "Linear Algebra/Least Squares/Least Squares.md",
     "Pasted image 20251015012238.png",
     "Pasted image 20251015011907.png",
     "Linear Algebra/Numerical Analysis",
-    "Linear Algebra/Least Squares/Least Squares Blur.md",
     "Linear Algebra/Least Squares/Untitled",
     "Linear Algebra/Matrix Factorizations/QR Factorization",
-    "Linear Algebra/Orthogonality/Projections",
-    "Linear Algebra/Matrices/Matrix Operations"
+    "Linear Algebra/Orthogonality/Projections"
   ]
 }

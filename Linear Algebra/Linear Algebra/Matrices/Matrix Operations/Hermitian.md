@@ -14,3 +14,6 @@ $$(AB)^H=B^HA^H$$
 ---
 # Spectral Theorem for Hermitian Matrices
 Spectral theorem states that for an $n \times n$ Hermitian matrix $A$, it follows that 
+* $A$ is [[unitarily diagonalizable]]
+* A has real [[eigen values]]
+* Eigen Vectors span $\mathbb{R}^n$  
