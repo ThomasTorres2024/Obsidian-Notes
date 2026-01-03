@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent.md",
+                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent Nesterov.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gradient Descent"
+              "title": "Gradient Descent Nesterov"
             }
           }
         ]
@@ -172,10 +172,17 @@
   },
   "active": "99e7b9e43b79d0f1",
   "lastOpenFiles": [
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent Nesterov.md",
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent.md",
+    "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
+    "Pasted image 20260103004708.png",
+    "Pasted image 20260103004700.png",
+    "Pasted image 20260103004605.png",
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
     "Linear Algebra/Optimization/Gradient Descent Algorithms",
     "Pasted image 20260102204320.png",
     "Linear Algebra/Randomized Linear Algebra/Random Matrix Multiplication.md",
-    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent.md",
     "Linear Algebra/Optimization",
     "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Eigen Value Problems Overview.md",
     "Linear Algebra/Random Matrix Theory/Untitled",
@@ -208,15 +215,8 @@
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Pasted image 20250706000320.png",
     "Linear Algebra/Pasted image 20250620003405.png",
-    "Linear Algebra/Pasted image 20250619235624.png",
-    "Linear Algebra/Orthogonality/Legendre Polynomials.md",
-    "eigen vectors.md",
-    "Linear Algebra/Geometry Formulas With Linea.md",
     "Linear Algebra/Matrices/Determinants",
-    "Pasted image 20251221033624.png",
-    "Pasted image 20251015012238.png",
     "Linear Algebra/Numerical Analysis",
-    "Linear Algebra/Least Squares/Untitled",
-    "Linear Algebra/Matrix Factorizations/QR Factorization"
+    "Linear Algebra/Least Squares/Untitled"
   ]
 }
