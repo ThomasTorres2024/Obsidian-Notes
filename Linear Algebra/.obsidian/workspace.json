@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dual LP.md",
+                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dual LP"
+              "title": "Stochastic Gradient Descent"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Symetric Matrix"
+              "title": "Backlinks for Stochastic Gradient Descent"
             }
           },
           {
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linear Algebra/Matrices/Special Matrices/Symetric Matrix.md",
+                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Symetric Matrix"
+              "title": "Outgoing links from Stochastic Gradient Descent"
             }
           },
           {
@@ -156,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -172,12 +172,15 @@
   },
   "active": "99e7b9e43b79d0f1",
   "lastOpenFiles": [
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
     "Linear Algebra/Optimization/Linear Programming/Introduction to Linear Programming.md",
-    "Dual LP.md",
+    "2026-01-03.md",
+    "Untitled.base",
+    "Linear Programming.md",
+    "Linear Algebra/Optimization/Linear Programming/Dual LP.md",
     "Pasted image 20260103054954.png",
     "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent Nesterov.md",
     "Linear Algebra/Optimization/Linear Programming",
-    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
     "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent.md",
     "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Pasted image 20260103004708.png",
@@ -208,15 +211,11 @@
     "Linear Algebra/Solving Systems of Equations",
     "Linear Algebra/Matrix Factorizations/SVD/Computation/Computing SVD.md",
     "Linear Algebra/Matrix Factorizations/SVD/PCA/Eigenfaces.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
-    "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
-    "Linear Algebra/Sources and Overview.md",
     "Pasted image 20250918103351.png",
     "Linear Algebra/Pasted image 20250706001752.png",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Pasted image 20250706000320.png",
-    "Linear Algebra/Matrices/Determinants",
-    "Linear Algebra/Numerical Analysis"
+    "Linear Algebra/Matrices/Determinants"
   ]
 }

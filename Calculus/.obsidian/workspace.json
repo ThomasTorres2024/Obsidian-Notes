@@ -11,28 +11,10 @@
             "id": "1a73104c78249e1f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calculus/Integration/Multivariable Integration/Surface Integrals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Surface Integrals"
-            }
-          },
-          {
-            "id": "6083e6f368340881",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Calculus/Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lagrange Multipliers"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -92,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5,
-    "collapsed": true
+    "width": 506.5
   },
   "right": {
     "id": "4a2671d6dbfabde1",
@@ -186,8 +167,8 @@
   },
   "active": "1a73104c78249e1f",
   "lastOpenFiles": [
-    "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
     "Calculus/Integration/Multivariable Integration/Surface Integrals.md",
+    "Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
     "Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
     "Calculus/Multivariable Functions/Parametrizations",
     "Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
+                "file": "Differential Equations/Laplace Transformations/Laplace Transform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spectral Theorem Definition and Proof"
+              "title": "Laplace Transform"
             }
           }
         ]
@@ -180,8 +180,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "a1f518bf1680a7c5",
+  "active": "da12667fbdc633d8",
   "lastOpenFiles": [
+    "Probability/Probability/Probability Functions/Continuous Distributions/Normal Distribution.md",
+    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
+    "Physics/Untitled",
+    "Physics",
+    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
     "Linear Algebra/Linear Algebra/Random Matrix Theory/Random Matrix Multiplication.md",
     "Linear Algebra/Linear Algebra/Random Matrix Theory/Untitled.md",
     "Linear Algebra/Linear Algebra/Random Matrix Theory/Untitled",
@@ -197,7 +202,6 @@
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Bilinear Forms.md",
     "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Jacobi Iteration.md",
-    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
     "Probability/Probability/Counting/Vandermonde Identity.md",
     "Probability/Probability/Counting/Permutations Combinations and Basic Counting Rules.md",
     "README.md",
@@ -210,8 +214,6 @@
     "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
     "Differential Equations/Existence and Uniqueness Theorem.md",
     "Calculus/Calculus/Multivariable Functions/Parametrizations/Parametrized Surfaces.md",
-    "Algorithms/Sorting/Sorting Time Complexity.md",
-    "Algorithms/Las Vegas Algorithms.md",
     "Machine Learning/Pasted image 20251213004320.png",
     "Machine Learning/Pasted image 20251213004317.png",
     "Machine Learning/Machine Learning/Neural Networks",

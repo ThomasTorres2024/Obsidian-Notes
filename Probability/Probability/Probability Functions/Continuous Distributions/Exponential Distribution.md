@@ -35,7 +35,7 @@ $$\mathbb{E}[X | X > a ] = a + \mathbb{E}[X - a | X > a ]= a + \frac{1}{\lambda}
 Instead of needing to use calculus and other math to get at our answer all we need is the memoryless property. 
 
 #### Proof that the [[Exponential Distribution]] is the only [[Memoryless]] Continuous Distribution
-If $X$ is a [[Random Variables]] that is continuous with the memoryless property, then $X$ ~ $\text{Exp}(\lambda)$. Let $F(x)$ be the [[Cumulative Density Functions]] of $X$, then $G(X) = P(X > x) = 1 - F(x)$ . We can write out the memoryless property using $G(x)$:
+If $X$ is a [[Random Variables]] that is continuous with the memoryless property, then $X$ ~ $\text{Exp}(\lambda)$. Let $F(x)$ be the [[Cumulative Density Functions]] of $X$, then $G(X) = P(X > x) = 1 - F(x)$ . We can write out the memoryless property using $G(x)$: 
 $$G(s+t)=G(s) \cdot G(t)$$
 If we let $s=t$ then we would get:
 $$G(2s)=G(s)^2$$
@@ -62,4 +62,7 @@ By the definition of [[moment]] as the coefficient of the taylor series, we have
 
 If we consider the more general exponential case, for $Y$ ~ $Exp(\lambda)$, we can consider $X=\lambda Y$. We can see that $Y$ has a mean of $1$ now, and that $Y^n=\frac{X^n}{\lambda^n}$. We can now take the expected value to obtain:
 $$\mathbb{E}[Y^n]=\mathbb{E}\left[ \frac{x^n}{\lambda^n} \right]= \frac{n!}{\lambda^n}$$
-Which falls out of our knowledge of $Exp(1)$. 
+Which falls out of our knowledge of $\exp(1)$. 
+
+
+
