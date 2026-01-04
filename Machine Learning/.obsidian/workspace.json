@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "dad5985005b8b1f0",
+        "id": "2f10151f24f7b807",
         "type": "tabs",
         "children": [
           {
-            "id": "3e0fd37e3d0c9942",
+            "id": "1dfe53c59e85ec42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Neural Networks/Convolutional Neural Networks.md",
+                "file": "Machine Learning/Performance Metrics/Variable Importance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Convolutional Neural Networks"
+              "title": "Variable Importance"
+            }
+          },
+          {
+            "id": "69adaf5fad1837f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Data/NLP/Embedding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Embedding"
+            }
+          },
+          {
+            "id": "8d80369b58c3f329",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Data/NLP/Transformers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Transformers"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,22 +195,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "3e0fd37e3d0c9942",
+  "active": "69adaf5fad1837f2",
   "lastOpenFiles": [
+    "Machine Learning/Data/NLP/Transformers.md",
+    "Machine Learning/Algorithms/Dimensionality Reduction/Dimension Reduction.md",
+    "Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
+    "Machine Learning/Algorithms/Classification/Neural Networks/Neural Networks.md",
+    "Machine Learning/Algorithms/Regression/Multinomial Logistic Regression.md",
+    "Machine Learning/Algorithms/Classification/Neural Networks",
+    "Machine Learning/Data/NLP/Embedding.md",
+    "Machine Learning/Data/Feature Transformation.md",
+    "Machine Learning/Data/NLP",
+    "Machine Learning/Performance Metrics/Variable Importance.md",
+    "Machine Learning/Neural Networks/Untitled.md",
+    "Machine Learning/Machine Learning Overview/Data Normalization.md",
+    "Machine Learning/Machine Learning Overview/Untitled.md",
+    "Machine Learning/Machine Learning Overview/Key Terms in Machine Learning.md",
+    "Machine Learning/Algorithms/Classification/Ensemble Techniques/Bagging.md",
+    "Machine Learning/Algorithms/Classification/Ensemble Techniques/Adaboost.md",
+    "Machine Learning/Algorithms/Classification/Ensemble Techniques/Boosting.md",
+    "Machine Learning/Algorithms/Optimization/Gradient Descent.md",
+    "Machine Learning/Algorithms/Classification/Ensemble Techniques",
+    "Machine Learning/Algorithms/Regression/Logistic Regression.md",
+    "Machine Learning/Algorithms/Optimization",
+    "Machine Learning/Algorithms/Classification/Decision Tree.md",
+    "Machine Learning/Algorithms/Classification/Random Forests.md",
+    "Machine Learning/CSC_461/All Topics.md",
+    "Machine Learning/Performance Metrics/Model Selection.md",
+    "Machine Learning/Algorithms/Classification",
     "Machine Learning/Pasted image 20251024121003.png",
     "Machine Learning/Pasted image 20251024114332.png",
     "Machine Learning/Pasted image 20251024113755.png",
     "Machine Learning/Pasted image 20251023010531.png",
     "Machine Learning/Machine Learning Overview/Model Selection.md",
-    "Machine Learning/Machine Learning Overview/Data Normalization.md",
-    "Machine Learning/CSC_461/All Topics.md",
     "Machine Learning/CSC_461",
     "Machine Learning/Algorithms/Dimensionality Reduction/LocalMAP.md",
     "Pasted image 20251213004320.png",
     "Pasted image 20251213004317.png",
-    "Machine Learning/Neural Networks/Untitled.md",
-    "Machine Learning/Algorithms/Dimensionality Reduction/Dimension Reduction.md",
-    "Machine Learning/Neural Networks/Convolutional Neural Networks.md",
     "Machine Learning/Neural Networks",
     "Pasted image 20250908223340.png",
     "Overfitting.svg",

@@ -18,6 +18,10 @@ In turn we can describe this as a function given by $h(x)$, which is our predict
 ![[Pasted image 20251015164017.png]]
 
 Generally the types of linear surfaces we are trying to finda re known as hyperplanes, which generalize the notion of lines, and planes, into higher dimensional objects to the $n$th degree.
+#### [[Binary Classifier]]
+A binary classifier takes a datast $D$ which contains $x$ vectors, and the outputs for these values are either $-1$ or $1$. Here, we are modeling the tendency for a value of probability.
+
+We feed our results into the sigmoid function, here we are predicting probability, so we have a prediction that is between 0-1, so the probability. If the score is close 1 confident about model, if the model is 1/2 not confident at all. 
 
 ---
 # Learning Decision Surfaces
@@ -83,6 +87,14 @@ The decision boundary is the curve where the hypothesis functions lad to $0.5$. 
 # Properties of Logistic Regression
 Loss function is still convex, so we have a global minimum. We can use [[regularization]] to avoid [[Overfitting]], so we are "Robust to Overfitting". Our weights allow us to ascribe variance to certain features and is important for [[feature importance]]. Lastly, the decision boundary of our function is still linear. Outputs are "probabilistic".
 
+
+---
+# Maximum Likelihood Estimation
+How do we find the best values of $W$? To find the best values of $W$, we need to sue a stats function to estimate parameters of $W$. How do we verify this is the best weight function after w have fed it through? If the score is high of our MLE then we can assume we are in a good position. 
+
+If the product of te probability estimators are close to 1 then we re good, we have the arg min that we have the negative likelihood estimation which can be fond using the negative log likelihood as well. 
+
+The lost function is always convex, it always give us the best global minimum, and need to use gradient descent or other second order methods 
 
 
 ---
