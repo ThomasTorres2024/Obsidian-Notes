@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent Nesterov.md",
+                "file": "Dual LP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gradient Descent Nesterov"
+              "title": "Dual LP"
             }
           }
         ]
@@ -172,8 +172,12 @@
   },
   "active": "99e7b9e43b79d0f1",
   "lastOpenFiles": [
-    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
+    "Linear Algebra/Optimization/Linear Programming/Introduction to Linear Programming.md",
+    "Dual LP.md",
+    "Pasted image 20260103054954.png",
     "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent Nesterov.md",
+    "Linear Algebra/Optimization/Linear Programming",
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
     "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent.md",
     "Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication.md",
     "Pasted image 20260103004708.png",
@@ -207,16 +211,12 @@
     "Linear Algebra/Matrix Factorizations/QR Factorization/The Gram-Schmidt Process.md",
     "Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Linear Algebra/Sources and Overview.md",
-    "unitarily diagonalizable.md",
-    "Simultaneous Iteration.md",
     "Pasted image 20250918103351.png",
     "Linear Algebra/Pasted image 20250706001752.png",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
     "Linear Algebra/Pasted image 20250706000320.png",
-    "Linear Algebra/Pasted image 20250620003405.png",
     "Linear Algebra/Matrices/Determinants",
-    "Linear Algebra/Numerical Analysis",
-    "Linear Algebra/Least Squares/Untitled"
+    "Linear Algebra/Numerical Analysis"
   ]
 }
