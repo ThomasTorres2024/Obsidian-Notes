@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Data/NLP/Embedding.md",
+                "file": "Machine Learning/Algorithms/Classification/Neural Networks/Backpropagation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Embedding"
+              "title": "Backpropagation"
             }
           },
           {
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5654a86c8bb04505",
@@ -197,13 +198,15 @@
   },
   "active": "69adaf5fad1837f2",
   "lastOpenFiles": [
+    "Machine Learning/Algorithms/Classification/Neural Networks/Neural Networks.md",
+    "Machine Learning/Algorithms/Classification/Neural Networks/Backpropagation.md",
+    "Pasted image 20260104064143.png",
+    "Machine Learning/Data/NLP/Embedding.md",
     "Machine Learning/Data/NLP/Transformers.md",
     "Machine Learning/Algorithms/Dimensionality Reduction/Dimension Reduction.md",
     "Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
-    "Machine Learning/Algorithms/Classification/Neural Networks/Neural Networks.md",
     "Machine Learning/Algorithms/Regression/Multinomial Logistic Regression.md",
     "Machine Learning/Algorithms/Classification/Neural Networks",
-    "Machine Learning/Data/NLP/Embedding.md",
     "Machine Learning/Data/Feature Transformation.md",
     "Machine Learning/Data/NLP",
     "Machine Learning/Performance Metrics/Variable Importance.md",
@@ -237,7 +240,6 @@
     "Overfitting.svg",
     "Machine Learning Problems/Classification.md",
     "Machine Learning/Ockham's Razor in Machine Learning.md",
-    "Machine Learning/Machine Learning.md",
     "Machine Learning Problems"
   ]
 }
