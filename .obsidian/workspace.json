@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
+                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Circulant Matrices.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Completing a Rank-One Matrix"
+              "title": "Circulant Matrices"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -196,6 +197,8 @@
   },
   "active": "a3a80168a99ef27f",
   "lastOpenFiles": [
+    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Circulant Matrices.md",
     "Pasted image 20260105150916.png",
     "Pasted image 20260105144503.png",
     "Pasted image 20260105144049.png",
@@ -209,7 +212,6 @@
     "Pasted image 20260105071802.png",
     "Pasted image 20260105143607.png",
     "Graph Theory/Special Graphs/Bipartite Graph.md",
-    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
     "Graph Theory/Special Graphs",
     "Graph Theory",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Efficient Matrix Multiplication.md",
