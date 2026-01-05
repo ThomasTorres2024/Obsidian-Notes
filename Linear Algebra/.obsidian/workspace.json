@@ -11,10 +11,14 @@
             "id": "7f2006f17357fa4c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory/Bernouli Random Matrices.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Bernouli Random Matrices"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "singular values",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7b407f2affbc0182",
@@ -90,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory/Bernouli Random Matrices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Bernouli Random Matrices"
             }
           },
           {
@@ -108,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory/Bernouli Random Matrices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Bernouli Random Matrices"
             }
           },
           {
@@ -165,11 +172,20 @@
   },
   "active": "7f2006f17357fa4c",
   "lastOpenFiles": [
+    "Pasted image 20250918103351.png",
+    "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory/Random Matrices.md",
+    "Linear Algebra/Optimization/Linear Programming/Linear Programming.md",
+    "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory/Bernouli Random Matrices.md",
+    "Linear Algebra/Randomized Linear Algebra/Random Matrix Theory",
+    "Linear Algebra/Randomized Linear Algebra/Random Matrix Multiplication.md",
+    "Linear Algebra/Matrix Factorizations/SVD/Singular Values/Singular Value.md",
+    "Linear Algebra/Matrix Factorizations/SVD/Computation/Computing SVD.md",
+    "Linear Algebra/Matrix Factorizations/SVD/Singular Values",
+    "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
     "Linear Algebra/Least Squares/Least Squares.md",
     "Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
     "Linear Algebra/Least Squares/Least Squares Blur.md",
     "Linear Algebra/Least Squares/Robust Regression with the L1 Norm.md",
-    "Linear Algebra/Optimization/Gradient Descent Algorithms/Stochastic Gradient Descent.md",
     "Linear Algebra/Optimization/Gradient Descent Algorithms/Gradient Descent with Momentum.md",
     "Linear Algebra/Optimization/Linear Programming/Introduction to Linear Programming.md",
     "2026-01-03.md",
@@ -186,7 +202,6 @@
     "Pasted image 20260103004605.png",
     "Linear Algebra/Optimization/Gradient Descent Algorithms",
     "Pasted image 20260102204320.png",
-    "Linear Algebra/Randomized Linear Algebra/Random Matrix Multiplication.md",
     "Linear Algebra/Optimization",
     "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Eigen Value Problems Overview.md",
     "Linear Algebra/Random Matrix Theory/Untitled",
@@ -196,20 +211,11 @@
     "Linear Algebra/Orthogonality/Orthogonal Complements.md",
     "Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
     "Linear Algebra/Linear Transformations/Linear Transformations.md",
-    "Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Perron-Frobenius Theorem.md",
-    "Linear Algebra/Eigen Values and Eigen Vectors/Eigen Values, Eigen Vectors, Definition and Properties.md",
-    "Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
     "Linear Algebra/Solving Systems of Equations/Traditional Solvers",
     "Linear Algebra/Solving Systems of Equations/Iterative Solvers",
-    "Linear Algebra/Numerical Analysis/Numerical Stability.md",
-    "Linear Algebra/Solving Systems of Equations",
-    "Pasted image 20250918103351.png",
     "Linear Algebra/Pasted image 20250706001752.png",
     "Linear Algebra/Pasted image 20250903085542.png",
     "Linear Algebra/Pasted image 20250903090054.png",
-    "Linear Algebra/Pasted image 20250706000320.png",
-    "Linear Algebra/Matrices/Determinants"
+    "Linear Algebra/Pasted image 20250706000320.png"
   ]
 }

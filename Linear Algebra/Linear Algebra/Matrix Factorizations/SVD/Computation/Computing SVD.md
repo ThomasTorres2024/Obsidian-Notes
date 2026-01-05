@@ -14,7 +14,7 @@ This approach is typically the naïve approach done by hand.
 
 # Numerical Approach for Computing SVD 
 
- Our approach for computing the SVD of a matrix will use something similar to a [[similarity transformation]] which is meant to preserve the eigen values of a matrix. Here we want to preserve the [[singular value]]s of a matrix.  This approach is for matrices where $A \in \mathbb{R}^{m \times n}$ is medium sized, and fails at matrices that are absolutely massive.
+ Our approach for computing the SVD of a matrix will use something similar to a [[similarity transformation]] which is meant to preserve the eigen values of a matrix. Here we want to preserve the [[Singular Value]]s of a matrix.  This approach is for matrices where $A \in \mathbb{R}^{m \times n}$ is medium sized, and fails at matrices that are absolutely massive.
 
 It turns out for $A=U\Sigma V^H$ that, left and right multiplication by orthogonal matrices doesn't effect the singular values. 
 

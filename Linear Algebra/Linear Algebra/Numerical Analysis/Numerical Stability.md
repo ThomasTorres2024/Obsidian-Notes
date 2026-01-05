@@ -12,4 +12,4 @@ Especially if we have iterative methods, we need to make sure that what we are u
 # Condition Number of a Matrix $A$ 
 We can determine if a matrix is well conditioned, and thereby would be nice to compute and work with, by the following formula:
 $$\mathcal{K}(A)=\|A\|\|A^{\dagger}\|=\frac{\sigma_{1}}{\sigma_{n}}$$
-Which is the ratio of the greatest [[singular value]] to the lowest [[singular value]] that is non-zero. 
+Which is the ratio of the greatest [[Singular Value]] to the lowest [[Singular Value]] that is non-zero. 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Probability Functions/Multivariate Distributions/Multinomial Distribution.md",
+                "file": "Probability/Probability Functions/Expected Value.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Multinomial Distribution"
+              "title": "Expected Value"
             }
           }
         ]

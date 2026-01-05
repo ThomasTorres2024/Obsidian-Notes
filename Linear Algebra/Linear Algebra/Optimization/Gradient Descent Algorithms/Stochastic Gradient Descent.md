@@ -70,3 +70,6 @@ The first version is used in analysis, and the second version for practice.
 In order to stabilize our [[Stochastic Gradients]], we consider a sample of points in a mini-batch instead of using the average of several randomly sampled batches of items within our dataset. We express our batch as $I_{k}$:
 $$x_{k+1}=x_{k}-\frac{\eta_{k}}{|I_{k}|} \sum_{j \in I_{k}} \nabla f_{j(x_{k})}$$
 We do not gain too much from using mini-batches per computation, but it is very important for GPU parallelization. Large mini-batches don't really help that much either. If we have more compute, we can handle larger batch sizes, but we start to look a lot more like [[Batch Gradient Descent]], which is good for optimization but poor for machine learning, since this decreases our region of uncertainty and causes us to overfit generally. 
+
+---
+# Proof of Convergence of [[Stochastic Gradient Descent]] Algorithm 
