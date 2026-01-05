@@ -4,7 +4,7 @@ tags:
 draft: "false"
 ---
 # ROC Curves 
-ROC curves are used in [[classification]] problems in order to represent the ratio of true positives to the ratio of false positives. We want to measure for every false prediction, how many true predictions do we have. 
+ROC curves are used in [[Classification]] problems in order to represent the ratio of true positives to the ratio of false positives. We want to measure for every false prediction, how many true predictions do we have. 
 
 We can start by taking an arbitrary decision boundary that bisects our dataset. Everything on one side is classified as 1 point, and everything on the other side is classified as another. 
 ![[Pasted image 20250917143721.png]]

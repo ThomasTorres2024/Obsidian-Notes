@@ -35,6 +35,6 @@ The following loss function makes use of the indicator function. We also impose 
 $$\mathcal{L}(f(\vec{x}),y)=\frac{1}{n} \sum_{i=1}^n \mathbb{1} 
  \begin{cases} \text{sign}(f(\vec{x})) \neq y & 1 \\\text{else } 0 \end{cases}
 $$
-If the sign of the predicted value does not equal the sign of the true value, then we added 1 to our sum as the value is errant. This particular function is not preferable. For one, the function is not [[Convex]], and furthermore its derivative is zero and has a discontinuity. We can't perform anything akin to [[Gradient Descent]] or [[Newton's Method]] to further optimize our model.  
+If the sign of the predicted value does not equal the sign of the true value, then we added 1 to our sum as the value is errant. This particular function is not preferable. For one, the function is not [[Convex]], and furthermore its derivative is zero and has a discontinuity. We can't perform anything akin to [[Optimization/Gradient Descent]] or [[Newton's Method]] to further optimize our model.  
 
 ---

@@ -4,7 +4,7 @@ tags:
 draft: "false"
 ---
 # Background on Classification
-If we are working on a [[classification]] problem, we want to be able to divide our data into two categories, one which is denoted as the positive category, or the set of items we are looking for, say in the instance of medical testing these are people with a rare illness, and a negative category where people are not sick. When we have multiple categories of things to look for, we can ignore the category where people are different. 
+If we are working on a [[Classification]] problem, we want to be able to divide our data into two categories, one which is denoted as the positive category, or the set of items we are looking for, say in the instance of medical testing these are people with a rare illness, and a negative category where people are not sick. When we have multiple categories of things to look for, we can ignore the category where people are different. 
 
 From this we have a couple of terms;
 * [[True Positive]] - When a point is classified as positive and it actually is positive (TP)

@@ -2,7 +2,7 @@
 title:
 ---
 # Decision Tree Introduction
-Decision trees are hierarchical models for [[classification]] and [[regression]]. These structures are like those of trees. [[Decision Tree]]s are composed of a root node, internal nodes, and leaf nodes. 
+Decision trees are hierarchical models for [[Classification]] and [[regression]]. These structures are like those of trees. [[Decision Tree]]s are composed of a root node, internal nodes, and leaf nodes. 
 
 [[Decision Tree]]s are quite old but they are very important for the modern day. [[Decision Tree]]s were used to make [[Random Forests]], and have been adopted into [[Optimal Tree]]s, which are the best possible trees. [[Optimal Tree]]s are hard to make, we could run through them by brute force, but our problem is [[NP-Hard]]. Developing the best tree is a relatively open problem in Machine Learning.
 
