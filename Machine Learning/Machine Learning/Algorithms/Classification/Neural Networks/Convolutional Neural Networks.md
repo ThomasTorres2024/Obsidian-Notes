@@ -59,6 +59,8 @@ With this method compared to the previous method, we are learning about differen
 As we go down the total number of our samples increases 
 
 ### Max Pooling
+We want to reduce the total size of the data in our network. Give our window size, we iterate over the image size, and then select the maximum value within the window, and then we add this to the new corresponding matrix produced from the pooling operation. 
+
 Very common to make things smalle in our neural network. We pick some size in our matrix, 
 we take the largest element of an entry of our matrix and 
 
@@ -71,3 +73,5 @@ With neural nets we use random weights and there we can creatte our filters,
 NNs are pretty good at l
 
 We can think of this ting as an image encoder and decoder, where we take an input image and can prodivimg some vectors that represent the image, we can then decode it and see our reuskrs 
+# Connection to [[Toeplitz Matrix]] and [[Convolution]]
+In [[Convolutional Neural Networks]] we apply the operation of [[Convolution]], which makes use of [[Toeplitz Matrix]] to make more efficient. This is because image data is absolutely massive, and therefore we need a good way to handle it in order to make our operations efficient. Strang doesn't really explain it, but the idea here is that we only need to compute $n$ many weights as opposed to $n^2$ many weights. 

@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a3a80168a99ef27f",
+            "id": "0c0b12ce24cad86e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Circulant Matrices.md",
+                "file": "Functional Analysis/Transforms/Convolution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Circulant Matrices"
-            }
-          },
-          {
-            "id": "d06eb6ee65470814",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Completing a Rank-One Matrix"
+              "title": "Convolution"
             }
           }
         ]
@@ -195,10 +181,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "a3a80168a99ef27f",
+  "active": "0c0b12ce24cad86e",
   "lastOpenFiles": [
-    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
+    "Functional Analysis/Transforms/Convolution.md",
+    "Functional Analysis/Transforms",
+    "Functional Analysis",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Circulant Matrices.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Toeplitz Matrix.md",
+    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
     "Pasted image 20260105150916.png",
     "Pasted image 20260105144503.png",
     "Pasted image 20260105144049.png",
@@ -234,12 +226,6 @@
     "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem Definition and Proof.md",
     "Linear Algebra/Linear Algebra/Random Matrix Theory/Random Matrix Multiplication.md",
     "Linear Algebra/Linear Algebra/Random Matrix Theory/Untitled.md",
-    "Linear Algebra/Linear Algebra/Random Matrix Theory/Untitled",
-    "Linear Algebra/Linear Algebra/Random Matrix Theory",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
-    "Random Thingy.md",
-    "Probability/Probability/Probability Functions/Discrete Distributions/Poisson Distribution.md",
-    "Probability/Probability/Probability Functions/Discrete Distributions/Binomial Distribution.md",
     "Complex Analysis/Pasted image 20251221230857.png",
     "Machine Learning/Pasted image 20251213004320.png",
     "Machine Learning/Pasted image 20251213004317.png"
