@@ -85,6 +85,14 @@ $$L=\begin{bmatrix} 1 & 1 & 1&1\\
 1 & w^2 & 1 & w^{2}\\
 1 & w^3 & w^2 & w
 \end{bmatrix}$$
+We can determine the [[eigen value]]s  for any [[Circulant Matrices]] by considering the following. Let us consider some degree 4 [[Circulant Matrices]], $A$ which can thus be expressed by:
+$$A=c_{0}I_{n}+c_{1}P+c_{2}P^2+c_{3}P^3$$
+We claim that we can obtain the [[eigen vectors]] of $A$ by computing the following for its corresponding $L$. Let us condense the coefficients into $\vec{c}=[c_{0},c_{1},c_{2},c_{3}]^T$
+
+Then, it should follow that for:
+$$L\vec{c}_{i}=\lambda_i$$
+I think if you look at the corresponding rows of $L$, and recall the fact that for some $A$, that $\lambda^2$ is an eigen value of $A^2$ if $\lambda$ is an ew of $A$, then this identity becomes a lot more obvious. Let us consider the eigen vector $v$ of $A$, then:
+$$Av=(c_{0}I_{n}+c_{1}P+c_{2}P^2+c_{3}P^3)v=(c_{0}+c_{1}\mu+c_{2}\mu^2+c_{3}\,u^3)$$
 
 ---
 # Interpretation of [[Circulant Matrices]] as Polynomials 
