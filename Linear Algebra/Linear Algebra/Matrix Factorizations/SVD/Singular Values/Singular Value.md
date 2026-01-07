@@ -10,7 +10,7 @@ It turns out that each [[Singular Value]] is given by the square roots of the [[
 $$\sigma_{i}=\sqrt{ \lambda_{i} }$$
 If $A$ is [[Hermitian]]/[[Symmetric Matrix]] then each $\sigma_{i}=|\lambda_{i}|$, as using the traditional [[Computing SVD]] algorithm would yield the same singular vectors and only remove any minus sign from the [[eigen values]]. 
 
-The minimum and maximum $\sigma_{i}$ are especially relevant. For example it determines the rate of convergence in [[Gradient Descent]] algorithms. 
+The minimum and maximum $\sigma_{i}$ are especially relevant. For example it determines the rate of convergence in [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] algorithms. 
 
 It also turns out that the singular values of a matrix satisfy some interesting properties of [[Matrix Norm]]s. For some $A \in \mathbb{R}^{m \times n}$:
 $$\|A\|_{2}=\max \sigma_{i}$$

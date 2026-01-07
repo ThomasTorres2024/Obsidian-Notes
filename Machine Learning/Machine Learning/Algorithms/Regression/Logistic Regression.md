@@ -71,7 +71,7 @@ $$=\arg \max_{w} \text{ }\sum_{i=1}^n \log  \left( \frac{1}{1+e^{-y(i)w^Tx(i)}} 
 $$=\arg \max_{w} \text{ } -\sum_{i=1}^n\log \left(1+e^{-y(i)w^Tx(i)}\right)$$
 $$=\arg \min_{w} \text{ } \frac{1}{n} \sum_{i=1}^n \log  \left({1+e^{-y(i)w^Tx(i)}} \right)$$This term is equal to $w^*$, and is also known as [[negative log likelihood]]:
 $$w^*=\arg \min_{w} \text{ } \frac{1}{n} \sum_{i=1}^n \log  \left({1+e^{-y(i)w^Tx(i)}} \right)$$
-There is no closed form solution of this function, however the loss function is a [[Convex Function]], which means that its local minimums re global minimums. We can use [[Gradient Descent]] in order to find $w^*$. 
+There is no closed form solution of this function, however the loss function is a [[Convex Function]], which means that its local minimums re global minimums. We can use [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] in order to find $w^*$. 
 
 Once $w$ has ben computed we have the hypothesis function for vector $\vec{x}$:
 $$h(x)=\frac{1}{1+e^{-w^Tx}}$$

@@ -21,7 +21,7 @@ The residual is the difference between our prediction and the actual data. We wa
 
 There is a closed form solution for this. There is an analytical solution to minimize the loss of the function. We have a [[loss functions]] that we can minimize our result:
 $$w^*=\text{ag}$$
-The mean squared error function is actually a [[Convex Function]], which implies that local minimums are actually the global minimum of a function. If we can find a local minimum then, then it follows that our mean squared error is actually when our function has a zero derivative. We can minimize our result using the [[Pseudoinverse]] of the weight matrix $W$, or through [[Gradient Descent]]. There are also MLEs.
+The mean squared error function is actually a [[Convex Function]], which implies that local minimums are actually the global minimum of a function. If we can find a local minimum then, then it follows that our mean squared error is actually when our function has a zero derivative. We can minimize our result using the [[Pseudoinverse]] of the weight matrix $W$, or through [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]]. There are also MLEs.
 
 Very high dimensional data is something we struggle to process, $O(nd^2+d^3)$. We can use mini-batching with gradient descent. For [[Time Series]] data, [[Linear Regression]] is useless, too many lines, can't possibly be useful. 
 

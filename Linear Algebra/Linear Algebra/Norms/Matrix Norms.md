@@ -40,7 +40,7 @@ $$A=U\Sigma V^T$$
 Taking the norm of $A$ given $U=V=I$ would be the equivalent of taking the norm of $\Sigma$ which would directly lend itself to the Frobenius singular value definition above, since we are merely summing over the sigmas. The intuition behind this formula is the fact that our $U$ is an [[orthogonal matrix]], and $V^T$ is an orthogonal matrix, and in turn have no bearing over the norm of  $A$.   
 
 #### 3.) Nuclear Norm
-We denote the nuclear norm of a matrix $A$ by $\| A\|_{N}$. This is also useful for deep learning. It turns out that we tend to have a lot more  weights than possibly samples. Our deep learning problem tends to have a lot of variables and minima. Our optimization via [[Gradient Descent]] is believed by professor Srebro at MIT to minimize the Nuclear Norm. 
+We denote the nuclear norm of a matrix $A$ by $\| A\|_{N}$. This is also useful for deep learning. It turns out that we tend to have a lot more  weights than possibly samples. Our deep learning problem tends to have a lot of variables and minima. Our optimization via [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] is believed by professor Srebro at MIT to minimize the Nuclear Norm. 
 
 All we do here is to sum the [[Singular Value]]s of our matrix:
 $$\|A \|_{N}=\sum_{i=1}^n\sigma_{i}=\sigma_{1}+\sigma_{2}+\cdots+\sigma_{n}$$

@@ -40,7 +40,7 @@ This is a theoretically interesting statement since we want to create some $F(x)
 
 ---
 # Training Neural Networks
-How do we learn weights in a neural network? The intuitive way of handling [[Neural Networks]] is through [[Gradient Descent]] and calculating the gradient of our neural network function, $F(x)$, however this computation is very expensive, and thus we have the [[Backpropagation]] algorithm, which iteratively computes the [[loss functions]]'s loss at every stage of the network. 
+How do we learn weights in a neural network? The intuitive way of handling [[Neural Networks]] is through [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] and calculating the gradient of our neural network function, $F(x)$, however this computation is very expensive, and thus we have the [[Backpropagation]] algorithm, which iteratively computes the [[loss functions]]'s loss at every stage of the network. 
 
 Since our function if of the form:
 $$F(x)=F(F(F\dots(F(X))))$$

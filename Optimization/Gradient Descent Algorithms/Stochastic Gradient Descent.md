@@ -3,17 +3,17 @@ title: Stochastic Gradient Descent
 tags:
 draft: "false"
 ---
-[[Stochastic Gradient Descent]] is a variation of the [[Gradient Descent]] algorithm which considers [[Batches]] of data compared to single vectors which are fed in and iterated over. As an aside, most modern day machine learning problems can be reduced to the following form, which is also known as finite sum problems in machine learning parlance:
+[[Stochastic Gradient Descent]] is a variation of the [[Optimization/Gradient Descent Algorithms/Gradient Descent]] algorithm which considers [[Batches]] of data compared to single vectors which are fed in and iterated over. As an aside, most modern day machine learning problems can be reduced to the following form, which is also known as finite sum problems in machine learning parlance:
 $$\min_{x} \frac{1}{n } \sum_{i=1}^{n} f_{i}(x)$$If we allow $n \to \infty$, then we are  working with "Stochastic Optimization Problems" in Optimization theory. In machine learning, a common set up for this problem is as follows:
 
 $$\text{Training Data: } \{ (x_{1},y_{1}),(x_{2},y_{2}),\cdots,(x_{n},y_{n})  \} \in \mathbb{R}^{d}\times \gamma$$
 In machine learning, both $d$ and $n$ are very large, where $d$ is the dimension of the data, and $n$ is the number of training/data points. This is what is meant by "large scale machine learning".  It turns out that [[Deep Neural Networks]] can be written using a finite sum problem:
 $$\frac{1}{n} \sum_{i=1}^{n} \text{loss}(y_{i},h(x,a_{i})) = \frac{1}{n} \sum_{i=1} ^{n} f_{i}(x) $$
 ---
-# Issues with Classical [[Gradient Descent]]
-[[Gradient Descent]] in its classical formulation really struggles with massive $n$ and $d$. It is a very large sum, if our dataset is huge, it takes hours to days for this to possibly compute for a single step. 
+# Issues with Classical [[Optimization/Gradient Descent Algorithms/Gradient Descent]]
+[[Optimization/Gradient Descent Algorithms/Gradient Descent]] in its classical formulation really struggles with massive $n$ and $d$. It is a very large sum, if our dataset is huge, it takes hours to days for this to possibly compute for a single step. 
 
-The classical formulation for [[Gradient Descent]] is the iterative equation:
+The classical formulation for [[Optimization/Gradient Descent Algorithms/Gradient Descent]] is the iterative equation:
 $$x_{k+1}=x_{k}-\eta_{k} \frac{1}{n} \sum_{i=1}^n \nabla f_{i}(x_{k})$$
 In [[Stochastic Gradient Descent]], we instead opt to use the gradient computed at the point $i(k)$ where $i(k) \in \{1,2,3,\dots ,n\}$, and instead we perform the following update:
 $$x_{k+1}=x_{k}-\eta_{k}\nabla f_{i}(k)x_{k}$$
@@ -47,7 +47,7 @@ We also want our speed of convergence to be pretty good for our algorithm, which
 
 ---
 # Variants of [[Stochastic Gradient Descent]]:
-When we introduce randomness into [[Gradient Descent]], we need to define our sense of randomness. We do this first by considering a version of [[Sample With Replacement]] and [[Sample Without Replacement]]. 
+When we introduce randomness into [[Optimization/Gradient Descent Algorithms/Gradient Descent]], we need to define our sense of randomness. We do this first by considering a version of [[Sample With Replacement]] and [[Sample Without Replacement]]. 
 ### Version 1.) of SGD [[Sample With Replacement]] 
 * We begin with some feasible $x_{0}$
 * For $k=0,1,\dots,$
