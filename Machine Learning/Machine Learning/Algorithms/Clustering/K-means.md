@@ -1,6 +1,7 @@
 ---
 title: K-means
 ---
+# [[K-means]] Introduction
 [[K-means]] is an [[unsupervised]] learning algorithm, used for discovering patterns or groups within our data. Sometimes we have labels but we want to do clustering on them. Because this is [[unsupervised]] it will ignore all of the labels since they aren't very relevant. 
 
 Given some data sometimes we want to see if we can observe any trends or groups within our data. Clustering algorithms are good at looking at data and observing [[clusters]], which give us the number of groups or items that fall into a set of categories. Deciding how we can come up with such an algorithm is fairly difficult, especially as cluster shapes changes.

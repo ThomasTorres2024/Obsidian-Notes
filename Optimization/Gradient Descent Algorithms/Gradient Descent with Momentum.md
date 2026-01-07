@@ -18,7 +18,7 @@ We can re-write our [[Gradient Descent with Momentum]] equations to be:
 $$x_{k+1}=x_{k}-sz_{k}$$$$z_{k+1}-Sx_{k+1}=\beta z_{k}$$
 We can describe this as a matrix equation now:
 $$x_{k+1}-x_{k}=-sz_{k}$$$$z_{k+1}-Sx_{k+1}=\beta z_{k}$$$$\begin{pmatrix}1 & 0\\ S & 1\end{pmatrix} \begin{pmatrix} x \\ z \end{pmatrix}_{k+1}=\begin{pmatrix}1 & -S\\ 0 & \beta \end{pmatrix} \begin{pmatrix}x\\z\end{pmatrix}_{k}$$
-We can simplify this result using the [[Eigen Vectors]] of $S$, since $S$ is [[Symetric Matrix]] by [[Spectral Theorem Definition and Proof]] we know that $S=X\Lambda X^{T}\implies Sq=\lambda q$ for a full set of [[Eigen Vectors]]. For this problem let:
+We can simplify this result using the [[Eigen Vectors]] of $S$, since $S$ is [[Symmetric Matrix]] by [[Spectral Theorem Definition and Proof]] we know that $S=X\Lambda X^{T}\implies Sq=\lambda q$ for a full set of [[Eigen Vectors]]. For this problem let:
 $$x_{k}=c_{k}q$$
 $$z_{k}=d_{k}q$$
 Which is to say we assume that the $x$ and $z$ are scalar multiples of [[Eigen Vectors]] of $S$. We also have that:
