@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Variation of Parameters.md",
+                "file": "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Series Solutions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Variation of Parameters"
+              "title": "Series Solutions"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 475.5
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -197,8 +197,9 @@
   },
   "active": "cc70903f3cd8b27d",
   "lastOpenFiles": [
-    "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Second Order Homogeneous Differential Equations.md",
     "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Variation of Parameters.md",
+    "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Series Solutions.md",
+    "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Second Order Homogeneous Differential Equations.md",
     "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Second Order Differential Equation.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Cramer's Rule.md",
     "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Euler-Cauchy Equations.md",
