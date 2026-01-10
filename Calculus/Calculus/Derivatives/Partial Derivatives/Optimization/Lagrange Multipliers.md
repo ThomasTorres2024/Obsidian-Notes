@@ -64,7 +64,7 @@ In this instance, our level curves are formed by $f(x,y)=c$ where $f$ is the squ
 $$f(x,y)=\sqrt{x^2+y^2}$$
 We vary the value of $f$ and continually plot new curves at each level. Our $f$ level curve, and our hyperbola curve $g$ should be tangent to one another in our minimized solution. Since $f$ and $g$ are tangent at the point of intersection, it follows that their tangent lines are both aligned, which means that the normals of each tangent are also aligned. 
 
-Since we previously established that the [[gradient]] is orthogonal to the level surface, the normal vector here is given simply by the gradient of our two functions. We know that the gradients are oriented in the same direction, however, their size is not necessarily the same. 
+Since we previously established that the [[Gradient]] is orthogonal to the level surface, the normal vector here is given simply by the gradient of our two functions. We know that the gradients are oriented in the same direction, however, their size is not necessarily the same. 
 
 Therefore, $\nabla f \parallel \nabla g$. Since both are parallel, we can express one as a constant multiple of the other:
 $$\nabla f \cdot \lambda = \nabla g$$

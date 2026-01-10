@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Common Linear Transformations.md",
+                "file": "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Linear First Order Differential Equations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Common Linear Transformations"
+              "title": "Linear First Order Differential Equations"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 475.5,
-    "collapsed": true
+    "width": 254.5
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -183,8 +182,18 @@
   },
   "active": "ae1e81040c3e2016",
   "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms/Linear Forms.md",
+    "Ordinary Differential Equations/Types of Differential Equations/Homogeneous Differential Equation.md",
+    "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Linear First Order Differential Equations.md",
+    "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Untitled",
+    "Ordinary Differential Equations/Laplace Transformations/Laplace Transform.md",
+    "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
+    "Algorithms/Randomization Algorithms/Monte Carlo Matrix Multiplication Algorithm.md",
+    "Calculus/Calculus/Derivatives/Partial Derivatives/Optimization/Lagrange Multipliers.md",
+    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Values, Eigen Vectors, Definition and Properties.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Circulant Matrices.md",
+    "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Euler Equations (ODEs).md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Common Linear Transformations.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms/Linear Forms.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms",
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms/Bilinear Forms.md",
     "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Euler-Cauchy Equations.md",
@@ -196,11 +205,9 @@
     "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Second Order Differential Equation.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Cramer's Rule.md",
     "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Particular Solutions.md",
-    "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods/Euler Equations (ODEs).md",
     "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods",
     "Ordinary Differential Equations/Theory and definitions of Differential Equations/Linearly Independent Functions.md",
     "Ordinary Differential Equations/Wronskian.md",
-    "Ordinary Differential Equations/Types of Differential Equations/Homogeneous Differential Equation.md",
     "Ordinary Differential Equations/Types of Differential Equations",
     "Ordinary Differential Equations/Solving Differential Equations/Second Order Differential Equations/Reduction of Order.md",
     "Differential Equations/Theory and definitions of Differential Equations/Untitled",
@@ -211,16 +218,8 @@
     "Ordinary Differential Equations/Solving Differential Equations",
     "Graph Theory/Spectral Graph Theory/Matrices/Graph Laplacian Matrix.md",
     "Calculus/Calculus/Vector Fields/Laplacian.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Adjacency Matrix.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Incidence Matrix.md",
-    "Algorithms/Graph Algorithms/Graphs Info/Graph.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Degree Matrix.md",
     "Pasted image 20260107083527.png",
-    "Graph Theory/Spectral Graph Theory/Matrices",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Symmetric Matrix.md",
-    "Machine Learning/Machine Learning/Algorithms/Clustering/K-means.md",
     "Pasted image 20260107064643.png",
-    "Linear Algebra/Linear Algebra/Problems in Linear Algebra/Distance Matrices.md",
     "Pasted image 20260105150916.png",
     "Pasted image 20260105144503.png",
     "Pasted image 20260105144049.png",
