@@ -26,3 +26,12 @@ The magnitude of that orthogonal projection is thus:
 $$\frac{\langle \vec{QM},\vec{n} \rangle}{\| \vec{n} \|}=\frac{a(x_{1}-x_{0})+b(y_{1}-y_{0})+c(z_{1}-z_{0})}{\| \vec{n} \|}=\frac{ax_{1}+by_{1}+cz_{1}+d}{\sqrt{a^2+b^2+c^2}}$$
 ![[maxresdefault.jpg]]
 
+---
+# Generalizations in Higher Dimensions 
+One way we can think of a plane is as a linear function that inhabits $\mathbb{R}^n$, such that the plane itself is only composed of $n-1$ dimensions. To make this easier and use the language of linear algebra, assuming for a second that our plane equation has the form:
+$$c_n=\sum_{i=1}^{n-1}\alpha_ic_i:\alpha_i \in \mathbb{R}$$
+We can generalize a plane to a [[Hyperplane]], that is it is, given this definition, it is a [[Linear Transformation]] of rank $n-1$, which inhabits a space of $n$. Let the [[Hyperplane]] be defined by:
+$$A \in \mathbb{R}^{n\times (n-1)}, \text{ rk}(A)=n-1$$
+Of course the general formula for a [[Hyperplane]] adds in the additional parameter for the elevation of the plane, some additional factor, $\alpha_n \in \mathbb{R}$:
+
+$$c_n=\alpha_n+\sum_{i=1}^{n-1}\alpha_ic_i:\alpha_i \in \mathbb{R}$$
