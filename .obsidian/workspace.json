@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Numerical Analysis/Numerical Stability/Condition Number.md",
+                "file": "Numerical Analysis/Numerical Linear Algebra/Condition Number of Matrix-Vector Multiplication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Condition Number"
+              "title": "Condition Number of Matrix-Vector Multiplication"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 404.000732421875,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -183,17 +182,20 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
-    "Numerical Analysis/Numerical Stability/Conditioning.md",
-    "Numerical Analysis/Numerical Stability/Condition Number.md",
-    "Numerical Analysis/Numerical Stability/Ill-Conditioned.md",
     "Numerical Analysis/Numerical Stability/Well-Conditioned.md",
+    "Numerical Analysis/Numerical Linear Algebra/Condition Number of Matrix-Vector Multiplication.md",
+    "Numerical Analysis/Numerical Linear Algebra",
+    "Numerical Analysis/Numerical Stability/Ill-Conditioned.md",
+    "Numerical Analysis/Numerical Stability/Condition Number.md",
+    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Jacobian.md",
+    "Numerical Analysis/Numerical Stability/Conditioning.md",
     "Numerical Analysis/Numerical Stability/Numerical Stability.md",
     "Numerical Analysis/Numerical Stability",
     "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
     "Algorithms/Las Vegas Algorithms.md",
     "Numerical Analysis",
     "Linear Algebra/Linear Algebra/Least Squares/Recursive Least Squares.md",
-    "Sherman-Morrison-Woodbury Formula.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sherman-Morrison-Woodbury Formula.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Gaussian Elimination.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Symmetric Matrix.md",
@@ -209,8 +211,6 @@
     "Operating Systems/Operating Systems/Random-Access Memory.md",
     "Complex Analysis/Complex Analysis/Analytic Function.md",
     "Complex Analysis/Complex Analysis/Complex Integration.md",
-    "Parent Tree.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Transpose.md",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
     "Pasted image 20260111084207.png",
@@ -222,7 +222,6 @@
     "Linear Algebra/Linear Algebra/Linear Transformations/Linear Independence",
     "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods",
     "Ordinary Differential Equations/Types of Differential Equations",
-    "Differential Equations/Theory and definitions of Differential Equations/Untitled",
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",
