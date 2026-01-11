@@ -114,3 +114,4 @@ In the case of an $n$ degree polynomial, we have
 
 $$ \left\|\begin{bmatrix} t_{1}^n & \cdots & t_{1}^3 & t_{1}^2 & t_{1} &1 \\ t_{2}^n & \cdots & t_{2}^3 &  t_{2}^2 & t_{2} & 1\\ t_{3}^n & \cdots & t_{3}^3 & t_{3}^2 & t_{3} & 1 \\ \vdots & \ddots & \vdots & \vdots & \vdots & \vdots \\ t_{n}^n & \cdots &t_{n}^3 & t_{n}^2 & t_{n} & 1 \end{bmatrix} \cdot \begin{bmatrix} \alpha_{3} \\ \alpha_{2} \\\alpha_{1} \\ \beta \end{bmatrix}  -\begin{bmatrix} y_{1} \\ y_{2} \\ y_{3}  \\ \vdots \\ y_{n}  \end{bmatrix}\right\|^2=\|A\vec{x}-\vec{b} \|^2 = \| \vec{\epsilon} \|^2=\vec{\epsilon}^T\vec{\epsilon}$$
 $$p_{n}(t)=\alpha_{n}t^n+a_{n-1}t^{n-1}+\cdots+\alpha_{2}t^2+\alpha_{1}t+\beta$$
+The matrix formed during this process is known as the [[Vandermonde Matrix]]. 
