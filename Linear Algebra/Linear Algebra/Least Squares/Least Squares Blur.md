@@ -18,7 +18,7 @@ So we can determine $\hat{u}$ via matlab backslash:
 $$\hat{u}=T\text{ \\ } w$$
 This restoration given is a [[Least Squares]] problem, and it fully minimizes $\|w-T\hat{u}\|_{2}$, but we run into some issues here. For one, we ignore the noise in $w$, and get possible rounding errors in computation. We in turn solve a system of equations with a wrong righthand side using the backslash operator.
 
-$T$ has small singular values eventually, so $T$ is [[poorly conditioned]]. 
+$T$ has small singular values eventually, so $T$ is [[Ill-Conditioned]]. 
 
 We can determine the influence of the error vector on $u$ by seeing that:
 $$T\hat{u}=w=v+e$$

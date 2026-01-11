@@ -18,7 +18,7 @@
       "query": "path:Algorithms path:\"Abstract Algebra\"  ",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 2430503
       }
     },
     {
@@ -81,7 +81,7 @@
       "query": "path:\"Operating Systems\" path:",
       "color": {
         "a": 1,
-        "rgb": 12419077
+        "rgb": 12779515
       }
     },
     {
@@ -125,6 +125,13 @@
         "a": 1,
         "rgb": 5395168
       }
+    },
+    {
+      "query": "path:\"Numerical Analysis\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
     }
   ],
   "collapse-display": false,
@@ -137,6 +144,6 @@
   "repelStrength": 15.3125,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.05932617187500274,
+  "scale": 0.05932617187500276,
   "close": false
 }
