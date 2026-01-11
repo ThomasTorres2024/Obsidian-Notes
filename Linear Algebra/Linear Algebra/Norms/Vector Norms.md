@@ -76,6 +76,6 @@ Note that orthogonality actually preserves vector norms. That is to say, for ort
 
 ---
 # Equivalence of Norms
-All norms are equivalent, meaning that for $c_{1}$ and $c_{2}$ we can express, for $\vec{x} \in V$ where $V$ is a [[vector space]]:
+All norms are equivalent, meaning that for $c_{1}$ and $c_{2}$ we can express, for $\vec{x} \in V$ where $V$ is a [[Vector Space]]:
 $$c_{1}\|\vec{x}\|_{\alpha} \leq \|\vec{x}\|_{\beta} \leq c_{2} \|\vec{x}\|_{\alpha}$$
 Where $0<c_{1}\leq c_{2}$. 

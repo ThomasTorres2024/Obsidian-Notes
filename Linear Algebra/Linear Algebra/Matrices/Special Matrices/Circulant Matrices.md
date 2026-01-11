@@ -34,7 +34,7 @@ $$P^3=\begin{bmatrix} 0 & 0 & 0 & 1 \\
 					0 & 1 & 0 & 0 \\
 					0 & 0 & 1 & 0 
 \end{bmatrix}$$
-The [[Circulant Matrices]] (I think by extension it forms a Vector Space, and this set of matrices generated from computing $P$ from the powers of $1-n$ is enough to provide a [[basis]] for said [[Vector Spaces and Vector Subspaces]]) form a nice [[Group]] and are closed under matrix additional and matrix multiplication. 
+The [[Circulant Matrices]] (I think by extension it forms a Vector Space, and this set of matrices generated from computing $P$ from the powers of $1-n$ is enough to provide a [[basis]] for said [[Vector Subspaces]]) form a nice [[Group]] and are closed under matrix additional and matrix multiplication. 
 
 It helps to think of multiplication of some $P^k$ by $k$ as shifting the position of the band of $1$s up by 1 diagonal, and then moving the lower band up by 1 as well. 
 

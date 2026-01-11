@@ -45,7 +45,7 @@ Therefore if the residual vector is orthogonal then it implies the projector is 
 
 ---
 
-I believe another way that Projectors can be thought of are as a [[Linear Transformations]] that maps from some $\mathbb{R}^n \to \text{Span}\{P \}$, where $P \in \mathbb{R}^{n \times n}$ that enforce that any vector in $v \in (\mathbb{R}^n \cap \text{Span}\{ P\})$ satisfies $$Pv=v$$
+I believe another way that Projectors can be thought of are as a [[Linear Transformation]] that maps from some $\mathbb{R}^n \to \text{Span}\{P \}$, where $P \in \mathbb{R}^{n \times n}$ that enforce that any vector in $v \in (\mathbb{R}^n \cap \text{Span}\{ P\})$ satisfies $$Pv=v$$
 Which should make sense for the idea of a projection. We are trying to enforce all vectors in $\mathbb{R}^n$ to go to $P$, but every vector that already resides in $P$ should simply stay put as it is already projected down into this [[Vector Subspace]]. We can furthermore obtain the property of [[Idempotent]] (Idempotency) from this by realizing that for $$P=\{p_{1},p_{2},\cdots p_{n} \}$$
 That $Pp_{i}=p_{i} \iff P^2=P$. I feel like this is a bit more intuitive to me.   
 
@@ -61,7 +61,7 @@ If $P$ is a projector, then the matrix $I-P$ is another projection matrix becaus
 $$(I-P)^2=I-2P+^2=I-P$$
 We can argue that this space actually projects into the [[Nullspace]] of $P$. Notice that if $P\vec{v}=\vec{0}$, that for $(I-P)\vec{v}=\vec{v}$, so we can see that $nul(P) \subseteq \text{span}({I-P}$).  Moreover, for any $\vec{x} \in \mathbb{R^n}$, it follows that:
 $$(I-P)\vec{x}=\vec{x}-P\vec{x} \in \text{Nul}(P)$$
-Which means $(I-P) \subseteq \text{Nul}(P)$, so since both [[vector space]]s are subsets of one another it follows that they are equivalent. We can also argue that the vector spaces are also complimentary. We can express their bases as a direct sum of one another:
+Which means $(I-P) \subseteq \text{Nul}(P)$, so since both [[Vector Space]]s are subsets of one another it follows that they are equivalent. We can also argue that the vector spaces are also complimentary. We can express their bases as a direct sum of one another:
 $$(I-P)=I-P$$ and we can also see that:
 $$\text{range}(P) \cap \text{nul}(P) = \{ 0 \}$$
 We can thus say that this project separates $\mathbb{C}^m$ into two different spaces.

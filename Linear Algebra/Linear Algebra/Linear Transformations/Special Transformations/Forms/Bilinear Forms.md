@@ -7,7 +7,7 @@ draft: "false"
 
 First we should establish what we mean by a "form". A form is a function that takes vectors from some vector spaces to scalar fields:
 $$\mathcal{V}_{1}\times\mathcal{V}_{2} \times \cdots \times \mathcal{V}_{n} \rightarrow \mathbb{F}$$
-We call a mapping between 1 [[vector space]] and a [[scalar field]] a one form or a co-vector. Bilinear forms involve 2 vector spaces.
+We call a mapping between 1 [[Vector Space]] and a [[scalar field]] a one form or a co-vector. Bilinear forms involve 2 vector spaces.
 
 For vector spaces $\mathcal{V},\mathcal{W}$ and a field $\mathbb{F}$, we can define a bilinear mapping as: $\mathcal{V} \times \mathcal{W} \rightarrow \mathbb{F}$. 
 

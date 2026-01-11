@@ -5,7 +5,7 @@ draft: "false"
 ---
 # Solutions to Homogeneous Second Order ODEs
 
-[[Homogeneous Differential Equation]]s of the second order have the property that $y = y_{1}c_{1} + y_{2}c_{2} = 0$ and for any scalar multiple of the sum of the two separate linearly independent solutions, we get a new solution. This property is known as the "superposition" for homogeneous equations.  It is also worthwhile to note that the solutions to a [[Second Order Differential Equation]] of this form form a Vector Space ([[Vector Spaces and Vector Subspaces]].).
+[[Homogeneous Differential Equation]]s of the second order have the property that $y = y_{1}c_{1} + y_{2}c_{2} = 0$ and for any scalar multiple of the sum of the two separate linearly independent solutions, we get a new solution. This property is known as the "superposition" for homogeneous equations.  It is also worthwhile to note that the solutions to a [[Second Order Differential Equation]] of this form form a Vector Space ([[Vector Subspaces]].).
 
 We can use the conditions of a vector subspace this to illustrate this solution. If $c_1=c_2=0 \implies y=0$ satisfies the condition. For $y_1,y_2 \in \mathcal{V}$ and $c_1,c_2 \in \mathbb{C}$ where $\mathcal{V}$ is the vector space of solutions to this [[Homogeneous Differential Equation]], we have that:
 $$y_1c_1+y_2c_2=0+0\implies y_1c_1+y_2c_2\in \mathcal{V}$$

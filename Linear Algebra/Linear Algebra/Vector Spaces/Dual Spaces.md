@@ -5,7 +5,7 @@ draft: "false"
 ---
 # Dual Space Definition
 
-For a vector space $\mathcal{V}$, $\exists \mathcal{V}^*$ another vector space isomorphic to $\mathcal{V}$. This vector space contains all linear forms or linear functionals, that is linear transformations given by $f : \mathcal{V} \rightarrow \mathbb{F}$. 
+For a [[Vector Space]] $\mathcal{V}$, $\exists \mathcal{V}^*$ another vector space isomorphic to $\mathcal{V}$. This vector space contains all linear forms or linear functionals, that is linear transformations given by $f : \mathcal{V} \rightarrow \mathbb{F}$. 
 
 We know that linear functionals are linear transformations. We can also show that the space of linear functionals is another vector space. Consider linear functionals $f,g \in \mathbb{V}^*, \vec{x} \in \mathbb{V}$, and scalar constants $c \in \mathbb{F}$. It follows that: 
 
@@ -111,7 +111,4 @@ Also note that the matrix we are using is the transposition of the basis:
 $$\begin{bmatrix} 2&3\\1& 1 \end{bmatrix}^T=\begin{bmatrix} 2&1\\3& 1 \end{bmatrix} $$
 
 This arises because linear functionals are row vectors that take in a set of inputs and convert them into a scalar, in effect a dot product. When we construct our matrix trying to solve for our $f_{1}$ and $f_{2}$ we lay our coefficients for the basis on their side since in a linear functional, in order to obtain a scalar output we need to evaluate them in the functionals at these points. 
-
----
-# The Matrix Transpose in the Context of Dual Spaces
 

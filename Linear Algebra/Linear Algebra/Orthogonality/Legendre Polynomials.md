@@ -6,7 +6,7 @@ draft: "False"
 
 # [[QR Factorization]] for Continuous Functions 
 
-There is analogue for expanding complex functions that is an extension of that of vectors. Instead of considering $\mathbb{C}^m$ we choose $L^2[-1,1]$, which consists of a [[vector space]] of complex functions on the interval $[-1,1]$. 
+There is analogue for expanding complex functions that is an extension of that of vectors. Instead of considering $\mathbb{C}^m$ we choose $L^2[-1,1]$, which consists of a [[Vector Space]] of complex functions on the interval $[-1,1]$. 
 
 The inner product of two functions $f,g\in L^2[-1,-1]$ then the [[inner product]] between these two functions is:
 $$\langle f, g\rangle = \int_{-1}^1\overline{f(x)}g(x)dx$$
@@ -40,7 +40,7 @@ Then we can express $A$ using a QR factorization where each $q$ is a function fr
 
 We are able to construct an orthonormal basis of functions $q_{i}(x)$ that satisfy:
 $$\int_{-1}^1\overline{q_{i}(x)}q_{j}(x)dx= \delta_{ij} =\begin{cases} 1 \text{ if i =j}\\0 \text{ if i} \neq j \end{cases}$$
-$q_{j}$ is a polynomial of degree $j$. We can describe the [[vector space]] of polynomials using the Legendre polynomials, $P_{j}$ which have the basis given by: 
+$q_{j}$ is a polynomial of degree $j$. We can describe the [[Vector Space]] of polynomials using the Legendre polynomials, $P_{j}$ which have the basis given by: 
 $$P_{0}(x)=1,P_{1}(x)=x,P_{2}(x)=\frac{3x^2-1}{2},P_{3}(x)=\frac{5x^3-3x}{2}$$
 The [[Legendre Polynomials]] are a basis for the polynomials of degree $j$, but they are furthermore an [[orthogonal]] basis that spans the set of polynomials. 
 

@@ -8,7 +8,7 @@ A [[linear]] form is a mapping from $\mathcal{V} \rightarrow \mathbb{F}$ where $
 
 Any linear form is given by some $f_{\vec{v}}(\vec{w})=\vec{v}^H\vec{w}$
 
-Linear forms are [[Linear Transformations]]. We can verify this below: 
+Linear forms are [[Linear Transformation]]. We can verify this below: 
 
 $$f_{v}(c \cdot(\vec{w}+\vec{u}))=\vec{v}^H(c \cdot(\vec{w}+\vec{u}))=\vec{v}^H(c \cdot\vec{w})+\vec{v}^H(c \cdot\vec{u})=c\vec{v}^H\vec{w}+c\vec{v}^H\vec{u}=cf_{\vec{v}}(\vec{w})+cf_{\vec{v}}(\vec{u})$$
 
@@ -65,7 +65,7 @@ $$f_{\vec{v}}(\vec{w})=\begin{bmatrix} 1 & \frac{1}{2} & \frac{1}{3} & \frac{1}{
 
 $$E_{3}(\vec{p)}=\vec{v}^H\vec{p}=\begin{bmatrix} 1 & 3 & 9 & 27\end{bmatrix} \cdot \vec{p}$$---
 # Linear Forms Form a Vector Space 
-This result is important for [[Dual Spaces]], and allow us to argue that the dual space is a valid [[vector space]]. Consider linear forms $f,g$ that perform $\mathcal{V} \rightarrow \mathbb{F}$. It follows that: 
+This result is important for [[Dual Spaces]], and allow us to argue that the dual space is a valid [[Vector Space]]. Consider linear forms $f,g$ that perform $\mathcal{V} \rightarrow \mathbb{F}$. It follows that: 
 
 $$(f+g)(c\vec{x}+c\vec{y})=f(c\vec{x} + c\vec{y})+g(c\vec{x}+c\vec{y})=cf(\vec{x}) +cf(\vec{y})+cg(\vec{x})+cg(\vec{y})$$
 $$=c\cdot f(\vec{x}+\vec{y}) + c\cdot g(\vec{x}+\vec{y})$$
