@@ -4,10 +4,10 @@ tags:
 draft: "False"
 ---
 # Definition
-Upper triangular matrices are [[matrices]] in $A \in \mathbb{R}^{n \times m}$ where each $a_{ij} =0$ when $i>j$. Typically, [[Upper Triangular Matrices]] are square matrices in the wild. 
+Upper triangular matrices are [[matrices]] in $A \in \mathbb{R}^{n \times m}$ where each $a_{ij} =0$ when $i>j$. Typically, [[Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix]] are square matrices in the wild. The product of two [[Upper Triangular Matrix]]
 
 #### Facts about Upper Triangular Matrices 
-The only matrices which are [[Upper Triangular Matrices]] and [[Lower Triangular Matrices]] are [[diagonal matrix]] (diagonal matrices). 
+The only matrices which are [[Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix]] and [[Lower Triangular Matrices]] are [[diagonal matrix]] (diagonal matrices). 
 
 #### The [[Inverse Matrix]] of an Upper Triangular Matrix is an Upper Triangular Matrix 
 Using a proof by contradiction, we can show that for the [[non singular]] Upper Triangular Matrix $A \in \mathbb{C}^{m \times m}$ that its inverse must necessarily be another Upper Triangular Matrix. Since $A$ is invertible, $A$ must have $m$ non-zero entries along its diagonal, otherwise it would have a determinant of zero and thereby not be invertible. Let the inverse matrix of $A$ be the matrix $Z$. 

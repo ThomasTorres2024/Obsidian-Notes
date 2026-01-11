@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d7eb9a6450064962",
+        "id": "fac04b30e6531fe0",
         "type": "tabs",
         "children": [
           {
-            "id": "1e526b9e53297eb2",
+            "id": "205bb5f57d4617ba",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Different Approaches to Solve Least Squares"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linear Transformation",
+                "query": "least squares methods",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 404.000732421875
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -176,8 +180,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "1e526b9e53297eb2",
+  "active": "a1f518bf1680a7c5",
   "lastOpenFiles": [
+    "Linear Algebra/Linear Algebra/Least Squares/Recursive Least Squares.md",
+    "Sherman-Morrison-Woodbury Formula.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Gaussian Elimination.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Symmetric Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Toeplitz Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Vandermonde Matrix.md",
+    "Upper Triangular Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row Echelon Form.md",
+    "Linear Algebra/Linear Algebra/Least Squares/Least Squares.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank k Perturbation.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Outer Product.md",
     "Operating Systems/Operating Systems/Random-Access Memory.md",
     "Complex Analysis/Complex Analysis/Analytic Function.md",
     "Complex Analysis/Complex Analysis/Complex Integration.md",
@@ -190,26 +208,12 @@
     "Pasted image 20260111084207.png",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Hermitian.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Dual Spaces.md",
-    "Vector Space.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Vector Subspaces.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Least Squares.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Vandermonde Matrix.md",
-    "Elementary Column Operations.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Cofactor Expansion.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row Operations",
     "Untitled 3.base",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row Operations/Elementary Row Operations.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
-    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/Householder Transformation.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/House Holder Reflectors.md",
-    "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
-    "Linear Algebra/Linear Algebra/Norms/Matrix Norms.md",
-    "Number Theory/Riemann-Hypothesis/Zeta Function.md",
-    "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Linear First Order Differential Equations.md",
     "Pasted image 20260108145912.png",
-    "Algorithms/Algorithmic Complexity/Time Complexity.md",
     "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Untitled",
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms",
     "Linear Algebra/Linear Algebra/Linear Transformations/Linear Independence",
