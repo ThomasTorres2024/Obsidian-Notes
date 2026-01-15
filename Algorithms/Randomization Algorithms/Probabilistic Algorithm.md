@@ -11,7 +11,7 @@ We would also expect that despite given the same inputs, we could get different 
 Generally, we want to reduce the probability of incorrect output to be something quite small. We also want to understand the runtime for our probabilistic algorithms. 
 
 From this we have two categories of algorithms:
-1. [[Monte Carlo Algorithms]], algorithms that are probably correct, we have a constant probability that we get a correct answer 99% of the time. An example of a Monte Carlo algorithm is the [[Monte Carlo Matrix Multiplication Algorithm]]. We are not guaranteeing that our matrix really indeed is the correct product, but we are able to reduce our margin of error nicely. 
+1. [[Monte Carlo Algorithms]], algorithms that are probably correct, we have a constant probability that we get a correct answer 99% of the time. An example of a Monte Carlo algorithm is the [[Feivald's Algorithm]]. We are not guaranteeing that our matrix really indeed is the correct product, but we are able to reduce our margin of error nicely. 
 2. [[Las Vegas Algorithms]], meaning we run in what is likely to be [[Polynomial Time]]. [[Quicksort]] is enough to give us a fully sorted array, but it might not run in the nice $O(n\text{log}(n))$ time. 
 
 Either our algorithm is correct and probably fast, or fast and probably correct. These are the two types of tradeoffs we are working through. 

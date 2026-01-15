@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
+                "file": "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Efficient Matrix Multiplication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gaussian Elimination"
+              "title": "Efficient Matrix Multiplication"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -183,8 +182,19 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Overview of Solving Systems of Linear Equations.md",
+    "Algorithms/Divide and Conquer Algorithm.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Efficient Matrix Multiplication.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Feivald's Algorithm.md",
+    "Algorithms/Randomization Algorithms/Probabilistic Algorithm.md",
+    "Algorithms/Sorting/Sorting Time Complexity.md",
+    "Algorithms/Sorting/Linear Sorting.md",
+    "Algorithms/Untitled",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Strassen Matrix Multiplication Algorithm.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Matrix Multiplication.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Overview of Solving Systems of Linear Equations.md",
     "LU Factorization.md",
     "Lower Triangular Matrices.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
@@ -202,27 +212,16 @@
     "Machine Learning/Machine Learning/Algorithms/NLP/Tokenization.md",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
     "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
-    "Numerical Analysis/Numerical Linear Algebra/Condition Number of a Matrix.md",
-    "Numerical Analysis/Numerical Linear Algebra/Condition Number of Matrix-Vector Multiplication.md",
-    "Linear Algebra/Linear Algebra/Norms/Vector Norms.md",
-    "Numerical Analysis/Numerical Stability/Ill-Conditioned.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Least Squares Blur.md",
-    "Numerical Analysis/Numerical Stability/Condition Number.md",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Backpropagation.md",
     "Numerical Analysis/Numerical Stability",
     "Numerical Analysis/Numerical Linear Algebra",
     "Numerical Analysis",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
     "Pasted image 20260111084207.png",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row Operations",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations",
     "Untitled 3.base",
     "Pasted image 20260108145912.png",
     "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Untitled",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Linear Independence",
-    "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods",
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",

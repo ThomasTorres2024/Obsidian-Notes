@@ -4,7 +4,22 @@ tags:
 draft: "False"
 ---
 # Efficient Matrix Multiplication 
-[[Matrix Multiplication]] is generally $O(n^3)$ in time complexity. It is a very expensive operation that we want to make more efficient. Let us consider the following example for 3 matrices which are of sizes:
+[[Matrix Multiplication]] is generally $O(n^3)$ in time complexity. It is a very expensive operation that we want to make more efficient. 
+
+We can theoretically speed up the process of [[Matrix Multiplication]] via the [[Strassen Matrix Multiplication Algorithm]], which is useful for matrices, perhaps square, where $n > 100$. 
+
+There are many improvements which provide better time complexities, but ultimately are useless. We would need a matrix in the size of billions for this idea to actually beat traditional methods. 
+
+---
+# [[Divide and Conquer Algorithm]]
+
+[[Matrix Multiplication]] can also be implemented using a [[Divide and Conquer Algorithm]], which partitions each matrix recursively into the following, which only works for square matrices:
+$$\begin{bmatrix} C_{11} & C_{12}\\ C_{21} & C_{22} \end{bmatrix} = \begin{bmatrix} A_{11} & A_{12}\\ A_{21} & A_{22} \end{bmatrix} \begin{bmatrix} B_{11} & B_{12}\\ B_{21} & B_{22} \end{bmatrix}= \begin{bmatrix} A_{11}B_{11}+A_{12}B_{21} & A_{11}B_{12}+ A_{12}B_{22}\\ A_{21}B_{11}+A_{22}B_{21} & A_{21}B_{12}+A_{22}B_{22} \end{bmatrix}$$
+The general cost function for this algorithm is $T(1)=\Theta(1)$ for a scalar operation, and for the recursive part we obtain:
+$$T(n)=8T(n/2)+\Theta(n^2)$$
+The result still has a time complexity of $\Theta(n^3)$ in the end. 
+# Efficient Computation of 3 Matrices By Order of Operation
+Let us consider the following example for 3 matrices which are of sizes:
 $$A \in \mathbb{R}^{m \times n},B \in \mathbb{R}^{n \times p},C \in \mathbb{R}^{p \times q}$$
 Where we are trying to compute the matrix:
 $$ABC$$

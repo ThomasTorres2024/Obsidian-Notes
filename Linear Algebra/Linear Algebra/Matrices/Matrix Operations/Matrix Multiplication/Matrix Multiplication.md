@@ -29,6 +29,7 @@ Let $B=AC$ where $A \in \mathbb{R}^{l \times m}$ and $B \in \mathbb{R}^{m \times
 $$\vec{b}_{j}=\sum_{k=1}^n \vec{a}_{k} \cdot c_{kj}$$
 We also have an entry-wise formula for entry $b_{ij}$ of $B$, which is given by:
 $$b_{ij}= \sum_{k=1}^n a_{ik}\cdot c_{kj}$$
+The [[Time Complexity]] of [[Matrix Multiplication]] is generally on the order of $O(lmn)$ for $A$ and $B$. 
 #### (Example) [[Outer Product]]
 The [[Outer Product]] is a matrix product that involves multiplying vectors $\vec{v}^T \in \mathbb{R}^{1 \times n}$ and $\vec{u} \in \mathbb{R}^n$ to yield:
 $$A=\vec{u} \cdot \vec{v}^T$$
