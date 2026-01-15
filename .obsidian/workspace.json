@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
+                "file": "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Condition Number of a System of Equations"
+              "title": "Gaussian Elimination"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vector norm",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,6 +183,24 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Overview of Solving Systems of Linear Equations.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
+    "LU Factorization.md",
+    "Lower Triangular Matrices.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Cramer's Rule.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Conjugate Gradient.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sparse Matrix.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Krylov Methods.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Inner Product Spaces.md",
+    "Machine Learning/Machine Learning/Algorithms/NLP/Transformer.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers/Transformers.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers",
+    "Machine Learning/Machine Learning/Algorithms/NLP/Embedding.md",
+    "Machine Learning/Machine Learning/Algorithms/NLP/Tokenization.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
     "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
     "Numerical Analysis/Numerical Linear Algebra/Condition Number of a Matrix.md",
     "Numerical Analysis/Numerical Linear Algebra/Condition Number of Matrix-Vector Multiplication.md",
@@ -192,26 +210,9 @@
     "Linear Algebra/Linear Algebra/Least Squares/Least Squares Blur.md",
     "Numerical Analysis/Numerical Stability/Condition Number.md",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Backpropagation.md",
-    "Parent Tree.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Different Approaches to Solve Least Squares.md",
-    "Numerical Analysis/Numerical Stability/Well-Conditioned.md",
-    "Numerical Analysis/Numerical Stability/Numerical Stability.md",
-    "Numerical Analysis/Numerical Stability/Conditioning.md",
     "Numerical Analysis/Numerical Stability",
     "Numerical Analysis/Numerical Linear Algebra",
     "Numerical Analysis",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sherman-Morrison-Woodbury Formula.md",
-    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Jacobian.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Recursive Least Squares.md",
-    "Sherman-Morrison-Woodbury Formula.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Gaussian Elimination.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Symmetric Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Toeplitz Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Vandermonde Matrix.md",
-    "Upper Triangular Matrix.md",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
     "Pasted image 20260111084207.png",
@@ -222,7 +223,6 @@
     "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms",
     "Linear Algebra/Linear Algebra/Linear Transformations/Linear Independence",
     "Ordinary Differential Equations/Solving Differential Equations/General Solution Methods",
-    "Ordinary Differential Equations/Types of Differential Equations",
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",
