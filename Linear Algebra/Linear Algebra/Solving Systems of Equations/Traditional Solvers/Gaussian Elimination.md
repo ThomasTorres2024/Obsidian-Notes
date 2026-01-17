@@ -64,3 +64,5 @@ $$\hat{L}=\begin{bmatrix} 1 & 0\\ 10^{20} & 1 \end{bmatrix},\hat{U}=\begin{bmatr
 Computing $\hat{L}\hat{U}$ is significantly different than $A$:
 $$\hat{L}\hat{U}=\begin{bmatrix} 10^{-20} & 1 \\ 1 & 0 \end{bmatrix}$$
 Using $\hat{L}$ and $\hat{U}$ to solve $\hat{L}\hat{U}x=b$, we will get a resulting $x$ which would not solve the original system. We say that [[LU Factorization]] is not [[backward stable]]. Our $L$ matrices may have a [[Condition Number of a Matrix]] which are potentially unstable.  
+
+This is where [[Gaussian Elimination with Pivoting]] is introduced.  
