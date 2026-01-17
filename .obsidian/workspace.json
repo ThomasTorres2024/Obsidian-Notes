@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Efficient Matrix Multiplication.md",
+                "file": "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Efficient Matrix Multiplication"
+              "title": "Gaussian Elimination"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:gaussian",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 364.0086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -182,8 +183,16 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
-    "Algorithms/Divide and Conquer Algorithm.md",
+    "Untitled 2.canvas",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Elementary Row Operations.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Row Echelon Form.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/LU Factorization.md",
+    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives/Jacobian.md",
+    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
+    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Differentiability.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Efficient Matrix Multiplication.md",
+    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives",
+    "Algorithms/Divide and Conquer Algorithm.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Feivald's Algorithm.md",
     "Algorithms/Randomization Algorithms/Probabilistic Algorithm.md",
     "Algorithms/Sorting/Sorting Time Complexity.md",
@@ -195,7 +204,6 @@
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Overview of Solving Systems of Linear Equations.md",
-    "LU Factorization.md",
     "Lower Triangular Matrices.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Cramer's Rule.md",
@@ -205,13 +213,7 @@
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Krylov Methods.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Inner Product Spaces.md",
-    "Machine Learning/Machine Learning/Algorithms/NLP/Transformer.md",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers/Transformers.md",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers",
-    "Machine Learning/Machine Learning/Algorithms/NLP/Embedding.md",
-    "Machine Learning/Machine Learning/Algorithms/NLP/Tokenization.md",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
-    "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
     "Numerical Analysis/Numerical Stability",
     "Numerical Analysis/Numerical Linear Algebra",
     "Numerical Analysis",
@@ -221,7 +223,6 @@
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations",
     "Untitled 3.base",
     "Pasted image 20260108145912.png",
-    "Ordinary Differential Equations/Solving Differential Equations/First Order Differential Equations/Untitled",
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",
