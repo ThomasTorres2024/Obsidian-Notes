@@ -44,4 +44,20 @@ $$A=\left(\prod_{i=1}^{m-1}P_i^{-1}L_{i}^{-1} \right)U $$
 # $PA=LU$ Factorization
 The factorization we computed is not quite an $LU$ factorization of $A$, but it can be manipulated into being one. It turns out that we have computed an [[LU Factorization]] of $PA$. 
 
-In our product for determining $U$, it turns out that we can actually reorder our matrix:
+In our product for determining $U$, it turns out that we can actually reorder our matrix. Let us consider an example of $A$ being $3 \times 3$, so, our factorization would be:
+$$L_3P_3L_2P_2L_1P_1A=U$$Let our $L'$ matrices that we obtain through some pivoting be:
+$$L_3^{'}=L_3,L_2^{'}=P_3L_2P_3^{-1},L_1^{'}=P_3P_2L_1P_2^{-1}P_3^{-1}$$
+Notice in the following that:
+$$L'_3L'_2L'_1P_3P_2P_1=L_3P_3L_2P_2L_1P_1$$
+Which notice that we can deal with the following factorization:
+$$(L'_{m-1}L'_{m-2}\dots L'_1)(P_{m-1}\dots P_2 P_1)A=U$$
+Which thus gives us the following factorization:
+$$PA=LU$$
+Any matrix $A$ that is square has a partial pivot LU decomposition. We do not actually permute $A$, and then perform partial pivoting on the resulting $PA$, as $P$ is unknown ahead of time. Instead, we follow the following algorithm for performing [[Gaussian Elimination]]:
+![[Pasted image 20260118061605.png]]
+
+---
+# Complete Pivoting 
+In complete pivoting, we change how we select our pivots for [[Numerical Stability]]. We permute the rows on the left, and the columns on the right of some matrix, obtaining some factorization similar to the above $PA=LU$ factorization:
+$$PAQ=LU$$
+Which we can then similarly work on. 

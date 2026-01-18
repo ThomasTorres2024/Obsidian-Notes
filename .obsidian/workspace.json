@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:gaussian",
+                "query": "gaussian el",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,9 +183,11 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
-    "Permutation Matrix.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
+    "Pasted image 20260118061605.png",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
+    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
+    "Permutation Matrix.md",
     "Untitled 2.canvas",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Elementary Row Operations.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Row Echelon Form.md",
@@ -212,8 +214,6 @@
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Conjugate Gradient.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sparse Matrix.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Krylov Methods.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Arnoldi Iteration.md",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers",
     "Numerical Analysis/Numerical Stability",
     "Numerical Analysis/Numerical Linear Algebra",
