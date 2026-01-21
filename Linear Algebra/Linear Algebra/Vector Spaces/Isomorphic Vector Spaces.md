@@ -5,7 +5,7 @@ draft: "false"
 ---
 # Isomorphic Vector Space Introduction
 
-Let us consider the following vector spaces: 
+Let us consider the following [[Vector Space]]: 
 
 1. $\mathbb{R}^{2 \times 2}$ with associated basis: $\left\{ \begin{bmatrix} 1&0\\0&0 \end{bmatrix},\begin{bmatrix} 0&1\\0&0 \end{bmatrix}, \begin{bmatrix} 0&0\\1&0 \end{bmatrix}, \begin{bmatrix} 0&0\\0&1 \end{bmatrix} \right\}$
 2. The polynomial space $\mathcal{P}^{3}$ with basis $\{1,x,x^2,x^3 \}$
@@ -24,7 +24,7 @@ We would hope that these operations represent the same vectors across different 
 ---
 # Isomorphic Vector Spaces Definition 
 
-Given a linear transformation $T : \mathcal{V} \rightarrow \mathcal{W}$ on vector spaces $\mathcal{V,W}$ over the field $\mathbb{F}$, we can say that $\mathcal{V}$ and $\mathcal{W}$ are isomorphic if $T$ is invertible. 
+Given a [[Linear Transformation]] $T : \mathcal{V} \rightarrow \mathcal{W}$ on vector spaces $\mathcal{V,W}$ over the field $\mathbb{F}$, we can say that $\mathcal{V}$ and $\mathcal{W}$ are isomorphic if $T$ is [[Invertible]]. 
 
 We can call the vector spaces isomorphic given the condition of an invertible $T$ since $\mathcal{V}$ and $\mathcal{W}$ are vector spaces, and $T$ is a bijection between spaces since it is invertible. All we are doing is naming a valid bijection and enforcing that the resulting domain and range of our transformation are both vector spaces to achieve the isomorphism property. 
 
@@ -40,7 +40,7 @@ and
 
 $$T^{-1}(a+bx+cx^2+dx^3)=\begin{bmatrix} a&b\\c&d \end{bmatrix}$$
 ---
-# An Isomorphism is an Equivalence Relation 
+# An Isomorphism is an [[Equivalence Relation]] 
 
 For an isomorphism to be an equivalence relation it must be, reflexive, symmetric and transitive. We will denote an isomorphism by "$\equiv$", and consider the vector spaces of dimension $n$ $\mathcal{V},\mathcal{W},\mathcal{Z}$.
 
@@ -81,7 +81,7 @@ The transformation $T : \mathcal{V} \rightarrow \mathbb{F}^n$ can be denoted as 
 
 Likewise, the inverse of $T$ is given by: $T^{-1} : \mathbb{F}^n \rightarrow \mathcal{V}$ and is defined as $f^{-1}(\vec{e}_{i}) = \vec{v}_{i}$ which simply maps the basis vectors from the field space to the basis vectors of the other vector space. 
 
-## Corollary 
+## Corollary (For [[Dimension]])
 As a corollary, if dim$(\mathcal{V}) =$ dim$(\mathcal{W})$ and both vector spaces are of finite dimension, then it follows from the fact that vector space isomorphisms are an equivalence relation, that $\mathcal{V} \equiv \mathcal{W}$. 
 
 That is to say: $\mathcal{V} \equiv \mathcal{W} \Longleftrightarrow \text{dim}(\mathcal{V})=\text{dim}(\mathcal{W})$

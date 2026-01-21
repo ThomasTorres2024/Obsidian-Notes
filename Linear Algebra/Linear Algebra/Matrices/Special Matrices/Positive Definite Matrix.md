@@ -83,3 +83,8 @@ $$e_{i}^TAe_{i}=e_{i}^TU^T(UDU^T)Ue_{i}=e_{i}^TDe_{i}=\lambda e_{i}^Te_{i}=\lamb
 Since $x^TAx \geq 0$ and we know that $\lambda \neq 0$ it follows that $\lambda \geq 0$. 
 
 ---
+# Properties
+Given [[Hermitian]] positive definite matrices, $A,X$ we have that:
+$(X^HAX)^H=X^HAX$. For $y \in \mathbb{R}^n$ we have that:
+$$y^HX^HAXy=b^HAb \geq 0$$
+Which is the case since $A$ is assumed [[Positive Definite Matrix]]. 

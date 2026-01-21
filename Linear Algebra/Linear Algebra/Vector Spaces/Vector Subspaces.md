@@ -18,7 +18,7 @@ A vector space can be described as the [[span]] of the set of $n$ vectors. This 
 
 We can say that two subspaces are [[Complementary Subspaces]] if:
 $$S_{1} \oplus S_{2} = \mathbb{R}^n \text{ and } S_{1} \cap S_{2} = \{ \}$$
-The [[dimension]] of a [[Vector Space]] is the number of vectors in the [[basis]]. 
+The [[Dimension]] of a [[Vector Space]] is the number of vectors in the [[basis]]. 
 
 ---
 

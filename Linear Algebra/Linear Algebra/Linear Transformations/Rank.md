@@ -4,7 +4,7 @@ tags:
 draft: "False"
 ---
 # Rank Definition
-We can think of the rank of a matrix as the [[dimension]] of the [[Column Space]] and the [[Row Space]], which are always equivalent, and we just refer to this quantity as the rank:
+We can think of the rank of a matrix as the [[Dimension]] of the [[Column Space]] and the [[Row Space]], which are always equivalent, and we just refer to this quantity as the rank:
 $$\text{dim}(\text{col}(A))=\text{dim}(\text{row}(A))=r$$
 A matrix which has a full rank has the maximum possible rank. For a matrix, $A \in \mathbb{F}^{m \times n}$, the matrix has rank:
 $$r=\text{min}(m,n)$$

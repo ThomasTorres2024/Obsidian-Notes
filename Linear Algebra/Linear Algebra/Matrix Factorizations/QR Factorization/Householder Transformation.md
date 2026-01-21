@@ -4,7 +4,7 @@ tags:
 draft: "false"
 ---
 # Introduction
-Computation of the [[QR Factorization]] in introductory examples makes use of the numerically unstable [[The Gram-Schmidt Process]] and [[Modified Gram-Schmidt Process]], both of which are [[numerically unstable]] after several hundred iterations. Via [[Householder Transformation]]s, we can express a matrix $A\in \mathbb{R}^{m \times n}$ where $m \geq n$ as the product of a matrix with orthonormal columns, $Q \in \mathbb{R}^{m \times n}$, and an upper triangular matrix $R \in \mathbb{R}^{n \times n}$ which is guaranteed to have [[Linear Algebra/Vector Spaces/Rank|Rank]] $n$, at least this is the case when we compute a [[Reduced QR]] factorization.
+Computation of the [[QR Factorization]] in introductory examples makes use of the numerically unstable [[The Gram-Schmidt Process]] and [[Modified Gram-Schmidt Process]], both of which are [[numerically unstable]] after several hundred iterations. Via [[Householder Transformation]]s, we can express a matrix $A\in \mathbb{R}^{m \times n}$ where $m \geq n$ as the product of a matrix with orthonormal columns, $Q \in \mathbb{R}^{m \times n}$, and an upper triangular matrix $R \in \mathbb{R}^{n \times n}$ which is guaranteed to have [[Rank|Rank]] $n$, at least this is the case when we compute a [[Reduced QR]] factorization.
 
 ---
 # Main Idea

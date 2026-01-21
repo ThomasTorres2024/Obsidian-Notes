@@ -33,7 +33,7 @@ The [[Time Complexity]] of [[Matrix Multiplication]] is generally on the order o
 #### (Example) [[Outer Product]]
 The [[Outer Product]] is a matrix product that involves multiplying vectors $\vec{v}^T \in \mathbb{R}^{1 \times n}$ and $\vec{u} \in \mathbb{R}^n$ to yield:
 $$A=\vec{u} \cdot \vec{v}^T$$
-Which yields a [[rank]] one matrix which each column of $A$, $\vec{a}_{j}$ corresponds to:
+Which yields a [[Rank]] one matrix which each column of $A$, $\vec{a}_{j}$ corresponds to:
 $$\vec{a}_{j}=\vec{u}\cdot v_{j}$$
 Which is to say we just scale our vector $\vec{u}$ by an entry in $\vec{v}^T$.
 

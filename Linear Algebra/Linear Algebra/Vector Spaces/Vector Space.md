@@ -17,3 +17,7 @@ A [[Vector Space]] can be described by a [[Field]], $\mathbb{F}$, and a set whic
 Given that these properties are satisfied we can denote a [[Vector Space]] by the set with a field, a set of vectors, an addition and scaling operation:
 $$\mathcal{V}=\{ V,\mathbb{F},+,* \}$$
 Vector addition in the [[Vector Space]] forms an [[Abelian Group]]. We can verify that a [[Vector Space]] is actually a [[Vector Space]] if it abides by the above criteria. We can sidestep this condition if we have some subset of the current [[Vector Space]] that satisfies closure of addition of vectors, closure of scalars, and lastly the zero element resulting in the zero vector. This is the test for the [[Vector Subspaces]], given that $\mathcal{V} \neq \emptyset$.  
+
+A vector space typically has a finite dimension, meaning that the [[basis]] of a vector space has a finite cardinality. 
+
+We denote a [[Vector Space]] with an associated [[norm]] as a "Normed Vector Space", $(\mathcal{V},\| \cdot \|)$. 

@@ -13,15 +13,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
+                "file": "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gaussian Elimination with Pivoting"
+              "title": "Gaussian Elimination"
+            }
+          },
+          {
+            "id": "1ecf5c144bfb51af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations/Hermitian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hermitian"
+            }
+          },
+          {
+            "id": "338fed27ab0e1136",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Abstract Algebra/Group Theory/Groups/Group.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Group"
+            }
+          },
+          {
+            "id": "0c2ae560009e820c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Abstract Algebra/Group Theory/Special Groups/General Linear Group.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "General Linear Group"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gaussian el",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 469.0086555480957,
     "collapsed": true
   },
   "right": {
@@ -181,56 +224,56 @@
       "bases:Create new base": false
     }
   },
-  "active": "205bb5f57d4617ba",
+  "active": "338fed27ab0e1136",
   "lastOpenFiles": [
-    "Pasted image 20260118061605.png",
+    "Abstract Algebra/Group Theory/Special Groups/Special Linear Group.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
-    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations/Hermitian.md",
+    "Abstract Algebra/Group Theory/Special Groups/General Linear Group.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Isomorphic Vector Spaces.md",
+    "Linear Algebra/Linear Algebra/Matrices/Determinants/Determinant.md",
+    "Calculus/Calculus/Geometry of Euclidean Spaces and Identities/Determinant.md",
+    "Abstract Algebra/Group Theory/Groups/Cayley Table.md",
+    "Pasted image 20260120163605.png",
+    "Abstract Algebra/Group Theory/Special Groups/Abelian Group.md",
+    "Abstract Algebra/Group Theory/Special Groups",
+    "Abstract Algebra/Group Theory/Groups/Identity Element.md",
+    "Abstract Algebra/Group Theory/Groups/Binary Operation.md",
+    "Abstract Algebra/Group Theory/Groups",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Dimension.md",
+    "Abstract Algebra/Group Theory",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Dependent.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Subspaces.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Independent.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Positive Definite Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/Cholesky Factorization.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/Polar Decomposition.md",
+    "Pasted image 20260118061605.png",
+    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
     "Permutation Matrix.md",
     "Untitled 2.canvas",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Elementary Row Operations.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Row Echelon Form.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/LU Factorization.md",
-    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives/Jacobian.md",
-    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Higher Order Derivative.md",
-    "Calculus/Calculus/Derivatives/Multivariable Differentiation/Differentiability.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Efficient Matrix Multiplication.md",
     "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives",
-    "Algorithms/Divide and Conquer Algorithm.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Feivald's Algorithm.md",
-    "Algorithms/Randomization Algorithms/Probabilistic Algorithm.md",
-    "Algorithms/Sorting/Sorting Time Complexity.md",
-    "Algorithms/Sorting/Linear Sorting.md",
     "Algorithms/Untitled",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Strassen Matrix Multiplication Algorithm.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication/Matrix Multiplication.md",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Overview of Solving Systems of Linear Equations.md",
-    "Lower Triangular Matrices.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Cramer's Rule.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Iterative Solvers/Krylov Methods/Conjugate Gradient.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sparse Matrix.md",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers",
     "Numerical Analysis/Numerical Stability",
     "Numerical Analysis/Numerical Linear Algebra",
-    "Numerical Analysis",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
     "Pasted image 20260111084207.png",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations",
-    "Untitled 3.base",
     "Pasted image 20260108145912.png",
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",
     "Pasted image 20260105144503.png",
-    "Pasted image 20260105144049.png",
     "Untitled.canvas",
-    "Untitled 1.canvas",
-    "Pasted image 20260105071802.png"
+    "Untitled 1.canvas"
   ]
 }
