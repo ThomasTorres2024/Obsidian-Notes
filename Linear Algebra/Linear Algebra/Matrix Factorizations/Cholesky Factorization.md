@@ -15,7 +15,8 @@ If we restrict ourselves to positive diagonal entries, then the factorization is
 
 We can think of the Cholesky factorization as finding $R$, a lower triangular matrix, which is the equivalent of a square root, since $RR^H=A$
 
-
+---
+# Numerical Computation of [[Cholesky Factorization]]
 
 
 
