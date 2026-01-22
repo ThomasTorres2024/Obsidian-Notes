@@ -46,6 +46,15 @@ For some 2 dimensional vector field, we have a flow along the $x$ and $y$ direct
 #### Theorem 
 For any $C^2$ [[Vector Field]] $F$, $\text{div}\text{ curl}(\vec{F}) =0$:
 $$\nabla \cdot (\nabla \times f)=0$$
+We can prove this by computing the expression using the definition of the [[Cross Product]]:
+$$\begin{align}
+\nabla \cdot \nabla f = \begin{bmatrix} \hat{i} & \hat{j} & \hat{k}\\
+\frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z} \\
+P & Q & R
+\end{bmatrix}
+\end{align}=\nabla \cdot (\hat{i} (R_y-Q_z) -\hat{j}(R_x-P_z) +\hat{k}(Q_x-P_y) $$
+$$=R_{yx}-Q_{zx}-R_{xy}+P_{zy}+Q_{xz}-P_{yz} = 0$$
+Due to equality of mixed [[Partial Derivative]]s, it follows that the above expression is 0:$$ \therefore \nabla \cdot (\nabla \times f)=0$$
 
 * $\text{div}(F+G)=\text{div}(F)+\text{div}(G)$
 * $\text{div}(fF)=(\nabla f)\cdot F + f \text{div}(F)$

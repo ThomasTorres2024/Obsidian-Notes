@@ -37,6 +37,15 @@ The curl tells us how fast we are spinning at any given time up to a factor of t
 #### Theorem 
 For any $C^2$ function $f$, $\text{curl}(\nabla f) =0$. 
 $$\therefore \nabla \times (\nabla f)=0$$
+###### Proof
+$$\begin{align}
+\nabla \times \nabla f = \begin{bmatrix} \hat{i} & \hat{j} & \hat{k}\\
+\frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z} \\
+\frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z}
+\end{bmatrix}
+\end{align}$$
+Note that this matrix is clearly [[Linearly Independent]], so it clearly will have a resulting [[Determinant]] of 0. If we also just compute the [[Cross Product]] normally, the result will also be zero. 
+
 ---
 # Identities
 * $\text{curl}(F+G)=\text{curl}(F)+\text{curl}(G)$

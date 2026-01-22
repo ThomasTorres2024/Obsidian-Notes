@@ -19,7 +19,7 @@ $$\text{det}(\mathcal{H})=f_{xx}f_{yy}-f_{xy}^2$$
 $$\text{trace}(\mathcal{H})=f_{xx}+f_{yy}$$
 The determinant of our hessian encodes the [[Second Derivative Test]]. 
 
-The trace of our hessian matrix encodes the [[Laplacian]]. 
+The trace of our hessian matrix encodes the [[Calculus/Calculus/Vector Fields/Laplacian]]. 
 
 We can think of the Hessian matrix being the [[Gradient]] of the gradient of $f$. By this, we can think of differentiating the gradient by each variable, which generates two new vectors which we condense into a matrix:
 $$\nabla f = \langle f_{x},f_{y}\rangle$$

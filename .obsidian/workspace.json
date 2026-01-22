@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "338fed27ab0e1136",
+            "id": "205bb5f57d4617ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Calculus/Calculus/Vector Fields/Laplacian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Laplacian"
+            }
+          },
+          {
+            "id": "f55a001cda65da89",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "divergence",
+                "query": "laplacian",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 346,
     "collapsed": true
   },
   "right": {
@@ -181,40 +195,40 @@
       "bases:Create new base": false
     }
   },
-  "active": "338fed27ab0e1136",
+  "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
     "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Del.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Laplacian.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Curl.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Del.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/Cholesky Factorization.md",
+    "Pasted image 20260120163605.png",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Dimension.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Rank.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Dependent.md",
+    "Abstract Algebra/Group Theory/Special Groups/Special Linear Group.md",
     "Abstract Algebra/Group Theory/Special Groups/General Linear Group.md",
+    "Abstract Algebra/Group Theory/Special Groups/Abelian Group.md",
+    "Abstract Algebra/Group Theory/Groups/Identity Element.md",
     "Abstract Algebra/Group Theory/Groups/Order.md",
     "Abstract Algebra/Group Theory/Groups/Group.md",
     "Abstract Algebra/Group Theory/Groups/Finite Group.md",
-    "Abstract Algebra/Group Theory/Groups/Cyclic Group.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations/Hermitian.md",
-    "Abstract Algebra/Group Theory/Special Groups/Special Linear Group.md",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Isomorphic Vector Spaces.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Determinant.md",
-    "Calculus/Calculus/Geometry of Euclidean Spaces and Identities/Determinant.md",
     "Abstract Algebra/Group Theory/Groups/Cayley Table.md",
-    "Pasted image 20260120163605.png",
-    "Abstract Algebra/Group Theory/Special Groups/Abelian Group.md",
-    "Abstract Algebra/Group Theory/Special Groups",
-    "Abstract Algebra/Group Theory/Groups/Identity Element.md",
+    "Abstract Algebra/Group Theory/Groups/Cyclic Group.md",
     "Abstract Algebra/Group Theory/Groups/Binary Operation.md",
     "Abstract Algebra/Group Theory/Groups",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Dimension.md",
+    "Abstract Algebra/Group Theory/Special Groups",
     "Abstract Algebra/Group Theory",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Dependent.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Subspaces.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Independent.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Positive Definite Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/Cholesky Factorization.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Symmetric Gaussian Elimination.md",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
     "Pasted image 20260118061605.png",
+    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
+    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
+    "Permutation Matrix.md",
     "Untitled 2.canvas",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Elementary Row Operations.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Row and Column Operations/Row Echelon Form.md",
     "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives",
     "Algorithms/Untitled",
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Unary Matrix Operations",

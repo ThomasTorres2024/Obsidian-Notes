@@ -97,7 +97,7 @@ In the degenerate case, what happens depends upon higher order derivatives of ou
 We can express our test more succinctly using a symmetric matrix of partial derivatives, which is better known as the [[Hessian Matrix]], denoted by $\mathcal{H}$ for the case in $\mathbb{R}^2$ for the function $f : \mathbb{R}^2 \rightarrow \mathbb{R}$:
 
 $$\mathcal{H}=\begin{bmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy}  \end{bmatrix}$$
-Note that computing the trace and determinant of our matrix gives us the [[Laplacian]] and the [[Second Derivative Test]]. 
+Note that computing the trace and determinant of our matrix gives us the [[Calculus/Calculus/Vector Fields/Laplacian]] and the [[Second Derivative Test]]. 
 
 To determine if our matrix has a maxima/minima, a saddle point, or nothing we begin by considering $\text{det}(\mathcal{H})$.
 $$\text{det}(\mathcal{H})=f_{xx}f_{yy}-f_{xy}^2$$

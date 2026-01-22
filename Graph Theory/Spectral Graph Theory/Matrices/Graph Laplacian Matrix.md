@@ -37,4 +37,4 @@ $$L=D-B=\begin{bmatrix} 3 & -1 & -1 & -1\\
 \end{bmatrix}$$
 Notice also that $\text{dim}(N(L))=1$, since we have 1 eigen vector in the [[Nullspace]] of $L$. 
 
-The reason why we call the [[Graph Laplacian Matrix]] a "Laplacian"? I'm a bit unsure of this, but it seems like our main point of investigating this thing is to find the [[Fiedler Eigen Vector]], so we have to concern ourselves with the [[eigen values]] of the [[Graph Laplacian Matrix]], such that we find the smallest $\neq 0$, so we need to find the nullspace, which seems similar to the [[Laplacian]] 
+The reason why we call the [[Graph Laplacian Matrix]] a "Laplacian"? I'm a bit unsure of this, but it seems like our main point of investigating this thing is to find the [[Fiedler Eigen Vector]], so we have to concern ourselves with the [[eigen values]] of the [[Graph Laplacian Matrix]], such that we find the smallest $\neq 0$, so we need to find the nullspace, which seems similar to the [[Calculus/Calculus/Vector Fields/Laplacian]] 
