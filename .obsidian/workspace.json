@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Groups/Finite Group.md",
+                "file": "Abstract Algebra/Group Theory/Special Groups/Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finite Group"
+              "title": "Subgroup"
             }
           },
           {
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "group",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,7 +197,12 @@
   },
   "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
+    "Abstract Algebra/Group Theory/Special Groups/Klein 4 Group.md",
     "Abstract Algebra/Group Theory/Special Groups/Subgroup.md",
+    "Optimization/Theory of Optimization/Optimization Raw Notes.md",
+    "Calculus/Calculus/Derivatives/Partial Derivatives/Optimization/Critical Points.md",
+    "Optimization/Theory of Optimization",
+    "Abstract Algebra/Group Theory/Groups/Finite Group.md",
     "Abstract Algebra/Group Theory/Special Groups/Abelian Group.md",
     "Calculus/Calculus/Vector Fields/Laplacian.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
@@ -215,7 +220,6 @@
     "Abstract Algebra/Group Theory/Groups/Identity Element.md",
     "Abstract Algebra/Group Theory/Groups/Order.md",
     "Abstract Algebra/Group Theory/Groups/Group.md",
-    "Abstract Algebra/Group Theory/Groups/Finite Group.md",
     "Abstract Algebra/Group Theory/Groups/Cayley Table.md",
     "Abstract Algebra/Group Theory/Groups/Cyclic Group.md",
     "Abstract Algebra/Group Theory/Groups/Binary Operation.md",
@@ -225,9 +229,6 @@
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Symmetric Gaussian Elimination.md",
     "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination with Pivoting.md",
     "Pasted image 20260118061605.png",
-    "Linear Algebra/Linear Algebra/Solving Systems of Equations/Traditional Solvers/Gaussian Elimination.md",
-    "Machine Learning/Machine Learning/Data/Feature Transformation.md",
-    "Permutation Matrix.md",
     "Untitled 2.canvas",
     "Calculus/Calculus/Derivatives/Multivariable Differentiation/Matrix Derivatives",
     "Algorithms/Untitled",
@@ -235,7 +236,6 @@
     "Linear Algebra/Linear Algebra/Matrices/Matrix Operations/Matrix Multiplication",
     "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers",
     "Numerical Analysis/Numerical Stability",
-    "Numerical Analysis/Numerical Linear Algebra",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
     "Pasted image 20260111084207.png",
