@@ -58,7 +58,7 @@ $$\nabla \times \vec{F} = \text{curl}(\vec{F})= \det\left(\begin{bmatrix} \hat{i
 $$=\hat{i}(xz-1)-\hat{j}(yz)+\hat{k}(-x^2)$$
 #### 2.) Let $\vec{F}=\langle x,xy,1\rangle$ 
 $$\nabla \times \vec{F} = \text{curl}(\vec{F})= \det\left(\begin{bmatrix} \hat{i} & \hat{j} & \hat{k}\\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ x & xy & 1 \end{bmatrix} \right)$$
-$$=\hat{i}(0)-\hat{j}(0)+\hat{k}(y)+\hat{k}y$$
+$$=\hat{i}(0)-\hat{j}(0)+\hat{k}(y)+\hat{k}y=\langle 0,0,y\rangle$$
 #### 3.) Let $\vec{F}=\left\langle \frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right\rangle$ 
 $$\text{curl}(F)=P_x-Q_y=\frac{-2xy}{(x^2+y^2)^2}+\frac{2yx}{(x^2+y^2)^2}=0$$
 $$\therefore \text{curl}(F)=0 \implies F \text{ is irrotational}$$

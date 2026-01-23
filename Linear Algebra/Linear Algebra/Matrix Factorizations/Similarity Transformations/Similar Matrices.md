@@ -22,6 +22,10 @@ $$B\vec{y}=\lambda \vec{y}$$
 
 Therefore, if $A$ and $B$ are similar, they have the same eigen-values, but their eigen vectors are not guaranteed to be the same. 
 
+We can also prove this using the definition of an [[Eigen Value]] by using the definition with the [[Characteristic Polynomial]]:
+$$p_B(\lambda )=\det(B-I_n\lambda)=\det(M^{-1}AM-I_n\lambda)$$
+$$=\det(A-I_n\lambda)\cdot \det(M)\cdot \frac{1}{\det(M)}=p_A(\lambda)$$
+
 Examples of similarity transformations consist of [[Eigen Value Decomposition]] ($A=PDP^{-1}$). The matrices $A$ and $B$ have the same [[eigen values]] with the same [[algebraic multiplicities]] and thus the same [[characteristic equation]]. 
 
 Since these matrices have the same eigen values it follows that they must have the same [[traces]] and [[determinants]]. 
@@ -42,3 +46,6 @@ A matrix factorization of $A=M^{-1}BM$ can reduce the complexity the operation o
 If it were the case that $B$ is diagonal, then: 
 
 $$A^{5000}= \prod_{i=1}^{5000} M^{-1}BM=M^{-1}B^{5000}M$$
+#
+
+

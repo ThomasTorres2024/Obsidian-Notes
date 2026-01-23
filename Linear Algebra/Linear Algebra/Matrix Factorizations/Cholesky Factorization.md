@@ -30,17 +30,29 @@ The resulting expression is the following sequence:
 $$A= R_n^H \dots R_2^HR_{1}^HR_{1}R_{2} \dots R_n$$
 Which compresses down into the product of an [[Upper Triangular Matrix]] and a [[Lower Triangular Matrices]]:
 $$A=R^HR$$
----
-# [[Time Complexity]] 
-The amount of operations required to form $A$ using big $O$ notation is $O(m^3)$. Similarly the number of flops is $\frac{1}{3}m^3$. 
+We can express this computation as an in-place algorithm that is performed on the upper part of $A$. It is not necessary to perform the whole result on both portions of the matrix as $R$ is upper triangular. We obtain the following algorithm:
+
+* $R=A$
+* for $k=1$ to $m$:
+	* for $j=k+1$ to $m$:
+		* $R_{j,j:m}=R_{j,j:m}-R_{k,j:m}\overline{R}_{kj}/R_{kk}$ 
+		* $R_{k,k:m}=R_{k,k:m}/\sqrt{R_{kk}}$
+
+The amount of operations required to form $A$ using big $O$ notation ([[Time Complexity]]) is $O(m^3)$. Similarly the number of flops is $\frac{1}{3}m^3$. 
 
 ---
 # [[Numerical Stability]] of the [[Cholesky Factorization]]
-The [[Cholesky Factorization]] is said to always be stable. For some $A$ that is [[Hermitian]] [[Positive Definite Matrix]], it follows that $A$ is 
+The [[Cholesky Factorization]] is said to always be stable. For some $A$ that is [[Hermitian]] [[Positive Definite Matrix]], it follows that $A$ is always stable.
 
 ---
-# Numerical Computation of [[Cholesky Factorization]]
-
+# Solving [[system of equations]] with [[Cholesky Factorization]]
+Given some SPD $A$, we can express $A$ as $A=R^HR$. We can then solve $Ax=b$ by writing:
+$$R^HRx=b$$
+$$R^Hy=b$$
+We can begin by solving this system of equations.
+Then we can solve the second system of equations given by:
+$$y=Rx$$
+Once $x$ is solved we obtain a solution to the system of linear equations. The time complexity is still $O(n^3)$ for this operation, and also still takes $\frac{1}{3}m^3$ many flops to perform. 
 
 
 ---
