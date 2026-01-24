@@ -130,4 +130,6 @@ $H$ is not a subgroup because it is not closed. $a=\sqrt{2} \in H$. Let $a=b$. $
 
 For $K$, consider $a=4 \in G$. Notice that $a^{-1}=1/4 \not \in G$. Thus $\exists a \in K$ such that $\not \exists a^{-1} \in K$. 
 
+#### Example 6.) [[Abstract Algebra/Group Theory/Special Groups/Cyclic Group|Cyclic Group]] (Read More Here)
+
 
