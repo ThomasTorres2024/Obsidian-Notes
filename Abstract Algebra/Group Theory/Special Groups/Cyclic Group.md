@@ -15,6 +15,31 @@ Therefore, by the [[Subgroup]] test of 1 element, it follows that $G$ is a subgr
 We can generalize the idea of a group formed from $a$, just a single element of $G$, to a subset of elements, $S$ such that $\langle S \rangle$ is the smallest [[Subgroup]] which contains all members of $S$, even if this means that $\langle S \rangle = G$. We can also define this as the intersection of all [[Subgroup]]s of $G$ which contain $S$, which thus forms a new subgroup automatically. 
 
 ---
+##### (Thm 4.1) Criterion for $a^i=a^j$ 
+Let $G$ be a [[Group]], let $a \in G$. $O(a)=\infty \iff$ $a^i=a^j \text{ only when } i=j$. If $O(a) \neq \infty$, then $a^i=a^j$ when $n$ divides $i-j$. 
+
+##### Proof:
+If $O(a)=\infty \implies \not \exists n, a^n = e$ (follows from def of [[Order]]). 
+$$a^{i}=a^{j}$$
+Then using cancellation:
+$$a^{i-j}=e$$
+Which thus entails that $i-j=0 \implies i=j$. The other portion of the proof is trivial. 
+
+Now we will prove the portion when $a$ has finite order $O(a)=n$ that $a^i=a^j$ iff $n | i-j$. 
+
+First we need to show that the generator for $a$ yields the following:
+$$\langle a \rangle = \{e,a,a^2,\dots a^{n-1} \}$$
+Since $O(a)=n \implies$ the elements in $\langle a \rangle$ are unique. For some $a^k \in \langle  a\rangle$, we can use the [[Euclidean Algorithm]] to express $\exists q,r \in \mathbb{Z}$ such that $k=nq+r$ where $0 \leq r < n$ that allows us to express $a^k$ as:
+$$a^k=a^{nq+r}=a^{nq}\cdot a^r=e\cdot a^r=a^r$$
+So, any member of $\langle a \rangle$ is of the form:
+$$\langle a \rangle = \{e,a,a^2,\dots a^{n-1} \}$$
+It can now be shown that $a | i-j$. Recall that:
+$$a^i=a^j \iff a^{i-j}=n$$
+Using the [[Euclidean Algorithm]] again we have that, $i-j=nq+r$ for $0 \leq r < n$: 
+
+
+
+---
 # Examples 
 #### Example 1.) $U(10)$. 
 Notice that $U(10)$ consists of all positive integers relatively prime to $10$, thus:

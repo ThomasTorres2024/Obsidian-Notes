@@ -9,7 +9,7 @@ There are multiple forms of programming languages. The first generation of progr
 The third generation of programming languages is an abstraction of assembler. These languages abstract the operations of assembler into language that is much closer to English, making code a lot easier to write. Some examples of this include [[Python]], [[Dart]], [[Java Script]], etc. 
 
 ---
-# Types of [[Programming Language]]s 
+# Types of [[Fundamentals of Programming Languages/Languages Overview/Programming Language]]s 
 There are various types of programming languages
 * [[Imperative Language]]s
 * [[Functional Language]]s
