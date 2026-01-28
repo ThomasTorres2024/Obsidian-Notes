@@ -34,12 +34,73 @@ $$a^k=a^{nq+r}=a^{nq}\cdot a^r=e\cdot a^r=a^r$$
 So, any member of $\langle a \rangle$ is of the form:
 $$\langle a \rangle = \{e,a,a^2,\dots a^{n-1} \}$$
 It can now be shown that $a | i-j$. Recall that:
-$$a^i=a^j \iff a^{i-j}=n$$
-Using the [[Euclidean Algorithm]] again we have that, $i-j=nq+r$ for $0 \leq r < n$: 
+$$a^i=a^j \iff a^{i-j}=e$$
+Using the [[Euclidean Algorithm]] again we have that, $i-j=nq+r$ for $0 \leq r < n$, then:
+$$a^{i-j}=a^{nq+r}=e$$
+$$=(a^q)^n\cdot a^r=e \cdot a^r = a^r=e$$
+We have that $r=0$, so $\implies i-j=nq$. The other direction for this proof is trivial, if $i-j | n$ then we can easily verify this condition of $a^i=a^j$:
+$$a^{i-j}=a^{nq}=e$$
+$$\iff a^i = a^j$$
+## Important Corollaries from this Result:
+#### Corollary 1.) Agreement of Order 
+For $a \in G$, $|a| = | \langle a \rangle |$. 
+
+#### Corollary 2.) $a^k=e$ iff $O(a) | k$  
+$$a^k=e \iff a^k = a^0 \iff a^{k-0} \iff O(a) | k$$
+
+#### Corollary 3.) If $a^k=e$ for $a \in G$, $a^k=e$ iff $k$ is a multiple of $|a|$ 
+#### Corollary 4.) Relationship between $|ab|$ and $|a| |b|$. 
+Generally nothing is given, but if we have that $a,b \in G$ where $G$ is a [[Finite Group]] and $ab=ba$ then it follows that $|ab|$ divides $|a| |b|$: 
+
+##### Proof: 
+If we let $|a|=m$ and $|b|=n$ then we can write:
+$$(ab)^{mn} = (a^m)^n(b^n)^m=e^ne^m=e$$
+We therefore have by corollary 2 that:
+$$|ab| | mn$$
+
+# Modular Arithmetic and the [[Binary Operation]] of a [[Cyclic Group]] 
+
+If we have that $(i+j) \mod(n)=k$ then we know that:
+$$a^{i}\cdot a^j = a^k \iff i+j \mod(n)=k$$
+Essentially every [[Cyclic Group]] has this underlying structure, meaning that there really only is 1 cyclic group. This behavior here is a Group [[Isomorphism]]. 
+
+##### Theorem 4.2) Determining the order of $|a^k|$ given only $|a|$ 
+For group $G$ and $a \in G$ where $|a|=n$, then $\langle a^k \rangle = \langle a^{\gcd(n.k)} \rangle$ and $|a^k|=n/\gcd(n,k)\rangle$. 
+
+#### Proof
+Let $d=\gcd(n,k)$ and $k=dr$, we have that:
+$$a^k=(a^d)^r$$And then by closure we obtain:
+$$\langle a^k \rangle \subseteq \langle a^d \rangle $$
+Then by the [[Euclidean Algorithm]] we have that $\exists s,t \in \mathbb{Z}$ where $d=ns+kt$, so we obtain that:
+$$a^d=a^{ns+kt}=a^{ns}a^{kt}=(a^n)^s(a^k)^t=e\cdot (a^k)^t \implies a^d \in \langle  a^k \rangle$$
+Thus by equality of sets $\langle a^k \rangle = \langle a^d \rangle$, and we obtain the first result that:
+$$\langle a^k \rangle = \langle a^{\gcd(n.k)} \rangle$$
+Now for the second part of the theorem. Let $|a^d|=n/d$ where $d$ is a divisor of $n$. Then:
+$$(a^d)^{n/d}=a^n=e $$
+So we obtain that $|a^d| \leq n/d$. But if $i \in \mathbb{N}$, then 
+$$(a^d)^i\neq e$$
+Which is because $di < n$. Thereby $|a^d| = n/d$ exactly. If we allow $d=\gcd(n,k)$ then, we can apply the result we just derived, and we obtain that:
+
+$$|a^k|=|\langle a^k \rangle|=|\langle a^{\gcd(n,k)} \rangle| = |a^{\gcd(n,k)}|=\frac{n}{\gcd(n,k)}$$
 
 
 
----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Examples 
 #### Example 1.) $U(10)$. 
 Notice that $U(10)$ consists of all positive integers relatively prime to $10$, thus:

@@ -21,7 +21,7 @@ Given a linear function, which our objective function is, the constraints are at
 
 There are 2 approaches to solving this problem, either using the [[Simplex Algorithm]] or the [[Karmarkar Algorithm]]. 
 
-# 1.) Simplex Algorithm 
+# 1.) [[Simplex Algorithm]] 
 We begin at a corner, and then we move to the next corner, and continue to move until we have reached some minimum. This is similar to [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] but only on corner points. 
 
 In the worst case, the [[Simplex Algorithm]] would be $O(2^n)$, as we have to check all of the exponentially many corners. The average case of the simplex algorithm is far more common, and tends to be of polynomial time complexity.  On average, it is fast. It can also be shown that [[Linear Programming]] problems belong to the world of [[Complexity Class P]] Algorithms. 

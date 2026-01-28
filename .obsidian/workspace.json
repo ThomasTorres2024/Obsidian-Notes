@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "77059440b7776fe0",
+        "id": "fac04b30e6531fe0",
         "type": "tabs",
         "children": [
           {
-            "id": "193cbedbb067b3ad",
+            "id": "205bb5f57d4617ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Grammar.md",
+                "file": "Calculus/Calculus/Multivariable Functions/Contour.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grammar"
+              "title": "Contour"
+            }
+          },
+          {
+            "id": "f55a001cda65da89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Calculus/Calculus/Vector Fields/Line Integrals/Curl.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Curl"
             }
           }
         ]
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "divergence",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.0086555480957
+    "width": 408
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -180,39 +194,40 @@
       "bases:Create new base": false
     }
   },
-  "active": "a1f518bf1680a7c5",
+  "active": "205bb5f57d4617ba",
   "lastOpenFiles": [
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Grammar.md",
-    "Pasted image 20260126214711.png",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Parse Tree.md",
-    "Graph Theory/Special Graphs/Bipartite Graph.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Adjacency Matrix.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Semantics.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Syntax.md",
-    "Fundamentals of Programming Languages/Languages Overview/Logical Language.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages",
-    "Fundamentals of Programming Languages/Formal Languages/Programming Language.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages",
-    "Fundamentals of Programming Languages",
-    "Abstract Algebra/Group Theory/Special Groups/Dihedral Group.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Curl.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
-    "Calculus/Calculus/Geometry of Euclidean Spaces and Identities/Cross Product.md",
+    "Optimization/Linear Programming/Simplex Method.md",
+    "Calculus/Calculus/Multivariable Functions/Contour.md",
+    "Optimization/Linear Programming/Simplex Algorithm.md",
+    "Optimization/Linear Programming/Linear Programming.md",
+    "Optimization/Theory of Optimization/Optimization.md",
+    "Optimization/Theory of Optimization/Global Minima.md",
+    "Optimization/Theory of Optimization/Global Maxima.md",
+    "global minima.md",
     "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
-    "Abstract Algebra/Group Theory/Groups/Group Center.md",
-    "Abstract Algebra/Group Theory/Special Groups/Rotation Group.md",
-    "Abstract Algebra/Group Theory/Special Groups/Special Linear Group.md",
-    "Abstract Algebra/Group Theory/Groups/Subgroup.md",
+    "Abstract Algebra/Group Theory/Groups/Cyclic Group.md",
     "Abstract Algebra/Group Theory/Groups/Finite Group.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/Similarity Transformations/Eigen Value Decomposition.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Parse Tree.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Syntax.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Semantics.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Grammar.md",
     "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
-    "Fundamentals of Programming Languages/Languages Overview/Object Oriented Programming.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Languages",
     "Fundamentals of Programming Languages/Languages Overview/Imperative Language.md",
+    "Fundamentals of Programming Languages/Languages Overview/Object Oriented Programming.md",
+    "Fundamentals of Programming Languages/Languages Overview/Logical Language.md",
     "Fundamentals of Programming Languages/Languages Overview/Functional Language.md",
     "Fundamentals of Programming Languages/Languages Overview",
+    "Fundamentals of Programming Languages",
+    "Abstract Algebra/Group Theory/Special Groups/Rotation Group.md",
+    "Abstract Algebra/Group Theory/Special Groups/Dihedral Group.md",
+    "Abstract Algebra/Group Theory/Groups/Subgroup.md",
+    "Abstract Algebra/Group Theory/Groups/Group Center.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/Similarity Transformations/Similar Matrices.md",
+    "Programming Languages/Languages Overview",
     "Programming Languages",
-    "Optimization/Theory of Optimization/Optimization Raw Notes.md",
     "Optimization/Theory of Optimization",
-    "Abstract Algebra/Group Theory/Special Groups/Abelian Group.md",
     "Pasted image 20260120163605.png",
     "Abstract Algebra/Group Theory/Groups",
     "Abstract Algebra/Group Theory/Special Groups",
@@ -227,6 +242,7 @@
     "Pasted image 20260107083527.png",
     "Pasted image 20260107064643.png",
     "Pasted image 20260105150916.png",
+    "Pasted image 20260105144503.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
