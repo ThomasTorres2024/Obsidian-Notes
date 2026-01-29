@@ -4,7 +4,7 @@ draft: "false"
 tags:
 ---
 # Gradient Descent with Momentum Description
-The aim of [[Gradient Descent with Momentum]] is to create a [[Optimization/Gradient Descent Algorithms/Gradient Descent]] method which remembers which directions we have previously moved in. Our formula for [[Gradient Descent with Momentum]] is described using a decay term. Our previous ratio of convergence is given is a modification in the form:
+The aim of [[Gradient Descent with Momentum]] is to create a [[Optimization/Algorithms/Gradient Descent Algorithms/Gradient Descent]] method which remembers which directions we have previously moved in. Our formula for [[Gradient Descent with Momentum]] is described using a decay term. Our previous ratio of convergence is given is a modification in the form:
 $$\left(\frac{1-b}{1+b}\right)^{2}\to \left(\frac{1-\sqrt{b}}{1+\sqrt{b}}\right)$$
 Here, even if $b$ is small, it should be the case that
 $$\left(\frac{1-b}{1+b}\right)^{2} > \left(\frac{1-\sqrt{b}}{1+\sqrt{b}}\right)$$
@@ -12,7 +12,7 @@ Which implies convergence happens much quicker. Our formula for the stochastic g
 $$\textcolor{Periwinkle}{\boxed{x_{k+1}=x_{k}-sz_{k},z_{k} =\nabla f_{k}+\beta z_{k-1}}}$$ Unlike in the original formulation, we have that $z_{k}=\nabla f_{k} + \beta z_{k-1}$, which is the gradient plus the previous direction that we moved in. It isn't just the [[Gradient]], it is a modification of it.  We can say that we have moved beyond a move of 2 steps of memory, to one of 3 steps. We can think of this like a second order differential equation that has a dampening term. We want to be able to express our equation here as a system of equations. Both of these are obtained by reordering the equations:
 $$x_{k+1}=x_{k}-sz_{k}$$
 $$z_{k+1}-\nabla f_{k+1}=\beta z_{k}$$
-We are still using the same function as in the original [[Optimization/Gradient Descent Algorithms/Gradient Descent]] problem, so:
+We are still using the same function as in the original [[Optimization/Algorithms/Gradient Descent Algorithms/Gradient Descent]] problem, so:
 $$f(x)=\frac{1}{2}x^{T}Sx\implies \nabla f =Sx$$
 We can re-write our [[Gradient Descent with Momentum]] equations to be:
 $$x_{k+1}=x_{k}-sz_{k}$$$$z_{k+1}-Sx_{k+1}=\beta z_{k}$$

@@ -4,7 +4,7 @@ draft: "False"
 tags:
 ---
 # Gradient Descent Nesterov/Adagrad
-Nesterov's descent is a modification of the [[Optimization/Gradient Descent Algorithms/Gradient Descent]] algorithm that takes us back. Like the momentum idea, it involves 3 steps:
+Nesterov's descent is a modification of the [[Optimization/Algorithms/Gradient Descent Algorithms/Gradient Descent]] algorithm that takes us back. Like the momentum idea, it involves 3 steps:
 
 $$x_{k+1}=x_{k} + \beta(x_{k}-x_{k+1})-s\nabla f(x_{k}+ \beta(x_{k}-x_{k-1}))$$
 We can re-write this in two steps for better clarity:

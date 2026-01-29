@@ -16,10 +16,19 @@ A point within the constraint set (Domain) is a point in the [[feasible set]] of
 
 Optimization problems of the form $f: \mathbb{R} \to \mathbb{R}$ only requires singular variable calculus, and the [[First Derivative Test]] can be used to find the [[local maxima]] and [[local minima]] of a function. If we are subject to some constraint set, we essentially check the local maxima and minima by computing $f'(x^*)=0$, and then determine the [[Concavity]] by computing $f''(x^*)$. 
 
-Say we have a constraint set given by $D=[a,b]$, then we would as well check to see if the endpoints $f(a)$ or $f(b)$ are extrema as well. 
+##### Find [[local minima]] and [[local maxima]] of a single Variable Function
+The way we determine the extrema of a single variable function is by using the [[First Derivative Test]]. 
 
-Optimization problems of the form $f : \mathbb{R}^n \to \mathbb{R}$ rely on techniques from multivariable calculus to find extrema, namely techniques like [[Lagrange Multipliers]] when we have a non-linear function with a non-linear constraint set. 
+Say we have a constraint set given by $D=[a,b]$, then we would as well check to see if the endpoints $f(a)$ or $f(b)$ are extrema as well. We can further characterize our extrema using the [[Second Derivative Test]] and determine the [[Concavity]] of our function along certain intervals.
 
+If we have some function with a domain $d=[0,\infty)$ then we would check $\lim_{x \to \infty} f(x)$, and evaluate this boundary. If $f(x)$ is unbounded, we would say that the function has no [[Global Maxima]] (as, $\forall x_0 \in D, \exists x_1 : f(x_1) > f(x_0)$).
+
+##### Multivariable Optimization Overview
+Optimization problems of the form $f : \mathbb{R}^n \to \mathbb{R}$ rely on techniques from multivariable calculus to find extrema.
+
+If we are determining the optima of a [[Multivariable Functions]], we can determine the [[Local Minima]] and the [[Local Maxima]] by determining for which  $x, \nabla f(x)=\vec{0}$.  
+
+ Techniques like [[Lagrange Multipliers]] when we have a non-linear function with a non-linear constraint set. 
 ##### Non-Linear Multivariable Function, Non-Linear Constraint Set 
 If we are given some general region rather than just a boundary to use, say for example the constraint set $x^2+y^2 \leq 3$, we need to check all of the points along the boundary. and the points within the boundary. We thus divide our problem into 2 sub-tasks:
 $$\begin{cases} 
@@ -32,7 +41,7 @@ Using a [[Lagrange Multipliers]], we compute when the gradients of the constrain
 ##### Non-Linear Multivariable Function, Linear Constraint Set 
 When we are given some multivariable function $f$ with a linear constraint set, we can express the function in terms of a single variable and then convert it into a single variable calculus problem that is a lot easier to work with. 
 
-Say for $f : \mathbb{R}^3 \to \mathbb{R}$, we are given a constraint set where $\alpha x + \beta y + \gamma = 0$, then we can simplify our $f(x,y) \to f(x)$ or to $f(y)$, and then  
+Say for $f : \mathbb{R}^3 \to \mathbb{R}$, we are given a constraint set where $\alpha x + \beta y + \gamma = 0$, then we can simplify our $f(x,y) \to f(x)$ or to $f(y)$, and then use the [[First Derivative Test]] or [[Second Derivative Test]] to solve for our optima. 
 
 ---
 # [[Linear Programming]] 
