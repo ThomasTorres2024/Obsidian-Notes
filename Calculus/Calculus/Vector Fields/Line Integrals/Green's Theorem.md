@@ -3,12 +3,60 @@ title: Greens Theorem
 tags: 
 draft: "false"
 ---
-# Introduction 
+# Definition of [[Green's Theorem]] 
 Let us recall the definition of the [[Curl]] for a vector field in two dimensions, $\vec{F}=\langle M, N \rangle$:$$\text{curl}(\vec{F})=N_{x}-M_{y}$$ The [[Vector Field]] is said to be a [[Conservative Field]] if $\text{curl}(\vec{F})=0$. We can compute the [[Line Integral]] directly along a closed curve to determine this fact, or we can make use of "Green's Theorem". 
 
 Green's theorem states that for a closed curve $c$ where $c$ goes counterclockwise, enclosing a region $R$, with a vector field $\vec{F}$ that is differentiable in $R$, then it follows that:
-$$\oint_{c}\vec{F}\cdot d\vec{r}=\int \int_{R} \text{curl}(\vec{F})dA=\int \int_{R}(N_{x}-M_{y})dA$$
-If it is the case that $c$ is clockwise, we would simply multiply our integral by $-1$. 
+$$\oint_{c}\vec{F}\cdot d\vec{r}=\iint_{R} \text{curl}(\vec{F})dA= \iint_{R}(N_{x}-M_{y})dA$$
+If it is the case that $c$ is clockwise, we would simply multiply our integral by $-1$
+
+# Proof of [[Green's Theorem]]
+Let us consider $\vec{F}=\langle P,Q\rangle$, over a simple rectangular domain $D = [a,b] \times [c,d]$. 
+```tikz 
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[domain=0:4] % Set default domain
+    % Draw grid and axes
+    \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+    \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+
+
+    % Plot f(x) = sin(x) (note the 'r' for radians)
+    \draw[color=blue, domain=1:3] plot (\x,1) node[right] {$C_1$};
+    \draw[color=blue, domain=1:3] plot (3,\x) node[above] {$C_2$};
+    \draw[color=blue, domain=1:3] plot (\x,3) node[right] {$C_3$};
+    \draw[color=blue, domain=0:2] plot (1,3-\x) node[right] {$C_4$};
+    
+	  
+
+	\filldraw (1, 0) circle[radius=1.5pt];
+	\node[below left] at (1, 0) {a};
+	
+		\filldraw (3, 0) circle[radius=1.5pt];
+	\node[below left] at (3, 0) {b};
+
+	  	\filldraw (0, 1) circle[radius=1.5pt];
+	\node[below left] at (0, 1) {c};
+	
+		  	\filldraw (0, 3) circle[radius=1.5pt];
+	\node[below left] at (0, 3) {d};
+
+
+
+\end{tikzpicture}
+\end{document}
+```
+We can decompose our region into 4 separate [[Line Integral]]s, such that (recall the definition of [[Flux]]):
+$$\oint \vec{F}\cdot \textbf{n}ds=\sum_{i=1}^4 \int_{C_1}\vec{F}\cdot (\textbf{n}_i)ds=\int_{a}^b \vec{F}\cdot -\hat{j}ds+ \int_{c}^d \vec{F}\cdot \hat{i}ds+ \int_{b}^a \vec{F}\cdot \hat{j}ds+ \int_{d}^c \vec{F}\cdot -\hat{i}ds  $$
+$$= \int_{b}^a -Q(t,c)dt+\int_{c}^dP(b,t)dt + \int_{a}^bQ(t,d)dt+\int_c^d-P(a,t)dt$$
+$$=\int_{c}^d [P(b,t)-P(a-t)]dt+\int_a^b[Q(t,d)-Q(t,c)]dt$$
+$$=\int_c^d \int_a^b \left(\frac{\partial P}{\partial x} \right)dxdy+\int_b^a \int_d^c \left(\frac{\partial Q}{\partial y}\right)dydx$$
+$$= \int_c^d \int_a^b \left(\frac{\partial P}{\partial x} \right)dxdy+\int_c^d \int_a^b \left(\frac{\partial Q}{\partial y}\right)dydx$$
+(Using [[Fubinni's Theorem]])
+$$=\int_c^d \int_a^b \left(\frac{\partial P}{\partial x} +\frac{\partial Q}{\partial y}\right)dydx =\int_c^d\int_a^b \text{div}(\vec{F})$$
+
+
 #### Example 1. 
 Let $C$ be the circle of radius 1 centered at $(2,0)$ that is counterclockwise. Let us compute the line integral:
 $$\oint_{c}ye^{-x}dx+\left(\dfrac{1}{2}x^2-e^{-x}\right)dy$$ If we were to directly approach the problem we would be using the bounds, $$x=2+\text{cos}(\theta),dx=-\text{sin}(\theta)d\theta$$$$y=\text{sin}(\theta),dx=\text{cos}(\theta)d\theta$$
