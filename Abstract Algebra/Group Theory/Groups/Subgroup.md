@@ -11,13 +11,11 @@ We denote a subgroup by $H \leq G$ or $H < G$ if we have a proper subset of $G$.
 There are two trivial subgroups. The group which consists exclusively of the [[Identity Element]], and the group where $H=G$, that is a [[Group]] is a subset of itself. 
 
 #### (Theorem 3.1) Subgroup Test 
-Let $G$ be a [[Group]] and let $H \subseteq G : H \neq \emptyset$.  Then it follows that, if $H$ is a [[Subgroup]] of $G$ iff $ab^{-1} \in H, \forall a,b \in H$.   
-
+Let $G$ be a [[Group]] and let $H \subseteq G : H \neq \emptyset$.  Then it follows that, if $H$ is a [[Subgroup]] of $G$ iff $ab^{-1} \in H, \forall a,b \in H$.  Note, it is extremely important to demonstrate $H \neq \varnothing$ in addition to $ab^{-1} \in H$, so the non-emptiness of $H$ should not be ignored. 
 #### Direction 1.) $\implies$ 
 Since $H$ is a group, $b \in H \implies b^{-1} \in H$. Furthermore $ab^{-1} \in H$ since $H$ is closed under its own [[Binary Operation]].
-
 #### Direction 2.) $\Longleftarrow$ 
-Suppose $H$ satisfies $(\star)$ "$(ab^{-1} \in H, \forall a,b \in H)$". Let $H$ and $G$ share the same [[Binary Operation]]. Since the same operation is shared and $G$ is a group, it follows that $H$ is associative. 
+Suppose $H$ satisfies the condition given by $(\star)$: $$(ab^{-1} \in H, \forall a,b \in H)$$ Let $H$ and $G$ share the same [[Binary Operation]]. Since the same operation is shared and $G$ is a group, it follows that $H$ is associative. 
 
 We want to argue that $H$ contains an [[Identity Element]] as well. Since $H \neq \varnothing$
 then $\exists x \in H$. Let $a=x,b=x$ then:
@@ -25,7 +23,7 @@ $$ab^{-1} \in H \iff xx^{-1} =e$$
 So $H$ contains the [[Identity Element]]. Since we have $e$, we can show inverses now. Let $a=e$ and $b=x$. So:
 $$ ab^{-1} \in H \iff  e \circ x^{-1} = x^{-1} \in H$$ So each element has its own inverse. If $x,y \in H$, then we need to show that $xy \in H$. Let $b^{-1} = y^{-1}$. Then by our assumption:
 $$xy \in H$$
-$$\therefore H \text{is a subgroup of G iff } ab^{-1} \in H, \forall a,b \in H$$
+$$\therefore H \text{ is a subgroup of G iff } ab^{-1} \in H, \forall a,b \in H$$
 #### (Theorem 3.2) Two-Step Subgroup Test 
 Let $G$ be a [[Group]] and let $:H \neq \varnothing$ and $H \subseteq G$. 
 

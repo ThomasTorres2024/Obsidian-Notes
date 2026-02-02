@@ -57,7 +57,6 @@ If we let $|a|=m$ and $|b|=n$ then we can write:
 $$(ab)^{mn} = (a^m)^n(b^n)^m=e^ne^m=e$$
 We therefore have by corollary 2 that:
 $$|ab| | mn$$
-
 # Modular Arithmetic and the [[Binary Operation]] of a [[Cyclic Group]] 
 
 If we have that $(i+j) \mod(n)=k$ then we know that:
