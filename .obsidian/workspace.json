@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "92ed87b310e95f39",
+            "id": "05c9c351b52b88a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Number Theory/Elementary Results/Euclidean Algorithm.md",
+                "file": "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Euclidean Algorithm"
+              "title": "Gauss's Law"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408
+    "width": 408,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -94,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Gauss's Law"
             }
           },
           {
@@ -166,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -180,37 +182,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "92ed87b310e95f39",
+  "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
+    "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
+    "Calculus/Calculus/Vector Fields/Special Vector Fields/Solid Angle Vector Field.md",
+    "Optimization/Linear Programming/Simplex Method.md",
+    "Calculus/Calculus/Vector Fields/Special Vector Fields/Position Vector Field.md",
+    "Calculus/Calculus/Vector Fields/Special Vector Fields",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
+    "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
+    "Calculus/Calculus/Vector Fields/Simply Connected.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Green's Theorem.md",
+    "Optimization/Linear Programming/Linear Programming.md",
+    "Probability/Probability/Probability Functions/Types of Probability Functions/Moment Generating Function.md",
+    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
+    "Probability/Probability/Probability Functions/Expected Value.md",
+    "Number Theory/Elementary Results/Euclidean Algorithm.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Curl.md",
     "Optimization/Theory of Optimization/Optimization.md",
     "Optimization/Algorithms",
     "Optimization/Theory of Optimization/Global Maxima.md",
     "Optimization/Linear Programming/Simplex Algorithm.md",
-    "Optimization/Linear Programming/Simplex Method.md",
-    "Optimization/Linear Programming/Linear Programming.md",
     "First Derivative Test.md",
     "Optimization/Theory of Optimization/Local Minima.md",
     "Optimization/Theory of Optimization/Global Minima.md",
     "Optimization/Theory of Optimization/Local Maxima.md",
     "Optimization/Theory of Optimization/Saddle Point.md",
     "Calculus/Calculus/Multivariable Functions/Contour.md",
-    "Number Theory/Elementary Results/Euclidean Algorithm.md",
     "Number Theory/Elementary Results",
-    "global minima.md",
-    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
-    "Abstract Algebra/Group Theory/Groups/Cyclic Group.md",
-    "Abstract Algebra/Group Theory/Groups/Finite Group.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/Similarity Transformations/Eigen Value Decomposition.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Parse Tree.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Syntax.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Semantics.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Grammar.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
     "Fundamentals of Programming Languages/Languages Overview/Programming Languages",
-    "Fundamentals of Programming Languages/Languages Overview/Imperative Language.md",
-    "Fundamentals of Programming Languages/Languages Overview/Object Oriented Programming.md",
-    "Fundamentals of Programming Languages/Languages Overview/Logical Language.md",
     "Fundamentals of Programming Languages/Languages Overview",
     "Fundamentals of Programming Languages",
     "Programming Languages/Languages Overview",
@@ -218,7 +221,6 @@
     "Optimization/Theory of Optimization",
     "Pasted image 20260120163605.png",
     "Abstract Algebra/Group Theory/Groups",
-    "Abstract Algebra/Group Theory/Special Groups",
     "Pasted image 20260118061605.png",
     "Untitled 2.canvas",
     "Pasted image 20260111090947.png",
