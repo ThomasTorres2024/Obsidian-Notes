@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Calculus/Vector Fields/Special Vector Fields/Solid Angle Vector Field.md",
+                "file": "Abstract Algebra/Group Theory/Groups/Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid Angle Vector Field"
+              "title": "Subgroup"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sub group",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Calculus/Vector Fields/Special Vector Fields/Solid Angle Vector Field.md",
+                "file": "Abstract Algebra/Group Theory/Groups/Subgroup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Solid Angle Vector Field"
+              "title": "Backlinks for Subgroup"
             }
           },
           {
@@ -168,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,35 +185,35 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Fundamentals of Programming Languages/Languages Overview/Types  (FPL).md",
+    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
     "Optimization/Theory of Optimization/Local Minima.md",
     "Optimization/Theory of Optimization/Feasible Direction.md",
-    "Optimization/Linear Programming/Simplex Method.md",
     "Optimization/Theory of Optimization/Local Maxima.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
-    "Fundamentals of Programming Languages/Types",
-    "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+    "Fundamentals of Programming Languages/Languages Overview/Object Oriented Programming.md",
+    "Graph Theory/Special Graphs/Bipartite Graph.md",
+    "Graph Theory/Spectral Graph Theory/Matrices/Degree Matrix.md",
+    "Graph Theory/Spectral Graph Theory/Matrices/Graph Laplacian Matrix.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
+    "Optimization/Linear Programming/Simplex Method.md",
+    "Optimization/Linear Programming/Simplex Algorithm.md",
+    "Calculus/Calculus/Multivariable Functions/Parametrizations/Boundary Orientation.md",
+    "Calculus/Calculus/Vector Fields/Surface Integrals/Green's Theorem.md",
+    "Calculus/Calculus/Vector Fields/Surface Integrals/Stokes' Theorem.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
+    "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
     "Calculus/Calculus/Vector Fields/Special Vector Fields/Solid Angle Vector Field.md",
+    "Fundamentals of Programming Languages/Languages Overview/Types  (FPL).md",
+    "Fundamentals of Programming Languages/Types",
     "Calculus/Calculus/Vector Fields/Special Vector Fields/Position Vector Field.md",
     "Calculus/Calculus/Vector Fields/Special Vector Fields",
     "Abstract Algebra/Group Theory/Groups/Group.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
     "Linear Algebra/Linear Algebra/Matrix Factorizations/QR Factorization/QR Factorization.md",
     "Calculus/Calculus/Vector Fields/Simply Connected.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Green's Theorem.md",
     "Optimization/Linear Programming/Linear Programming.md",
     "Probability/Probability/Probability Functions/Types of Probability Functions/Moment Generating Function.md",
-    "Probability/Probability/Probability Functions/Continuous Distributions/Exponential Distribution.md",
-    "Probability/Probability/Probability Functions/Expected Value.md",
-    "Number Theory/Elementary Results/Euclidean Algorithm.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Curl.md",
-    "Optimization/Theory of Optimization/Optimization.md",
     "Optimization/Algorithms",
-    "Optimization/Theory of Optimization/Global Maxima.md",
-    "Optimization/Linear Programming/Simplex Algorithm.md",
-    "First Derivative Test.md",
-    "Optimization/Theory of Optimization/Global Minima.md",
     "Number Theory/Elementary Results",
     "Fundamentals of Programming Languages/Languages Overview/Programming Languages",
     "Fundamentals of Programming Languages/Languages Overview",

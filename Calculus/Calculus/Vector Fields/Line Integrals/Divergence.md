@@ -40,6 +40,7 @@ For some 2 dimensional vector field, we have a flow along the $x$ and $y$ direct
 
 [[Divergence]] in the direction of $x^+$ corresponds to positive divergence in that term, and divergence in the opposite direction corresponds to negative divergence in that term. The same can be said for the other dimensions as well. 
 
+
 ---
 # [[Divergence]] Properties:
 

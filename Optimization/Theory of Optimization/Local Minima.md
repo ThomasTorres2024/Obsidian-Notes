@@ -15,7 +15,7 @@ Which is to say all of the vectors are within a distance ([[norm]]) of $\epsilon
 # First Order Necessary Conditions for $x^*$ to be a [[Local Minima]]
 Let us consider some [[Multivariable Functions]] $f$ such that $f : \mathbb{R}^n \to \mathbb{R}$ where $f$ has the [[feasible set]] $\Omega, \Omega \subseteq \mathbb{R}^n$, and that $f$ is $C^1$. 
 
-If $x^* \in \Omega$, then $x^*$ is a local min if for any direction $\vec{d}$ we have that [[The Directional Derivative]] in direction $\vec{d}$ satisfies:
+If $x^* \in \Omega$, then $x^*$ is a local min if for any direction $\vec{d}$  that is a [[Feasible Direction]] we have that [[The Directional Derivative]] in direction $\vec{d}$ satisfies:
 $$d^T [\nabla f(x)]\geq 0$$
 If $x^*$ is the local minimizer, then it follows for some neighborhood around $x^*$ that:
 $$f(x^*+\alpha\vec{d})\geq f(x^*)$$

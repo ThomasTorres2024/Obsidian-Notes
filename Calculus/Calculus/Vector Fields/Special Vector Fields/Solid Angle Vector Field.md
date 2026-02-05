@@ -17,6 +17,12 @@ If we consider the [[Flux]] of some surface $S$ in $\mathbb{A}$, we would obtain
 # Relationship Between the [[Solid Angle Vector Field]] and the [[Angle Element Vector Field]] in $\mathbb{R}^2$
 In $\mathbb{R}^2$, both of these vector fields can be used to measure how far some curve extends. It is also the case that both of these vector fields will return the same angle in this special case. Recall the definition of the [[Angle Element Vector Field]]: 
 $$\mathbb{a}(x,y)=\frac{1}{x^2+y^2}\langle -y,x \rangle $$
-Notice that $\mathbb{a}$ is just a rotation of the [[Solid Angle Vector Field]] by $\frac{\pi}{2}$ radians. Similarly, we also rotate the surface, and since rotation will preserve the total angle stretched, we maintain the same difference in angle. 
+Notice that $\mathbb{a}$ is just a rotation of the [[Solid Angle Vector Field]] by $\frac{\pi}{2}$ radians. Similarly, we also rotate the surface, and since rotation will preserve the total angle stretched, we maintain the same difference in initial and terminal angle. If we consider the [[Flux]] of $\mathbb{A}$ and the [[Line Integral]] involving $\mathbb{a}$, due to the rotation property, We can express this idea mathematically in the following:
+$$\int \mathbb{A} \cdot \mathbf{n} \text{ ds}= \int \mathbb{a} \cdot \mathbf{t} \text{ ds}= \int \mathbb{a} \cdot \vec{dS}= \theta(b)-\theta(a)$$
+
+
+
+
+
 
 

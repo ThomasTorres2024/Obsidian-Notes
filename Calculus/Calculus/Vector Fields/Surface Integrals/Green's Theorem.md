@@ -11,52 +11,17 @@ $$\oint_{c}\vec{F}\cdot d\vec{r}=\iint_{R} \text{curl}(\vec{F})dA= \iint_{R}(N_{
 If it is the case that $c$ is clockwise, we would simply multiply our integral by $-1$
 
 # Proof of [[Green's Theorem]]
-Let us consider $\vec{F}=\langle P,Q\rangle$, over a simple rectangular domain $D = [a,b] \times [c,d]$. 
-```tikz 
-\usepackage{tikz}
-\begin{document}
-\begin{tikzpicture}[domain=0:4] % Set default domain
-    % Draw grid and axes
-    \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
-    \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
-    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
-
-
-    % Plot f(x) = sin(x) (note the 'r' for radians)
-    \draw[color=blue, domain=1:3] plot (\x,1) node[right] {$C_1$};
-    \draw[color=blue, domain=1:3] plot (3,\x) node[above] {$C_2$};
-    \draw[color=blue, domain=1:3] plot (\x,3) node[right] {$C_3$};
-    \draw[color=blue, domain=0:2] plot (1,3-\x) node[right] {$C_4$};
-    
-	  
-
-	\filldraw (1, 0) circle[radius=1.5pt];
-	\node[below left] at (1, 0) {a};
-	
-		\filldraw (3, 0) circle[radius=1.5pt];
-	\node[below left] at (3, 0) {b};
-
-	  	\filldraw (0, 1) circle[radius=1.5pt];
-	\node[below left] at (0, 1) {c};
-	
-		  	\filldraw (0, 3) circle[radius=1.5pt];
-	\node[below left] at (0, 3) {d};
-
-
-
-\end{tikzpicture}
-\end{document}
-```
-We can decompose our region into 4 separate [[Line Integral]]s, such that (recall the definition of [[Flux]]):
-$$\oint \vec{F}\cdot \textbf{n}ds=\sum_{i=1}^4 \int_{C_1}\vec{F}\cdot (\textbf{n}_i)ds=\int_{a}^b \vec{F}\cdot -\hat{j}ds+ \int_{c}^d \vec{F}\cdot \hat{i}ds+ \int_{b}^a \vec{F}\cdot \hat{j}ds+ \int_{d}^c \vec{F}\cdot -\hat{i}ds  $$
-$$= \int_{b}^a -Q(t,c)dt+\int_{c}^dP(b,t)dt + \int_{a}^bQ(t,d)dt+\int_c^d-P(a,t)dt$$
-$$=\int_{c}^d [P(b,t)-P(a-t)]dt+\int_a^b[Q(t,d)-Q(t,c)]dt$$
-$$=\int_c^d \int_a^b \left(\frac{\partial P}{\partial x} \right)dxdy+\int_b^a \int_d^c \left(\frac{\partial Q}{\partial y}\right)dydx$$
-$$= \int_c^d \int_a^b \left(\frac{\partial P}{\partial x} \right)dxdy+\int_c^d \int_a^b \left(\frac{\partial Q}{\partial y}\right)dydx$$
-(Using [[Fubinni's Theorem]])
-$$=\int_c^d \int_a^b \left(\frac{\partial P}{\partial x} +\frac{\partial Q}{\partial y}\right)dydx =\int_c^d\int_a^b \text{div}(\vec{F})$$
-
-
+We can make use of the previously proved The Divergence Theorem. In order to use the divergence theorem, we consider vector field 
+ and the normal vector to the region . We can consider a rotation of 
+ by 90 degrees, and then consider the tangent components of  (since we rotated by  degrees). Therefore, we will obtain:
+$$\int_{\partial D} \vec{F} \cdot \textbf{ n } ds= \int_{\partial D} \langle -Q,P\rangle \cdot \mathbf{t }dS-\iint_D \text{div}(\langle -Q,P \rangle) dxdy=\iint_D [-Q_x +P_y ]dxdy$$$$=\iint_D \text{curl}(\vec{F})dxdy$$
+---
+# Applications
+The area of a two dimensional region can be calculated using [[Green's Theorem]]. 
+Consider the [[Vector Field]], $$\vec{A}=\langle -y, x \rangle$$
+Over the closed region $D$. Then: 
+$$\frac{1}{x}\int_{\partial D} \vec{A} \cdot \textbf{ t}dS= \frac{1}{2} \iint_D\text{curl}(\vec{A})= \frac{1}{2}\iint_D \left[\frac{\partial }{\partial x}(x)- \frac{\partial}{\partial y}(-y) \right]dxdy$$
+$$= \frac{1}{2} \iint_D (1+1)dxdy=\frac{2}{2}\iint_Ddxdy= \text{Area}(D)$$
 #### Example 1. 
 Let $C$ be the circle of radius 1 centered at $(2,0)$ that is counterclockwise. Let us compute the line integral:
 $$\oint_{c}ye^{-x}dx+\left(\dfrac{1}{2}x^2-e^{-x}\right)dy$$ If we were to directly approach the problem we would be using the bounds, $$x=2+\text{cos}(\theta),dx=-\text{sin}(\theta)d\theta$$$$y=\text{sin}(\theta),dx=\text{cos}(\theta)d\theta$$
