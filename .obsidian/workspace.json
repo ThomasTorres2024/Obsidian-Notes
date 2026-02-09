@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
+                "file": "Fundamentals of Programming Languages/Languages Overview/Polymorphism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cyclic Group"
+              "title": "Polymorphism"
             }
           }
         ]
@@ -74,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 408
+    "width": 408,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -184,8 +184,10 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Abstract Algebra/Group Theory/Groups/Subgroup.md",
+    "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
     "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
+    "Fundamentals of Programming Languages/Languages Overview/Types  (FPL).md",
+    "Abstract Algebra/Group Theory/Groups/Subgroup.md",
     "Optimization/Theory of Optimization/Local Minima.md",
     "Optimization/Theory of Optimization/Feasible Direction.md",
     "Optimization/Theory of Optimization/Local Maxima.md",
@@ -193,7 +195,6 @@
     "Graph Theory/Special Graphs/Bipartite Graph.md",
     "Graph Theory/Spectral Graph Theory/Matrices/Degree Matrix.md",
     "Graph Theory/Spectral Graph Theory/Matrices/Graph Laplacian Matrix.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
     "Optimization/Linear Programming/Simplex Method.md",
     "Optimization/Linear Programming/Simplex Algorithm.md",
     "Calculus/Calculus/Multivariable Functions/Parametrizations/Boundary Orientation.md",
@@ -203,7 +204,6 @@
     "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
     "Calculus/Calculus/Vector Fields/Special Vector Fields/Solid Angle Vector Field.md",
-    "Fundamentals of Programming Languages/Languages Overview/Types  (FPL).md",
     "Fundamentals of Programming Languages/Types",
     "Calculus/Calculus/Vector Fields/Special Vector Fields/Position Vector Field.md",
     "Calculus/Calculus/Vector Fields/Special Vector Fields",
