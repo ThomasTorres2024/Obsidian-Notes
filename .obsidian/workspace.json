@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+                "file": "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Divergence Theorem"
+              "title": "Cyclic Group"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -184,6 +184,7 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
+    "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
     "Calculus/Calculus/Vector Fields/Conservative Field.md",
     "Calculus/Calculus/Vector Fields/Surface Integrals/Stokes' Theorem.md",
     "Calculus/Calculus/Vector Fields/Flow Integrals and Circulation.md",
@@ -211,7 +212,6 @@
     "Calculus/Calculus/Multivariable Functions/Parametrizations/Boundary Orientation.md",
     "Calculus/Calculus/Vector Fields/Surface Integrals/Green's Theorem.md",
     "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
-    "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
     "Fundamentals of Programming Languages/Types",
     "Calculus/Calculus/Vector Fields/Special Vector Fields",
     "Optimization/Algorithms",

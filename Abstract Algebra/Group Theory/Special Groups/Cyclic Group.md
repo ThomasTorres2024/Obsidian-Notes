@@ -81,7 +81,67 @@ $$(a^d)^i\neq e$$
 Which is because $di < n$. Thereby $|a^d| = n/d$ exactly. If we allow $d=\gcd(n,k)$ then, we can apply the result we just derived, and we obtain that:
 
 $$|a^k|=|\langle a^k \rangle|=|\langle a^{\gcd(n,k)} \rangle| = |a^{\gcd(n,k)}|=\frac{n}{\gcd(n,k)}$$
+#### Corollaries of this Result
+###### Order of Elements in Finite Cyclic Groups
+In a [[Finite Group]] that is cyclic, the order of an element divides the order of the group. Let $G$ be a group, and let $|G|=n$. Then, for $G=\langle a \rangle$, we let $d=\gcd(n,k)$. 
 
+Then by the previous theorem we have that:
+$$|a^k|= \frac{n}{\gcd(n,k)}=\frac{n}{d} \iff d|a^k| =n  \implies |a^k| \bigg| n$$
+Clearly, we obtain the result that the order of an element in the group $|a^k|$, divides the order of the group $|G|=n$.
+
+###### Corollary 2.) Criterion for $\langle a^i \rangle = \langle a^j \rangle$ and $|a^i|=|a^j|$ 
+If $G$ is a cyclic group then the following statements are equivalent:
+* 1.) $\langle a^i \rangle  = \langle a^j \rangle$ 
+* 2.) $O(a^i)=O(a^j)$
+* 3.) $\gcd(n,i)=\gcd(n,j)$
+
+$1.) \implies 2$
+Using the fact that $O(a^i)=O(\langle a^i \rangle)$, then: 
+$$O(a^i)=O(\langle a^i \rangle)=O(\langle a^j \rangle ) = O(a^j) \iff O(a^i) = O(a^j)$$
+Also immediate from other first corollary, 2 groups must have equal order here if they are finite (I think this also works or is the symbolic version of it). 
+
+$2.) \implies 3$
+We are given that $O(a^i)=O(a^j)$, then:
+$$O(a^i)= \frac{n}{ \gcd(n,i)} = O(a^j) = \frac{n}{\gcd(n,j)} \iff \gcd(n,i) = \gcd(n,j) $$
+
+$3.) \implies 1$
+We are given that $\gcd(n,i) = \gcd(n,j)$. 
+By previous theorem:
+$$\langle a^i \rangle = \langle a^{\gcd(n,i)} \rangle , \langle a^j \rangle = \langle a^{\gcd(n,j)} \rangle  $$
+But since $\langle a^{\gcd(n,i)} \rangle  = \langle a^{\gcd(n,j)} \rangle$ we have that:
+$$\langle a^i \rangle = \langle a^j \rangle $$
+Thus the circuit is complete. 
+
+---
+### Corollary 3 - Generators of Finite Cyclic Groups
+We can determine what the generators are of Finite Cyclic groups using the following. Given a group $G$ that is finite and cyclic of order $n$ s.t. $|a|=n$, then TFAE:
+* 1.) $\langle a^i \rangle = \langle a \rangle = G$  
+* 2.) $O(a^i)=O(a)=n$
+* 3.) $\gcd(n,i)=1$
+
+These are all essentially true by supposing that $j=1$. Then for any $i$ where the above criterion are satisfies implies all of the results of this corollary. Nothing is particularly new here.
+
+$1 \implies 2 \implies 3 \implies 1$  
+True via Corollary 2 that was shown above, this is just for $j=1$. 
+
+I think this helps elucidate the concept a bit more. If we have that $a^i$, and we know its a generator then:
+$$O(a^i) = \frac{n}{\gcd(n,i)} = \frac{n}{1}=n$$
+I think this makes it a bit clearer. Intuitively, we know that every $a^k$ must be unique for $k \mod(n)$, and since we have that this group has $n$ elements, we are eventually going to need to cover every single element the group crossed by.  
+
+### Corollary 4 - Generators of $\mathbb{Z}_n$ 
+For $k \in \mathbb{Z}_n$, $k$ is a generator of $\mathbb{Z}_n$ iff $\gcd(n,k)=1$. 
+
+$\implies$
+If $k$ is a Generator of $\mathbb{Z}_n$ then $\gcd(n,k)=1$ is true by corollary 3. We have that $\langle a^k \rangle = \langle a \rangle$, and since the corollary is true, it follows that $\gcd(n,k)=1$. 
+
+$\Longleftarrow$ 
+If $\gcd(n,k)=1$, then since the corollary is true it follows that $\langle a \rangle = \langle a^k \rangle$.  
+
+Corollary 4 and 3 can be used to identify the generators of cyclic groups. 
+
+---
+# Fundamental Theorem of Cyclic Groups 
+We are interested in ascertaining how many subgroups a finite cyclic 
 
 
 
