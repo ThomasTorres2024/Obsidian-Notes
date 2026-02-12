@@ -122,6 +122,10 @@ $$=\iint_{\partial D_1}\text{div}(\vec{F})dxdy+\iint_{\partial D_2}\text{div}(\v
 Therefore we obtain for punctured regions that can be decomposed into a finite set of [[Simply Connected]] and for [[Simply Connected]] regions that:
 $$ \oint\vec{F}\cdot \textbf{n}ds  =\sum_{i=1}^n \iint_{\partial D_i} \text{div}(\vec{F})\cdot \textbf{n}dS$$
 
+---
+# [[The Divergence Theorem]] for $\mathbb{R}^3$
+The [[The Divergence Theorem]] relates a [[Flux Integral]] over a surface $S$ with a [[Triple Integrals]] over the surface which the surface $S$ encloses:
+$$\iint_{S} \vec{F} \cdot dS = \iiint_{V_3} \text{div}(\vec{F}) \text{ } dV_3$$
 #### Example 1.) Sphere
 Consider the sphere of radius $a$ centered at the origin through the vector field $\vec{F}=z\hat{k}$ Green's theorem allows us to express our flux integral as:
 $$\underset{ S \;}{ {\rlap{\mspace{1mu} \boldsymbol{\bigcirc}}{\rlap{\int}{\;\int}}} } z\hat{k} \cdot \hat{n} \cdot ds= \iiint_{D} \text{div}(z\hat{k})\cdot dV = \iint_{D}dV= \dfrac{4}{3} \pi a^3 $$
