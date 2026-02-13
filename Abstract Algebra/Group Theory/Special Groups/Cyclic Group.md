@@ -29,13 +29,13 @@ Now we will prove the portion when $a$ has finite order $O(a)=n$ that $a^i=a^j$ 
 
 First we need to show that the generator for $a$ yields the following:
 $$\langle a \rangle = \{e,a,a^2,\dots a^{n-1} \}$$
-Since $O(a)=n \implies$ the elements in $\langle a \rangle$ are unique. For some $a^k \in \langle  a\rangle$, we can use the [[Euclidean Algorithm]] to express $\exists q,r \in \mathbb{Z}$ such that $k=nq+r$ where $0 \leq r < n$ that allows us to express $a^k$ as:
+Since $O(a)=n \implies$ the elements in $\langle a \rangle$ are unique. For some $a^k \in \langle  a\rangle$, we can use the [[Division Algorithm]] to express $\exists q,r \in \mathbb{Z}$ such that $k=nq+r$ where $0 \leq r < n$ that allows us to express $a^k$ as:
 $$a^k=a^{nq+r}=a^{nq}\cdot a^r=e\cdot a^r=a^r$$
 So, any member of $\langle a \rangle$ is of the form:
 $$\langle a \rangle = \{e,a,a^2,\dots a^{n-1} \}$$
 It can now be shown that $a | i-j$. Recall that:
 $$a^i=a^j \iff a^{i-j}=e$$
-Using the [[Euclidean Algorithm]] again we have that, $i-j=nq+r$ for $0 \leq r < n$, then:
+Using the [[Division Algorithm]] again we have that, $i-j=nq+r$ for $0 \leq r < n$, then:
 $$a^{i-j}=a^{nq+r}=e$$
 $$=(a^q)^n\cdot a^r=e \cdot a^r = a^r=e$$
 We have that $r=0$, so $\implies i-j=nq$. The other direction for this proof is trivial, if $i-j | n$ then we can easily verify this condition of $a^i=a^j$:
@@ -70,7 +70,7 @@ For group $G$ and $a \in G$ where $|a|=n$, then $\langle a^k \rangle = \langle a
 Let $d=\gcd(n,k)$ and $k=dr$, we have that:
 $$a^k=(a^d)^r$$And then by closure we obtain:
 $$\langle a^k \rangle \subseteq \langle a^d \rangle $$
-Then by the [[Euclidean Algorithm]] we have that $\exists s,t \in \mathbb{Z}$ where $d=ns+kt$, so we obtain that:
+Then by the [[Division Algorithm]] we have that $\exists s,t \in \mathbb{Z}$ where $d=ns+kt$, so we obtain that:
 $$a^d=a^{ns+kt}=a^{ns}a^{kt}=(a^n)^s(a^k)^t=e\cdot (a^k)^t \implies a^d \in \langle  a^k \rangle$$
 Thus by equality of sets $\langle a^k \rangle = \langle a^d \rangle$, and we obtain the first result that:
 $$\langle a^k \rangle = \langle a^{\gcd(n.k)} \rangle$$
@@ -141,13 +141,47 @@ Corollary 4 and 3 can be used to identify the generators of cyclic groups.
 
 ---
 # Fundamental Theorem of Cyclic Groups 
-We are interested in ascertaining how many subgroups a finite cyclic 
+We are interested in ascertaining how many [[Subgroup]]s a finite cyclic group has. We will demonstrate the following result. 
 
+Every subgroup of a cyclic group is cyclic. 
 
+If a cyclic group $G$ has order $n$ defined by $G = \langle a \rangle$ then, any subgroup of $G$ has an order which is a divisor of $n$, and for each positive divisor $k$ of $n$, $\langle a \rangle$ has one subgroup of order $k$, which is $\langle a ^{\frac{n}{k}} \rangle$.  
 
+More concretely if $G$ is a finite group of order $n=30$, then all of the Subgroups of this group are of the form $\langle a^{\frac{30}{k}} \rangle$, which would entail that the divisors, $k$ would be:
+$$k \in \{1,2,3,5,6,10,15,30 \}$$
+Then we would have that the subgroups of $G$ are:
+$$\langle a^{30}\rangle, \langle a^{15}\rangle, \langle a^{10}\rangle, \langle a^6\rangle, \langle a^5\rangle, \langle a^3\rangle, \langle a^2\rangle, \langle a^1\rangle$$
 
+#### Proof.)
+Let $G = \langle a \rangle$ and let $H \leq G$. We need to show that $H$ is a cyclic group. 
 
+If $H = \{e \}$, then $H$ must be a cyclic group. 
 
+###### Claim.)
+We claim that $a^t \in H$ fir  $a^t, t \in \mathbb{N}$. Since it is known that $G=\langle a \rangle$, every element of $G$ is of the form $a^t$ for $t \in \mathbb{Z}$. 
+
+But since we have ruled out that $H \neq \{e \}$ as in the above case, and it is a subgroup, it must be the case that it includes some $a^t$ where $t \in \mathbb{Z} \textbackslash \{0 \}$. 
+
+$t>0$ is our desired result, but if $t <0$, then $-t>0$  and $a^{-t} \in H$. Due to properties of being a group, its inverse must also be in the group. So, either way, we know that there is an $a^t$ in $H$ that can be represented by a positive integer. $\diamondsuit$ 
+
+Let $m$ be the least positive integer for $a^m \in H$, we know that $H$ contains some $a^t$ now and so we are allowed to do this. By closure, of groups, we can say that:
+$$\langle a^m \rangle \subseteq H$$
+We want to show that $\langle a^m \rangle = H$ which means we must show that $\langle a^m \rangle \supseteq H$. 
+If we can show that an arbitrary member $b \in H$ has the property that $b \in \langle a^m \rangle$, then we have our desired result. 
+
+Since $b \in G \implies b =a^k$ for some integer $k$. Using the [[Division Algorithm]], we know that $\exists q,r \in \mathbb{Z}$ such that $k=mq+r$ for $0 \leq r < m$. 
+
+Then:
+$$a^k = a^{mq+r}=a^{mq} \circ a^r \iff a^r = a^{-mq}a^k$$
+Recall that $\langle a^m \rangle \subseteq H$. Clearly, $a^{-mq} \in H$, and so $a^r=a^{-mq}a^k=a^{-mq}b \in H$ due to closure.  
+
+We chose $m$ to be the least positive integer for which $a^m \in H$ and we imposed by the [[Division Algorithm]] that $0 \leq r < m$. To spell it out $a^r$ is clearly in $H$, but it can't be $a^m$ due to the conditions of the division algorithm we imposed, and furthermore it is less than $m$,  so it must follow that the only valid $r$ here is for $r=0$. And since $r=0 \implies a^r=e$.   
+
+Therefore, we obtain that $r=0$ due to the minimality of $m$, and $0 \leq r < m$. We obtain that:
+$$a^r = a^{-mq}a^k \iff a^{mq}=a^k $$
+Then:
+$$b=a^{mq} = (a^m)^q \in \langle a^m \rangle $$
+And since $b \in H$, it follows that $\langle a^m \rangle = H$, and therefore by the definition of cyclic group, $H$ is a cyclic group. 
 
 
 

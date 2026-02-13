@@ -165,7 +165,7 @@ We can show that $U(n)$ is a group under multiplication $\mod(n)$. For example l
 | **3**            | 3   | 9   | 1   | 7   |
 | **7**            | 7   | 1   | 9   | 3   |
 | **9**            | 3   | 7   | 3   | 1   |
-By the conditions of this group, we always have $1$, so that serves as the [[Identity Element]]. We also have an inverse via the [[Euclidean Algorithm]]. Multiplication is still associative, even if we are considering modular arithmetic. I am not sure how to verify closure. 
+By the conditions of this group, we always have $1$, so that serves as the [[Identity Element]]. We also have an inverse via the [[Division Algorithm]]. Multiplication is still associative, even if we are considering modular arithmetic. I am not sure how to verify closure. 
 
 #### Ex 14.) Subtraction under $\mathbb{Z}$ 
 Subtraction is not associative so this cannot form a group. 
