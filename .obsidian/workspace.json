@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
+                "file": "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cyclic Group"
+              "title": "Gauss's Law"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "surface integral",
+                "query": "gauss",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 548.0086555480957,
+    "width": 365.0086555480957,
     "collapsed": true
   },
   "right": {
@@ -184,6 +184,14 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
+    "Abstract Algebra/Group Theory/Special Groups/Permutation Group.md",
+    "Number Theory/Chinese Remainder Theorem.md",
+    "Number Theory/Primes/Euler's Totient Function.md",
+    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
+    "Number Theory/Elementary Results/Division Algorithm.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
+    "Number Theory/Primes/Relatively Prime.md",
+    "Abstract Algebra/Group Theory/Groups/Cayley Table.md",
     "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
     "Calculus/Calculus/Vector Fields/Conservative Field.md",
     "Calculus/Calculus/Vector Fields/Surface Integrals/Stokes' Theorem.md",
@@ -203,15 +211,7 @@
     "Fundamentals of Programming Languages/Languages Overview/Programming Language.md",
     "Fundamentals of Programming Languages/Languages Overview/Polymorphism.md",
     "Optimization/Theory of Optimization/Local Minima.md",
-    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
     "Abstract Algebra/Group Theory/Groups/Subgroup.md",
-    "Optimization/Theory of Optimization/Feasible Direction.md",
-    "Graph Theory/Special Graphs/Bipartite Graph.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Degree Matrix.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Graph Laplacian Matrix.md",
-    "Calculus/Calculus/Multivariable Functions/Parametrizations/Boundary Orientation.md",
-    "Calculus/Calculus/Vector Fields/Surface Integrals/Green's Theorem.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Divergence.md",
     "Fundamentals of Programming Languages/Types",
     "Calculus/Calculus/Vector Fields/Special Vector Fields",
     "Optimization/Algorithms",
