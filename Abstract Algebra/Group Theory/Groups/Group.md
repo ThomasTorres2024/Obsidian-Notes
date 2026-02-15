@@ -137,7 +137,7 @@ Notice that $0+n=0$ and that $1+(n-1)=0$, and that $2+(n-2)=0$. If we index the 
 We are working with reals, and by definitions of the reals, they are associative and closed under multiplication. Clearly the identity element is 1. The inverse for any $a \in \mathbb{R}^*$ is $\frac{1}{a}$, since:
 $$a \cdot \frac{1}{a} = \frac{1}{a} \cdot a=\frac{a}{a}$$
 #### Ex 8.) [[General Linear Group]]  
-Consider, $A,B \in GL(2,\mathbb{R})$. Then $A \cdot B$ we have that $\det(AB)=\det(A) \cdot \det(B) \neq 0 \implies AB \in GL(2,\mathbb{R}$, so we have that the group is closed. [[Matrix Multiplication]] is associative. The identity matrix is the identity element of the group, and is in the group since it has a [[Determinant]] of 1. 
+Consider, $A,B \in GL(2,\mathbb{R})$. Then $A \cdot B$ we have that $\det(AB)=\det(A) \cdot \det(B) \neq 0 \implies AB \in GL(2,\mathbb{R}$, so we have that the group is closed. [[Matrix Multiplication]] is associative. The identity matrix is the identity element of the group, and is in the group since it has a determinant of 1. 
 
 The general form for an [[Inverse Matrix]] is:
 $$A^{-1}= \frac{1}{\det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$$
@@ -147,7 +147,7 @@ Therefore, it is a [[Group]].
 
 #### Ex 9.) [[Special Linear Group]]  (Read in that article)
 Clearly $I_n$ the identity matrix $n \times n$ is the identity element here since $\det(I_n)=1$. 
-[[Matrix Multiplication]] is associative. Also for $A,B \in SL(n,\mathbb{R})$ we have that $\det(AB)=\det(A)\det(B)=1$ so $AB \in SL(n,\mathbb{R})$. The inverse of some $A$ exists since its [[Determinant]] is non-zero, and furthermore its determinant is the reciprocal of $A$, so $\det(A^{-1})=1 \implies A^{-1} \in SL(n,\mathbb{R})$. 
+[[Matrix Multiplication]] is associative. Also for $A,B \in SL(n,\mathbb{R})$ we have that $\det(AB)=\det(A)\det(B)=1$ so $AB \in SL(n,\mathbb{R})$. The inverse of some $A$ exists since its determinant is non-zero, and furthermore its determinant is the reciprocal of $A$, so $\det(A^{-1})=1 \implies A^{-1} \in SL(n,\mathbb{R})$. 
 
 $$\therefore SL(n,\mathbb{R}) \text{ is a Group}$$
 #### Ex 10.) The set of all real $n \times n$ matrices with real entries:
@@ -165,7 +165,7 @@ We can show that $U(n)$ is a group under multiplication $\mod(n)$. For example l
 | **3**            | 3   | 9   | 1   | 7   |
 | **7**            | 7   | 1   | 9   | 3   |
 | **9**            | 3   | 7   | 3   | 1   |
-By the conditions of this group, we always have $1$, so that serves as the [[Identity Element]]. We also have an inverse via the [[Euclidean Algorithm]]. Multiplication is still associative, even if we are considering modular arithmetic. I am not sure how to verify closure. 
+By the conditions of this group, we always have $1$, so that serves as the [[Identity Element]]. We also have an inverse via the [[Division Algorithm]]. Multiplication is still associative, even if we are considering modular arithmetic. I am not sure how to verify closure. 
 
 #### Ex 14.) Subtraction under $\mathbb{Z}$ 
 Subtraction is not associative so this cannot form a group. 

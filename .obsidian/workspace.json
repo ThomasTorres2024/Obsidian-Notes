@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Calculus/Calculus/Derivatives/Exterior Derivatives.md",
+=======
+                "file": "Calculus/Calculus/Vector Fields/Line Integrals/Gauss's Law.md",
+>>>>>>> fe13ebb0d2e894be420ae4b7e8e631d01773bfd3
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Exterior Derivatives"
+=======
+              "title": "Gauss's Law"
+>>>>>>> fe13ebb0d2e894be420ae4b7e8e631d01773bfd3
             }
           }
         ]
@@ -53,7 +61,11 @@
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
                 "query": "generalized",
+=======
+                "query": "gauss",
+>>>>>>> fe13ebb0d2e894be420ae4b7e8e631d01773bfd3
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +90,12 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 395.0110321044922
+=======
+    "width": 365.0086555480957,
+    "collapsed": true
+>>>>>>> fe13ebb0d2e894be420ae4b7e8e631d01773bfd3
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -183,11 +200,22 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Calculus/Calculus/Vector Fields/Surface Integrals/Green's Theorem.md",
     "Calculus/Calculus/Derivatives/Exterior Derivatives.md",
     "Calculus/Calculus/Derivatives/Exterior Derivatives",
     "Calculus/Calculus/Vector Fields/Surface Integrals/Stokes' Theorem.md",
     "Calculus/Calculus/Vector Fields/Surface Integrals/Surface Integral.md",
+=======
+    "Abstract Algebra/Group Theory/Special Groups/Permutation Group.md",
+    "Number Theory/Chinese Remainder Theorem.md",
+    "Number Theory/Primes/Euler's Totient Function.md",
+    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
+    "Number Theory/Elementary Results/Division Algorithm.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
+    "Number Theory/Primes/Relatively Prime.md",
+    "Abstract Algebra/Group Theory/Groups/Cayley Table.md",
+>>>>>>> fe13ebb0d2e894be420ae4b7e8e631d01773bfd3
     "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
     "Calculus/Calculus/Vector Fields/Conservative Field.md",
     "Calculus/Calculus/Vector Fields/Curl Field.md",

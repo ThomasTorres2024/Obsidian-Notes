@@ -37,6 +37,6 @@ Proofs
 3. If $dx|ax \implies dx=eax \implies eax-dx=0 \implies  x(ea-d)=0 \implies$ but $x \neq 0$ so $ea-d=0 \implies ea=d \implies$ divisible by both $x$ and $d$. 
 4. If $d|a \implies de=a \implies e =\frac{a}{d}$, since $e \in \mathbb{Z}$ this is okay, then $a=de=d\frac{a}{d} \implies \frac{a}{d} | a$. 
 ---
-# The [[Euclidean Algorithm]]
+# The [[Division Algorithm]]
 Suppose $a \in \mathbb{Z}$, and $b \in \mathbb{N}$. Then $\exists! q,r, \in \mathbb{Z}$ s.t. $a=bq+r$ for $0 \leq r < b$. 
 Consider $A=\{a-bx|x \in \mathbb{Z} \} \cup \mathbb{N}$.  
