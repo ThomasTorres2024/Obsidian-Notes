@@ -17,24 +17,6 @@ $$dS=\langle -z_x,-z_y,1 \rangle $$
 Now, using these two identities we can write: 
 $$\iint_S \text{curl}(\vec{F}) \cdot dS= \iint_D \left[ \left(\frac{\partial F_3}{\partial y} - \frac{\partial F_2}{\partial z}\right)\left(- \frac{\partial z}{\partial x} \right) +\frac{\partial F_1}{\partial z}  - \frac{\partial F_3}{\partial x}, \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} \right]dA$$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 If we have that $\vec{F}$ is $C^1$. 
 If the surface $S$ has no boundary, then the boundary set $\partial S$ and thus:
 $$\iint \text{curl}(\vec{F}) \cdot \vec{dS}=\int_{\partial S =\varnothing} \vec{F} \cdot \vec{dS}=0$$
-
