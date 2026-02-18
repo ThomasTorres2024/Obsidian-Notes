@@ -25,4 +25,9 @@ Which has clear analogues to the single variable case. There are more general wa
 #### Computing Multivariable Taylor Series
 We can use some tricks like [[polar coordinates]], addition and subtraction of other taylor series since they are uniquely defined, and as well the [[Geometric Series]] since the following is true for $-1 < x < 1$:
 $$\frac{1}{1-x}=\sum_{k=0}^\infty x^{k}=1+x+x^2+x^3+\cdots$$
-$
+# Using Vector Notation and [[Matrix Derivative]]s 
+We can further generalize the idea for functions of the form $f : \mathbb{R}^n \to \mathbb{R}$. Then, we can define the [[Taylor Series]] of first and second order with the following for $\vec{A} \in \mathbb{R}^n$:
+$$T_{1}(\vec{x},A)=f(\vec{x},\vec{A})+[\nabla f(\vec{A})]^T (\vec{x}-\vec{A})$$
+$$T_{2}(\vec{x},A)=f(\vec{x},\vec{A})+[\nabla f(\vec{A})]^T (\vec{x}-\vec{A}) + \frac{1}{2}(\vec{x}-\vec{A})^T \mathcal{H}_{A} (\vec{x}-\vec{A})$$
+Where $\mathcal{H}_{A}$ denotes the [[Hessian Matrix]] of $f$. Notice that here we include the [[Quadratic Form]] of the [[Hessian Matrix]] and the [[Vector Derivative]]. 
+

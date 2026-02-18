@@ -39,7 +39,7 @@ Suppose that we have a lot of events, $A_{1},A_{2},\cdots,A_{n}$ and $\mathbb{P}
 
 We would expect that $\lambda$ is the expected number of things that occur, which would be given by summing the probability of our events, so it should be that:
 $$\lambda = \sum_{j=1}^n p_{j}$$
-This is also known as the "Poisson Approximation". If each [[event]] is [[Independent]], then it follows that we have the sum of $n$ [[Bernouli Trial]]s, and if it is furthermore the case that each trial has the same [[probability]], then our resulting $\lambda$ is $np$ and we would get a [[Binomial Distribution]].
+This is also known as the "Poisson Approximation". If each [[Event (Probability)]] is [[Independent]], then it follows that we have the sum of $n$ [[Bernouli Trial]]s, and if it is furthermore the case that each trial has the same [[probability]], then our resulting $\lambda$ is $np$ and we would get a [[Binomial Distribution]].
 
 We want to show that $\lim{n \to \infty}$ that   the [[Binomial Distribution]] actually converges to the [[Poisson Distribution]]. 
 

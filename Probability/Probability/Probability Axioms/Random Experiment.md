@@ -1,0 +1,1 @@
+A process in which a random outcome is observed. For instance consider a coin toss 

@@ -8,9 +8,9 @@ We are interesting in functions over the reals, more specifically in functions o
 $$F:U \subseteq \mathbb{R}^n \to \mathbb{R}^m$$
 Which take [[vector]]s in some region of $\mathbb{R}^n$ and map to some subset of $\mathbb{R}^m$. We can define the [[Graph]] of a function as the set of all of a functions inputs and outputs, more specifically as the set given by:
 $$\text{graph of } F=\{(\vec{x},F(\vec{x}) \in \mathbb{R}^{m+n}  : \vec{x} \in U \}$$
-The [[Contour]] or [[Level Set]] of value $c \in \mathbb{R}$ is the set where, for a function $f : \mathbb{R}^n \to \mathbb{R}$:
+The [[Contour]] or [[Contour]] of value $c \in \mathbb{R}$ is the set where, for a function $f : \mathbb{R}^n \to \mathbb{R}$:
 $$\text{contour of } c =\{ \vec{x} \in U : f(\vec{x})=c \} \subset \mathbb{R}^n$$
-A level set is a [[Level Points]] if $n=1$,[[Level Curve]] if $n=2$, and a [[Level Surface]] if $n=3$. This is a collection of all points where the function achieves the value $C$. We are interested in this particular idea because it helps us visualize and work with functions that have graphs in $\mathbb{R}^3$, because their functions are very complicated. [[Level Set]]s allow us to see how our function works. For instance consider when $f(x,y)=x^2+y^2$. The level curve at different levels of $c$ will be given by a set of concentric circles centered at the origin:
+A level set is a [[Level Points]] if $n=1$,[[Level Curve]] if $n=2$, and a [[Level Surface]] if $n=3$. This is a collection of all points where the function achieves the value $C$. We are interested in this particular idea because it helps us visualize and work with functions that have graphs in $\mathbb{R}^3$, because their functions are very complicated. [[Contour]]s allow us to see how our function works. For instance consider when $f(x,y)=x^2+y^2$. The level curve at different levels of $c$ will be given by a set of concentric circles centered at the origin:
 ![[Pasted image 20250912174119.png]]
 Another example of a function of this type is $f(x,y)=x^2-y^2$. When we take its level curves, we get a family of hyperbolas that degenerate into straight lines through the origin:
 ![[Pasted image 20250912174239.png]]
