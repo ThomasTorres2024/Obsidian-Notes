@@ -3,10 +3,10 @@ title: Gradient Descent
 tags:
 draft: "False"
 ---
-# Gradient  and Convexity Review
+#` Gradient  and Convexity Review
 Gradient Descent is a method used to obtain the local minimum of a function by continually iterating in the direction of the lowest descent. 
 
-For some function $f(x,y)$ the [[Gradient]], $\nabla f = \langle f_{x},f_{y} \rangle$. The [[Hessian]] is given by:
+For some function $f(x,y)$ the [[Gradient]], $\nabla f = \langle f_{x},f_{y} \rangle$. The [[Hessian Matrix]] is given by:
 $$\mathcal{H}= \nabla^2f =\begin{bmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{bmatrix}$$
 The standard interpretation of the gradient asks us which direction of steepest descent out of the function. If we take the minus of it we get the same line, but in the direction of least descent. If we go perpendicular to both, we stay along the function along a tangent line. 
 

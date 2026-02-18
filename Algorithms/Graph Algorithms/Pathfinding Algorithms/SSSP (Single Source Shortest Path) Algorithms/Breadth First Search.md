@@ -9,7 +9,7 @@ A [[path]] is a sequence of vertices that take us from one vertex to another ver
 Another way we could think of distance is the number of edges in our path minus 1 (since we need to account for the root node), and also the total number of edges is equivalent. 
 
 # Shortest Path Algorithm Computation
-Let us consider a set known as the "[[level set]]" of a vertex, which is the set of all points that are a distance $\delta$ away from our vertex. We denote our level set by:
+Let us consider a set known as the "[[Contour]]" of a vertex, which is the set of all points that are a distance $\delta$ away from our vertex. We denote our level set by:
 $$L_{k}=\{ v \in V : d(s,v)=k \}$$
 One way that we can achieve this end is by computing the level set for all $k$. which gives rise to an algorithm known as [[breadth-first search]].
 
