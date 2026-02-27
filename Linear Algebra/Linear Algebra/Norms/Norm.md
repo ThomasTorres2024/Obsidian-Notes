@@ -5,7 +5,7 @@ draft: "false"
 ---
 # Norm Definitions
 
-A norm is a mapping between a vector space, $\mathcal{V}$ to a field $\mathbb{F}$, where $\mathbb{F}$ is either the complex or real numbers. We should also note that [[Inner Product Spaces]] induce norms. 
+A norm is a mapping between a vector space, $\mathcal{V}$ to a field $\mathbb{F}$, where $\mathbb{F}$ is either the complex or real numbers. We should also note that [[Inner Product]] induce norms. 
 
 A norm is a way to measure the size of a matrix, a tensor, a function, or some object. The norm should reflect aspects of our functions. We can examine some common  $p$  vector norms on the vector, $\vec{v}$. We denote a norm by double brackets:
 $$ \text{Example notation for a norm: } \| \vec{v} \|$$
@@ -16,6 +16,11 @@ A vector norm also must satisfy the following criteria for vectors $\vec{x},\vec
 2. $\| \vec{x} \| = 0 \Longleftrightarrow \vec{x}=\vec{0}_{v}$
 3. $\| \alpha \cdot \vec{x}\|= |\alpha| \cdot \| \vec{x} \|$
 4. $\|\vec{x} +\vec{y} \| \leq \| x || + \| y \|$ The triangle inequality is proved using the [[Cauchy-Schwarz Inequality]]
+
+We denote general norms by $\| \cdot \|$.  We can also define the distance between two vectors using the norm:
+$$\text{dist}(u,v)=\|u-v\|$$
+This gives us a [[Metric]] on $V$, which allows us to define a [[Metric Space]]. 
+
 
 ---
 # Different Vector Norms

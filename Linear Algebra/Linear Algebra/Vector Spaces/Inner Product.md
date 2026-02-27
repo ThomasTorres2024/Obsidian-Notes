@@ -70,6 +70,8 @@ The real inner product is symmetric in both arguments due to us having real numb
 
 All of these properties induce a vector norm as well. Since the Cauchy-Schwarz identity is automatically true for such a space, the triangle rule for norms is automatically satisfied, which is a step we can use to prove this rule.  
 
+Another interesting fact is that, if we have an [[Inner Product]] given by $\langle u,v\rangle$ we can make another inner product space just as easily for $c >0$ with $c \langle u,v \rangle$ (I think this is related to the fact that any [[norm]] can be expressed as the matrix norm using a [[Positive Definite Matrix]], and that since we can describe an [[Inner Product]] using $I_{n}$ it follows that $c \cdot I_{n}$ is still a [[Positive Definite Matrix]]. 
+
 ---
 # Proof of the Cauchy-Schwarz Inequality 
 

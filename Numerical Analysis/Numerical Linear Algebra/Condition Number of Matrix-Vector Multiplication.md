@@ -4,11 +4,11 @@ tags:
 draft: "False"
 ---
 # Condition Number of Matrix-Vector Multiplication
-This is a key [[Condition Number]] for numerical linear algebra. Let us consider some $A \in \mathbb{C}^{m \times n}$ and $x \in \mathbb{C}^n$ then we can express the condition number by considering the infinitesimal increment $\delta x$. We will also use an arbitrary [[Vector Norms]] The [[Condition Number]] for our problem is given by:
+This is a key [[Condition Number]] for numerical linear algebra. Let us consider some $A \in \mathbb{C}^{m \times n}$ and $x \in \mathbb{C}^n$ then we can express the condition number by considering the infinitesimal increment $\delta x$. We will also use an arbitrary [[Norm]] The [[Condition Number]] for our problem is given by:
 $$\kappa = \sup_{\delta x} \left( \frac{\|A(x+\delta x)-Ax\|}{\|Ax\|} \bigg / \frac{\|\delta x\|}{\|x\|  } \right)$$
 $$= \sup_{\delta x} \left( \frac{\|A\delta x \| }{\|\delta x\|} \bigg / \frac{\|A x\|}{\|x\| } \right)$$
 $$=\|A\|\frac{\|x\|}{\|Ax\| }$$
-By the sub multiplicative property of [[Matrix Norms]], we have that:
+By the sub multiplicative property of [[Matrix Norm]], we have that:
 $$\frac{\|x\|}{\|Ax\|} \leq \|A^{-1}\|$$
 So:
 $$\kappa \leq \|A\|\cdot \|A^{-1}\|$$
