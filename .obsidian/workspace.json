@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank k Perturbation.md",
+                "file": "Abstract Algebra/Group Theory/Cosets/Coset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rank k Perturbation"
+              "title": "Coset"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cayley table",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 479.00072860717773
+    "width": 479.00072860717773,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -184,11 +185,23 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
+    "Abstract Algebra/Group Theory/Morphisms/Isomorphism.md",
+    "Abstract Algebra/Group Theory/Cosets/Coset.md",
+    "Abstract Algebra/Group Theory/Cosets",
+    "Abstract Algebra/Group Theory/Morphisms/Automorphism.md",
+    "Euler's Identity.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
+    "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages/Functional Language.md",
+    "Abstract Algebra/Group Theory/Morphisms",
+    "Fundamentals of Programming Languages/Functions/Generic Function.md",
+    "Fundamentals of Programming Languages/Functions/Function Table.md",
+    "Fundamentals of Programming Languages/Functions/Lambda Function.md",
+    "Fundamentals of Programming Languages/Functions",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank k Perturbation.md",
+    "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sparse Matrix.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sherman-Morrison-Woodbury Formula.md",
-    "Abstract Algebra/Group Theory/Groups/Group.md",
     "Abstract Algebra/Group Theory/Groups/Binary Operation.md",
     "Abstract Algebra/Group Theory/Groups/Abelian Group.md",
     "Optimization/Algorithms/Search Algorithms/Gradient Descent Algorithms/Gradient Search Method.md",
@@ -204,23 +217,11 @@
     "Calculus/Calculus/Matrix Calculus",
     "Calculus/Calculus/Multivariable Functions/Contour.md",
     "Calculus/Calculus/Multivariable Functions/Multivariable Functions.md",
-    "Probability/Probability/Probability Axioms/Probability.md",
-    "Probability/Probability/Probability Axioms/Event (Probability).md",
-    "Probability/Probability/Probability Axioms/Random Experiment.md",
-    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
     "Probability/Probability/Probability Axioms",
     "Probability/Probability/1_empirical-rule.webp",
-    "Probability/Probability/Combinatorics/Permutation.md",
-    "Abstract Algebra/Group Theory/Special Groups/Cyclic Group.md",
-    "Calculus/Calculus/Derivatives/Exterior Derivative.md",
-    "Calculus/Calculus/Vector Fields/Surface Integrals/Green's Theorem.md",
     "Calculus/Calculus/Derivatives/Exterior Derivatives",
     "Optimization/Algorithms/Search Algorithms/One Dimensional Search",
     "Optimization/Algorithms/Search Algorithms",
-    "Fundamentals of Programming Languages/Types",
-    "Calculus/Calculus/Vector Fields/Special Vector Fields",
-    "Optimization/Algorithms",
-    "Number Theory/Elementary Results",
     "Pasted image 20260120163605.png",
     "Pasted image 20260118061605.png",
     "Untitled 2.canvas",
