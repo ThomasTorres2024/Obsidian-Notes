@@ -65,6 +65,8 @@ $$S= \{a_{1},a_{2}, \dots, a_{m}, b_{1}, b_{2}, \dots, b_{n}, c_{1}, c_{2}, \dot
 To prove $\alpha \beta = \beta \alpha$, it must be shown that:
 $$(\alpha \beta)(x) = (\beta \alpha)(x), \forall x \in S$$
 ##### Case 1.)
+If $x=a_{i}$ for some $1 \leq i \leq m$, then:
+$$(\alpha \beta ) (a_{i}) = \alpha(\beta(a_{i}))=a$$
 
 ---
 # Examples.)

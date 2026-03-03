@@ -50,7 +50,7 @@ And if we take all of these, it will turn out that that the $s$ should cancel, s
 $$s\cdot \sum_{j=1}^r \frac{a_{j}b_{j}^T}{s}=\sum_{j=1}^ra_{j}b_{j}^T=AB$$
 We can now use the formula for [[variance]] involving the mean on the exterior:
 $$\sigma^2= \left(\sum_{j=1}^r \frac{\|a_{j}\|^2\|b_{j}^T \|^2}{s\mathbb{P}_{j}} \right)-\frac{1}{s}\|AB\|_{F}^2$$
-Where the mean is taken using the Frobenius [[Matrix Norms]]. Notice however that:
+Where the mean is taken using the Frobenius [[Matrix Norm]]. Notice however that:
 $$\mathbb{P}_{j}=\frac{\|a_{j}\|\|b_{j}^T\|}{C} \implies \sigma^2=\left(C^2 -\|AB\|_{F}^2 \right)$$
 This is a fixed number which is true given that we have successfully optimized our probabilities. Our goal here is to show that optimizing the probabilities results in:
 $$C=\sum_{i=1}^r \|a_{i}\|\cdot\|b_{i}^T\|$$ We can begin by trying to optimize all of the values of $p_{k}$ by the constraint that:

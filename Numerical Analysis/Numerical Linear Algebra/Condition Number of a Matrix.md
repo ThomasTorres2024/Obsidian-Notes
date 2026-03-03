@@ -4,7 +4,7 @@ tags:
 draft: "False"
 ---
 # Condition Number of a Matrix
-The product $\|A\| \cdot \|A^{-1}\|$ occurs frequently and is given a name, the [[Condition Number of a Matrix]], with an arbitrary [[Matrix Norms]]:
+The product $\|A\| \cdot \|A^{-1}\|$ occurs frequently and is given a name, the [[Condition Number of a Matrix]], with an arbitrary [[Matrix Norm]]:
 $$\kappa(A)=\|A\|\cdot \|A^{-1}\|$$
 If $\kappa(A)$ is small, then we can say that the [[Condition Number]] is [[Well-Conditioned]], however, if it is large $\kappa(A)$ is large then it is [[Ill-Conditioned]]. If $A$ is not invertible, we sometimes write that:
 $$\kappa(A)=\infty$$
