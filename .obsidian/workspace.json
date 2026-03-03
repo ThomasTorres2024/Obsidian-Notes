@@ -1,52 +1,24 @@
 {
   "main": {
-    "id": "7688c4ef18c474c2",
+    "id": "db28860e4c64bd09",
     "type": "split",
     "children": [
       {
-        "id": "fac04b30e6531fe0",
+        "id": "267971fd28f1b30a",
         "type": "tabs",
         "children": [
           {
-            "id": "05c9c351b52b88a5",
+            "id": "22d6baa85c92bbc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Probability/Probability/Combinatorics/Combination.md",
+                "file": "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combination"
-            }
-          },
-          {
-            "id": "4ff302d65c4ce8a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Probability/Probability/Combinatorics/Permutation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Permutation"
-            }
-          },
-          {
-            "id": "8721e5eda0b99c6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Determinants/Leibniz Determinant Formula.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Leibniz Determinant Formula"
+              "title": "Hilbert Space"
             }
           }
         ]
@@ -55,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "41d00af4cf7460be",
+    "id": "b05fa9b2b52d7f44",
     "type": "split",
     "children": [
       {
-        "id": "493363e878dba28d",
+        "id": "6a9f3e4e00a282ec",
         "type": "tabs",
         "children": [
           {
-            "id": "a1f518bf1680a7c5",
+            "id": "e360c28c809a0a96",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -76,12 +48,12 @@
             }
           },
           {
-            "id": "1eeb6a3d846100a4",
+            "id": "c33134043fd27270",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "file:permu",
+                "query": "hilbert space",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +65,7 @@
             }
           },
           {
-            "id": "095ba262a7747dd3",
+            "id": "a199dc89f3be0818",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -106,23 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 602.0110321044922
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "b78e4f91fda4c002",
+    "id": "9d8149978a4124bd",
     "type": "split",
     "children": [
       {
-        "id": "0c66674291e4bd71",
+        "id": "ab90945c3132e149",
         "type": "tabs",
         "children": [
           {
-            "id": "c504d165b939d6f6",
+            "id": "027b338972c2912e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+                "file": "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,24 +105,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The Divergence Theorem"
+              "title": "Backlinks for Hilbert Space"
             }
           },
           {
-            "id": "2d8f464e9cf808a4",
+            "id": "0bab8e73c5c4fffa",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Hilbert Space"
             }
           },
           {
-            "id": "f91820d091d88a3d",
+            "id": "2e802d4d9ed88f6c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -164,7 +138,7 @@
             }
           },
           {
-            "id": "1f9374a420814a18",
+            "id": "8aab14164f2d9ce4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -178,24 +152,25 @@
             }
           },
           {
-            "id": "bf752501a5a76d2e",
+            "id": "2e57ec788d324941",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Hilbert Space"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -206,60 +181,29 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "latex-ocr:LatexOCR": false
     }
   },
-  "active": "05c9c351b52b88a5",
+  "active": "22d6baa85c92bbc7",
   "lastOpenFiles": [
-    "Probability/Probability/Combinatorics/Permutation.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Leibniz Determinant Formula.md",
-    "Probability/Probability/Combinatorics/Combination.md",
-    "Probability/Probability/Combinatorics/Completing a Rank-One Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Determinant.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Cofactor Expansion.md",
+    "Functional Analysis/Hilbert Spaces/Bessel's Inequality.md",
+    "Functional Analysis/Function Classes/Square Integrable.md",
+    "Functional Analysis/Function Classes/Absolutely Integrable.md",
+    "Functional Analysis/Function Classes/Piecewise Continuous.md",
+    "Linear Algebra/Linear Algebra/Norms/Norm.md",
+    "Linear Algebra/Linear Algebra/Norms/Normed Space.md",
+    "Linear Algebra/Linear Algebra/Norms/Triangle Inequality.md",
+    "Linear Algebra/Linear Algebra/Norms/Matrix Norm.md",
+    "Functional Analysis/Function Classes/Periodic Function.md",
+    "Functional Analysis/Function Classes/Continuous Function.md",
+    "Optimization/Linear Programming/Simplex Algorithm.md",
+    "Optimization/Linear Programming/Linear Programming.md",
     "Optimization/Linear Programming/Simplex Method.md",
     "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
-    "Functional Analysis/Hilbert Spaces/Bessel's Inequality.md",
-    "Functional Analysis/Hilbert Spaces/Parseval's Theorem.md",
-    "Functional Analysis/Hilbert Spaces",
-    "Linear Algebra/Linear Algebra/Orthogonality/Orthogonal.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Inner Product.md",
-    "Linear Algebra/Linear Algebra/Orthogonality/Orthonormal.md",
-    "Linear Algebra/Linear Algebra/Orthogonality/Kronecker Delta.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Dual Spaces.md",
-    "Functional Analysis/Transforms/Convolution.md",
-    "Linear Algebra/Linear Algebra/Norms/Norm.md",
-    "Linear Algebra/Linear Algebra/Norms/Matrix Norm.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Isomorphic Vector Spaces.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Positive Definite Matrix.md",
-    "Abstract Algebra/Group Theory/Groups/Abelian Group.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
-    "Untitled 3.canvas",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Forms/Bilinear Forms.md",
-    "Abstract Algebra/Group Theory/Special Groups/Permutation Groups/Permutation Group.md",
-    "Fundamentals of Programming Languages/Languages Overview/Programming Languages/Parse Tree.md",
-    "Calculus/Calculus/Matrix Calculus",
-    "Probability/Probability/Probability Axioms",
-    "Probability/Probability/1_empirical-rule.webp",
-    "Calculus/Calculus/Derivatives/Exterior Derivatives",
-    "Optimization/Algorithms/Search Algorithms/One Dimensional Search",
-    "Optimization/Algorithms/Search Algorithms",
-    "Fundamentals of Programming Languages/Types",
-    "Calculus/Calculus/Vector Fields/Special Vector Fields",
-    "Optimization/Algorithms",
-    "Number Theory/Elementary Results",
-    "Pasted image 20260120163605.png",
-    "Pasted image 20260118061605.png",
-    "Untitled 2.canvas",
-    "Pasted image 20260111090947.png",
-    "Pasted image 20260111090653.png",
-    "Pasted image 20260111084207.png",
-    "Pasted image 20260108145912.png",
-    "Pasted image 20260107083527.png",
-    "Pasted image 20260107064643.png",
-    "Pasted image 20260105150916.png",
-    "Untitled.canvas",
-    "Untitled 1.canvas"
+    "Functional Analysis/Function Classes",
+    "Geometry/Pythagorean Theorem.md",
+    "Geometry",
+    "Functional Analysis/Hilbert Spaces/Parseval's Theorem.md"
   ]
 }

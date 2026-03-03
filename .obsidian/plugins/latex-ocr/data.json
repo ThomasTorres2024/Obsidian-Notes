@@ -1,0 +1,12 @@
+{
+  "debug": false,
+  "pythonPath": "python3",
+  "cacheDirPath": "C:\\Users\\nqkro\\AppData\\Local\\Programs\\Obsidian\\.obsidian\\plugins\\latex-ocr\\model_cache",
+  "delimiters": "$$",
+  "port": "50051",
+  "startServerOnLoad": true,
+  "showStatusBar": true,
+  "useLocalModel": false,
+  "hfApiKey": "",
+  "obfuscatedKey": ""
+}
