@@ -40,6 +40,11 @@ Since $H$ is a group, $e \in H$, and so $ae =a \in aH$.
  Conversely, let $a \in H$. Clearly, $aH \subseteq H$. Let $h \in H$. We know that $a^{-1}h \in H$ via closure. But also, $a^{-1}h \in aH \implies a(a^{-1}h) =h \in aH$, and thus $aH=H$  
 
 #### 3.) Proof $(ab)H=a(bH)$
+Follows directly from the associative property of elements of groups (we know all of these elements are associative since they come from $G$ which is  group as well):
+$$(ab)h=a(bh) \text{ and } h(ab)= (ha)b$$
+
+#### 4.) Proof $aH=bH \iff a,b \in H$
+If $a \in H$ then $aH=H=bH$ trivially. If $aH=bH$ then 
 
 
 ---
