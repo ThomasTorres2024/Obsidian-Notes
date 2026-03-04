@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Cosets/Coset.md",
+                "file": "Abstract Algebra/Group Theory/Cosets/Lagrange's Theorem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Coset"
+              "title": "Lagrange's Theorem"
             }
           }
         ]
@@ -185,6 +185,10 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
+    "Abstract Algebra/Group Theory/Groups/Finite Group.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
+    "Abstract Algebra/Group Theory/Cosets/Lagrange's Theorem.md",
+    "Abstract Algebra/Group Theory/Cosets/Coset.md",
     "Geometry/Pythagorean Theorem.md",
     "Geometry",
     "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
@@ -198,11 +202,9 @@
     "Functional Analysis/Function Classes/Absolutely Integrable.md",
     "Functional Analysis/Function Classes",
     "Abstract Algebra/Group Theory/Morphisms/Isomorphism.md",
-    "Abstract Algebra/Group Theory/Cosets/Coset.md",
     "Abstract Algebra/Group Theory/Cosets",
     "Abstract Algebra/Group Theory/Morphisms/Automorphism.md",
     "Euler's Identity.md",
-    "Abstract Algebra/Group Theory/Groups/Group.md",
     "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages/Functional Language.md",
     "Abstract Algebra/Group Theory/Morphisms",
     "Fundamentals of Programming Languages/Functions/Generic Function.md",
@@ -216,8 +218,6 @@
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Sherman-Morrison-Woodbury Formula.md",
     "Abstract Algebra/Group Theory/Groups/Binary Operation.md",
     "Abstract Algebra/Group Theory/Groups/Abelian Group.md",
-    "Optimization/Algorithms/Search Algorithms/Gradient Descent Algorithms/Gradient Search Method.md",
-    "Abstract Algebra/Group Theory/Special Groups/Permutation Groups/Transpositions.md",
     "Abstract Algebra/Group Theory/Special Groups/Permutation Groups",
     "Calculus/Calculus/Matrix Calculus",
     "Probability/Probability/Probability Axioms",

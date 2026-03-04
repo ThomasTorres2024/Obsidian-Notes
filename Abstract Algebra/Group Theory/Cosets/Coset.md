@@ -43,8 +43,42 @@ Since $H$ is a group, $e \in H$, and so $ae =a \in aH$.
 Follows directly from the associative property of elements of groups (we know all of these elements are associative since they come from $G$ which is  group as well):
 $$(ab)h=a(bh) \text{ and } h(ab)= (ha)b$$
 
-#### 4.) Proof $aH=bH \iff a,b \in H$
-If $a \in H$ then $aH=H=bH$ trivially. If $aH=bH$ then 
+#### 4.) Proof $aH=bH \iff a \in bH$
+If $aH=bH$ then $a=ae \in aH = bH$ (argument 4). Conversely, if $a \in bH \implies a=bh$ for $h \in H$. Since $H$ is a group then $hH=H$ and therefore:
+$$aH=(bh)H=b(hH)=bH$$
+### 5.) Proof $aH=bH$ or $aH \cap bH = \varnothing$
+$aH=bH$ follows from $4$, we know that if $\exists c \in aH \cap bH \implies cH=aH$ 
+and $cH=bH$ and by the transitive property $aH=bH$ 
+
+### 6.) Proof $aH=bH \iff a^{-1}b \in H$
+
+We use property $4$ in this proof:
+
+$$\begin{align}
+aH=bH\\ \Large \Updownarrow \\ a^{-1}(aH)=a^{-1}(bH)\\ \Large \Updownarrow \\ H=(a^{-1}b)H \\ \Large \Updownarrow \\a^{-1}b \in H
+\end{align}$$
+
+### 7.) Proof $|aH|=|bH|$
+We can find an injective map between both sets and argue they have equivalent cardinality. The correspondence given by $ah \longrightarrow bh$  clearly maps $aH$ onto $bH$. We also have that by cancelation it is injective.  
+
+### 8.) $aH=Ha \iff H=aHa^{-1}$
+We make use of property $3$ here:
+
+$$\begin{align}
+aH=Ha\\ \Large \Updownarrow \\ aHa^{-1}=(Ha)a^{-1}\\ \Large \Updownarrow \\ (aH)a^{-1}= (Ha)a^{-1} \\ \Large \Updownarrow \\aHa^{-1}= H(aa^{-1})=H
+\end{align}$$
+
+### 9.) $aH \leq G \iff a \in H$
+
+If $aH \leq G \implies e \in aH$. So we have that $aH \cap eH \neq \varnothing \implies$ there is something in the intersection of the two groups, so we can say that by $5.)$ that $aH=eH=H$. Conversely, if $a \in H$ then by $2$ again $aH=H$.  
+
+There are also similar properties for right [[Coset]]s. 
+
+---
+# Theorem.) [[Lagrange's Theorem]]
+Lagrange's Theorem states that for a [[Finite Group]], $G$ and a [[Subgroup]] $H \leq G$, then $|H| \bigg| |G|$. 
+
+Moreover, the number distinct left (also true for right) [[Coset]]s of the $H$ over $G$ is given by $\frac{||G||}{||H||}$. 
 
 
 ---
