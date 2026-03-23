@@ -13,6 +13,8 @@ If groups $G_{1}$ and $G_{2}$ are isomorphic, we denote this via:
 $$G_{1} \equiv G_{2}$$
 Since $\phi$ is bijective, it also must clearly be the case that $|G_{1}|=|G_{2}|$ 
 
+More simply, an [[Isomorphism]] is a bijective [[Homomorphism]]. It also must be an [[Epimorphism]] and a [[Monomorphism]]. 
+
 ---
 # Properties of Isomorphisms $\textcolor{red}{(Theorem)}$ 
 Suppose that $\phi$ is an isomorphism from a group $G_{1} \mapsto G_{2}$, then:

@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"3f21f02b3d933541","type":"text","text":"# [[Morphism]]\n","x":-200,"y":-360,"width":240,"height":60,"color":"5"},
+		{"id":"663249a799e45da3","type":"text","text":"# [[Epimorphism]]\nSurjective morphism","x":-674,"y":-315,"width":274,"height":75,"color":"2"},
+		{"id":"e145214dc47fcf06","type":"text","text":"# [[Monomorphism]]\nInjective morphism","x":-751,"y":-122,"width":250,"height":82,"color":"2"},
+		{"id":"8687e53409500905","type":"text","text":"# [[Homomorphism]]\n$\\phi(a \\circ b)= \\phi(a) \\circ \\phi(b)$","x":120,"y":-186,"width":250,"height":129,"color":"2"},
+		{"id":"cd8a54d6dbd2d3e6","type":"text","text":"# [[Endomorphism]]\nA [[Morphism]] where $\\phi : A \\to A$","x":-327,"y":-183,"width":255,"height":123,"color":"2"},
+		{"id":"ee64565b26f690ca","type":"text","text":"# [[Isomorphism]]\nA bijective [[Homomorphism]]","x":-146,"y":154,"width":266,"height":126,"color":"3"},
+		{"id":"d73b6f96c26ba06f","type":"text","text":"# Automorphism\n[[Automorphism]]s are [[Isomorphism]]s that are [[Endomorphism]]s. ","x":-674,"y":280,"width":229,"height":142,"color":"6"}
+	],
+	"edges":[
+		{"id":"afc352793ffcaab8","fromNode":"3f21f02b3d933541","fromSide":"bottom","toNode":"8687e53409500905","toSide":"top"},
+		{"id":"efd012db07ccecc3","fromNode":"8687e53409500905","fromSide":"bottom","toNode":"ee64565b26f690ca","toSide":"top"},
+		{"id":"0270fdb7fa210c49","fromNode":"3f21f02b3d933541","fromSide":"bottom","toNode":"cd8a54d6dbd2d3e6","toSide":"top"},
+		{"id":"a7a033877e46833f","fromNode":"ee64565b26f690ca","fromSide":"bottom","toNode":"d73b6f96c26ba06f","toSide":"top"},
+		{"id":"d16bb17652ee9aa7","fromNode":"cd8a54d6dbd2d3e6","fromSide":"bottom","toNode":"d73b6f96c26ba06f","toSide":"top"},
+		{"id":"278f00ca2bcc141b","fromNode":"3f21f02b3d933541","fromSide":"bottom","toNode":"663249a799e45da3","toSide":"top"},
+		{"id":"b937cf5ec63b0ad7","fromNode":"3f21f02b3d933541","fromSide":"bottom","toNode":"e145214dc47fcf06","toSide":"top"},
+		{"id":"9813891350435b32","fromNode":"e145214dc47fcf06","fromSide":"bottom","toNode":"ee64565b26f690ca","toSide":"top"},
+		{"id":"50248925ab82282a","fromNode":"663249a799e45da3","fromSide":"bottom","toNode":"ee64565b26f690ca","toSide":"top"}
+	]
+}

@@ -7,6 +7,7 @@ draft: "False"
 # Automorphism
 An [[Automorphism]] is an [[Isomorphism]], $\phi$ that maps a [[Group]], $G$ to itself, which gives us:
 $$\phi : G \mapsto G$$
+Another way that we could say that is that $\phi$ is an [[Automorphism]] if it is both an [[Endomorphism]] and an [[Isomorphism]]. 
 
 ---
 # Inner [[Automorphism]] 
