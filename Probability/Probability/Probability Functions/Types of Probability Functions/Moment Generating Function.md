@@ -8,7 +8,7 @@ An alternate way to define [[Probability Density Function]]s. A random variable,
 
 $t$ is just a dummy variable. This is a well defined variable, since the function of a [[Random Variables]] is itself a [[Random Variables]]. 
 
-Why is this called a "moment generating function"? Let us expand the [[Taylor Series]] of our [[Moment Generating Function]], and we know that the taylor expansion of $e$ has an infinite radius of convergence, so it is valid everywhere: 
+Why is this called a "moment generating function"? Let us expand the [[Taylor Series]] of our [[Moment Generating Function]], and we know that the Taylor expansion of $e$ has an infinite radius of convergence, so it is valid everywhere: 
 $$\mathbb{E}[e^{tx}]=\mathbb{E}\left[ \sum_{n=0}^\infty \frac{x^n t^n}{n!} \right]$$
 Applying [[Linearity]] of the [[Expected Value]] over an infinite number of values 
 $$= \sum_{n=0}^\infty \frac{\mathbb{E}[x^n] t^n}{n!}$$
