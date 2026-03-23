@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cayley table",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,6 +197,8 @@
     "Abstract Algebra/Group Theory/Groups/Finite Group.md",
     "Abstract Algebra/Group Theory/Groups/Group.md",
     "Abstract Algebra/Group Theory/Cosets/Coset.md",
+    "Probability/Probability/Probability Functions/Types of Probability Functions/Moment Generating Function.md",
+    "Number Theory/Primes/Fermat's Little Theorem.md",
     "Geometry/Pythagorean Theorem.md",
     "Geometry",
     "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
@@ -211,6 +213,7 @@
     "Functional Analysis/Function Classes",
     "Abstract Algebra/Group Theory/Cosets",
     "Euler's Identity.md",
+    "Abstract Algebra/Group Theory/Groups/Group.md",
     "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages/Functional Language.md",
     "Abstract Algebra/Group Theory/Morphisms",
     "Fundamentals of Programming Languages/Functions/Generic Function.md",
@@ -220,7 +223,6 @@
     "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages",
     "Abstract Algebra/Group Theory/Special Groups/Permutation Groups",
     "Calculus/Calculus/Matrix Calculus",
-    "Probability/Probability/Probability Axioms",
     "Probability/Probability/1_empirical-rule.webp",
     "Pasted image 20260120163605.png",
     "Pasted image 20260118061605.png",
