@@ -45,3 +45,30 @@ This manner of obtaining $Q$ conjugate vectors can be systematized using [[The G
 Given a set of [[Linearly Independent]] vectors, $p_{0},p_{1},\dots, p_{n}$, we can use [[The Gram-Schmidt Process]] in order to derive a set of $Q$ conjugate vectors by using the following algorithm. 
 $$d_{0}=p_{0}$$
 $$d_{k+1}=p_{k+1}-\sum_{i=0}^k \frac{p^{(k+1)^T}Qd^{(i)}}{d^{(i)^T}Qd^{(i)}}$$
+
+---
+
+# Proof of Convergence of the [[Conjugate Direction]] Algorithm in $n$ steps 
+For any initial point, $x^{(0)}$, the conjugate direction algorithm converges to the unique minimizer, $x^*$ (the solution to $Qx=b$) in $n$ many steps, which is to say:
+$$x^{(n)}=x^*$$
+
+$\textcolor{red}{Proof.)}$ Consider $x^*-x^{(0)} \in \mathbb{R}^n$. Because each direction, $d^{(i)}$ is linearly independent then:
+$$x^* - x^{(0)} = \sum_{i=0}^{n-1} \beta_{i}d^{(i)} $$
+Taking advantage of the $Q$ conjugateness of the vectors, we can obtain that:
+$$d^{(k)^T}Q(x^{*}-x^{(0)})=\beta_{k}d^{(k)^T}Qd^{(k)} \iff \beta_{k}  = \frac{d^{(k)^T}Q(x^*-x^{(0)})}{d^{(k)^T}Qd^{(k)}}$$
+
+We can also write that: 
+$$x^{(k)}=x^{(0)} + \sum_{i=0}^{k-1} \alpha_{i} d^{(i)} \iff x^{(k)}-x^{(0)} = \sum_{i=0}^{k-1} \alpha_{i}d^{(i)} $$
+$$\iff x^{*}-x^{(0)}=(x^* - x^{k})+x^{(k)}-x^{(0)}$$
+
+Left multiplication of this statement allows us to obtain that:
+$$d^{(k)^T} Q(x^*-x^{(0)})=d^{(k)^T }Q(x^*-x^{(k)})=-d^{(k)^T}g^{(k)}$$
+Which is obtained from the fact that the [[Gradient]] for a quadratic here is given by:
+$$g^{(k)}=Qx^{(k)}-b$$ and $Qx^*=b$, therefore we obtain that:
+$$\beta_{k}=-\frac{d^{(k)^T}g^{(k)}}{d^{(k)^T}Qd^{(k)}} =\alpha_{k} $$
+(Somehow?) Lastly we get that $x^*=x^{(n)}$, which finishes the proof (my guess here is that given the above gradient this is the only thing to satisfy it and if you check the algebra that it should work out?)
+
+---
+# The $(k+1)$th gradient is orthogonal to the $k$th direction 
+
+

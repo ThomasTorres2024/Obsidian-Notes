@@ -74,12 +74,6 @@ If $aH \leq G \implies e \in aH$. So we have that $aH \cap eH \neq \varnothing \
 
 There are also similar properties for right [[Coset]]s. 
 
----
-# Theorem.) [[Lagrange's Theorem]]
-Lagrange's Theorem states that for a [[Finite Group]], $G$ and a [[Subgroup]] $H \leq G$, then $|H| \bigg| |G|$. 
-
-Moreover, the number distinct left (also true for right) [[Coset]]s of the $H$ over $G$ is given by $\frac{||G||}{||H||}$. 
-
 
 ---
 # Examples:
@@ -94,4 +88,4 @@ All of the cosets of $H$ here are:
 $$0+H=\{0,3,6 \}=3+H=6+H$$
 $$1+H=\{1,4,7 \}=4+H=7+H$$
 $$2+H=\{2,5,8 \}=5+H=8+H$$
-
+# Example 
