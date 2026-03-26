@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Morphisms/Endomorphism.md",
+                "file": "Optimization/Linear Programming/Simplex Method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Endomorphism"
+              "title": "Simplex Method"
             }
           }
         ]
@@ -184,8 +184,10 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
+    "Optimization/Linear Programming/Linear Programming.md",
+    "Optimization/Linear Programming/Simplex Algorithm.md",
     "Abstract Algebra/Group Theory/Morphisms/Endomorphism.md",
+    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
     "Abstract Algebra/Group Theory/Morphisms/Epimorphism.md",
     "Abstract Algebra/Group Theory/Morphisms/Morphisms.canvas",
     "Abstract Algebra/Group Theory/Morphisms/Isomorphism.md",
@@ -213,12 +215,7 @@
     "Functional Analysis/Function Classes",
     "Abstract Algebra/Group Theory/Cosets",
     "Euler's Identity.md",
-    "Abstract Algebra/Group Theory/Groups/Group.md",
-    "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages/Functional Language.md",
     "Abstract Algebra/Group Theory/Morphisms",
-    "Fundamentals of Programming Languages/Functions/Generic Function.md",
-    "Fundamentals of Programming Languages/Functions/Function Table.md",
-    "Fundamentals of Programming Languages/Functions/Lambda Function.md",
     "Fundamentals of Programming Languages/Functions",
     "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages",
     "Abstract Algebra/Group Theory/Special Groups/Permutation Groups",
