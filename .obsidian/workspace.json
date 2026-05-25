@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Optimization/Linear Programming/Simplex Method.md",
+                "file": "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Ring.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simplex Method"
+              "title": "Polynomial Ring"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bilinear",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 479.00072860717773
+    "width": 479.00072860717773,
+    "collapsed": true
   },
   "right": {
     "id": "b78e4f91fda4c002",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
+                "file": "Abstract Algebra/Group Theory/External Direct Product.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The Divergence Theorem"
+              "title": "Backlinks for External Direct Product"
             }
           },
           {
@@ -184,42 +185,42 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Abstract Algebra/Group Theory/Groups/External Direct Product.md",
-    "Optimization/Linear Programming/Linear Programming.md",
-    "Optimization/Linear Programming/Simplex Algorithm.md",
+    "Untitled 3.base",
+    "Abstract Algebra/Group Theory/Groups/Abelian Group.md",
+    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Abel's Theorem.md",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Ring.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Unit (Ring Theory).md",
+    "Abstract Algebra/Group Theory/Groups/Identity Element.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Division Algorithm.md",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Monic Polynomial.md",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial.md",
+    "Abstract Algebra/Ring Theory/Polynomial Ring",
+    "Abstract Algebra/Ring Theory/Principle Ideal Domain.md",
+    "Abstract Algebra/Ring Theory/Polynomial Rings/Untitled.md",
+    "Abstract Algebra/Ring Theory/Polynomial Rings",
+    "Abstract Algebra/Ring Theory/Principle Ideal.md",
+    "Abstract Algebra/Ring Theory/Module.md",
+    "Set Theory/Function.md",
+    "Set Theory/Set.md",
+    "Set Theory/Relation.md",
+    "Set Theory/Cartesian Product.md",
+    "Category Theory/Monoid.md",
+    "Category Theory/Monad.md",
+    "Category Theory/Operation (Category Theory).md",
+    "Category Theory/Endofunctor.md",
+    "Abstract Algebra/Group Theory/Groups/Morphism.md",
+    "Category Theory/Functor.md",
+    "Category Theory/Category.md",
+    "Category Theory/Object (Category Theory).md",
     "Abstract Algebra/Group Theory/Morphisms/Endomorphism.md",
-    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
-    "Abstract Algebra/Group Theory/Morphisms/Epimorphism.md",
+    "Untitled",
+    "Category Theory",
+    "Abstract Algebra/Ring Theory",
+    "Abstract Algebra/Group Theory/Classification of Groups",
+    "Set Theory",
+    "Analysis/Untitled",
     "Abstract Algebra/Group Theory/Morphisms/Morphisms.canvas",
-    "Abstract Algebra/Group Theory/Morphisms/Isomorphism.md",
-    "Abstract Algebra/Group Theory/Morphisms/Monomorphism.md",
-    "Abstract Algebra/Group Theory/Morphisms/Automorphism.md",
-    "Abstract Algebra/Group Theory/Morphisms/Homomorphism.md",
-    "Optimization/Linear Programming/Simplex Method.md",
-    "Abstract Algebra/Group Theory/Cosets/Lagrange's Theorem.md",
-    "Abstract Algebra/Group Theory/Groups/Finite Group.md",
-    "Abstract Algebra/Group Theory/Groups/Group.md",
-    "Abstract Algebra/Group Theory/Cosets/Coset.md",
-    "Probability/Probability/Probability Functions/Types of Probability Functions/Moment Generating Function.md",
-    "Number Theory/Primes/Fermat's Little Theorem.md",
-    "Geometry/Pythagorean Theorem.md",
-    "Geometry",
-    "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
-    "Functional Analysis/Hilbert Spaces/Parseval's Theorem.md",
-    "Functional Analysis/Hilbert Spaces/Bessel's Inequality.md",
-    "Functional Analysis/Hilbert Spaces",
-    "Functional Analysis/Function Classes/Square Integrable.md",
-    "Functional Analysis/Function Classes/Periodic Function.md",
-    "Functional Analysis/Function Classes/Piecewise Continuous.md",
-    "Functional Analysis/Function Classes/Continuous Function.md",
-    "Functional Analysis/Function Classes/Absolutely Integrable.md",
-    "Functional Analysis/Function Classes",
-    "Abstract Algebra/Group Theory/Cosets",
-    "Abstract Algebra/Group Theory/Morphisms",
-    "Fundamentals of Programming Languages/Functions",
-    "Fundamentals of Programming Languages/Languages Overview/Functional Programming Languages",
-    "Abstract Algebra/Group Theory/Special Groups/Permutation Groups",
-    "Calculus/Calculus/Matrix Calculus",
     "Probability/Probability/1_empirical-rule.webp",
     "Pasted image 20260120163605.png",
     "Pasted image 20260118061605.png",

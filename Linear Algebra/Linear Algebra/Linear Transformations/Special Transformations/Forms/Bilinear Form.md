@@ -49,9 +49,35 @@ This is considered the "canonical" form for a Bilinear Form. The dot product is 
 Given any vector spaces $\mathcal{V}$ and $\mathcal{W}$ over field $\mathbb{F}$ with respective bases $\{\vec{v}_{1}, \cdots \vec{v}_{m} \}$ and $\{\vec{w}_{1}, \cdots \vec{w}_{n} \}$, if $\mathcal{V} \times \mathcal{W} \rightarrow \mathbb{F}$ is a bilinear form then there exists a unique matrix $A \in \mathbb{F}^{m \times n}$ such that $f(\vec{v},\vec{w})=\vec{v}^TA\vec{w}$ yields a scalar. 
 
 ---
+# (Theorem) Uniqueness of Bilinear Form
+If $U$ is an $n$ dimensional vector space with the basis $\{ x_{1},x_{2},\cdots,x_{n} \}$, if $V$ is an $m$ dimensional vector space with the basis $\{v_{1},v_{2},\cdots,v_{m} \}$, and if $\{a_{ij} \}$ is an sequence in $\mathbb{F}$ such that $1 \leq i \leq m,1\leq j \leq n$, then there is only one bilinear form on the direct sum $U \oplus V$, where $w \in U \oplus V$ such that $w(x_{i},y_{j})=\alpha_{ij} : \forall i,j$.
+
+$Proof.)$ If $x=\sum_{i} \xi,y = \sum_{j} \eta_{j} y_{j}$ and $w$ is a bilinear form on $U \oplus V$ such that $w(x_{i},y_{j})=\alpha_{ij}$ , then:
+
+$$w(x,y)=\sum_{i} \sum_{j} \xi_{i} \eta_{j} w(x_{i},y_{i}) =\sum_{i} \sum_{j} \xi_{i} \eta_{j} \alpha_{ij} $$
+Here we obtain uniqueness by being able to read the equation from left to right and right to left where we get the same result.
+
+# (Theorem) Basis and Dimension of Bilinear Forms
+If $U$ is an $n$ dimensional vector space with the basis $\{x_{1},x_{2},\cdots,x_{n} \}$ and if $V$ is an $m$ dimensional vector space with the basis $\{v_{1},v_{2},\cdots,v_{m} \}$, then there is a basis $\{w_{pq} \}$ for $1 \leq p \leq n,1 \leq q \leq m$ in the vector space of all [[Bilinear Form]] on $U \oplus V$ with the property that $w_{pq}(x_{i},x_{j})=\delta_{ip} \delta_{jq}$. 
+
+It can be shown that the bilinear forms are linearly independent since:
+$$\sum_{p} \sum_{q} \alpha_{pq} w_{pq} = 0$$
+$$0= \sum_{p} \sum_{q} \alpha_{pq} \delta_{ip} \delta_{jq}=\alpha_{ij}$$
+(I am not really sure how this is proof of linear indep I guess I can see it?)
+
+Now the spanning part can be proved for the basis. Consider some arbitrary $w(x_{i},y_{j}) \in W$ then if $w(x_{i},y_{j})=a_{ij}$
+$$w=\sum_{p} \sum_{q} \alpha_{pq} w_{pq}$$
+But, if $x= \sum_{i} \xi_{i} x_{i}$ and $y= \sum_{j} \eta_{i}y_{j}$ then:
+$$w(x,y) = \sum_{i} \sum_{j} \xi_{i} \eta_{j} \delta_{ip} \delta_{jq}=\xi_{p } \eta_{q}$$
+Then we have:
+$$w(x,y)=\sum_{i} \sum_{j} \xi_{i} \eta_{j} \alpha_{ij} = \sum_{p} \sum_{q} \alpha_{pq} w_{pq}(x,y)$$
+Since the set spans and is linearly independent it is thus a basis for the space of bilinear forms. 
+
+
+---
 # Metric Tensors 
 
-Metric tensors are bilinear forms that satisfy properties of [[similarity]] and [[p[ositive definite]]ness for a vector $\vec{v}$. Metric tensors are also symmetric. That is to say: 
+Metric tensors are bilinear forms that satisfy properties of [[similarity]] and [[positive definite]]ness for a vector $\vec{v}$. Metric tensors are also symmetric. That is to say: 
 
 $$g(\vec{v},\vec{w})=g(\vec{w},\vec{v})$$
 

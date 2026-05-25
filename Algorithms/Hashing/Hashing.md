@@ -30,7 +30,7 @@ If something is at the corresponding address, we return nothing, or we can retur
 | Direct Access Array | n                | 1               | 1             | n       | n               |
 The direct access array is good at finding items and deleting or inserting them. We also are making the assumptions that we can only sort integers. It uses a LOT of memory however.
 
-The direct access array is also a [[Set]] Interface. 
+The direct access array is also a [[Set (Computer Science)]] Interface. 
 
 We are also making a subtle assumption that our words are stored as nice sized, typically 64 as is standard, bits. We want to ensure that our largest key, $u$, will be smaller than $2^w$ where $2^w$ is the "word size" on our machine. 
 
