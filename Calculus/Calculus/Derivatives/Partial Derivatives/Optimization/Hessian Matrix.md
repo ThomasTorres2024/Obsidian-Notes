@@ -11,7 +11,7 @@ For instance, the first [[partial derivative]] of a function is the [[Gradient]]
 $$\nabla f= \begin{bmatrix} f_{x} & f_{y} \end{bmatrix}^T$$
 The second partial derivative is expressed by the symmetric matrix known as the [[Hessian Matrix]] which we denote as $\mathcal{H}$:
 $$\nabla^2f= \begin{bmatrix} f_{xx} & f_{xy}\\f_{yx} & f_{yy} \end{bmatrix}=\mathcal{H}$$
-The third partial derivative is expressed as a rank 3 [[tensor]]. 
+The third partial derivative is expressed as a rank 3 [[Tensor]]. 
 
 The Hessian matrix and its associated trace and [[Determinant]] are interesting quantities that we want to consider:
 

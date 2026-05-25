@@ -20,3 +20,7 @@ For instance, consider the group for the operations of rotations and reflections
 | **sr³** | sr³ | sr² | sr  | s   | r³  | r²  | r   | e   |
 
 
+---
+# Results Involving [[Cayley Table]]s 
+
+If there are $2$ non-isomorphic ([[Isomorphism]])  [[Finite Group]]s of the same order then their multiplications are different. 

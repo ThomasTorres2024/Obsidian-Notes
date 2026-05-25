@@ -12,10 +12,10 @@ Each entry of $A$ is given by, $A^T_{ij}=A_{ji}$.  For concrete examples conside
 If a matrix satisfies $A^T=A$ then we say that $A$ is a [[Symmetric Matrix]].  
 
 ---
-# [[Dual Spaces]] and the Matrix [[Transpose]]
+# [[Dual Space]] and the Matrix [[Transpose]]
 We can actually obtain the [[Transpose]] of a Matrix by modifying a [[Linear Transformation]]. 
 
-Recall that the [[Dual Spaces]] can be defined as a [[Linear Transformation]] which goes from some [[Vector Space]], $\mathcal{V}$ to a [[Field]] $\mathbb{F}$:
+Recall that the [[Dual Space]] can be defined as a [[Linear Transformation]] which goes from some [[Vector Space]], $\mathcal{V}$ to a [[Field]] $\mathbb{F}$:
 $$V^*=\mathcal{L}(\mathcal{V},\mathbb{F})$$
 Let $T$ be the [[Linear Transformation]] between the vector spaces $\mathcal{V} \to \mathcal{W}$. The transpose of $T$ should be  an operation that maps not just in the opposite order from $\mathcal{W} \to \mathcal{V}$, but also by taking the dual of these vector spaces. Therefore, we can think of $T^T$ as the following map:
 $$T^T:\mathcal{W}^* \to \mathcal{V}^*$$

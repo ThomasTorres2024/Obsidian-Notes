@@ -134,12 +134,75 @@ $$h'=ht, k'=t^{-1}k$$
 
 Thus, for ever element in $H \cap K$, there is another way to express the element $hk$. QED $|HK|= \frac{|H||K|}{|H \cap K|}$
 
+---
+### Example.) 
+Claim that a group of order $75$ has at most one subgroup of $25$. Suppose $|G|=75$. Let, $H,K \leq G$ and $|H|=|K|=25$. By the above theorem we know that $|H \cap K| \bigg| |H| \cdot |K|$. 
+
+We also have that $|H \cap K|$ is an integer and must be less than or equal to $25$, so it either $1,5,$ or $25$.  $|H \cap K| =1 \implies |H| \cdot |K| > 75$ which is a contradiction since $|H| \cdot |K| > |G|$, similarly we get the same thing for $|H \cap K|=5$, we get $125>75$ and we only have a consistent result if $|H \cap K|=25$. 
 
 
+---
+# Theorem 7.3 Classification of Groups of [[Order]] $2p$: 
+
+Let $G$ be a group of order $2p$ where $p$ is a prime, so $p>2$. Then $G \cong \mathbb{Z}_{2p}$ OR $G \cong D_p$.  
+
+$Proof.)$ If $G$ has an element of order $2p$ then $G$ is a [[Cyclic Group]] of order $2p$, and is therefore Isomorphic. We can then show that $G \cong D_p$ for the next case. 
+
+Our goal is to be able to show that the [[Cayley Table]] of $G$ will resemble $D_p$ more and more until it is forced into being $D_p$, the [[Dihedral Group]] of $p$. It can be shown that $G$ must have an element of order $p$. 
 
 
+By $7.1.2$, it must be the case that every element of $G$ must divide $2p=|G|$. Since $G$ has no elements of order $2p$, it means that $G$ has either an element of order $2$ or order $p$. 
+
+If we suppose that there are no elements of order $p$, then every non identity element of $G$ is order $2$, which is to say that:
 
 
+$$a^2 = e \iff a=a^{-1}  : \forall a \in G $$
 
+Hence, if $a,b \in G$ then: 
 
+$$ab=(ab)^{-1}=b^{-1}a^{-1}=ba$$
 
+And thus $G$ is an Abelian group. Since $p \geq 2$, if $a,b \neq$ identity elements of $G$, then it follows that the set is a [[Subgroup]] of $G$:
+
+$$\{e,a,b,ab \} < G $$
+
+Since $p>2$ and $p$ is prime, so $p$ is odd, and thus it cannot be the case that $4 \not\bigg| \text{ }2p$
+ which contradicts [[Lagrange's Theorem]], which entails that that $G$ must have an element of order $p$, which we denote by $a$. 
+
+Since $a$ has order $p$ then $|\langle a \rangle|=p$, so there are elements in the group $G \textbackslash \langle a \rangle$.  Let $b \in G \textbackslash \langle a \rangle$. Thus, $|b|=2$ or $|b|=p$. 
+
+By Lagrange's theorem, $\langle a \rangle \cap \langle b \rangle$ is a subgroup of $\langle a \rangle$ for $|\langle a \rangle | =p$. For $b \not \in \langle a \rangle$, then $\langle a \rangle \cap \langle b \rangle \neq \langle a \rangle$, and thus $|\langle a \rangle \cap \langle b \rangle|=1$. If $|b|=p$, then by $7.2$ we obtain that: 
+
+$$|\langle a \rangle \cdot \langle b \rangle   =  \frac{ |\langle a \rangle| \cdot |\langle b \rangle |  }{ |\langle a \rangle \cap  \langle b \rangle | }=\frac{p^2}{1}=p^2 $$
+
+But since $p>2$ then we have that $p^2 >2p$. It therefore must be the case that $|b|=2$. From this we are able to deduce that:
+
+$$G=\langle a \rangle \cup \langle a \rangle b = \{ e,a,a^2, \cdots, a^{p-1}, b,ab, ab^2, \cdots, ab^{p-1} \}$$
+
+From here we must show that the resulting group that we have obtained for $G$ has only possible [[Cayley Table]] for $G$, since $D_p$ is a group of order $2p$, then we would expect that $G \cong D_{p}$.  
+
+If there are $2$ non-isomorphic finite groups of the same order then their multiplications are different. 
+
+For $ab \not \in \langle a \rangle$, we have that $|ab|=2$ since we showed that any element in $G\textbackslash \langle a \rangle$ is $2$. Therefore we have that:
+
+$$(ab) ^2 = e \iff bab=a^{-1}$$
+
+Repeated multiplication of $a^{j}$ are of the form:
+
+$$a^{-j} = ba^jb : j \in \mathbb{N}$$
+
+There are $4$ types of products here: 
+
+1. $a^i \circ a^j = a^{i+j}$
+
+2. $a^i \circ (a^jb)=a^{i+j}b$
+
+3. $(a^ib) \circ a^j=a^iba^jb^2=a^iba^j b\cdot b =a^ia^{-j}b=a^{i-j}b$
+
+4. $(a^ib)(a^jb)=a^i(ba^jb)=a^ia^{-j}=a^{i-j}$
+
+When $p>2$ is prime and $G$ doesn't have an element of order $2p$ then $G$ must have an element of order $2p$ then $G$ must have an element $a$ of order $p$ and an element $b$ of order $2$, and since $|G|=2p$, and $|a|=p,|b|=2$, which completely determines the table for $G$, and thus $G \cong D_{p}$ in this case. 
+
+In either case we have that $G \cong D_{p}$ OR $G \cong \mathbb{Z}_{2p}$ for $|G|=2p$. 
+
+---
