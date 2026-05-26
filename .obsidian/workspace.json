@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Ring.md",
+                "file": "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Polynomial Ring"
+              "title": "Normal Subgroup"
             }
           }
         ]
@@ -185,12 +185,21 @@
   },
   "active": "05c9c351b52b88a5",
   "lastOpenFiles": [
-    "Untitled 3.base",
-    "Abstract Algebra/Group Theory/Groups/Abelian Group.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Abel's Theorem.md",
+    "Abstract Algebra/Group Theory/Groups/Forming New Groups/External Direct Product.md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
+    "Abstract Algebra/Group Theory/Cosets/Orbit (of a Point).md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary",
+    "Abstract Algebra/Group Theory/Groups/Types of Groups",
+    "Abstract Algebra/Group Theory/Groups/Forming New Groups",
+    "Abstract Algebra/Group Theory/Cosets/Stabilizer of a Point.md",
+    "Abstract Algebra/Group Theory/Cosets/Lagrange's Theorem.md",
+    "Abstract Algebra/Group Theory/Cosets/Coset.md",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Ring.md",
+    "Untitled 3.base",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Abelian Group.md",
+    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Abel's Theorem.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Unit (Ring Theory).md",
-    "Abstract Algebra/Group Theory/Groups/Identity Element.md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Identity Element.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Division Algorithm.md",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Monic Polynomial.md",
@@ -209,17 +218,9 @@
     "Category Theory/Monad.md",
     "Category Theory/Operation (Category Theory).md",
     "Category Theory/Endofunctor.md",
-    "Abstract Algebra/Group Theory/Groups/Morphism.md",
-    "Category Theory/Functor.md",
-    "Category Theory/Category.md",
-    "Category Theory/Object (Category Theory).md",
-    "Abstract Algebra/Group Theory/Morphisms/Endomorphism.md",
     "Untitled",
     "Category Theory",
     "Abstract Algebra/Ring Theory",
-    "Abstract Algebra/Group Theory/Classification of Groups",
-    "Set Theory",
-    "Analysis/Untitled",
     "Abstract Algebra/Group Theory/Morphisms/Morphisms.canvas",
     "Probability/Probability/1_empirical-rule.webp",
     "Pasted image 20260120163605.png",

@@ -47,7 +47,7 @@ The orbit of a point $p$ under $D_4$, where $p$ is one of the axes, consists of 
 $$\text{stab}_{{D_{4}}}(p)=\{R_{0},F \}$$
 
 ---
-# Theorem (7.4) Orbit-Stabilizer Theorem 
+# Theorem ). Orbit-Stabilizer Theorem 
 
 ([[Stabilizer of a Point]])
 

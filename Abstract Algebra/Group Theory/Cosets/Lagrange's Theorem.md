@@ -7,7 +7,7 @@ draft: "False"
 # Theorem.) [[Lagrange's Theorem]]
 Lagrange's Theorem states that for a [[Finite Group]], $G$ and a [[Subgroup]] $H \leq G$, then $|H| \bigg| |G|$. 
 
-Moreover, the number distinct left (also true for right) [[Coset]]s of the $H$ over $G$ is given by $\frac{||G||}{||H||}$. 
+Moreover, the number distinct left (also true for right) [[Coset]]s of the $H$ over $G$ is given by $\frac{|G|}{|H|}$. 
 
 ### Proof.) 
 Let the distinct cosets of $H$ in $G$ be:
@@ -29,16 +29,16 @@ $$|G|=r|H|$$
 Which concludes the proof that $|H| \bigg |G|$ and that there are $r$ many [[Coset]]s of $H$ over $G$
 
 ---
-# Corollary .)  $\large [G:H]=\frac{|G|}{|H|}$
+# Corollary 1.)  $\large [G:H]=\frac{|G|}{|H|}$
 If $G$ is a finite group and $H \leq G$ then:
 $$\large [G : H ] = \frac{|G|}{|H|} = r \quad (\text{ from above example})$$
-# Corollary .)  $\large |a| \bigg| |G|$
+# Corollary 2.)  $\large |a| \bigg| |G|$
 In a [[Finite Group]], $G$ the order of each element $a \in G$ we have that the [[Order]] of $a$ divides the [[Order]] of $G$. 
 
 ##### Proof.) 
 If $G$ is any group and $a \in G$, recall that from the properties of cyclic groups that $|a|=|\langle a \rangle|$. 
 
-### Corollary.) Groups of Prime Order are Cyclic 
+## Corollary 3.) Groups of Prime Order are Cyclic 
 
 Every group of prime order is isomorphic ([[Isomorphism]]) to $\mathbb{Z}_{p}$ and is also an [[Abelian Group]] by extension. 
 
@@ -102,7 +102,7 @@ $$[G:K] = \frac{|G|}{|K|} = \frac{|G|}{|H|} \cdot \frac{|H|}{|K|}$$
 Which completes the proof for this corollary. 
 
 ---
-# Theorem 7.2 
+# Theorem .) Size of a Product Group
 
 Given the [[Subgroup]]s, $H \leq G$ and $K \leq G$ then for the following group:
 
@@ -142,7 +142,7 @@ We also have that $|H \cap K|$ is an integer and must be less than or equal to $
 
 
 ---
-# Theorem 7.3 Classification of Groups of [[Order]] $2p$: 
+# Theorem .) Classification of Groups of [[Order]] $2p$: 
 
 Let $G$ be a group of order $2p$ where $p$ is a prime, so $p>2$. Then $G \cong \mathbb{Z}_{2p}$ OR $G \cong D_p$.  
 
