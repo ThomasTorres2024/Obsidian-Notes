@@ -8,6 +8,10 @@ The [[Simplex Method]] is a method for finding the extrema of a [[Linear Program
 
 Graphically, we can think of letting our objective function $f$, stretch over the feasible region by considering various [[Contour]]s of $f$ (e.g for $f(x,y)=z$, let $z=k$, a constant). 
 
+
+---
+
+
 ### Example 
 Let us consider the following maximization problem:
 $$f(x,y)=2x+5y$$

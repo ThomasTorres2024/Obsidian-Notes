@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fac04b30e6531fe0",
+        "id": "30c09074e1b32012",
         "type": "tabs",
         "children": [
           {
-            "id": "05c9c351b52b88a5",
+            "id": "eb33f8f108b2e127",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bilinear",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Abstract Algebra/Group Theory/External Direct Product.md",
+                "file": "Calculus/Calculus/Vector Fields/Surface Integrals/The Divergence Theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for External Direct Product"
+              "title": "Backlinks for The Divergence Theorem"
             }
           },
           {
@@ -183,7 +183,7 @@
       "latex-ocr:LatexOCR": false
     }
   },
-  "active": "05c9c351b52b88a5",
+  "active": "eb33f8f108b2e127",
   "lastOpenFiles": [
     "Abstract Algebra/Group Theory/Groups/Forming New Groups/External Direct Product.md",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
@@ -203,7 +203,7 @@
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Division Algorithm.md",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Monic Polynomial.md",
-    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
     "Abstract Algebra/Ring Theory/Polynomial Ring",
     "Abstract Algebra/Ring Theory/Principle Ideal Domain.md",
     "Abstract Algebra/Ring Theory/Polynomial Rings/Untitled.md",
@@ -231,8 +231,6 @@
     "Pasted image 20260111084207.png",
     "Pasted image 20260108145912.png",
     "Pasted image 20260107083527.png",
-    "Pasted image 20260107064643.png",
-    "Pasted image 20260105150916.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
