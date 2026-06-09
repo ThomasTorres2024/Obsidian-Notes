@@ -70,4 +70,5 @@ Clearly $0(x) \in I\implies I\neq \emptyset$. $I$ is clearly Abelian since the a
 ### Example 7.) 
 Let $R=C([-1,1])$ be the set of continuous functions on $[-1,1]$ and let $S$ be the set of all differentiable functions on $[-1,1]$. Then, $S$ is a subring of $R$, but not an ideal. 
 
-Consider $1 \in S$, and $|x| \in R$
+Consider $1 \in S$, and $|x| \in R$, $1|x| \notin S$ since $|x|$ cannot be differentiated. 
+
