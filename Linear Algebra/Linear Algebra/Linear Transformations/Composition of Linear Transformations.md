@@ -10,6 +10,3 @@ For the given [[Linear Transformation]] $\mathcal{F : V \rightarrow W,G : X \rig
 $$\mathcal{F \circ G}(\vec{x}+\vec{y})=\mathcal{F(G}(\vec{x}+\vec{y}))=\mathcal{F(G}(\vec{x}))+\mathcal{F(G}(\vec{y}))=\mathcal{F \circ G}(\vec{x})+\mathcal{F \circ G}(\vec{y})$$
 $$\mathcal{F \circ G}(\alpha\vec{x})=\mathcal{F(G}(\alpha\vec{x}))=\mathcal{F(\alpha \cdot G}(\vec{x}))=\alpha \cdot \mathcal{F(G}(\vec{x}))$$
 In conclusion the composition of any two linear transformations is itself another a linear transformation.
-
----
-# Matrix Representations of Linear Transformations 
