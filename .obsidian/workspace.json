@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
+                "file": "Linear Algebra/Linear Algebra/Norms/Matrix Norm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Normal Subgroup"
+              "title": "Matrix Norm"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "eb33f8f108b2e127",
   "lastOpenFiles": [
-    "Abstract Algebra/Group Theory/Groups/Forming New Groups/External Direct Product.md",
+    "Linear Algebra/Linear Algebra/Norms/Norm.md",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
+    "Abstract Algebra/Group Theory/Groups/Forming New Groups/External Direct Product.md",
     "Abstract Algebra/Group Theory/Cosets/Orbit (of a Point).md",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary",
     "Abstract Algebra/Group Theory/Groups/Types of Groups",
@@ -220,7 +221,6 @@
     "Category Theory/Endofunctor.md",
     "Untitled",
     "Category Theory",
-    "Abstract Algebra/Ring Theory",
     "Abstract Algebra/Group Theory/Morphisms/Morphisms.canvas",
     "Probability/Probability/1_empirical-rule.webp",
     "Pasted image 20260120163605.png",

@@ -49,8 +49,13 @@ $$\|A \|_{N}=\sum_{i=1}^n\sigma_{i}=\sigma_{1}+\sigma_{2}+\cdots+\sigma_{n}$$
 We can find [[Matrix Norm]] by using a vector as well. We can derive our notion of the size of a matrix from the size of vectors. The matrix norm is defined as the following between matrix norms on $p$ and $q$ on the domain and range of $A\in \mathbb{R}^{m \times n}$:
 $$\|A\vec{x}\|_{p} \leq C\|\vec{x}\|_{q}$$
 $C \in \mathbb{R}$ is the smallest number for which the above equality holds for any $\vec{x} \in \mathbb{R}^n$ where $\vec{x} \neq \vec{0}$. We think of this as the maximum factor by which $A$ is able to stretch the vector $\vec{x}$. We have that:
-![[Pasted image 20250918103351.png]]
+
+$$\|A\|_{{(m,n)}}=\underset{x \in \mathbb{R}^n, x\neq0}{\text{sup}}{\|Ax\|_{m}}/\|x\|_{n}=\underset{x \in \mathbb{R}^n, \|x\|_{n}=1}{\text{sup}}\|Ax\|_{m}$$
 
 For instance, the induced vector norm of $1, \|A\|_{1}$ is given by:
 $$\|A\|_{1}= \sup_{\vec{x} \in \mathbb{R}^n, \|\vec{x}\|_{1}=1} \|A\vec{x}\|_{1}$$
 Which is equivalent to saying the maximum of 1 norm of column vectors of $A$. Which is equivalent to saying the maximum sum of the columns 
+
+---
+# Deriving the $1$-Norm of a Matrix
+If $A$ is any $m \times n$ matrix, then $\|A\|_{1}$ is the maximum column sum of $A$. 
