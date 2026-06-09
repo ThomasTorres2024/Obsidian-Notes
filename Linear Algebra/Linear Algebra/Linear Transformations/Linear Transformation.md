@@ -1,6 +1,7 @@
 ---
 title: Linear Transformations
-tags: 
+tags:
+  - LinearAlgebra
 draft: "false"
 ---
 # Linear Transformations
@@ -21,6 +22,7 @@ Some examples of more typical linear transformations include
 1. The identity map, which maps a vector to itself: $\mathcal{Id}(\vec{v}) = \vec{v}, \vec{v} \in \mathcal{V}$
 2. Mapping by a matrix, $A \in \mathbb{R}^{n \times m}$ for $\vec{x} \in \mathbb{R}^m$, then our given linear transformation is $\mathcal{L}_{A} : \mathbb{R}^m \rightarrow \mathbb{R}^n$, $\mathcal{L}_{A} = A\vec{x}$
 3. Let $M \in \mathbb{R}^{m \times m}$ and $N \in \mathbb{R}^{n \times n}$ be fixed matrices then we can define the following linear transformation: $\mathcal{L}_{MN}(X) = MXN$ for $X \in \mathbb{R}^{m \times n}$
+4. [[Integral]]s, [[derivative]]s 
 
 Some examples of exotic linear transformations include [[derivatives]], [[integrals]], and laplace transforms, as all of these satisfy the two conditions of [[linearity]]:
 
@@ -103,4 +105,66 @@ $$\text{dim}(\mathcal{R(L)})+\text{dim}(\mathcal{N(L)})=\text{dim}(\mathcal{V})$
 ---
 Another way we can think of this is that the rank and the dimension of $N(A^T)$ is equal to the total number of columns, and the rank plus the dimension of $N(A)$ gives the number of rows. 
 
-A matrix is said to be [[full rank]] if $\text{rank}(A)=\text{min}(n,m)$. 
+A matrix is said to be full [[Rank]] if $\text{rank}(A)=\text{min}(n,m)$. 
+
+---
+# Theorem.) The set of all [[Linear Transformation]]s on a [[Vector Space]] is a [[Vector Space]] itself. 
+This is fairly easy to prove, we need to prove the first $4$ conditions for a [[Vector Space]] being an Abelian Group, and then the remaining $4$ criteria for closure of scalar multiplication. 
+
+For a linear map $\mathcal{T}:\mathcal{V} \to \mathcal{W}$, we have that for $\text{dim}(\mathcal{V})=n \in \mathbb{N}$ and $\text{dim}(\mathcal{W})=m \in \mathbb{N}$, since any [[Linear Transformation]] can be represented as a [[Matrix]] [[vector]] product, then we can represent any arbitrary such $\mathcal{T}$ some [[Matrix]] in $\mathbb{F}^{m \times n}$. 
+
+---
+# Products of [[Linear Transformation]]s
+We define the product of two [[Linear Transformation]]s to be a [[Composition of Linear Transformations]]. 
+
+### Theorem .) The Product of any two [[Linear Transformation]]s is another [[Linear Transformation]]
+If we consider linear transformations, $A,B$ and their corresponding product, assuming that such a thing is well defined, then we their product, $AB$ is another linear transformation. We obtain the following properties for linear transformations this way:
+
+1. $A0=0A=0$
+2. $A1=1A=A$
+3. $A(B+C)=AB+AC$
+4. $(B+C)A=BA+CA$
+5. $A(BC)=(AB)C$
+
+These properties essentially trivially come from the definition of what a production of linear transformations is. For instance, we can prove $3$ in the following: 
+
+$$\begin{align}
+(A(B+C)x) =A((B+C)x)=A(Bx+Cx)= \\ \\
+
+ABx+ACx=(AB)x+(AC)x=(AB+AC)x
+\end{align}$$
+---
+# Inverse Linear Transformations
+We can say that some linear transformation $\mathcal{T}$ defined on $V$ is invertible if the following conditions are satisfied:
+
+1. If $x_{1} \neq x_{2} \implies Ax_{1} \neq Ax_{2}$
+2. For every $y \in V, \exists x \in V,Ax=y$.
+
+Any $A$ which satisfies these conditions is an invertible linear transformation. It is also clear from these conditions that:
+$$AA^{-1}=A^{-1}A=I$$
+
+## Theorem.) If $A,B,C$ are linear transformations such that $AB=CA=1$, then $A$ is invertible and $A^{-1}=B=C$
+
+$Proof.)$
+We can take the contrapositive of the first criteria and observe that, if $Ax_{1}=Ax_{2}$, and that $CAx_{1}=CAx_{2}=x_{1}=x_{2}$ since $CA=I$. Secondly, for any $y \in V$, we have that $x=By$, then $y=ABy=Ax$ which follows from the fact that $AB=I$ so trivially $ABy=y$, and also the fact that $By=x$ is arbitrary. Thus we know that $A$ is invertible. The second trivially follows now from preforming the following: 
+
+$$\begin{align}
+A^{-1}AB=A^{-1}1 \iff B=A^{-1} \\ \\
+
+CAA^{-1} =1A^{-1} \iff C=A^{-1}
+\end{align}$$
+It is also insufficient for only of these criteria to be true, this would completely fail, we need both directions. We can consider the linear transformations given by integral and differential maps, and this result is trivial. Secondly, this result should be trivial in some instances when any two arbitrary [[Linear Transformation]]s can be multiplied together in a Ring, and since the multiplicative identity of a ring is unique and satisfies both the left and right handed inverses, it is trivial. 
+
+### Theorem.) Equivalent Conditions for Invertibility of a Linear Transformation
+We say that a [[Linear Transformation]] is invertible iff for linear transformation $A$, $Ax=0 \implies x=0$,or if for each $y \in V$, there is some $x \in V$ such that $Ax=v$. 
+
+$Proof.)$ 
+The case where $A$ is invertible is trivial, which leads to the second case where $Ax=0 \implies x= 0$. Now consider  some arbitrary $u\neq v,$ then $u-v \neq 0$ so $Au\neq Av$, thus we satisfy the first criteria. Secondly, we need to show that for $y \in V$ that $\exists x \in V$ such that $Ax=y$. Consider the basis in $V: \quad \{x_{1},x_{2}, \cdots,x_{n} \}$ and now consider $\{Ax_{1},Ax_{2},\cdots,Ax_{n} \}$, we want to show this is also a basis in $V$, which can be done by showing that the set is linearly independent. 
+
+$$\begin{align}
+\sum_{i=1}^n \alpha_{i}Ax_{i}=A\sum_{i=1}^n\alpha_{i}x_{i} =0
+\end{align}$$
+Thus it must be the case that each $\alpha_{i}=0$ since $Ax=0 \implies x=0$. 
+
+### Theorem.) Inverse of a Linear Transformation
+Follows from shoes and socks theorem, namely that for some invertible $A,B$ then $(AB)^{-1}=B^{-1}A^{-1}$. This is a trivial theorem regardless of how we approach it. 
