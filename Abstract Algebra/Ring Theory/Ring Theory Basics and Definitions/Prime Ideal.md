@@ -23,3 +23,11 @@ Since $p$ is a prime then either $p\bigg|s$ or $p\bigg|t$, such that either $s\i
 
 Since in both cases $p\mathbb{Z}$ is a prime ideal, then the proof holds. 
 
+### Example 2.)
+The ideal $\langle x^2+1 \rangle$ is not prime in $\mathbb{Z}_{2}[x]$, but it is a maximal ideal.  
+
+For example consider $x+1 \not \in \langle x^2+1\rangle$. 
+
+Then:
+$$(x+1)^2=x^2+2x+1=x^2+1 \in \langle x^2+1 \rangle$$
+

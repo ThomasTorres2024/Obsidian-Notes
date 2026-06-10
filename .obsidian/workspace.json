@@ -4,63 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "30c09074e1b32012",
+        "id": "4a03aa989f6a9edb",
         "type": "tabs",
         "children": [
           {
-            "id": "f7320fd1f3d36023",
+            "id": "35e425a3cd1b9f33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Maximal Ideal.md",
+                "file": "Abstract Algebra/Ring Theory/Morphisms/Ring Homomorphism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maximal Ideal"
-            }
-          },
-          {
-            "id": "eb33f8f108b2e127",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Prime Ideal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prime Ideal"
-            }
-          },
-          {
-            "id": "3e5cceb0a4dab0ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Optimization/Linear Programming/Linear Programming.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linear Programming"
-            }
-          },
-          {
-            "id": "e6f7cefeea37412d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Optimization/Linear Programming/Simplex Method.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Simplex Method"
+              "title": "Ring Homomorphism"
             }
           }
         ]
@@ -221,49 +179,53 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "latex-ocr:LatexOCR": false
+      "latex-ocr:LatexOCR": false,
+      "bases:Create new base": false
     }
   },
-  "active": "f7320fd1f3d36023",
+  "active": "35e425a3cd1b9f33",
   "lastOpenFiles": [
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Prime Ideal.md",
-    "name.png",
-    "Optimization/Linear Programming/Simplex Method.md",
-    "Optimization/Linear Programming/Simplex Algorithm.md",
-    "Optimization/Linear Programming/Linear Programming Standard Form.md",
-    "Optimization/Linear Programming/Linear Programming.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ring Isomorphism.md",
+    "Abstract Algebra/Ring Theory/Morphisms/Ring Homomorphism.md",
+    "Abstract Algebra/Group Theory/Morphisms/Isomorphism.md",
+    "Abstract Algebra/Ring Theory/Morphisms",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Maximal Ideal.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Quotient Ring.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Prime Ideal.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ideal (Rings).md",
-    "Linear Algebra/Linear Algebra/Norms/Matrix Norm.md",
-    "Pasted image 20260602084131.png",
-    "Operating Systems/Windows/Useful Windows Commands.md",
-    "Operating Systems/Windows",
+    "name.png",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Integral Domain.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Characteristic (Ring).md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Linear Transformation.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Composition of Linear Transformations.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Vector.md",
     "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Matrix.md",
+    "Linear Algebra/Linear Algebra/Matrices/Untitled.md",
     "Linear Algebra/Linear Algebra/Matrices/Basic Definitions",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Zero Divisor.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Field.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Subring.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ring.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Integral Domain.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Field.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Characteristic (Ring).md",
+    "Abstract Algebra/Group Theory/Morphisms/Homomorphism.md",
+    "Pasted image 20260602084131.png",
+    "Abstract Algebra/Group Theory/Morphisms/Exploration for AHP Matrices.md",
+    "Pasted image 20260601093259.png",
     "Abstract Algebra/Group Theory/Morphisms/Kernel (Abstract Algebra).md",
+    "Operating Systems/Windows/Useful Windows Commands.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/APH Matrix.md",
+    "Operating Systems/Windows",
     "Abstract Algebra/Group Theory/Morphisms/Image (Abstract Algebra).md",
     "Abstract Algebra/Group Theory/Groups/Forming New Groups/Quotient Group.md",
-    "Linear Algebra/Linear Algebra/Norms/Norm.md",
-    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Normal Subgroup.md",
-    "Abstract Algebra/Group Theory/Groups/Forming New Groups/External Direct Product.md",
-    "Abstract Algebra/Group Theory/Cosets/Orbit (of a Point).md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Cayley Table.md",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary",
-    "Abstract Algebra/Group Theory/Groups/Types of Groups",
     "Abstract Algebra/Group Theory/Groups/Forming New Groups",
     "Untitled 3.base",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
+    "Set Theory",
+    "Category Theory",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
     "Abstract Algebra/Ring Theory/Polynomial Ring",
-    "Abstract Algebra/Ring Theory/Polynomial Rings",
+    "Pasted image 20260406064944.png",
+    "Pasted image 20260403084211.png",
     "Abstract Algebra/Group Theory/Morphisms/Morphisms.canvas",
     "Probability/Probability/1_empirical-rule.webp",
     "Pasted image 20260120163605.png",
@@ -271,9 +233,6 @@
     "Untitled 2.canvas",
     "Pasted image 20260111090947.png",
     "Pasted image 20260111090653.png",
-    "Pasted image 20260111084207.png",
-    "Pasted image 20260108145912.png",
-    "Pasted image 20260107083527.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

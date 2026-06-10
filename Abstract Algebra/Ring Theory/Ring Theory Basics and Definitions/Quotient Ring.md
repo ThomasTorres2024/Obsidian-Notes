@@ -116,3 +116,49 @@ $$\begin{align}
 \end{align}$$
 Holds over $I$ in the last $2$ equalities. Thus, $x+2,x+3$ are both zero divisors in $\frac{R}{I}$, and thus this quotient ring is not a field.  
 
+---
+# Theorem.) $\frac{R}{A}$ is an integral domain $\iff A$ is prime. 
+
+Let $R$ be a commutative ring with unity, and let $A$ be an ideal of $R$. Then, $\frac{R}{A}$ is an integral domain $\iff A$ is prime. 
+
+$Proof.)$
+$\implies$ Suppose that $\frac{R}{A}$ is an [[Integral Domain]] and that $ab \in A$. Then:
+$$(a+A)(b+A)=ab+A=A=0+A$$
+Since $\frac{R}{A}$ is an integral domain, then either $a+A=A$ or $b+A=A$ entails either $a\in A$ or $b \in A$. In this direction, $A$ is thus prime. 
+
+$\Longleftarrow$ Suppose that $A$ is prime. Then, $\frac{R}{A}$ is automatically commutative ring with unity,  so all we need to do is ensure that there are no $0$ divisors. 
+
+Suppose that:
+$$(a+A)(b+A)=0+A=A$$
+Then $ab \in A$ so either $a\in A$ or $b\in A$ since $A$ is prime. Hence, $a+A=A$ or $b+A=A$ is either the zero coset in $\frac{R}{A}$. Which would entail that $\frac{R}{A}$ is an integral domain. 
+
+---
+# Theorem.) $\frac{R}{A}$ is a field $\iff A$ is Maximal
+Let $R$ be a commutative ring with unity, and let $A$ be a proper ideal of $R$, then $\frac{R}{A}$ is a field $\iff A$ is maximal. 
+
+$Proof.)$
+$\implies$ Suppose first that $\frac{R}{A}$ is a field and let $B$ be an ideal of $R$ which properly contains $A$.
+
+Let $b \in B$ but $b \not \in A$. Then, $b+A\in \frac{R}{A}$ and $b+A\neq A$. Since $\frac{R}{A}$ is a field, $\exists c+A$ such that:
+
+$$(b+A)(c+A)=1+A$$
+Which is to say that this is the multiplicative identity of $\frac{R}{A}$. Since $B$ is an ideal, then $bc \in B$, and since $bc=1$ then $1 \in B$ which entails that for any $r \in R$ then $r=r\cdot1 \in B$, thus $B=R$, which entails that $A$ is maximal. 
+
+$\Longleftarrow$
+Suppose that $A$ is maximal and let $b \in R$ but $b\not\in A$ such that $b+A\neq0+A$.
+
+$\frac{R}{A}$ is a commutative ring with identity, all we need to do is verify that every element in it is a unit. Consider the following subring:
+$$B=\{br+a:r \in R, a\in A \}$$
+It's easy to check that $B$ is a subring of $R$, and is also an ideal. $B$ strictly contains $A$ since $b\not\in A$, and since $A$ is maximal $B=R$ and thus $1\in B$.
+
+Thus:
+$$1=bc+a'$$
+Holds for some $c \in R,a'\in A$. Then:
+$$\begin{align}
+1+A=bc+a'+A \\
+=bc+A \\
+=(b+A)(c+A)
+\end{align}$$
+Which is to say that $b+A$ has multiplicative inverse $c+A$, so $\frac{R}{A}$ is a field.
+
+Since $\implies,\Longleftarrow$are true then we know that the result holds. 
