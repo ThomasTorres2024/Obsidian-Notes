@@ -74,4 +74,21 @@ Such an element here is called idempotent of $S$.
 
 In order to determine homomorphisms here we need to be able to find all idempotent elements of the form $a=\phi(1) \in \mathbb{Z}_{20}$. 
 
-Since $a=\phi(1) \in \phi(\mathbb{Z}_{10})$
+Since $a=\phi(1) \in \phi(\mathbb{Z}_{10})$, and since $|\phi(\mathbb{Z}_{10})|\bigg|10$ we have that by Lagrange's theorem, $|a|\bigg|10$, thus $|a|=10,5,2$, but again not $1$. 
+
+Considering $|a|=10$ first, then we obtain that $a=2$, and we can observe that it is not idempotent: $$\begin{align}
+2^2=4 \\
+6^2=36=16 \mod(20) \\
+14^2=196=16 \mod(20) \\
+18^2=324=4 \mod(20)
+\end{align}$$
+Thus there are no idempotent elements for $|a|=10$. If we move onto $|a|=5$ then we have that, $a=4,8,12,16$. And then checking for idempotency:
+$$\begin{align}
+4^2=16 \\
+8^2=64=4\mod(20) \\
+12^2=144=4\mod(20) \\
+16^2=256=16\mod(20)
+\end{align}$$
+Thus the mapping from $\mathbb{Z}_{10} \to \mathbb{Z}_{20}$ given by $\phi(x)=16x$ is a possible non-zero homomorphism which maintains all relevant properties. Lastly if $|a|=2$ then we only have the possibility of $a=10 \implies 10^2=100=0 \mod(20)$
+
+For a homomorphism from $\mathbb{Z}_{20} \to \mathbb{Z}_{10}$
