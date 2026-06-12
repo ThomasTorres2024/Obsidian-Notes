@@ -4,5 +4,5 @@ tags:
   - AbstractAlgebra
 draft: "False"
 ---
-# [[Ring Isomorphism]]
-A [[Ring Isomorphism]] is a [[Function]] that is [[bijective]] [[Ring Homomorphism]] between two rings $A$ and $B$. 
+# [[Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ring Isomorphism]]
+A [[Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ring Isomorphism]] is a [[Function]] that is [[bijective]] [[Ring Homomorphism]] between two rings $A$ and $B$. 
