@@ -4,7 +4,7 @@ draft: "False"
 tags:
 ---
 # Jacobi Iteration
-A very old algorithm for computing [[eigen value]]s of matrices introduced in 1845. The algorithm recently has gained attention, and is a part of an active area of research, especially due to parallel computing. For $A \in \mathbb{R}^{m \times m}$, if $m \geq 5$, by [[Abel's Theorem]], it follows that no single step exists to force the matrix into a [[diagonal matrix]] or a [[triangular matrix]] via [[Schur's Triangularization]]. 
+A very old algorithm for computing [[Eigen Value]]s of matrices introduced in 1845. The algorithm recently has gained attention, and is a part of an active area of research, especially due to parallel computing. For $A \in \mathbb{R}^{m \times m}$, if $m \geq 5$, by [[Abel's Theorem]], it follows that no single step exists to force the matrix into a [[diagonal matrix]] or a [[triangular matrix]] via [[Schur's Triangularization]]. 
 
 Jacobi iteration asks us to apply a diagonalization algorithm on submatrices that can be handled in a single step. There have been attempts to use $4 \times 4$ matrices for this reduction, but the standard approach is to apply a $2 \times 2$ [[Givens Matrix]]. We assume here that $A=A^T$ and that $A$ is real. $A$ is [[diagonalizeable]] in the following form:
 $$J^TAJ=J^T \begin{bmatrix} a & d\\ d & b \end{bmatrix} J = \begin{bmatrix} \neq 0 & 0\\ 0 & \neq 0 \end{bmatrix}$$

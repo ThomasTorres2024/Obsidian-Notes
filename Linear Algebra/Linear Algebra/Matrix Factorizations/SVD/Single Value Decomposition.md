@@ -47,7 +47,7 @@ $$\Longleftrightarrow A^TA=V  \begin{bmatrix} \sigma_{1}^2\vec{e_{1}}& \sigma_{2
 Just for the sake of convenience I will call the matrix sandwiched between $V$ and $V^T$ as $\Sigma_{v}$.
 Thus:
 $$A^TA=V\Sigma_{v}V^T$$
-Notice that the vectors in $V$ are the [[eigen vectors]] of $A^TA$ and $\Sigma_{v}$ consists of the [[eigen values]] of $A^TA$.
+Notice that the vectors in $V$ are the [[eigen vectors]] of $A^TA$ and $\Sigma_{v}$ consists of the [[Eigen Value]] of $A^TA$.
 
 Likewise the right multiplication of $AA^T$ results in:
 

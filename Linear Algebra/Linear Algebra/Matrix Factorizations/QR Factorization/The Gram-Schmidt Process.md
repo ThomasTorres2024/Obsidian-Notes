@@ -28,7 +28,7 @@ $$\vec{q}_{3}= \vec{p}_{3}- \dfrac{<\vec{q}_{1},\vec{p}_{3}>}{\| \vec{q}_{1} \|}
 
 After we have chosen our first $\vec{p}_{i}$ from $P$ and have successfully normalized it, we then look for the next vector in $P$ and project it onto $\vec{p}_{1}$, then we orthogonalize the result, and keep adding so forth and so on. 
 
-Intuitively, we can think of this as taking off the component of each vector which is parallel to the existing vector until we end up only with the orthogonal part, since we can break apart any vector into a [[linear combination]] of the vectors orthogonal to that vector and parallel to that part. 
+Intuitively, we can think of this as taking off the component of each vector which is parallel to the existing vector until we end up only with the orthogonal part, since we can break apart any vector into a [[Linear Combination]] of the vectors orthogonal to that vector and parallel to that part. 
 
 In turn, we are just extracting the orthogonal part at each iteration of this process. 
 

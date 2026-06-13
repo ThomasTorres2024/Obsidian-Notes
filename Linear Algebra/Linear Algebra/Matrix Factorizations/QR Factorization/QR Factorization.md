@@ -118,7 +118,7 @@ The [[Legendre Polynomials]] are a basis for the polynomials of degree $j$, but 
 ---
 # Applications 
 
-We can use $QR$ factorization to compute [[Least Squares]] and to compute [[eigen values]].  QR factorization is especially useful for eigen value problems, [[Krylov Methods]], and many other methods. Having an orthonormal basis is significantly more desirable than having a potentially [[ill-conditioned]] matrix. 
+We can use $QR$ factorization to compute [[Least Squares]] and to compute [[Eigen Value]].  QR factorization is especially useful for eigen value problems, [[Krylov Methods]], and many other methods. Having an orthonormal basis is significantly more desirable than having a potentially [[ill-conditioned]] matrix. 
 
 #### Solving Ax=b with [[QR Factorization]]
 [[QR Factorization]] can be used to solve the matrix equation $Ax=b$:

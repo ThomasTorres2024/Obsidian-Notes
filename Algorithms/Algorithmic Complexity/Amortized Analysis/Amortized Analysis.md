@@ -1,6 +1,7 @@
 ---
 title: Amortized Analysis
-tags: 
+tags:
+  - Algorithms
 draft: "false"
 ---
 # Introduction
@@ -27,7 +28,7 @@ Which entails that with $n$ insertions, we have $\Theta(n)$. If we think about t
 This gives us an [[Amortized Analysis]] cost of $\Theta(1)$ for insertion into a hash table. This is an example of the "Aggregate Method".
 
 ---
-# [[Aggregate Method]]
+# Aggregate Method
 A method for determining the [[Amortized Analysis]] cost of performing $k$ operations. Loosely we can think of this as:
 
 $$\text{aggregate method cost } =  \dfrac{\sum_{i=1}^k \text{ op cost} }{k}$$
@@ -42,8 +43,8 @@ We always want our total cost to be either as big or bigger than the actual cost
 
 This definition is generally a lot more flexible. 
 
-### (Example) [[2-3 Trees]] 
-To construct an empty [[2-3 Trees]], it takes $O(1)$ time worst case. 
+### (Example) 2-3 Trees 
+To construct an empty 2-3 Trees, it takes $O(1)$ time worst case. 
 
 For insertion, our amortized cost is $O(\text{log}(n)^*)$, and for deletion we have an amortized cost of $\emptyset$.   We can think of deletion as being $\emptyset$ because we cannot delete more elements than we have inserted. 
 
@@ -54,15 +55,15 @@ Hence we can treat $d$ as zero. We also have to note that our operations are not
 If we let our $n^*$ be the overall maximum cost of any such operation, then our analyses will still hold true since they provide an upper limit. 
 
 ---
-# [[Accounting Method]]
+# Accounting Method
 Let us define a bank account, and an operation can store credit in the bank account. The bank account can never go negative, but our summation always must be $\geq 0$. Each operation costs some amount of money. 
 
 We pay for operations using credit stored in the bank as long as our balance is non-negative. If we don't use the remaining balance, then we have a nice upper bound
 
 We have an operation which we can use to pay for time using credit in our bank. We also have that our balance is always non-negative. 
 
-#### Argument for [[2-3 Trees]] $O(\text{log}(n))$ Insertion and $\varnothing$ for deletion
-We can reuse the [[2-3 Trees]] example above, and we can argue that insertions are still $O(\text{log}(n))$ while deletions are $\varnothing$ time complexity. Again, the root of arguing this is that we cannot delete more than we insert, so inserting $i$ items would result in at most $i$ deletions, meaning we do $O(2i\text{log}(n) = O(\text{log}(n)$ complexity.  
+#### Argument for 2-3 Trees $O(\text{log}(n))$ Insertion and $\varnothing$ for deletion
+We can reuse the 2-3 Trees example above, and we can argue that insertions are still $O(\text{log}(n))$ while deletions are $\varnothing$ time complexity. Again, the root of arguing this is that we cannot delete more than we insert, so inserting $i$ items would result in at most $i$ deletions, meaning we do $O(2i\text{log}(n) = O(\text{log}(n)$ complexity.  
 
 For each insertion, we put a coin worth $O(\text{log}(n))$. Deletions consume 1 coin. Therefore, the amortized cost of our operation is:
 $$\text{amortized cost} = \text{actual cost + deposits - withdrawls}$$
@@ -76,10 +77,10 @@ $$[X,Y,W(o),Z(o)]$$
 The next set of insertions will result in an array of size 8. Half of the items, 4, have coins, and 4 do not. When $n=m$, that is the number of items we have inserted is equal to the table size, then we have $\frac{n}{2}$ total coins. 
 
 This results in an amortized cost given by:
-$$ \text{amortized cost } =  \Theta(n)-c\dfrac{n}{2}$$ Our amortized cost turns out to be $0$ if $c$ is sufficiently large, around the size of $2.$ We still need to deposit and withdraw coins, which still operates in constant time, so overall it turns out that we have a constant time for insertion according to the [[Accounting Method]]. 
+$$ \text{amortized cost } =  \Theta(n)-c\dfrac{n}{2}$$ Our amortized cost turns out to be $0$ if $c$ is sufficiently large, around the size of $2.$ We still need to deposit and withdraw coins, which still operates in constant time, so overall it turns out that we have a constant time for insertion according to the Accounting Method. 
 
 ---
-# [[Charging Method]]
+# Charging Method
 Allow operations to charge cost retroactively to their past (?????????), we can only go to the past not the future. The cost we are deducting from the past is added back to the future. In total this gives us the following formula for our amortized cost:
 $$\text{amortized cost = actual cost - total charge to past + total charge in future } $$
 
@@ -101,8 +102,8 @@ We consider doubling to be $\frac{m}{2}$ insertions our last resize.
 Halving costs $\Theta(m)$ time and doubling also costs $\Theta(m)$ time. We have $\Theta(m)$ operations to charge to, and we charge constant for each of the operations. We never charge an operation more than once. I really am not sure what's going on here in all honesty it doesn't seem to prove anything?
 
 ---
-# [[Potential Method]]
-Much like the [[Accounting Method]], we have a bank account with a balance. We need to define a potential function, $\phi$, we can think of it like potential energy, that maps data structure configuration to a non-negative integer. 
+# Potential Method
+Much like the Accounting Method, we have a bank account with a balance. We need to define a potential function, $\phi$, we can think of it like potential energy, that maps data structure configuration to a non-negative integer. 
 
 In accounting, we store our credit, our deltas, but with the potential function we use our function to compute the amount 
 

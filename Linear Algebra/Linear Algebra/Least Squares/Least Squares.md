@@ -69,7 +69,7 @@ $$\vec{x}=\hat{R}^{-1}\hat{c}$$
 
 # Solution via Normal Equations 
 
-Recall that for any $A \in \mathbb{R}^{m \times n}$ where $m \geq n$ and the columns of $A$ are [[linearly independent]], that: $$\mathbb{R}^m = \mathcal{R}(A) \oplus \mathcal{N}(A^T)$$ Any vector $\vec{b} \in \mathbb{R}^m$ can be uniquely expressed as a [[linear combination]] of a vector from $\mathcal{R}(A)$ and $\mathcal{N}(A^T)$. Therefore, we can express $$\vec{b} = \vec{b}_{\mathcal{R}} + \vec{b}_{\mathcal{N}}$$
+Recall that for any $A \in \mathbb{R}^{m \times n}$ where $m \geq n$ and the columns of $A$ are [[linearly independent]], that: $$\mathbb{R}^m = \mathcal{R}(A) \oplus \mathcal{N}(A^T)$$ Any vector $\vec{b} \in \mathbb{R}^m$ can be uniquely expressed as a [[Linear Combination]] of a vector from $\mathcal{R}(A)$ and $\mathcal{N}(A^T)$. Therefore, we can express $$\vec{b} = \vec{b}_{\mathcal{R}} + \vec{b}_{\mathcal{N}}$$
 Therefore, by minimizing our error vector's squared norm, we can re-write it as the following: 
 
 $$\vec{\epsilon}=A\vec{x}-\vec{b} = A\vec{x}-\vec{b}_{\mathcal{R}}-\vec{b}_{\mathcal{N}}$$

@@ -8,7 +8,7 @@ draft: "False"
 A [[Ring Homomorphism]] $\phi$ from a [[Ring]] $R$ to a ring $S$ is a mapping that preserves the [[Binary Operation]]s for both multiplication and addition. That is to say:
 $$\phi(a+b)=\phi(a)+\phi(b)$$
 $$\phi(ab)=\phi(a)\phi(b)$$
-Notice that these are the properties of [[Homomorphism]]s generally. If this function is [[bijective]] then it follows that it is a [[Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Ring Isomorphism]]. 
+Notice that these are the properties of [[Homomorphism]]s generally. If this function is [[bijective]] then it follows that it is a [[Ring Isomorphism]]. 
 
 ---
 # Examples
@@ -236,3 +236,45 @@ $$\begin{align}
 Since $\text{ker}(\phi)=\{0\}$ then $r_{1}-r_{2}=0$ so $r_{1} = r_{2}$ which concludes this result. 
 
 The remaining proofs are trivial since they are similar to other proofs about Group homomorphisms. 
+
+---
+# Theorem.) Homomorphisms from $\mathbb{Z}$ to a ring with Unity 
+Let $R$ be a ring with unity $1$ and the mapping $\phi: \mathbb{Z} \to R$ be given by $n \mapsto n \cdot 1$ be a ring homomorphism. 
+
+$Proof.)$ 
+First if $m,n \in \mathbb{Z}$ then:
+$$\begin{align}
+\phi(m+n) = (m+n)\cdot1 \\
+=m\cdot1 + n \cdot1 \\
+=\phi(m)+\phi(n)
+\end{align}$$
+So $\phi$ preserves addition. Secondly, if $m,n \in \mathbb{Z}$ then:
+$$\begin{align}
+\phi(mn)=(mn)\cdot1  = \sum_{i=1}^{mn} 1  
+=\sum_{i=1}^m \left( \sum_{j=1}^n 1 \right) =\sum_{i=1}^m \phi(n) \\
+=(m\cdot1)\cdot \phi(n)  \phi(m) \cdot \phi(n)
+\end{align}$$
+If $m=0,n>0$ then:
+$$\phi(mn)=\phi(0)=0$$
+While $\phi(m)\phi(n)=0\phi(n)=0$. The case for $m>0,n=0$ is basically identical and the case for $m=n=0$ is trivial. The cases for $m,n \leq0$ are easy, as we can just factor out a negative sign. Thus, $\phi$ preserves both operations and forms a ring homomorphism. 
+
+### Corollary.) A ring with Unity contains $\mathbb{Z}_{n}$ or $\mathbb{Z}$. 
+If $R$ is a ring with unity and $\text{char}(R) =n>0 \implies R$ contains a subring isomorphic to $\mathbb{Z}_{n}$. If the characteristic of $R$ is $0$, then $R$ contains a subring isomorphic to $\mathbb{Z}$. 
+
+$Proof.)$
+Let $1$ be the unity of $R$ and let:
+$$S=\{k \cdot 1 : k \in \mathbb{Z}\}$$
+By the above theorem, the mapping $\phi : \mathbb{Z} \to S$ given by $\phi(k)=k\cdot 1$ is a ring homomorphism, and by the first Isomorphism Theorem for Rings we have that:
+$$\frac{\mathbb{Z}}{\text{ker}(\phi)} \cong S$$
+Then, $k \in \text{ker}(\phi) \iff k\cdot 1 = 0$. If $\text{char}(R)=n$ which is positive, then it must be the case that $k>0$. Using integer division by $k$ with a remainder, we have that: 
+$$\text{ker}(\phi) = \langle k \rangle \quad k =|1|$$
+But, by a result for [[Integral Domain]]s, it follows that $k=|1|=n=\text{char}(R)$, and thus we have that $\text{ker}(\phi)=\langle n \rangle$. So we obtain that: 
+$$S \cong \frac{\mathbb{Z}}{\langle n \rangle } \cong \mathbb{Z}_{n}$$
+On the other hand if $\text{char}(R)=0$, then it must be the case that $k=0$ and $|1|=\infty$ and $\text{ker}(\phi)=\langle 0 \rangle$ which gives:
+$$S \cong \frac{\mathbb{Z}}{\langle 0 \rangle } \cong \mathbb{Z}$$
+---
+# Corollary 2.) $\mathbb{Z}_{m}$ is a Homomorphic Image of $\mathbb{Z}$. 
+For any $m \in \mathbb{N}$ the mapping $\phi: \mathbb{Z} \to \mathbb{Z}_{m}$ given by $x \mapsto x \mod(m)$ is a ring homomorphism. 
+
+$Proof.)$
+Let $1$ be the unity of $\mathbb{Z}_{m}$ then $x \mod(m)=x\cdot1 \mod(m)$. This satisfies the ring homomorphism of type $n \mapsto n \cdot 1$ by an above theorem, thus it is a homomorphism. 

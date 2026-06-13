@@ -6,9 +6,9 @@ draft: "false"
 # Singular Value
 The [[Singular Value]]s of a matrix are the diagonal entries of the matrix $\Sigma$ from $A=U \Sigma V^T$, satisfying:
 $$\sigma_{1}\geq \sigma_{2} \geq \dots \geq \sigma_{p} \geq 0$$
-It turns out that each [[Singular Value]] is given by the square roots of the [[eigen value]]s of the matrix $AA^T$/$A^TA$ (these matrices have the same [[eigen value]]s up to the number of 0's):
+It turns out that each [[Singular Value]] is given by the square roots of the [[Eigen Value]]s of the matrix $AA^T$/$A^TA$ (these matrices have the same [[Eigen Value]]s up to the number of 0's):
 $$\sigma_{i}=\sqrt{ \lambda_{i} }$$
-If $A$ is [[Hermitian]]/[[Symmetric Matrix]] then each $\sigma_{i}=|\lambda_{i}|$, as using the traditional [[Computing SVD]] algorithm would yield the same singular vectors and only remove any minus sign from the [[eigen values]]. 
+If $A$ is [[Hermitian]]/[[Symmetric Matrix]] then each $\sigma_{i}=|\lambda_{i}|$, as using the traditional [[Computing SVD]] algorithm would yield the same singular vectors and only remove any minus sign from the [[Eigen Value]]. 
 
 The minimum and maximum $\sigma_{i}$ are especially relevant. For example it determines the rate of convergence in [[Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent]] algorithms. 
 

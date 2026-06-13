@@ -40,7 +40,7 @@ If we think about the size of these images and the amount of info we need to sto
 From this we can more formally describe the initialization of the facespace and eigenfaces. We run this process before our first training, or whenever we have spare time computationally. After we add in more faces, we want to add them to the existing set and train it. 
 
 1. Get an initial set of face images, the training set 
-2. Get the eigenfaces from the set with the highest corresponding [[eigen value]]s, these $M$ images span the "face space". As we encounter new faces, eigenfaces can be updated or recalculated. 
+2. Get the eigenfaces from the set with the highest corresponding [[Eigen Value]]s, these $M$ images span the "face space". As we encounter new faces, eigenfaces can be updated or recalculated. 
 3. For every image in our Dataset, we can project it onto the facespace to determine the set of weights for each person to represent all (technically not all since $M$ is not necessarily all of the eigen-vectors) possible faces 
 
 ### Facial Recognition Step 

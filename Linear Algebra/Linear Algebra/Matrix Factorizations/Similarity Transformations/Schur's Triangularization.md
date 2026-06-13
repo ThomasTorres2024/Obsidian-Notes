@@ -9,7 +9,7 @@ $$A=UT_{A}U^H$$
 
 It is possible for $T_{A}$ to be a [[diagonal matrix]], which implies that $A$ is then unitarily diagonalizable, but generally it is not.
 
-This is a [[similarity transformation]] and we can derive various theorem about the [[determinant]] and the [[eigen values]] of $A$ from it. 
+This is a [[similarity transformation]] and we can derive various theorem about the [[determinant]] and the [[Eigen Value]] of $A$ from it. 
 - - -
 # Proof 
 
@@ -22,7 +22,7 @@ Since $U=1$ is orthogonal, $A$ is upper triangular, which implies that the base 
 
 For the inductive hypothesis, we assume that the result will hold for matrices of size $(n-1) \times (n-1)$.
 
-Consider the [[characteristic polynomial]] of $A$ given by $P_{A}(\lambda).$ $P_{A}(\lambda)$ has $n$ roots, but allow us to consider the root $\lambda_{1}$ which is an eigen-value of $A$ with corresponding vector $\vec{v_{1}}$.
+Consider the [[Characteristic Polynomial]] of $A$ given by $P_{A}(\lambda).$ $P_{A}(\lambda)$ has $n$ roots, but allow us to consider the root $\lambda_{1}$ which is an eigen-value of $A$ with corresponding vector $\vec{v_{1}}$.
 
 We can assume that $\| \vec{v_{1}} \| =1$ since, without loss of generality, any $\vec{v_{1}} \cdot c, c \in \mathbb{C}$ is still an eigen-vector. We know that $\dfrac{\vec{v_{1}} }{\| \vec{v_{1}}\|}$ is a unit vector. 
 

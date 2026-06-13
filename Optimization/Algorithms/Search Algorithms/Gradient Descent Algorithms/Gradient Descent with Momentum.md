@@ -29,7 +29,7 @@ $$\begin{pmatrix}1 & 0\\ -\lambda & 1\end{pmatrix} \begin{pmatrix} c_{k+1} \\ d_
 We can re-write our equation using the inverse of the left hand side matrix:
 $$\begin{pmatrix} c_{k+1} \\ d_{k+1}\end{pmatrix}= \begin{pmatrix}1 & 0\\ \lambda & 1\end{pmatrix} \begin{pmatrix} 1 & -s\\0 & \beta\end{pmatrix} \begin{pmatrix} c_{k}\\d_{k} \end{pmatrix} \implies$$
 $$\begin{pmatrix} c_{k+1} \\ d_{k+1}\end{pmatrix}= \begin{pmatrix}1 & -s\\ \lambda & \beta-\lambda s\end{pmatrix}\begin{pmatrix} c_{k}\\d_{k} \end{pmatrix}=R\begin{pmatrix} c_{k}\\d_{k} \end{pmatrix}$$
-We want to choose an $s$ and a $\beta$ such that we make $R$ as "small as possible". We know that the [[eigen values]] of $S$ (which is also [[Positive Definite Matrix]]) lie between:
+We want to choose an $s$ and a $\beta$ such that we make $R$ as "small as possible". We know that the [[Eigen Value]] of $S$ (which is also [[Positive Definite Matrix]]) lie between:
 $$0<m \leq \lambda \leq M$$
 The [[Condition Number]] of our matrix is given by:
 $$\kappa =\frac{M}{m}$$

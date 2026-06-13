@@ -4,7 +4,7 @@ draft:
 tags:
 ---
 # [[Eigen Value]] Definition:
-An [[Eigen Value]] is some $\lambda \in \mathbb{C}$ such that for the [[characteristic polynomial]] of a matrix $A \in \mathbb{C}^{n \times n}$, denoted by $p_A(x)$, the equation satisfies that: $$p_A(\lambda)=0$$ Furthermore an eigen-value satisfies the following equation with $v \in \mathbb{C}^n:v\neq \vec{0}$:
+An [[Eigen Value]] is some $\lambda \in \mathbb{C}$ such that for the [[Characteristic Polynomial]] of a matrix $A \in \mathbb{C}^{n \times n}$, denoted by $p_A(x)$, the equation satisfies that: $$p_A(\lambda)=0$$ Furthermore an eigen-value satisfies the following equation with $v \in \mathbb{C}^n:v\neq \vec{0}$:
 $$Av=\lambda v$$
 We also call these "Right Eigen Values" and they 
 
@@ -29,6 +29,6 @@ $$ \Longleftrightarrow (A - \lambda I_{n \times n})\vec{x}= 0$$
 $$ \Longleftrightarrow \text{det}(A - \lambda I_{n \times n})= 0$$
 The eigen values of $A$ are thus the values for which $A - \lambda I_{n \times n}$ is a singular matrix.
 
-We can find the [[characteristic polynomial]] of $A$ by computing the polynomial: $$p_{A}(\lambda) = \text{det}(A - \lambda I_{n \times n})=0$$ 
+We can find the [[Characteristic Polynomial]] of $A$ by computing the polynomial: $$p_{A}(\lambda) = \text{det}(A - \lambda I_{n \times n})=0$$ 
 
 The number of times $\lambda$ appears as a root of the [[Characteristic Polynomial]] is the algebraic multiplicity of $\lambda$, whereas the [[Dimension]] of the [[Eigenspace]] associated with an [[Eigen Value]] is the [[Geometric Multiplicity]] of an [[Eigen Value]]. 

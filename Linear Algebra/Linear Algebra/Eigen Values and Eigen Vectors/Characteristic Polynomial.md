@@ -1,6 +1,7 @@
 ---
 title: Characteristic Polynomial
 tags:
+  - LinearAlgebra
 draft: "False"
 ---
 The [[Characteristic Polynomial]] of a matrix, $A \in \mathbb{R}^{n \times n}$ is the polynomial defined by:

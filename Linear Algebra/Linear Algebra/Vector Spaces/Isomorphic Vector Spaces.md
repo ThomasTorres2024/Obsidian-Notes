@@ -24,7 +24,7 @@ We would hope that these operations represent the same vectors across different 
 ---
 # Isomorphic Vector Spaces Definition 
 
-Given a [[Linear Transformation]] $T : \mathcal{V} \rightarrow \mathcal{W}$ on vector spaces $\mathcal{V,W}$ over the field $\mathbb{F}$, we can say that $\mathcal{V}$ and $\mathcal{W}$ are isomorphic if $T$ is [[Invertible]]. 
+Given a [[Linear Transformation]] $T : \mathcal{V} \rightarrow \mathcal{W}$ on vector spaces $\mathcal{V,W}$ over the field $\mathbb{F}$, we can say that $\mathcal{V}$ and $\mathcal{W}$ are isomorphic if $T$ is invertible. 
 
 We can call the vector spaces isomorphic given the condition of an invertible $T$ since $\mathcal{V}$ and $\mathcal{W}$ are vector spaces, and $T$ is a bijection between spaces since it is invertible. All we are doing is naming a valid bijection and enforcing that the resulting domain and range of our transformation are both vector spaces to achieve the isomorphism property. 
 

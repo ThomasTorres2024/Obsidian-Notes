@@ -26,7 +26,7 @@ We can also prove this using the definition of an [[Eigen Value]] by using the d
 $$p_B(\lambda )=\det(B-I_n\lambda)=\det(M^{-1}AM-I_n\lambda)$$
 $$=\det(A-I_n\lambda)\cdot \det(M)\cdot \frac{1}{\det(M)}=p_A(\lambda)$$
 
-Examples of similarity transformations consist of [[Eigen Value Decomposition]] ($A=PDP^{-1}$). The matrices $A$ and $B$ have the same [[eigen values]] with the same [[algebraic multiplicities]] and thus the same [[characteristic equation]]. 
+Examples of similarity transformations consist of [[Eigen Value Decomposition]] ($A=PDP^{-1}$). The matrices $A$ and $B$ have the same [[Eigen Value]] with the same [[algebraic multiplicities]] and thus the same [[Characteristic Polynomial]]. 
 
 Since these matrices have the same eigen values it follows that they must have the same [[traces]] and [[determinants]]. 
 

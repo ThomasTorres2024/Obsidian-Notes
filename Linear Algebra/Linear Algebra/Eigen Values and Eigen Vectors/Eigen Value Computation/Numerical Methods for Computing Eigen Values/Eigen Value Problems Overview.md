@@ -4,7 +4,7 @@ draft: "False"
 tags:
 ---
 # Overview 
-[[eigen value]] algorithms are interested in either computing a single eigen value, or multiple eigen values. Some algorithms are very good at peeking into the matrix and only getting a few very efficiently, whereas others are very good at extracting all of the eigen values of a matrix efficiently. 
+[[Eigen Value]] algorithms are interested in either computing a single eigen value, or multiple eigen values. Some algorithms are very good at peeking into the matrix and only getting a few very efficiently, whereas others are very good at extracting all of the eigen values of a matrix efficiently. 
 
 We go for these approximate algorithms due to [[Abel's Theorem]], since there is no finite step process to find the eigen-values of a matrix of the size $5 \times 5$ and above. 
 

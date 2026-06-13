@@ -16,7 +16,7 @@ The pure QR algorithm goes like the following. We begin with a matrix we want to
 At each step, we are computing a [[QR Factorization]] of the $k$th iterate of $A$, and then we are computing a new $k$th iterate by performing a similarity transformation. Notice that the [[similarity transformation]] is obtained by doing: 
 $$Q^{(k)}R^{(k)}=A^{(k)}$$
 $$R^{(k)}=Q^{(k)^T} A^{(k)} \iff R^{(k)}Q^{(k)}=Q^{(k)^T} A^{(k)}Q^{(k)} = A^{(k+1)} $$
-Thus, for the $k$th final iteration it can be said that the following 2 matrices have the same [[eigen values]], which gives the algorithm its power:
+Thus, for the $k$th final iteration it can be said that the following 2 matrices have the same [[Eigen Value]], which gives the algorithm its power:
 $$A_{0} \text{ is similiar to } A_{k}$$
 As such, we obtain a new iterate (I initially had some trouble understanding that this is not the $k$th power). Under certain conditions, our factorization of the $k$th iterate actually turns into a [[Schur's Triangularization]] of the matrix $A$, and if $A$ is [[Hermitian]], then the resulting matrix actually is of diagonal form. 
 

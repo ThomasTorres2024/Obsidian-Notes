@@ -11,7 +11,7 @@ A [[Vector Space]] can be described by a [[Field]], $\mathbb{F}$, and a set whic
 3. [[Identity Element]] of Vector Addition: $$\exists 0\in V, \text{ such that}, v+0=v, \forall v \in V$$
 4. [[Inverse Element]]s of Vector Addition $$\text{For every } v\in V, \exists -v \in V:-v+v=0$$
 5. Scalars from $\mathbb{F}$ are associative: $$\gamma (\delta v)=(\gamma \delta)v$$
-6. Identity Element of Scalar Multiplication: $$1v=v, 1 \text{ is the }$$ [[Multiplicative Identity]] in $\mathbb{F}$
+6. Identity Element of Scalar Multiplication: $$1v=v, 1 \text{ is the }$$ [[Identity Element]] in $\mathbb{F}$
 7. Distributivity of Scalar Multiplication: $$\delta(u+v)=\delta u +\delta v$$
 8. Distributivity of Scalar Multiplication with respect to field addition: $$(\delta + \gamma)v=\delta v+\gamma v$$
 Given that these properties are satisfied we can denote a [[Vector Space]] by the set with a field, a set of vectors, an addition and scaling operation:

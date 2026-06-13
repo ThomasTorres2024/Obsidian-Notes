@@ -8,6 +8,6 @@ An [[Ill-Conditioned]] problem or algorithm in numerical analysis is a problem o
 
 Examples of Ill-Conditioned problems include solving the roots of a polynomial equation, which are almost always [[Ill-Conditioned]]. 
 
-Another example of an [[Ill-Conditioned]] problem is the computation of [[eigen value]]s of a non symmetric matrix. For instance take the following two matrices:
+Another example of an [[Ill-Conditioned]] problem is the computation of [[Eigen Value]]s of a non symmetric matrix. For instance take the following two matrices:
 $$\begin{bmatrix} 1 & 1000\\ 0 & 1  \end{bmatrix} \implies \Lambda=\{ 1,1 \}$$$$\begin{bmatrix} 1 & 1000\\ 0.001 & 1  \end{bmatrix} \implies \Lambda=\{ 0,2 \}$$
-However, the computation of the [[eigen value]]s of a [[Symmetric Matrix]] is [[Well-Conditioned]]. 
+However, the computation of the [[Eigen Value]]s of a [[Symmetric Matrix]] is [[Well-Conditioned]]. 

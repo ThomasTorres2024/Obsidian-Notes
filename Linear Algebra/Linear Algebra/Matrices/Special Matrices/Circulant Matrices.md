@@ -46,7 +46,7 @@ The reason that we care about this class of matrices is because of their applica
 When we perform [[Convolution]], we apply [[Circulant Matrices]] in [[Cyclic Convolution]] (closure under some polynomial [[Group]]). Otherwise, we would apply a [[Toeplitz Matrix]], where 
 
 ---
-# Eigen Vectors of [[Circulant Matrices]] and [[eigen values]] of [[Circulant Matrices]] 
+# Eigen Vectors of [[Circulant Matrices]] and [[Eigen Value]] of [[Circulant Matrices]] 
 
 The [[Eigen Vectors]] of every circulant matrix is going to be the same. This comes from the fact that:
 $$Av=\lambda v \implies A(Av)=\lambda Av=A^2v=\lambda ^2 v \implies v \text{ is an eigen vector of } A^2 $$
@@ -63,7 +63,7 @@ $$\det(P-\lambda I_{n})= \det \left( \begin{bmatrix} -\lambda & 1 & 0 & 0\\
 \end{bmatrix} \right) =0$$
 Using [[Cofactor Expansion]] we can quickly see that for this particular $P$ that:
 $$\det(P-\lambda I_{n})=1-\lambda^4 = 0\iff \lambda ^4=1$$
-Which entails that the [[eigen value]]s of [[Circulant Matrices]] are actually the corresponding [[Roots of Unity]] for some given power, $n$. Here it corresponds to the fourth roots of unity. Let us denote each root of unity by:
+Which entails that the [[Eigen Value]]s of [[Circulant Matrices]] are actually the corresponding [[Roots of Unity]] for some given power, $n$. Here it corresponds to the fourth roots of unity. Let us denote each root of unity by:
 $$\large w^k=e^{\frac{2\pi ki}{n}}$$
 Where $k$ corresponds to the $k$th entry for the $n$th root of unit where $1 \leq k \leq n$. 
 
@@ -85,7 +85,7 @@ $$L=\begin{bmatrix} 1 & 1 & 1&1\\
 1 & w^2 & 1 & w^{2}\\
 1 & w^3 & w^2 & w
 \end{bmatrix}$$
-We can determine the [[eigen value]]s  for any [[Circulant Matrices]] by considering the following. Let us consider some degree 4 [[Circulant Matrices]], $A$ which can thus be expressed by:
+We can determine the [[Eigen Value]]s  for any [[Circulant Matrices]] by considering the following. Let us consider some degree 4 [[Circulant Matrices]], $A$ which can thus be expressed by:
 $$A=c_{0}I_{n}+c_{1}P+c_{2}P^2+c_{3}P^3$$
 We claim that we can obtain the [[eigen vectors]] of $A$ by computing the following for its corresponding $L$. Let us condense the coefficients into $\vec{c}=[c_{0},c_{1},c_{2},c_{3}]^T$
 

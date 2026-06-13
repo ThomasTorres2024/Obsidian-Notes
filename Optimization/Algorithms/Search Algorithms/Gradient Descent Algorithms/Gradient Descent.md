@@ -48,7 +48,7 @@ Another method is [[Backtracking]]. We begin with a fixed $S$ again, we consider
 
 # Gradient Descent Example
 
-We can determine the convergence of the [[Optimization/Algorithms/Search Algorithms/Gradient Descent Algorithms/Gradient Descent]] algorithm by considering the smallest and largest [[eigen value]]s when a matrix is a [[Symmetric Matrix]]. If the matrix were not symmetric, the maximum [[Singular Value]] over the minimum singular value would be used:
+We can determine the convergence of the [[Optimization/Algorithms/Search Algorithms/Gradient Descent Algorithms/Gradient Descent]] algorithm by considering the smallest and largest [[Eigen Value]]s when a matrix is a [[Symmetric Matrix]]. If the matrix were not symmetric, the maximum [[Singular Value]] over the minimum singular value would be used:
 $$\text{Symmetric Matrix: } \frac{\lambda_{\text{max}}}{\lambda_{\text{min}}}$$
 $$\text{Not Symmetric Matrix: } \frac{\sigma_{\text{max}}}{\sigma_{\text{min}}}$$
 Let us consider the pure quadratic given by:

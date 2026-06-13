@@ -25,7 +25,7 @@ This follows due to the properties of all vectors in $\beta$ being orthonormal, 
 
 We can prove that an orthogonal set is a [[linearly independent]] set. Consider $V=\{\vec{v}_{1},\vec{v}_{2},\cdots,\vec{v}_{n} \} \subseteq \mathbb{R}^n$, which is an orthogonal set. 
 
-Let us consider the zero vector expressed as a [[linear combination]] of vectors in $V$:
+Let us consider the zero vector expressed as a [[Linear Combination]] of vectors in $V$:
 
 $$\vec{0}=\alpha_{1}\vec{v}_{1}+\alpha_{2}\vec{v}_{2}+\cdots+\alpha_{n}\vec{v}_{n}$$
 If we multiply both sides by each $\vec{v}_{j}$ where $1 \leq j \leq n$, then at each stage, we will get that:

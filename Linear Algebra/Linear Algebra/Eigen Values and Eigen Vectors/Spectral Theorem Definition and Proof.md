@@ -10,8 +10,8 @@ Note that I included a proof for this under special matrices as well, and the pr
 
 The spectral theorem states that for all Hermitian Matrices where $A \in \mathbb{R}^{n \times n}$:
 
-1.  $A$  has real [[eigen value]]s
-2.  [[Eigen Vectors]] corresponding to distinct eigen values in $A$ are [[orthogonal]]
+1.  $A$  has real [[Eigen Value]]s
+2.  [[Eigen Vector]]s corresponding to distinct eigen values in $A$ are [[orthogonal]]
 3.  $A$ is orthogonally diagonalizable
 
 - - - 
@@ -69,7 +69,7 @@ $$(\mu-\lambda)\vec{x}^H\vec{y}=0$$
 $$\vec{x}^H\vec{y}=<\vec{x},\vec{y}>=0$$
 In conclusion, the inner product between any eigen vectors corresponding to distinct eigen values is 0, thus the two vectors are orthogonal.
 
-$\therefore$ for any [[Hermitian matrix]] $A$, it follows its eigen values are real, it is [[unitarily diagonalizable]], and has orthogonal eigen vectors corresponding to distinct eigen values.
+$\therefore$ for any [[Hermitian]] matrix $A$, it follows its eigen values are real, it is unitarily [[diagonalizeable]], and has orthogonal eigen vectors corresponding to distinct eigen values.
   - - - 
 # Proof that the eigen vectors of A form a basis of $\mathbb{R}^n$
 

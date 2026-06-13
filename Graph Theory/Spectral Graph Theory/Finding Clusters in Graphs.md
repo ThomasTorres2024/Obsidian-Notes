@@ -18,7 +18,7 @@ First what we do is:
 There is no good measure of the rate of convergence for this particular algorithm. However, this is a valid and a quite popular way to answer this question. 
 
 #### 2.) "Spectral Clustering"
-When we talk about Spectral with reference to any kind of study, we are really referring to the [[eigen value]]s of a matrix. We begin with the [[Graph Laplacian Matrix]]:
+When we talk about Spectral with reference to any kind of study, we are really referring to the [[Eigen Value]]s of a matrix. We begin with the [[Graph Laplacian Matrix]]:
 $$L=A^TA$$
 $A$ is the "[[Incidence Matrix]]" of the graph. $D$ is the degree matrix of the graph, and $B$ is the [[Adjacency Matrix]]. The [[Incidence Matrix]], $A \in \mathbb{R}^{m \times n}$.  It is also the case that $A$ is [[Symmetric Matrix]] and that $A$ is furthermore [[positive semidefinite]]. 
 

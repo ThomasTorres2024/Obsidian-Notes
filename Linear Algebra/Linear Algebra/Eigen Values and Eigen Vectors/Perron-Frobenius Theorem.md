@@ -7,7 +7,7 @@ draft: "false"
 
 The Perron-Frobenius Theorem states that for $A \in \mathbb{R}^{n \times n}$ where $A^T=A$ that:
 
-* There is an [[eigen value]] $\lambda_{0}$ such that for all other eigen values $\lambda$ in the [[spectrum]] of $A$ that $\lambda_{0} > \lambda$, that is $\lambda_{0} = \text{max}(\lambda)$
+* There is an [[Eigen Value]] $\lambda_{0}$ such that for all other eigen values $\lambda$ in the [[spectrum]] of $A$ that $\lambda_{0} > \lambda$, that is $\lambda_{0} = \text{max}(\lambda)$
 * The eigen value $\vec{x}$ corresponding to $\lambda_{0}$ has all positive values 
 * $\text{alg mult}(\lambda_{0})=1$
 
