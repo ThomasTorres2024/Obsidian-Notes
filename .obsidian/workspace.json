@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Field.md",
+                "file": "Linear Algebra/Linear Algebra/Subspaces/Projection Matrix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Field"
+              "title": "Projection Matrix"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "orthgonal",
+                "query": "projection",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -185,6 +186,23 @@
   },
   "active": "f0041d2e49d6189d",
   "lastOpenFiles": [
+    "Calculus/Calculus/Vector Fields/Line Integrals/Flux.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Reduced.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Invariant (Vector Space).md",
+    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
+    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Matrix.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Invariant Transformation.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
+    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Untitled.md",
+    "Abstract Algebra/Group Theory/Cosets/Normalizer.md",
+    "Normalizer.md",
+    "Numerical Analysis/Numerical Stability/Conditioning.md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Group.md",
+    "Operating Systems/Operating Systems/Processes/States of a Process (through its lifetime.md",
+    "Probability/Probability/Untitled 1.base",
+    "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
+    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Field.md",
     "Abstract Algebra/Morphisms/Ring Homomorphism.md",
     "Abstract Algebra/Morphisms/Ring Isomorphism.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Diagonal Matrix.md",
@@ -195,23 +213,7 @@
     "Algorithms/Algorithmic Complexity/Amortized Analysis/Amortized Analysis.md",
     "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Orthogonal Matrix.md",
     "Linear Algebra/Linear Algebra/Vector Spaces/Linear Combination.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Span.md",
-    "Linear Algebra/Linear Algebra/Subspaces/Column Space.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Rank.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Characteristic Polynomial.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Algebraic Multiplicity.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Geometric Multiplicity.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Eigenspace.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value.md",
     "name.png",
-    "eigen values.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Linearly Independent.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Vector Space.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Isomorphic Vector Spaces.md",
-    "Set Theory/Equivalence Relation.md",
-    "Linear Algebra/Linear Algebra/Matrices/Determinants/Determinant.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Field.md",
-    "algebraic multiplicities.md",
     "Abstract Algebra/Ring Theory/Morphisms",
     "Linear Algebra/Linear Algebra/Matrices/Basic Definitions",
     "Pasted image 20260602084131.png",
@@ -223,7 +225,6 @@
     "Set Theory",
     "Category Theory",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
-    "Abstract Algebra/Ring Theory/Polynomial Ring",
     "Pasted image 20260406064944.png",
     "Pasted image 20260403084211.png",
     "Abstract Algebra/Morphisms/Morphisms.canvas",

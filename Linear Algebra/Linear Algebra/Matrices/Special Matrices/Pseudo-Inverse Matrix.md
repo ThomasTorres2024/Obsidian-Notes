@@ -38,7 +38,7 @@ From this we can see that if $A^\dagger = A^T(AA^T)^{-1}$ then we would obtain:
 $$AA^\dagger = A(A^T(AA^T)^{-1})=I$$
 If we consider the cases for both of these using the fundamental theorem of linear algebra, we would see that the column rank of $n$ case would result in a null space of $\vec{0}$, but a nullspace of $A^T$ that is full. Conversely for a matrix of row rank where the rank is $m$ then we get a nullspace that has many vectors, but a nullspace of $A^T$ with only the zero vector again. We are able to send back vectors in the column and row space respectively, but we cannot do anything with vectors that end up getting mapped to the zero vector.
 ![[Pasted image 20250619235624.png]]
-Notice also that if we try and inverse the right side using a left inverse, and inverse the left side using a right inverse, we actually obtain the [[Projection Matrices]], which project onto the column space, and the row space. 
+Notice also that if we try and inverse the right side using a left inverse, and inverse the left side using a right inverse, we actually obtain the [[Projection Matrix]], which project onto the column space, and the row space. 
 
 We can examine the third case where we do not have a full rank matrix in its columns or its rows, and it is rectangular. Our resulting matrix inverse could bring back vectors from the row space to the column space, and vice versa, but the components that are in the nullspace we could not bring back. 
 

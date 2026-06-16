@@ -21,7 +21,7 @@ It turns out that we can do this, and we need to make use of the [[House Holder 
 $$v+x=\|x\|e_1$$
 ![[Pasted image 20260108145912.png]]
 
-In order to define our reflector, $F$, we can begin with trying to find an appropriate projection matrix ([[Projection Matrices]]) onto $H$ and orthogonal to $v$. We can do this with the following matrix:
+In order to define our reflector, $F$, we can begin with trying to find an appropriate projection matrix ([[Projection Matrix]]) onto $H$ and orthogonal to $v$. We can do this with the following matrix:
 $$H=I-\frac{vv^H}{v^Hv}$$
 We can turn $H$ into a reflector by realizing that for any $y \in \mathbb{R}^n$, we have that $y$ is projected onto the [[span]] of $H$. However, if we continue going by one more step of $\frac{vv^H}{v^Hv}$, it turns out that we end up just on the other side of $H$. We use this idea to construct our reflector, $F$. 
 

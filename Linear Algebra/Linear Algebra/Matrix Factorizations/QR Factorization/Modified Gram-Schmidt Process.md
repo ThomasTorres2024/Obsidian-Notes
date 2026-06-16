@@ -9,7 +9,7 @@ The modified [[The Gram-Schmidt Process]], is a process which takes of a set $n$
 We can form the $j$th projector by taking of the first $j-1$ projectors and taking their product. Instead of continually projecting onto rank 1 subspaces, we compute the next $v_{j}$ by taking a product with new projector matrices.
 
 ---
-# [[Projection Matrices]] and the [[Modified Gram-Schmidt Process]]
+# [[Projection Matrix]] and the [[Modified Gram-Schmidt Process]]
 We can think of each $q_{i}$ column vector in the matrix $Q$ as a projection of a column vector of $A$ onto an [[Orthogonal Projector]]. 
 $$q_{1}=\frac{P_{1}a_{1}}{\|P_{1}a_{1}\|},q_{2}=\frac{P_{2}a_{2}}{\|P_{2}a_{2}\|},\cdots, q_{n}=\frac{P_{n}a_{n}}{\|P_{n}a_{n}\|}$$
 We denote the $j$th projection matrix, $P_{j} \in \mathbb{C}^{m \times m}$, as a projection of $\mathbb{C}^{m}$ onto the space orthogonal to the first $j-1$. vectors. When we carry out [[The Gram-Schmidt Process]], we are essentially trying to extract the component of $a_{j}$ which does not lie in the part spanned by the previous subspace $\langle q_{1},q_{2},\cdots,q_{j-1},\rangle$. We continue repeating this process until we have exhausted all column vectors of $A$. 

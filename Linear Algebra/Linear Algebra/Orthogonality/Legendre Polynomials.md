@@ -44,6 +44,6 @@ $q_{j}$ is a polynomial of degree $j$. We can describe the [[Vector Space]] of p
 $$P_{0}(x)=1,P_{1}(x)=x,P_{2}(x)=\frac{3x^2-1}{2},P_{3}(x)=\frac{5x^3-3x}{2}$$
 The [[Legendre Polynomials]] are a basis for the polynomials of degree $j$, but they are furthermore an [[orthogonal]] basis that spans the set of polynomials. 
 
-We can define [[Projection Matrices]] with respect to the [[Legendre Polynomials]] by a "matrix" on $[-1,1] \times [-1,1]$, which is an integral operator of the form: 
+We can define [[Projection Matrix]] with respect to the [[Legendre Polynomials]] by a "matrix" on $[-1,1] \times [-1,1]$, which is an integral operator of the form: 
 $$f(\cdot) \mapsto \sum_{j=0}^{n-1} q_{j}(\cdot) \int_{-1}^1 \overline{q_{j}(x)}f(x)dx $$
 which really is a map $L^2[-1,1] \to L^2[-1,1]$.  
