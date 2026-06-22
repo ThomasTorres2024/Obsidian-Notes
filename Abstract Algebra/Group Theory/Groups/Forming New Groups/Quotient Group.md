@@ -96,7 +96,7 @@ This is obvious from Lagrange if we apply it to $[G:K]$, and then to $[G:H]$, an
 
 ---
 # Theorem .) Applications of Quotient Groups $\frac{G}{Z(G)}$
-Let $G$ be a group and let $Z(G)$ be the [[Group Center]] of $G$ such that $Z(G) \triangleleft G$. If the only [[Coset]] of $\frac{G}{Z(G)}$ is the identity coset $G$ it follows that $G=Z(G)$. Showing that this result is true would be enough to prove the result. 
+Let $G$ be a group and let $Z(G)$ be the [[Center of a Group]] of $G$ such that $Z(G) \triangleleft G$. If the only [[Coset]] of $\frac{G}{Z(G)}$ is the identity coset $G$ it follows that $G=Z(G)$. Showing that this result is true would be enough to prove the result. 
 
 If $\frac{G}{Z(G)}$ is cyclic then $G$ is an [[Abelian Group]]. 
 
