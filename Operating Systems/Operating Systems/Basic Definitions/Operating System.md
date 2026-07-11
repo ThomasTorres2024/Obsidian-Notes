@@ -35,7 +35,7 @@ Another perspective on operating systems is as a control program, which stops im
 
 We can't really fully define what an OS is. It is generally hard to make single pieces of hardware do our task, so instead we opt for an OS which can coordinate a common se of tasks. Some OSs take up gigabytes, and some take up megabytes, it depends a lot upon their feature. 
 
-A more common definition, and the one that will mostly be used is that the OS as the only program that runs throughout the entirety of the computers time on. The program that continually runs when the computer is on is known as the [[Kernel]]. 
+A more common definition, and the one that will mostly be used is that the OS as the only program that runs throughout the entirety of the computers time on. The program that continually runs when the computer is on is known as the [[Kernel (OS)]]. 
 
 There are also [[system programs]], which are related to the kernel but not a part of it. 
 

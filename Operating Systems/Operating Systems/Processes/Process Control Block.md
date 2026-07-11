@@ -4,7 +4,7 @@ tags:
 draft: "False"
 ---
 # Process Control Block
-PCBs are used to represent [[Processes]] by our system, and take account of the state of a process, the number of a process, the program counter (how far we are into execution of a program),registers, memory, limits, open files, etc. 
+PCBs are used to represent [[Process (OS)]] by our system, and take account of the state of a process, the number of a process, the program counter (how far we are into execution of a program),registers, memory, limits, open files, etc. 
 
 We need a pointer to each block of memory where our code is stored for a process. We also want to know the list of files opened. We only update the [[Process Control Block]] when we move from different states, like from ready to running etc.
 
@@ -12,4 +12,4 @@ We also have a process ID/process number, this is the ID of the number, and it i
 
 Registers are [[CPU Registers]], there are different kinds of registers, but this tells us which CPU registers a program is using.  We also have CPU Scheduling Information, which the [[Scheduler]] determines which order our processes should be executed in, and how long our program should be executed for. 
 
-We also have the memory management information consisting of limits. We also have the [[IO]] Devices associated to our device. All of these ideas are grouped together in the [[Process Control Block]], which allows us to keep all of the relevant information for [[Processes]] in their own respective container. 
+We also have the memory management information consisting of limits. We also have the [[IO]] Devices associated to our device. All of these ideas are grouped together in the [[Process Control Block]], which allows us to keep all of the relevant information for [[Process (OS)]] in their own respective container. 

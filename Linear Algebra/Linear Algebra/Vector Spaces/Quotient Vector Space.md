@@ -14,6 +14,7 @@ Following the properties of [[Coset]]s, we have that the following results are t
 
 Since [[Coset]]s are equivalent classes, note that in the following it is not necessarily the case that $x=y$. Also the [[Identity Element]] of this [[Vector Space]] is $W$ itself namely $0+W$. 
 $$x+W=y+W \iff x,y \in W$$
+Intuitively, a quotient vector space is a [[Quotient Group]] which zeroes out any elements in $W$. 
 
 ---
 # Theorem

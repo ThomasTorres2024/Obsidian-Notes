@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Abelian Group.md",
+                "file": "Operating Systems/Operating Systems/Basic Definitions/Daemon (OS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abelian Group"
+              "title": "Daemon (OS)"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Abelian",
+                "query": "Microkernel",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,34 +185,38 @@
   },
   "active": "f0041d2e49d6189d",
   "lastOpenFiles": [
+    "Operating Systems/Operating Systems/Unix/init (Unix).md",
+    "Operating Systems/Operating Systems/Basic Definitions/Daemon (OS).md",
+    "Operating Systems/Operating Systems/Unix",
+    "Operating Systems/Operating Systems/Basic Definitions/Device Driver.md",
+    "Operating Systems/Operating Systems/Basic Definitions/Kernels/Microkernel (OS).md",
+    "Operating Systems/Operating Systems/Basic Definitions/Kernels",
+    "Operating Systems/Operating Systems/Basic Definitions/Kernels/Kernel (OS).md",
+    "Operating Systems/Operating Systems/Processes/Process (OS).md",
+    "Operating Systems/Operating Systems/Basic Definitions/Interrupts/Interrupts (OS).md",
+    "Operating Systems/Operating Systems/CSC 412/Raw Notes.md",
+    "Logic/Classical Logic.md",
+    "Logic/De Morgan Duality.md",
+    "Logic/Commutativity of Conjunction.md",
+    "Logic/Idempotency of Entailment.md",
+    "Logic/Monotonicity of Entailment.md",
+    "Logic/Law of Noncontradiction.md",
+    "Logic/Principle of Explosion.md",
+    "Logic/Double Negation Elimination.md",
+    "Logic/Law of Excluded Middle.md",
+    "Logic/Proposition.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Tensor Product.md",
+    "Logic/Untitled",
+    "Logic",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Quotient Vector Space.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Formal Product.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Dual Space.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Anihilator.md",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Abelian Group.md",
     "Abstract Algebra/Group Theory/Cosets/Class Equation.md",
     "Number Theory/Primes/Prime.md",
-    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Group Action.md",
-    "Abstract Algebra/Group Theory/Cosets/Stabilizer of a Point.md",
-    "Abstract Algebra/Group Theory/Cosets/Orbit (of a Point).md",
-    "Abstract Algebra/Group Theory/Special Groups/Centralizer.md",
-    "Abstract Algebra/Group Theory/Cosets/Conjugacy Class.md",
-    "Abstract Algebra/Group Theory/Cosets/Conjugacy Subgroup.md",
-    "Optimization/Linear Programming/Simplex Method.md",
-    "Optimization/Linear Programming/Simplex Algorithm.md",
     "Pasted image 20260619105256.png",
     "Pasted image 20260619102633.png",
-    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Center of a Group.md",
-    "Abstract Algebra/Group Theory/Cosets/Normalizer.md",
-    "Linear Algebra/Linear Algebra/Subspaces/Projection Matrix.md",
-    "Calculus/Calculus/Vector Fields/Line Integrals/Flux.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Reduced.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Invariant (Vector Space).md",
-    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
-    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Matrix.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Invariant Transformation.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
-    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Untitled.md",
-    "Normalizer.md",
-    "Numerical Analysis/Numerical Stability/Conditioning.md",
-    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Group.md",
     "Probability/Probability/Untitled 1.base",
     "name.png",
     "Abstract Algebra/Ring Theory/Morphisms",
@@ -223,10 +226,6 @@
     "Operating Systems/Windows",
     "Abstract Algebra/Group Theory/Groups/Group Vocabulary",
     "Abstract Algebra/Group Theory/Groups/Forming New Groups",
-    "Untitled 3.base",
-    "Set Theory",
-    "Category Theory",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions",
     "Pasted image 20260406064944.png",
     "Pasted image 20260403084211.png",
     "Abstract Algebra/Morphisms/Morphisms.canvas",
