@@ -1,10 +1,11 @@
 ---
 title: Group Center
 tags:
+  - AbstractAlgebra
 draft: "False"
 ---
 # Group Center 
-The [[Group Center]], for a [[Group]] $G$, is denoted by $Z(G)$ is the set where for $x \in G$, we define:
+The [[Center of a Group]], for a [[Group]] $G$, is denoted by $Z(G)$ is the set where for $x \in G$, we define:
 $$Z(G):=\{a \in G: ax=xa ,\forall x \in G \}$$
 I like to think of this as being the Abelian part. 
 

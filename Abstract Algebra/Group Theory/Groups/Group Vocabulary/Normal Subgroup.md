@@ -28,7 +28,7 @@ And thus we obtain by both directions for this case that $ah=Ha$ and thus by the
 ### Example 1.) 
 For an [[Abelian Group]] $G$, and some [[Subgroup]] $H$ of $G$ we know that $H$ must be an [[Abelian Group]] and therefore must be normal since any $ah=ha$ for $a \in G, h \in H$. 
 
-### Example 2.) If $G$ is a group and we consider the [[Group Center]] $Z(G)=\{  a\in G : ab=ba \quad \forall b \in G\}$
+### Example 2.) If $G$ is a group and we consider the [[Center of a Group]] $Z(G)=\{  a\in G : ab=ba \quad \forall b \in G\}$
 Since $Z(G)$ commutes with every element in $G$ it is trivially a [[Normal Subgroup]] of $G$. 
 
 ### Example 3.) If $n \geq_{1} \implies A_{n} \triangleleft S_{n}$. 

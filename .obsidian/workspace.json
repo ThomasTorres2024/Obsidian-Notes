@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Linear Algebra/Linear Algebra/Linear Transformations/Quotient Transformation.md",
+=======
+                "file": "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Abelian Group.md",
+>>>>>>> 2def84ceac9fce66965b21225fe5bc479b81b675
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Quotient Transformation"
+=======
+              "title": "Abelian Group"
+>>>>>>> 2def84ceac9fce66965b21225fe5bc479b81b675
             }
           }
         ]
@@ -53,7 +61,11 @@
             "state": {
               "type": "search",
               "state": {
+<<<<<<< HEAD
                 "query": "",
+=======
+                "query": "Abelian",
+>>>>>>> 2def84ceac9fce66965b21225fe5bc479b81b675
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -184,6 +196,7 @@
   },
   "active": "35e425a3cd1b9f33",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Quotient Transformation.md",
     "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Characteristic (Ring).md",
@@ -213,6 +226,38 @@
     "Linear Algebra/Linear Algebra/Subspaces/Column Space.md",
     "Abstract Algebra/Morphisms/Morphisms.canvas",
     "Abstract Algebra/Morphisms",
+=======
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Abelian Group.md",
+    "Abstract Algebra/Group Theory/Cosets/Class Equation.md",
+    "Number Theory/Primes/Prime.md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Group Action.md",
+    "Abstract Algebra/Group Theory/Cosets/Stabilizer of a Point.md",
+    "Abstract Algebra/Group Theory/Cosets/Orbit (of a Point).md",
+    "Abstract Algebra/Group Theory/Special Groups/Centralizer.md",
+    "Abstract Algebra/Group Theory/Cosets/Conjugacy Class.md",
+    "Abstract Algebra/Group Theory/Cosets/Conjugacy Subgroup.md",
+    "Optimization/Linear Programming/Simplex Method.md",
+    "Optimization/Linear Programming/Simplex Algorithm.md",
+    "Pasted image 20260619105256.png",
+    "Pasted image 20260619102633.png",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Center of a Group.md",
+    "Abstract Algebra/Group Theory/Cosets/Normalizer.md",
+    "Linear Algebra/Linear Algebra/Subspaces/Projection Matrix.md",
+    "Calculus/Calculus/Vector Fields/Line Integrals/Flux.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Reduced.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Invariant (Vector Space).md",
+    "Linear Algebra/Linear Algebra/Subspaces/Invariant Subspace.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Quadratic Form.md",
+    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Matrix.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Special Transformations/Invariant Transformation.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Basis.md",
+    "Linear Algebra/Linear Algebra/Matrices/Basic Definitions/Untitled.md",
+    "Normalizer.md",
+    "Numerical Analysis/Numerical Stability/Conditioning.md",
+    "Abstract Algebra/Group Theory/Groups/Group Vocabulary/Group.md",
+    "Probability/Probability/Untitled 1.base",
+    "name.png",
+>>>>>>> 2def84ceac9fce66965b21225fe5bc479b81b675
     "Abstract Algebra/Ring Theory/Morphisms",
     "name.png",
     "Linear Algebra/Linear Algebra/Matrices/Basic Definitions",
@@ -231,8 +276,6 @@
     "Pasted image 20260120163605.png",
     "Pasted image 20260118061605.png",
     "Untitled 2.canvas",
-    "Pasted image 20260111090947.png",
-    "Pasted image 20260111090653.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
