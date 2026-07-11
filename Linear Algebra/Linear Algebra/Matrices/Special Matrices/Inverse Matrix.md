@@ -8,6 +8,8 @@ draft: "False"
 The [[Inverse Matrix]] is a [[Matrix]] $B$ that for some $A \in \mathbb{F}^{n \times n}$ satisfies:
 $$AB=BA=I_{n}$$
 
+Furthermore, we can state that any invertible matrix is an [[Abstract Algebra/Morphisms/Automorphism|Automorphism]] (since each [[Matrix]] is a [[Linear Transformation]]) on the vector space that it is onto. 
+
 ---
 # Invertible Matrix Theorem
 The following conditions are equivalent:

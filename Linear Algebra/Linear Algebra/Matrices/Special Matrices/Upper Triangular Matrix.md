@@ -4,7 +4,7 @@ tags:
 draft: "False"
 ---
 # Definition
-Upper triangular matrices are [[matrices]] in $A \in \mathbb{R}^{n \times m}$ where each $a_{ij} =0$ when $i>j$. Typically, [[Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix]] are square matrices in the wild. The product of two [[Upper Triangular Matrix]]
+Upper triangular matrices are [[Matrix]] in $A \in \mathbb{R}^{n \times m}$ where each $a_{ij} =0$ when $i>j$. Typically, [[Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix]] are square matrices in the wild. The product of two [[Upper Triangular Matrix]]
 
 #### Facts about Upper Triangular Matrices 
 The only matrices which are [[Linear Algebra/Linear Algebra/Matrices/Special Matrices/Upper Triangular Matrix]] and [[Lower Triangular Matrices]] are [[diagonal matrix]] (diagonal matrices). 

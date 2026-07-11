@@ -5,7 +5,7 @@ tags:
 ---
 # Similar Matrices Definition 
 
-Consider $A,B \in \mathbb{R}^{n \times n}$.  If $A$ and $B$ are similar, then for some [[invertible matrix]] $M$ we can write that 
+Consider $A,B \in \mathbb{R}^{n \times n}$.  If $A$ and $B$ are similar, then for some [[Inverse Matrix]] $M$ we can write that 
 
 $$B=M^{-1}AM$$
 
