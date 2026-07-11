@@ -11,7 +11,7 @@ Our incentive for this factorization is rooted in the fact that we have an upper
 $$A\vec{x}=\vec{b}=QR\vec{x}$$$$R\vec{x}=Q^T\vec{b}$$
 It turns out this is a nice system to work with for solving. We can find the inverse of $Q$ very quickly, of course assume that it is square, because $Q$'s inverse is just its transpose. Performing a matrix vector computation is also quick, so $Q^T\vec{b}$ can be solved easily. $\vec{x}$ can thus easily be solved by just row reducing, which is a nice matrix to work since it is upper triangular. 
 
-Also, in this square case where both $Q$ and $R$ are full rank and square and thereby [[Invertible Matrix]], we get the following result:
+Also, in this square case where both $Q$ and $R$ are full rank and square and thereby [[Inverse Matrix]], we get the following result:
 
 $$| \text{det}(A)|=|\text{det}(QR)|=|\text{det}(Q)\cdot\text{det}(R)|=|\text{det}(R)|=|\prod_{i=1}^nR_{ii}|$$
 This works out since $Q$ is a unitary matrix and has a determinant of plus or minus one, which has a magnitude of one. This simplifies our expression, and leaves us with the product of the diagonal entries. 

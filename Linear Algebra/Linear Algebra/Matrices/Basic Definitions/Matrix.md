@@ -16,7 +16,7 @@ Let $\mathcal{V}$ be an $n$ dimensional [[Vector Space]], and let $\mathcal{X}=\
 $$\begin{align}
 Ax_{j}= \sum_{i} \alpha_{ij} x_{i}
 \end{align}$$
-For $j=1,\cdots,n$. The set of $(\alpha_{ij})$ of $n^2$ scalars. We express a matrix as a square array of its scalars in the following form: 
+For $j=1,\cdots,n$. The set of $(\alpha_{ij})$ of $n^2$ scalars (this assumes that the linear transformation is endomorphic). We express a matrix as a square array of its scalars in the following form: 
 $$A=\begin{bmatrix}
 \alpha_{11} & \alpha_{12} & \cdots & \alpha_{1n} \\
 \alpha_{21} & \alpha_{22} & \cdots & \alpha_{2n} \\

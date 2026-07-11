@@ -64,7 +64,7 @@ In this diagram, we show that the null space of $A$ is orthogonal to the row spa
 We depict our range of the columns of $A$ and null space of $A^T$. 
 
 --- 
-# [[Invertible Matrix]] Theorem 
+# [[Inverse Matrix]] Theorem 
 
 An invertible matrix has the following properties for the matrix $A \in \mathbb{R}^{n \times n}$. If the row and column counts for $A$ are not equal, then $A$ cannot be invertible. If they do match and any one of the following conditions are satisfied, then all of the other conditions are also true. 
 

@@ -77,7 +77,7 @@ Since the set spans and is linearly independent it is thus a basis for the space
 ---
 # Metric Tensors 
 
-Metric tensors are bilinear forms that satisfy properties of [[similarity]] and [[positive definite]]ness for a vector $\vec{v}$. Metric tensors are also symmetric. That is to say: 
+Metric tensors are bilinear forms that satisfy properties of [[Similarity (Linear Transformations)]] and [[positive definite]]ness for a vector $\vec{v}$. Metric tensors are also symmetric. That is to say: 
 
 $$g(\vec{v},\vec{w})=g(\vec{w},\vec{v})$$
 

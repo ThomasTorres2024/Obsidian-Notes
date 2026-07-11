@@ -168,3 +168,21 @@ Thus it must be the case that each $\alpha_{i}=0$ since $Ax=0 \implies x=0$.
 
 ### Theorem.) Inverse of a Linear Transformation
 Follows from shoes and socks theorem, namely that for some invertible $A,B$ then $(AB)^{-1}=B^{-1}A^{-1}$. This is a trivial theorem regardless of how we approach it. 
+
+---
+# Change of Basis
+For any given [[Vector Space]] $V$, we can describe $V$ using two different bases which are not identical. Let the following bases be equivalent descriptions of $V$:
+$$V=\text{span}\{ \vec{x_{1}},\vec{x_{2}},\cdots,\vec{x_{n}} \}= \text{span}\{\vec{y_{1}},\vec{y_{2}},\cdots,\vec{y_{n}}\}$$
+Where each $y_{i}\neq x_{i}$. We ask the following questions about linear transformations. For some $x \in V$ if $x=\sum_{i}\delta_{i}\vec{x_{i}}=\sum_{i}\gamma_{i}\vec{y_{i}}$ we want to ascertain the relationship between the coordinates $(\delta_{1},\delta_{2},\ldots,\delta_{n})$ and $(\gamma_{1},\gamma_{2},\ldots,\gamma_{n})$ as well as the relationship between the following:
+$$x=\sum_{i} a_{i} x_{i} \quad y = \sum_{i}a_{i}x_{i}  \quad : x_{i} \in \mathbb{F}$$
+Both questions can be answered by considering the linear transformation $A$ written in Matrix form as $\alpha_{ij}$ in the basis of $x_{i}'s$ which maps each $x_{i} \mapsto y_{i}$, or rather by:
+$$A\left( \sum_{i} \delta_{i}  \vec{ x_{i}} \right) = \sum_{i} \delta_{i} \vec{y_{i}}$$
+
+Where (this particular identity here i don't understand at all? the matrix notation used in this book is weird? everything else is straight forward)
+$$y_{j}=Ax_{j}= \sum_{i} \alpha_{ij}x_{i} $$
+Also notice that $A$ is invertible since $\sum_{i} \delta_{i} y_{i} = 0 \iff \delta_{i}=0 \forall i$. The first question can be solved in the following:
+$$\sum_{j} \gamma _{j} y_{j} = \sum_{j} \gamma_{j}Ax_{j}=\sum_{j} \gamma_{j} \sum_{i} \alpha_{ij}x_{i} = \sum_{i} \left( \sum_{j} \alpha_{ij} \gamma_{ij} \right) x_{i} = \sum_{i} \left( \sum_{j} \alpha_{ij} \gamma_{j} \right)x_{i} $$
+And thus
+$$\sum_{i}\left( \sum_{j} \alpha_{ij}\gamma_{j} \right) x_{i} =\sum_{i} (\delta_{i}x_{i}) \iff \delta_{i}=\alpha_{ij}\gamma_{j}$$
+The second question is trivially answered via:
+$$y=Ax$$

@@ -53,8 +53,10 @@ $$\begin{align}
 \end{align}$$
 Here we still have that $k \leq n$. If $f(x)$ has no zeroes other than $a$ then we are done and obtain $k=n$. OTOH if $b\neq a$ and $b$ is a zero of $f(x)$, then:
 $$f(b)=(b-a)^kq(b) \implies f(b)=0$$
-So $b$ is a zero of $f(x)$ and a zero of $q(x)$ moreover, which has the same multiplicity for $f(x)$. 
- 
+So $b$ is a zero of $f(x)$ and a zero of $q(x)$ moreover, which has the same multiplicity for $f(x)$. From the second principle of mathematical induction, we obtain that $\text{deg}(q(x))=n-k$ zeroes at most. Thus $f(x)$ has at most $k+n-k=n$ zeros counting multiplicity. 
+
+This result is not generally true for a general ring, and is restricted to that of a field.  
+
 ---
 ### Theorem - Every [[Ideal (Rings)]] in $k[x]$ is a principal ideal. 
 Suppose $I \subseteq k[x]$ is an [[Ideal (Rings)]]. Take $p(x) \in I$ such that $p(x)$ is a [[Monic Polynomial]] and that $\text{deg}(p(x))$ is minimal over all polynomials of positive degree, which ensures that $p(x)$ is not a constant [[Polynomial]]. We want to show that $p(x)$ generates the entire [[Ideal (Rings)]]. 
