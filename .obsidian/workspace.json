@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating Systems/Operating Systems/Basic Definitions/Daemon (OS).md",
+                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Matrix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daemon (OS)"
+              "title": "Rank 1 Matrix"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Microkernel",
+                "query": "rank",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,12 +185,17 @@
   },
   "active": "f0041d2e49d6189d",
   "lastOpenFiles": [
+    "Linear Algebra/Linear Algebra/Linear Transformations/Rank.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Perturbation.md",
+    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Rank 1 Matrix.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Nullity.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Nullspace.md",
+    "Operating Systems/Operating Systems/Basic Definitions/Daemon (OS).md",
     "Set Theory/ZFC Axioms.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Quotient Transformation.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Projection.md",
     "Linear Algebra/Linear Algebra/Linear Transformations/Adjoint.md",
     "Operating Systems/Operating Systems/Unix/init (Unix).md",
-    "Operating Systems/Operating Systems/Basic Definitions/Daemon (OS).md",
     "Operating Systems/Operating Systems/Unix",
     "Operating Systems/Operating Systems/Basic Definitions/Device Driver.md",
     "Operating Systems/Operating Systems/Basic Definitions/Kernels/Microkernel (OS).md",
@@ -208,13 +213,8 @@
     "Logic/Principle of Explosion.md",
     "Logic/Double Negation Elimination.md",
     "Logic/Law of Excluded Middle.md",
-    "Logic/Proposition.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Tensor Product.md",
     "Logic/Untitled",
     "Logic",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Quotient Vector Space.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Formal Product.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Dual Space.md",
     "Pasted image 20260619105256.png",
     "Pasted image 20260619102633.png",
     "Probability/Probability/Untitled 1.base",
