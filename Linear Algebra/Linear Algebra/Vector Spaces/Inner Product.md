@@ -97,3 +97,50 @@ Which finally yields the Cauchy-Schwarz inequality.
 
 Intuitively, I think of this inequality as a corollary from the cosine identity. Since we know that $\text{cos}(\theta)=\dfrac{|\vec{x} \cdot \vec{y}|}{\| \vec{x} \| \| \vec{y} \|}$, we know cosine is bound between $-1$ and $1$, and for most cases, unless the vectors are oriented in the same direction and thus linearly dependent, it is the case that the hypotenuse will be greater than the numerator, so our answer would tend to have an absolute value of less than one, which would imply that the denominator is larger. I tend to think of this identity as a concretization of this rather obvious fact, since the hypotenuse in a right triangle is always the largest side. 
 
+---
+### Alternative Proof of the Cauchy-Schwarz Identity Using [[Bessel's Inequality]]
+We can also prove this result using this inequality. Given a finite orthonormal set, $X=\{x_{1},x_{2},\dots,x_{n} \}$ we can prove this result. 
+
+$Proof).$ 
+Let $y=0$ then it is trivial that $|\langle x,y \rangle| \leq ||x|| \cdot ||y||$. Now assume that $y\neq0$. It is trivially true that $\frac{y}{||y||}$ is an orthonormal set, a finite one so we can apply Bessel's Inequality:
+$$\left|\left\langle  x, \frac{y}{||y||}  \right\rangle \right|^2 \leq ||x|| ^2 \iff |\langle x,y \rangle|^2 \leq ||x||^2 ||y||^2$$
+
+---
+# Connection to [[Dual Space]]
+For any inner product space $V$ given the linear functional $y' \in V'$ there is some unique corresponding $y \in V$ such that $y'(x)=\langle x,y \rangle \quad \forall x \in V$. 
+
+$Proof).$
+If $y'=0$ then $y=0$ satisfies that statement. Let $M$ consist of all of vectors $x \in M$ such that $y'(x)=0$. Let $N=M^\perp$ be the orthogonal complement of $M$, then $N$ must contain a non-zero vector $y_0$ (We assume that not all $y'(x)=0 \implies y'$ is then the $0$ map so this cannot be the case). Arbitrarily take $y=y_{0} \cdot y'(y_{0})$ s.t. $\|y_{0}\|=1$ then it is trivially true that the following is satisfied:
+$$(1) \quad y'(x)=\langle x,y \rangle$$
+By $x=y_{0}$. Secondly consider for some arb. $x$ that $x_{0}=x- \lambda y_{0}$ s.t. $\lambda = \frac{y'(x)}{y'(y_{0})}$ thus we have that $y'(x_{0})=0$. Notice also that $x=x_{0}+y_{0}$ and that $y'(x_{0})=\langle x_{0},y\rangle$ holds. By linearity we then have that:
+$$\begin{align}
+y'(x_{0})+y'(\lambda y_{0}) = & \langle x_{0},y \rangle + \langle \lambda y_{0},y \rangle \\
+\Updownarrow \\
+y'(x_{0}+\lambda y_{0}=) y'(x) & = \langle x,y\rangle 
+ \end{align}$$
+ Now for uniqueness consider the following for $y_{1},y_{2} \in V$:
+ $$\begin{align}
+\langle x,y_{1} \rangle = \langle x,y_{2} \rangle  \\
+\iff \langle x, y_{1}-y_{2} \rangle = 0  \\
+\iff y_{1}-y_{2}=0 \iff y_{1}=y_{2}
+\end{align}$$
+Thus the result is as follows.
+
+Notice that there is nearly an [[Isomorphism]] between the two in this correspondence the only thing which makes it not an isomorphism is conjugation. $y_{1}+y_{2} \to y_{1}'+y_{2}'$ but $\alpha y \to \overline y'$.  
+
+---
+# Polarization
+
+### Theorem 1).
+A necessary and sufficient condition that a linear transformation $A$ on an inner product space be $0$ is that $\langle Ax,y \rangle =0 \quad  \forall x,y$. 
+
+$Proof).$ 
+The necessary portion is obvious. Secondly if we let $Ax=y$ then $\langle Ax,Ax\rangle = 0 \quad \forall x$ so $A=0$. 
+
+### Theorem 2).
+A necessary and sufficient condition that a self adjoint linear transformation $A$ on an inner product space be $0$ is that $\langle Ax,x \rangle =0 \quad  \forall x,$. 
+
+$Proof).$ 
+The necessary portion is obvious. For sufficiency note the following identity: 
+$$(Ax,y)+(Ay,x)=(A(x+y),(x+y))-(Ax,x)-(Ay,y)$$
+Since $A$ is self adjoint, then $\langle Ax,y\rangle = \overline{\langle y,Ax \rangle}$

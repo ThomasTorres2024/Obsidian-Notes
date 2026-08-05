@@ -2,6 +2,7 @@
 title: Determinant
 draft: "false"
 tags:
+  - LinearAlgebra
 ---
 # Determinant Definition
 The [[Determinant]] is a map from a matrix, $$ \large \det(A) : \mathbb{C}^{n \times n} \mapsto \mathbb{C}$$
@@ -14,6 +15,13 @@ We also use bars around a matrix to denote the [[Determinant]] of a matrix as an
 We can compute higher dimensional matrices by using the [[Cofactor Expansion]] by computing the sum of the determinant of correctly signed minor matrices. 
 
 We can also use any row or column to iterate over in order to compute our determinant. Any even valued iteration in our expansion will have a negative sign in front of it. 
+
+### Alternating Forms 
+An alternative definition coming from linear transformations, indicates that given some [[Linear Transformation]] $A$, and some alternating multilinear form $w$ such that $w(x_{1},x_{2},\cdots,x_{n}) \in \mathbb{F}$, then the following:
+$$Aw=w(Ax_{1},Ax_{2},\cdots,Ax_{n})$$
+Is a [[Linear Transformation]] on the space of alternating forms. This space is one dimensional and thus any other map from it must be a scalar multiple, that is to say that $\exists \delta \in \mathbb{F}$ such that:
+$$\delta w(Ax_{1},Ax_{2},\cdots,Ax_{n})=  w(x_{1},x_{2},\cdots,x_{n})$$
+If we consider the properties of alternating forms as well, namely that if it is evaluated on a set of [[Linearly Independent]] vectors then its answer will be non-zero, and if it is evaluated on a [[Linearly Dependent]] set of the vectors then its answer will be zero. Furthermore, if we permute the arguments an odd number of times we introduce a negative one, which fits into the general properties of determinants. 
 
 ---
 # Properties of the Determinant 

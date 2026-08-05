@@ -8,7 +8,7 @@ tags:
 We can decompose all matrices into a factorization given by $A = U \Sigma V^T$ where $A \in \mathbb{R}^{m \times n}$, 
 $U \in \mathbb{R}^{m \times m}$ and is [[orthogonal]], and $V \in \mathbb{R}^{n \times n}$ and is orthogonal, and $\Sigma \in \mathbb{R}^{m \times n}$ and is a [[diagonal matrix]].  
 
-The matrix $V$ comes from the [[row space]] of $A$ and the matrix $U$ comes from the [[Column space]] of $A$ 
+The matrix $V$ comes from the [[row space]] of $A$ and the matrix $U$ comes from the [[Column Space]] of $A$ 
 
 If $A$ is symmetric [[Positive Definite Matrix]], $A$ has a much simpler SVD:
 $$A=Q \wedge Q^T$$

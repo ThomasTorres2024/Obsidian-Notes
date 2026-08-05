@@ -1,6 +1,7 @@
 ---
 title: Cofactor Expansion
 tags:
+  - LinearAlgebra
 draft: "false"
 ---
 # Cofactor Expansion 

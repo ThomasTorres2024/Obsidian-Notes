@@ -25,3 +25,13 @@ Spectral theorem states that for an $n \times n$ Hermitian matrix $A$, it follow
 * $A$ is [[unitarily diagonalizable]]
 * A has real [[Eigen Value]]
 * Eigen Vectors span $\mathbb{R}^n$  
+
+Interestingly, any [[Matrix]] $A$ can be expressed as a $A=B+C$ where $B$ is a [[Hermitian]] matrix and $C$ is a [[Skew-Symmetric Matrix]]. 
+
+$$\begin{align}
+B=\frac{A+A^H}{2} \quad \quad C=\frac{A-A^H}{2} \\
+B^H = B \quad \quad \quad  \quad C^H = -C \\
+A=B+C  
+\end{align}$$
+This is somewhat analogous to the [[Complex Numbers]] as [[Hermitian]] matrices tend to act like the [[Real Numbers]] and Skew Symmetric matrices tend to act like complex numbers. 
+
