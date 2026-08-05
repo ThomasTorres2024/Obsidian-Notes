@@ -6,7 +6,7 @@ draft: "false"
 # Rank 1 Perturbation 
 A [[Rank 1 Perturbation]] is the result of taking a matrix $A \in \mathbb{F}^{n \times n}$, and for $u,v\in \mathbb{F}^{n}$ computing the following:
 $$A-uv^H$$
-If we begin from a simpler point, let $A=I$. We choose $u,v \neq 0$, such that $uv^H$ is a matrix of [[Rank]] 1. We can compute the inverse of this matrix, assuming that it exists as the following form:
+If we begin from a simpler point, let $A=I$. We choose $u,v \neq 0$, such that $uv^H$ is a [[Matrix]] of [[Rank]] 1 ([[Rank 1 Matrix]]). We can compute the inverse of this matrix, assuming that it exists as the following form:
 $$(I-uv^H)^{-1}=I+\frac{uv^H}{1-v^Hu}$$
 We can confirm that this hypothetical inverse is the actual inverse. Let us verify that this is an [[Inverse Matrix]]: 
 $$(I-uv^H) (I-uv^H)^{-1}=(I-uv^H) \left[ I+\frac{uv^H}{1-v^Hu} \right]=(I-uv^H)+\frac{uv^H}{1-v^Hu}- \frac{uv^Huv^H}{1-v^Hu}$$

@@ -10,7 +10,7 @@ We also have memory systems with different IO devices. These are shared by 1+ us
 
 Users interact with the program in two differently ways, copying or deleing a file etc, by way of files. Before we had a way of accessing our OS through the CMD, but now its just another application.
 
-What we have now is a bunch of processes that would like access to different resources. A program is a piece of code on the disk, it is static, it is dead. Once it is loaded it becomes a process, it has a status etc. [[Processeses]] are running programs. We could have 2+ running on the same program. 
+What we have now is a bunch of processes that would like access to different resources. A program is a piece of code on the disk, it is static, it is dead. Once it is loaded it becomes a process, it has a status etc. [[Process (OS)]] are running programs. We could have 2+ running on the same program. 
 
 Can at any point two processes access the same resources at the same time? Generally they can't, how do we deal with the conflict of access in a way that is fair. We have to deal with security here too. The more we add features, more users, networking, programs accessing the same info, we have a lot of new headaches to resolve involving security. In the 90s the OS used disc space to simulate having more RAM.
 
@@ -37,7 +37,7 @@ OS came from a single program that ran one program after another finished. OS gr
 
 Below the OS will still had BIOs and such. We establish a hierarchy of how these things interact. We cannot bypass anything you can only support the layer above and below you. Each layer hides details a lot, nicer to work with. But, the problem with this is is that some parts of the OS exist at different layers, some between layers. It's a bit messy then to handle it. We could also get stuck between different labels. This system never went anywhere in reality. 
 
-Instead we moved to [[Kernel]] architecture, which is still the system to this day. The idea is that we reduce the OS to its most basics. The kernel must do memory management, scheduling, synchronization, file systems, and some others.
+Instead we moved to [[Kernel (OS)]] architecture, which is still the system to this day. The idea is that we reduce the OS to its most basics. The kernel must do memory management, scheduling, synchronization, file systems, and some others.
 
 GUI, networking, multimedia, all were moved instead to drivers. We are still essentially doing this in the current day. The kernel interfaces with the hardware, and also talks to things within our system that are lower level like drivers. 
 

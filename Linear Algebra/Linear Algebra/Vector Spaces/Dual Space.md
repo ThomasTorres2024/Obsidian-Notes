@@ -1,6 +1,7 @@
 ---
-title: 
-tags: 
+title:
+tags:
+  - LinearAlgebra
 draft: "false"
 ---
 # Dual Space Definition
@@ -112,3 +113,26 @@ $$\begin{bmatrix} 2&3\\1& 1 \end{bmatrix}^T=\begin{bmatrix} 2&1\\3& 1 \end{bmatr
 
 This arises because linear functionals are row vectors that take in a set of inputs and convert them into a scalar, in effect a dot product. When we construct our matrix trying to solve for our $f_{1}$ and $f_{2}$ we lay our coefficients for the basis on their side since in a linear functional, in order to obtain a scalar output we need to evaluate them in the functionals at these points. 
 
+---
+# Dual Spaces and Reflexivity  
+For some vector space $\mathcal{V}$, then the [[Dual Space]] of the [[Dual Space]], $\mathcal{V}'' \cong V$ which in words there is an [[Isomorphism]] between the original vector space and the dual of the dual. We typically consider this to be an equality, though this isn't the full truth, we really just refer to the isomorphism but use equality to avoid the clumsiness of the language involved here. This property is known as __reflexivty__ here. 
+
+---
+# Annihilators 
+## __Definition__). 
+The annihilator $S^0$ for some subset of a [[Vector Space]] $V$, not necessarily a [[Vector Subspaces]], is the set of all vectors $y \in V'$ such that $[x,y]=0 \quad \forall x \in S$. 
+
+Immediately by the definition, we have that:
+$$0^0 = V' \quad V^0 = 0$$
+If $V$ is a finite dimensional vector space and $S$ has a non-zero vector then $S \neq 0 \implies S^0 \neq V'$.
+
+### Theorem).
+Any such annihilator is a [[Vector Subspaces]] of $V'$. 
+
+### Theorem).
+If $M$ is a subspace of a finite dimensional vector space $V$ then $M^{00}=M$.
+
+$Proof.)$
+This is an application of 
+
+We can also state that for any $V=M \oplus N \implies V^{\prime} = M^0 \oplus N^0$ 

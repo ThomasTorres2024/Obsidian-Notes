@@ -1,5 +1,12 @@
-# [[Interrupts]] 
-Interrupts alert the CPU to events that require attention. [[Interrupts]] are sent to the [[CPU]] by [[hardware]] along the [[system bus]]. Interrupts are crucial for the interaction between [[software]] and [[hardware]]. CPU interrupts stop execution of the system, and transfers execution to a fixed location immediately. The fixed location typically has the address of where the "service routine for the interrupt is located", we execute the routine here, and then the CPU resumes computation on the interrupt. and cause it to focus on the thing which sent its request. 
+---
+title: Interrupts
+tags:
+  - Operating_Systems
+draft: "False"
+---
+
+# [[Interrupts (OS)]] 
+Interrupts alert the CPU to events that require attention. [[Interrupts (OS)]] are sent to the [[CPU]] by [[hardware]] along the [[system bus]]. Interrupts are crucial for the interaction between [[software]] and [[hardware]]. CPU interrupts stop execution of the system, and transfers execution to a fixed location immediately. The fixed location typically has the address of where the "service routine for the interrupt is located", we execute the routine here, and then the CPU resumes computation on the interrupt. and cause it to focus on the thing which sent its request. 
 
 We generally handle each interrupt with a specific handler and process for dealing with each kind of interrupt. Interrupts happen very often and must be handled very frequently, so we want to be able to deal with them quickly. We use a "table (I assume hashmap?)" of pointers to different interrupt routines. We access the table directly, there are no intermediate routines.
 
@@ -12,7 +19,7 @@ If we need to change the processor state, that is the current values in the [[re
 ---
 # Interrupt Implementation 
 
-We implement [[Interrupts]] using a wire directly in the [[CPU]] [[hardware]] known as the [[interrupt-request line]]. The CPU detects if a controller asserted a request, if it does it reads the interrupt number and jumps to the interrupt handler routine 
+We implement [[Interrupts (OS)]] using a wire directly in the [[CPU]] [[hardware]] known as the [[interrupt-request line]]. The CPU detects if a controller asserted a request, if it does it reads the interrupt number and jumps to the interrupt handler routine 
 
 A [[Device Controller]] raises an interrupt through the [[interrupt-request line]] and sends a signal to the CPU. This allows the CPU to respond to asynchronous events. Modern interrupts need more sophisticated handling features than just this.
 
