@@ -76,3 +76,4 @@ $$\begin{align}
 \end{align}$$
 
  But since $V'=M^0 \oplus N^0$, then we obtain that $A'$ is reduced by $(M^0,N^0)$ as desired $\blacksquare$
+

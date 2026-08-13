@@ -8,4 +8,4 @@ A [[Symmetric Matrix]] is a matrix, $A \in \mathbb{F}^{n \times n}$ that satisfi
 * $A^T=A$
 * $A_{ij}=A_{ji}$ 
 
-A [[Symmetric Matrix]] is also a [[Normal Matrices]], which means $A^TA=AA^T$, so $A$ is [[unitarily diagonalizable]]. We also should look at [[Spectral Theorem Definition and Proof]] and [[Normal Matrices]]. The complex analog of this is [[Hermitian]] Matrices. 
+A [[Symmetric Matrix]] is also a [[Normal Matrices]], which means $A^TA=AA^T$, so $A$ is [[unitarily diagonalizable]]. We also should look at [[Spectral Theorem]] and [[Normal Matrices]]. The complex analog of this is [[Hermitian]] Matrices. 

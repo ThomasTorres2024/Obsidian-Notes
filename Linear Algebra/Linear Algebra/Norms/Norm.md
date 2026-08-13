@@ -84,3 +84,12 @@ Note that orthogonality actually preserves vector norms. That is to say, for ort
 All norms are equivalent, meaning that for $c_{1}$ and $c_{2}$ we can express, for $\vec{x} \in V$ where $V$ is a [[Vector Space]]:
 $$c_{1}\|\vec{x}\|_{\alpha} \leq \|\vec{x}\|_{\beta} \leq c_{2} \|\vec{x}\|_{\alpha}$$
 Where $0<c_{1}\leq c_{2}$. 
+
+---
+# Bounded Norms
+This provides more of an analysis perspective of norms. 
+
+We define a bounded norm as, for some [[Linear Transformation]] $A$, then $\forall x\in V$, then:
+$$\|Ax\| \leq K \cdot  \|x\|$$
+For any constant $K$. The greatest lower bound of all constants with this property is the norm/bound of $A$ and is denoted by $\|A\|$. 
+

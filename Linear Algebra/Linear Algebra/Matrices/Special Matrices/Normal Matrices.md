@@ -73,3 +73,29 @@ From this, the only values that are not guaranteed to be zero are the diagonal v
 Since $A$ is normal $\Longleftrightarrow A=UDU^H$ we can draw the following conclusions:
 * Normal matrices are unitarily diagonalizable, that is we can express any normal matrix as $UDU^H$
 * The eigen vectors of $A$ form an orthonormal basis of $\mathbb{R}^n$. Since $UDU^H$ is a diagonalization of $A$ and a similarity transformation, it follows that $U$ consists of all eigen vectors of $A$, and furthermore that each vector in it must be normal since $U$ is an orthogonal matrix 
+
+---
+# Another Perspective on Normal Transformations
+Normal [[Linear Transformation]]s $A$ are such that for $AA^H=A^HA$. Notice also that:
+$$A=B+Ci = \frac{1}{2}(A+A^H) + \frac{1}{2i} (A-A^H) $$
+From which we can algebraically verify that $BC=CB$. Conversely if we show that $A=B+iC$ and $A^H=B-iC$
+
+We can prove this result also using [[Spectral Theorem]] with the following spectral form:
+$$A=\sum_{j} \alpha_{j} E_{j} \implies A^H = \sum_{j} \overline{\alpha_{j}} E_{j} $$
+From which it is easy to see that:
+$$A^HA=AA^H=\sum_{j} |\alpha_{j}|^2 E_{j}$$
+---
+# Commutativity of Hermitian Matrices
+
+The following criterion can be proposed for all [[Hermitian]] matrices that are commutative: 
+### Theorem).
+Two self adjoint transformations $A,B$ on a finite dimensional inner product space are commutative iff there exists a self adjoint transformation $C$ such that there are real valued function $f,g$ such that $A=f(C)$ and $B=g(C)$. Alternatively we could write, if such a $C$ exists then $C=h(A,B)$ where $h$ is a suitable real valued function of two real variables.  
+
+$Proof).$ 
+The sufficiency portion is clear, necessity only needs to be shown. Consider the spectral forms of $A,B$: 
+$$A=\sum_{i} \alpha_{i}E_{i} \quad B= \sum_{j} \beta_{j}F_{j} $$
+Since $A,B$ commute then $E_{i},F_{j}$ must commute too. Secondly, let $h$ be any function of two real variables such that $h(\alpha_{i},\beta_{j})=\gamma_{ij}$ are all distinct, then write:
+$$C=h(A,B) =\sum_{i} \sum_{j} h(\alpha_{i},\beta_{j})E_{i}F_{j}  $$
+Secondly let $f,g$ be such that:
+$$f(\gamma_{ij})=\alpha_{i} \quad g(\gamma_{ij})=\beta_{j} $$
+This thus gives that $f(C)=A,g(C)=B$. 

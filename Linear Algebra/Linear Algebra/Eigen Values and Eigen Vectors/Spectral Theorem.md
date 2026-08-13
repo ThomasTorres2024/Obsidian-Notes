@@ -128,6 +128,52 @@ Since every eigen vector of $A$ can be expressed using only real values, it foll
 
 In conclusion, $A^T=A$ and $A \in \mathbb{R}^{n \times n} \implies$ $U,D \in \mathbb{R}^{n \times n}$
 
+---
+# Projections and [[Spectral Theorem]]
 
+### Theorem).
+For any Self-[[Adjoint]] [[Linear Transformation]], $A$, on a finite dimensional inner product space, there corresponds, $\alpha_{1},\alpha_{2},\alpha_{3},\dots ,\alpha_{r}$ with [[Projection]]s $E_{1},E_{2},\dots,E_{n}$such that they are all orthogonal and non-zero, then the following is true:
 
+1. $\alpha_{j}$are pairwise distinct
+2. the $E_{j}$ are pairwise orthogonal and non-zero
+3. $\sum_{j}E_{j}=1$
+4. $\sum_{j}\alpha_{j}E_{j}=A$
+
+$Proof).$
+Let $\alpha_{1},\dots,\alpha_{r}$ be the [[Eigen Value]]s of $A$ and let $E_j$ be the perpendicular projection on the subspace consisting of all solutions of $Ax=\alpha_{j} x$. This ensures condition $(1)$ clearly. This entails that each $x$ is an eigen vector corresponding to the eigen value $\alpha_{j}$, furthermore by spectral theorem these must be orthogonal thereby each projector is also mutually orthogonal. 
+
+Now we can see that if $E=\sum_{j}E_{j}$ then $E$ must be another perpendicular projection. Notice that $\text{dim}(E)=\text{dim}\left( \sum_{j} E_{j} \right)=$ the dimension of the entire space which entails $(3)$ namely that $E=\sum_{j}E_{j}=I$. 
+
+In order to prove $(4)$, consider any vector $x$, and then write $x_j=E_{j}x$. It then follows that:
+$$Ax_{j}= \alpha x_{j}$$
+This comes from the definition of each $E_{j}$ as being the set of all vectors fulfilling the above.
+$$\begin{align}
+Ax=A(Ix)=A\left( \sum_{j}E_{j}x \right) = \sum_{j}Ax_{j} =  \\
+\sum_{j}\alpha_{j} x_{j} = \sum_{j} \alpha_{j} E_{j} x
+\end{align}$$
+And thus we have that $A=\sum_{j}\alpha_{j}E_{j}$ This concludes $(4)$ and thereby the proof.
+
+The expression of $A=\sum_{j} \alpha_{j} E_{j}$ is known as the 'spectral form' of $A$. Now we shall prove its uniqueness.
+### Theorem 2). 
+If $\sum_{j=1}^r\alpha_{j}E_{j}$ is the spectral form of a self adjoint linear tf on a finite dimensional inner product space, then the $\alpha's$ are all distinct eigen values of $A$. 
+
+Moreover, for $1\leq k\leq r$, then there there exist polynomials $p_{k}$ with real coefficients such that $p_{k}(\alpha_{j})=0$ whenever $j \neq k$ and that $p_{k}(a_{k})=1$ for every such polynomial $p_{k}(A)=E_{k}$. 
+
+$Proof$).
+Each $E_{j}\neq0$ and thus has some $x$ such that $E_{j}x=x$ and $E_{i}x=0 \forall i\neq j$, thus we have:
+$$Ax=\sum_{j=1}^n( \alpha_{j} E_{j}x )=\alpha_{j}x \implies \alpha_{j} \text{ is eig of }A$$
+Conversely let $\lambda$ be an eig of $A$, then for any $Ax=\lambda x$ for $x\neq0$, denote $x_{j}=E_{j}x$,and then:
+$$Ax=\lambda x = \lambda \sum_{j}x_{j}$$
+And thus:
+$$Ax=A\left( \sum_{j} x_{j} \right)=\sum_{j} \alpha_{j} x_{j}$$
+And then we have that:
+$$\sum_{j} (\lambda - \alpha_{j})x_{j}=0 \implies \lambda -\alpha_{j} = 0$$
+We know that the set formed is linearly independent between the $x$'s since they are orthogonal. And thus $\lambda$ is equal to one of the $\alpha_{j}'s$. 
+### Theorem).
+If $\sum_{i=1}^r \alpha_{j}E_{j}=A$ for $A=A^H$, then a necessary and sufficient condition such that $AB=BA$ is that $B$ commutes with each $E_{j}$. 
+
+$Proof).$ 
+The sufficiency of the condition is trivial, since it can clearly be algebraically verified that the result holds. Secondly. we can check the necessity condition. Let $A,B$ commute with one another. (I don't understand this), then from commutation we get that $B$ commutes with each polynomial in $A$, and therefore $B$ commutes with $E_j$. 
+
+As a point to make, we can generalize the spectral definition easily to the case with infinite dimensional vector spaces, and it beats out standard notation sometimes. 
 

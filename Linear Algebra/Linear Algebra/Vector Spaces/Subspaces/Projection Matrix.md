@@ -95,6 +95,84 @@ This gives the following SVD/[[Eigen Value Decomposition]] of $P$, also note sin
 $$P=Q\Sigma Q^H$$
 But also we can verify that it is Hermitian now quite easily.
 
+---
+# Qualities of Orthogonal Projectors
+Orthogonal projectors satisfy the following conditions, namely that a linear transformation $E$ is a perpendicular projection iff $E^2=E=E^T$. Perpendicular projections are all positive linear transformations, and satisfy that $\|Ex\| \leq \|x\| \forall x$.
+
+
+### Theorem).
+$Proof).$
+Recall that if $M,N$ are subspaces of $V$ such that $V=M \oplus N$, then $V'=M^0 \oplus N^0$. Secondly, if $E$ is the projection on $M$ along $N$ then $E'$ is the projection on $N^0$ along $M^0$. 
+
+In the context of this problem denote $N=M^\perp$ thus we have that, $V=M \oplus M^\perp$ and so $V'=M^\perp \oplus M = V \implies V'=V$. Here, $E'$ would be on $N^0=(M^\perp)^0=M$ along $M^0=M^\perp$ and thus by definition $E=E'$. 
+
+Conversely, let $E=E^2=E'$. Then by the definition of projection $E$ is a projection on $R(E)$ along $N(E)$, let these denote the range and nullspace of $E$ respectively. It remains to be shown that for $x \in R(E),y \in N(E)$ that $\langle x,y \rangle =0$. Observe the following:
+$$\langle x,y \rangle = \langle Ex,y \rangle = \langle x,E'y \rangle = \langle x,Ey \rangle = 0 $$
+It can be shown that $E$ is positive:
+$$\langle Ex,x \rangle = \langle E^2x, x \rangle = \langle Ex,E'x\rangle = \langle Ex,Ex \rangle = \|Ex\|^2 \geq 0$$
+Now for $1-E:$
+$$\|x\|^2 -\|Ex\|^2 = \langle x, x\rangle - \langle Ex,x \rangle = \langle [1-E] x,x\rangle \geq0$$
+This concludes the theorem's proof.
+
+
+We can also enforce that if $E=E^2$ and $\|Ex\| \leq \|x\| \forall x$ then $E=E'$. 
+### Theorem).
+$Proof)$. 
+We wts that $R(E) \perp N(E)$. Note that for $x\in N^\perp,y=Ex-x \in N$ since:
+$$Ey=E^2x-Ex=Ex-Ex=0$$
+Also notice that $Ex=x+y$ since $x+y=x=Ex-x=Ex$ and that $\langle x,y \rangle =0$. This gives us that:
+$$\|x\|^2 \geq \|Ex\|^2 = \|x\|^2  + 2\langle x,y \rangle +   \|y\|^2 = \|x\|^2 + \|y\|^2  \geq \|x\|^2 $$
+And thus we have that $y=0 \implies Ex=x \implies x\in R(E) \implies N^\perp \subseteq R(E)$. Conversely suppose that for $Ez=z$ where $z \in R(E)$, then $z=x+y$ where $x\in N,y \in N^\perp$, then:
+$$z=Ez=Ex+Ey=Ex=x$$
+So $z \in N^\perp \implies R(E) \subseteq N^\perp$ 
+Thus $R(E)=N^\perp$ and so we can finally conclude that $E=E'$ since the projection is orthogonal. This concludes the proof.
+### Theorem).
+Two perpendicular projections are orthogonal to one another iff $EF=FE=0$. To put this formally, if $E=P_{m}$ and $F=P_{n}$ are orthogonal iff $M,N$ (the respective ranges of $E,F$) are orthogonal themselves. 
+
+$Proof).$
+Consider when $EF=0$ and $x,y$ are in the ranges of $E,F$ respectively, then:
+$$\langle x,y \rangle = \langle Ex, Fy \rangle = \langle x,E'Fy \rangle = \langle x,EFy \rangle =0$$
+Now assume $M,N$ are orthogonal spaces such that $N \subseteq M^\perp$, then $Ex=0$ for $x \in M^\perp$, then $Ex=0 \implies EFx=0$ since $Fx \in M^\perp$.
+
+### Theorem). 
+The sum of perpendicular projections, $E_{1},\dots,E_{n}$, which are perpendicular, then a necessary and sufficient condition for $E=\sum_{i=1}^n E_{i}$ to be a projection itself is that $E_{i}E_{j}=0$ when $i\neq j$. 
+
+$Proof).$
+Assuming pairwise perpendicularity leads to an obvious conclusion:
+$$(E)^2=\left( \sum_{i=1}^n E_{i} \right)^2 = \left( \sum_{i=1}^n E_{i} \right) \left( \sum_{j=1}^n E_{j} \right) = \sum_{i=1}^n E_{i}^2=\sum_{i=1}^n E_{i} = E $$
+Secondly, it is clear that since each $E_{i}'=E_{i}\implies E=E'$. Now we want to consider the converse, and assume that $E$ is a perpendicular projection. Let $x \in R(E_{i})$ then:
+$$\begin{align}
+\|x\|^2 \geq \|Ex\|^2 = \langle Ex,x \rangle = \left\langle  \sum_{j=1}^n E_{j}x,x  \right\rangle = \sum_{j} \langle E_{j}x,x \rangle = \sum_{j} \|E_{j}x\|^2 \geq \|E_{i}x\|^2 = \|x\|^2 \\
+\end{align}$$
+Thus for any $i \neq j \implies E_{j}x=0$. This is to say that for any $x \in R(E_{i}) \implies x\in N(E_{j})$ for $j \neq i$. This means that the transformations are perpendicular to one another since their ranges are orthogonal. This concludes the proof.
+### Theorem).
+For perpendicular projections $E=P_{M}$ and $F=P_{N}$ the following conditions are mutually equivalent:
+1. $E \leq F$
+2. $\|Ex\| \leq \|Fx\| \forall x$
+3. $M \subset N$
+4. $FE=E$
+5. $EF=E$
+$Proof).$ 
+
+$(1)\implies(2)$
+If $E \leq F \implies \forall x$:
+$$0 \leq \langle [F-E]x,x \rangle = \langle Fx,x \rangle - \langle Ex,x \rangle = \|Fx\|^2 -\|Ex\|^2$$
+$(2)\implies (3)$
+Assume that $\|Ex\| \leq \|Fx\|, \forall x$. Consider any $x \in M$, then:
+$$\|x\|^2 \geq \|Fx\| \geq \|Ex\| = \|x\|$$
+So, $\|Fx\|=\|x\|$ or $\|x\|^2 - \langle Fx,x\rangle =0$, from which we obtain:
+$$\langle [1-F]x,x \rangle = \|(1-F)x\|^2 =0 $$
+Consequently $x=Fx$ since $x \in N(1-F) \implies x\in M$. Thus, $x\in M \implies x\in N$ so $M \subseteq N$. 
+
+$(3)\implies(4/5)$
+If $M \subseteq N$ then $FEx=Ex$ for all $x$. So $FE=E \implies EF=E$ via adjoints and thus $EF=FE=E$. 
+
+$(4/5) \implies(1)$
+If $EF=FE=E$ then $\forall x$, 
+$$\langle Fx,x \rangle - \langle Ex,x \rangle = \langle Fx,x \rangle - \langle FEx,x \rangle = \langle F[1-E]x,x \rangle $$
+Both $E,F$ commute and thus $1-E$ and $F$ do too. $G=F(1-E)$ is also a projection. This gives:
+$$\langle Fx,x \rangle - \langle Ex,x \rangle = \langle Gx,x \rangle = \|Gx\|^2 \geq 0$$
+This completes the circuit and thereby the proof. 
 ### Rank One Orthogonal Projector
 An important type of projector is the rank one projector, where we project a subspace down onto a one dimensional space. Take $q$ where $q$ is an orthogonal vector. This direction is given by , and our projector is thus:
 $$P_{q}=qq^H$$

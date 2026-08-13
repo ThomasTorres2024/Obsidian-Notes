@@ -13,7 +13,7 @@ The Perron-Frobenius Theorem states that for $A \in \mathbb{R}^{n \times n}$ whe
 
 We can look at a brief sketch of this proof. 
 
-All eigen values of $A$ are known to be real since $A$ is a symmetric matrix, and by [[Spectral Theorem Definition and Proof]] all of its eigen values must be real. 
+All eigen values of $A$ are known to be real since $A$ is a symmetric matrix, and by [[Spectral Theorem]] all of its eigen values must be real. 
 
 ---
 # Intuition 

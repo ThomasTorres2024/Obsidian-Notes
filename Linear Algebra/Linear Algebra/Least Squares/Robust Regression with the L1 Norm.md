@@ -4,7 +4,7 @@ tags:
 draft: "false"
 ---
 # Robust Regression with the L1 Norm 
-Typically in the context of applied math, we deal with the [[Euclidean Norm]] almost exclusively. It turns out that both the L1 and L2 norms have their own merits. The L1 norm has gained significantly more interest recently, since it is used in statistics and also in regression type problems. The L2 norm has nice geometric aspects that we ignore when we choose the L1 norm and is computationally easier and easier to write out in code. 
+Typically in the context of applied math, we deal with the [[Euclidean Norm]] almost exclusively. It turns out that both the L1 and L2 norms have their own merits. The L1 norm has gained significantly more interest recently, since it is used in statistics and also in regression type problems. The L2 norm has nice geometric aspects that we ignore when we choose the L1 [[Norm]] and is computationally easier and easier to write out in code. 
 
 In the typical [[Least Squares]], ignoring the $y$ intercept and assuming it is 0 to begin with, we have the following equation:
 $$ax=b \iff a \begin{pmatrix} x_{1} & x_{2} & \dots &x_{n} \end{pmatrix}=\begin{pmatrix} b_{1} & b_{2} & \dots &b_{n} \end{pmatrix}$$
