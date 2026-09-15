@@ -42,7 +42,7 @@ If $p(x)$ is any polynomial in $\mathbb{R}[x]$, and since $1\in A$ then $p(x) \c
 ---
 # Corollary.) Maximal Ideals are Prime
 Let $R$ be a commutative ring with unity and let $A$ be a proper ideal of $R$. Then, if $A$ is a [[Maximal Ideal]] then it must also be a [[Prime Ideal]]. 
-
+	
 We can use the result for [[Quotient Group]]s which states that if $\frac{R}{A}$ where $A$ is a proper ideal of $R$ forms a [[Field]] iff $A$ is a maximal ideal.  Secondly, we know that every field is an integral domain, and that $\frac{R}{A}$ is an integral domain $\iff A$ is prime. 
 
 The result holds that $A$ is both prime and maximal. 

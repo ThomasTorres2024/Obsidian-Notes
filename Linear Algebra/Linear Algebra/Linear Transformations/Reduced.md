@@ -5,7 +5,7 @@ tags:
 draft: "False"
 ---
 # Reduced/Decomposed Definition
-If $M,N$ are [[Invariant Subspace]]s both invariant under $A$, and $V= M \oplus N$, then $A$ is  
+If $M,N$ are [[Invariant Subspace]]s both invariant under $A$, and $V= M \oplus N$, then $A$ is a "Reduced" [[Linear Transformation]].   
 
 Another way of thinking of this idea is that given any $M$ vector space invariant under $A$, then there are many ways to find some vector space $N$ such that $V= M \oplus N$, and it is not always the case that some $N$ exists. 
 
