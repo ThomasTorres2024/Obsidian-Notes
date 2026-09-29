@@ -57,7 +57,3 @@ The bottom can never be zero, so the numerator must be zero, so this means that:
 $$p(zu)=0$$
 Which implies that [[Polynomial]] $p$ must have at least one root. The fact that our polynomial has a winding number of $n$ at the end corresponds to the polynomial having $n$ roots. 
 
----
-# Sources 
-The Fundamental Theorem of Algebra - https://www.youtube.com/watch?v=RBRVL6nP2Dk&t=104s
-

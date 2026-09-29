@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "66571e23e0ce39d4",
+        "id": "e91bc837a4a77d65",
         "type": "tabs",
         "children": [
           {
-            "id": "c7fad28dd01e2a59",
+            "id": "96d4d8a182f6746f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secure Programming/Programming Languages vs Security.md",
+                "file": "Set Theory/Integer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Programming Languages vs Security"
+              "title": "Integer"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b594f056a9f75c53",
@@ -167,12 +166,25 @@
               "icon": "lucide-list",
               "title": "Outline of Unitary Matrices"
             }
+          },
+          {
+            "id": "8131f2b22b374199",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Secure_Programming/Security Principles.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -187,38 +199,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "c7fad28dd01e2a59",
+  "active": "96d4d8a182f6746f",
   "lastOpenFiles": [
-    "Secure Programming/Coding Practices.md",
-    "Secure Programming/Programming Languages vs Security.md",
-    "Secure Programming/Design Principles and Good Coding Practices.md",
-    "Secure Programming/Vulnerabilities.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
-    "Machine Learning/Machine Learning/Algorithms/NLP/Transformer.md",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers/Transformers.md",
-    "Numerical Analysis/Numerical Stability/Convergence (Numerical Analysis).md",
-    "Machine Learning/Machine Learning/LLM/Model Types/FFN.md",
-    "Numerical Analysis/Numerical Analysis.md",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
-    "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
-    "Computer Organization/Raw Notes.md",
-    "Algorithms/Hashing/Hashing.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Inner Product.md",
-    "Calculus/Calculus/Geometry of Euclidean Spaces and Identities/Dot Product.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Model History.md",
-    "Machine Learning/Machine Learning/LLM/One Hot Encoding.md",
-    "Machine Learning/Machine Learning/LLM/Model Types",
-    "Machine Learning/Machine Learning/LLM/Natural Language Processing.md",
-    "Secure Programming",
-    "Operating Systems/Operating Systems/Basic Definitions/Computer Organization.md",
-    "Calculus/Calculus/Series and Sequences/Taylor Series.md",
-    "Functional Analysis/Function Classes/Continuous Function (Class).md",
-    "Calculus/Calculus/Limits/Limit.md",
-    "Networking/Untitled.md",
-    "Computer Organization",
-    "Networking",
-    "Machine Learning/Machine Learning/Algorithms/NLP/Tokenization.md",
-    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Irreducibility.md",
+    "Set Theory/Inductive Set.md",
+    "Set Theory/Integer.md",
+    "Real Analysis/Real Number.md",
+    "Permutation Matrix.md",
+    "Real Numbers.md",
+    "Operating Systems/Operating Systems/File Systems/Symlink.md",
+    "Operating Systems/Operating Systems/File Systems/Inode.md",
+    "Operating Systems/Operating Systems/File Systems/Useful Commands (File Systems).md",
+    "Secure_Programming/Security Principles.md",
+    "Operating Systems/Operating Systems/File Systems/File.md",
+    "Operating Systems/Operating Systems/File Systems",
+    "Secure_Programming/Security Implementation.md",
+    "Abstract Algebra/Abstract Algebra/Fundamental Theorem of Algebra.md",
+    "Linear Algebra/Linear Algebra/Matrices/Matrix.md",
+    "Linear Algebra/Linear Algebra/Linear Transformations/Linear Transformation.md",
+    "Algorithms/Graph Algorithms/Graphs Info/Graph.md",
+    "Category Theory/Operation (Category Theory).md",
+    "Category Theory/Object (Category Theory).md",
+    "Category Theory/Monoid.md",
+    "Category Theory/Monad.md",
+    "Category Theory/Functor.md",
+    "Category Theory/Endofunctor.md",
+    "Category Theory/Category.md",
+    "Dart/Programming in Dart/Async.md",
+    "Pasted image 20260105144503.png",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Factorization.md",
+    "Abstract Algebra/Ring Theory/Polynomial Ring/Irreducible Polynomial.md",
+    "Linear Algebra/Linear Algebra/Norms/Norm.md",
     "Real Analysis"
   ]
 }

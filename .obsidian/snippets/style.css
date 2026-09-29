@@ -1,0 +1,9 @@
+body {
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.25);
+}
+.workspace-leaf, .workspace-tab-header-container {
+  background: transparent;
+}
+.workspace-split.mod-root, .workspace-split.mod-root .view-content, .workspace-split.mod-root .view-header {
+  background: transparent;
+}   

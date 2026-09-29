@@ -5,7 +5,7 @@ tags:
 draft: "False"
 ---
 # Complexification 
-Let $V$ be a [[Vector Space]] over the [[Real Numbers]]. We can construct a vector space such that $V^+=V \oplus Vi$ where $Vi$ is analogous to changing its corresponding [[Field]] to the [[Complex Numbers]]. 
+Let $V$ be a [[Vector Space]] over the [[Real Number]]. We can construct a vector space such that $V^+=V \oplus Vi$ where $Vi$ is analogous to changing its corresponding [[Field]] to the [[Complex Numbers]]. 
 
 Let addition over $V^+$ for $\langle x,y \rangle \in V^+$ and $x,y \in V$. Define the sum of these elements by:
 $$\langle x_{1},y_{1} \rangle + \langle x_{2},y_{2} \rangle = \langle x_{1}+x_{2},y_{1}+y_{2} \rangle$$

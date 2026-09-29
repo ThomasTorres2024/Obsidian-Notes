@@ -33,5 +33,5 @@ B=\frac{A+A^H}{2} \quad \quad C=\frac{A-A^H}{2} \\
 B^H = B \quad \quad \quad  \quad C^H = -C \\
 A=B+C  
 \end{align}$$
-This is somewhat analogous to the [[Complex Numbers]] as [[Hermitian]] matrices tend to act like the [[Real Numbers]] and Skew Symmetric matrices tend to act like complex numbers. 
+This is somewhat analogous to the [[Complex Numbers]] as [[Hermitian]] matrices tend to act like the [[Real Number]] and Skew Symmetric matrices tend to act like complex numbers. 
 
