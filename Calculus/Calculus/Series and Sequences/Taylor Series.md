@@ -12,6 +12,9 @@ I like to think of this as an extension of the idea that the very essence of cal
 $$ \lim_{n \to \infty }f-f_{approx}=0 \implies \lim_{k \to \infty} \sum_{n=0}^k \frac{f^n\cdot(x)^n}{n!}=f$$
 Another thing to note, the Taylor series expansion of a function is unique. Any way that we may obtain the Taylor series results in the same expression. Due to this fact, we can add, multiply, differentiate, or integrate them as we please. 
 
+### Error and Residual
+Suppose $f \in C^n[a,b]$
+
 ---
 # Multivariable Taylor Series 
 The notion of approximating functions using increasingly higher terms is true here. We use a [[tangent plane]] for a first degree [[Taylor Series]]. Another particularly relevant approximation is one using a [[Quadratic Form]], which is a second order approximation and again the highest term is second degree. 

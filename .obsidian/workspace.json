@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Organization/Raw Notes.md",
+                "file": "Secure Programming/Programming Languages vs Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Raw Notes"
+              "title": "Programming Languages vs Security"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linear Algebra",
+                "query": "Secure",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -177,46 +177,48 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "latex-ocr:LatexOCR": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "latex-ocr:LatexOCR": false
+      "bases:Create new base": false
     }
   },
   "active": "c7fad28dd01e2a59",
   "lastOpenFiles": [
-    "Networking/Untitled.md",
+    "Secure Programming/Coding Practices.md",
+    "Secure Programming/Programming Languages vs Security.md",
+    "Secure Programming/Design Principles and Good Coding Practices.md",
+    "Secure Programming/Vulnerabilities.md",
+    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
+    "Machine Learning/Machine Learning/Algorithms/NLP/Transformer.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Transformers/Transformers.md",
+    "Numerical Analysis/Numerical Stability/Convergence (Numerical Analysis).md",
+    "Machine Learning/Machine Learning/LLM/Model Types/FFN.md",
+    "Numerical Analysis/Numerical Analysis.md",
+    "Machine Learning/Machine Learning/Algorithms/Classification/Neural Networks/Convolutional Neural Networks.md",
+    "Numerical Analysis/Numerical Linear Algebra/Condition Number of a System of Equations.md",
     "Computer Organization/Raw Notes.md",
-    "Computer Organization",
+    "Algorithms/Hashing/Hashing.md",
+    "Linear Algebra/Linear Algebra/Vector Spaces/Inner Product.md",
+    "Calculus/Calculus/Geometry of Euclidean Spaces and Identities/Dot Product.md",
+    "Machine Learning/Machine Learning/LLM/Model Types/Model History.md",
     "Machine Learning/Machine Learning/LLM/One Hot Encoding.md",
+    "Machine Learning/Machine Learning/LLM/Model Types",
+    "Machine Learning/Machine Learning/LLM/Natural Language Processing.md",
+    "Secure Programming",
+    "Operating Systems/Operating Systems/Basic Definitions/Computer Organization.md",
+    "Calculus/Calculus/Series and Sequences/Taylor Series.md",
+    "Functional Analysis/Function Classes/Continuous Function (Class).md",
+    "Calculus/Calculus/Limits/Limit.md",
+    "Networking/Untitled.md",
+    "Computer Organization",
     "Networking",
     "Machine Learning/Machine Learning/Algorithms/NLP/Tokenization.md",
-    "Machine Learning/Machine Learning/LLM/Natural Language Processing.md",
     "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Irreducibility.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Maximal Ideal.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Prime Ideal.md",
-    "Number Theory/Primes/Euclid's Lemma.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Reduced.md",
-    "Abstract Algebra/Ring Theory/Principle Ideal Domain.md",
-    "Abstract Algebra/Ring Theory/Polynomial Ring/Irreducible Polynomial.md",
-    "Linear Algebra/Linear Algebra/Norms/Norm.md",
-    "Linear Algebra/Linear Algebra/Least Squares/Robust Regression with the L1 Norm.md",
-    "Real Analysis/Vector Convergence.md",
-    "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Normal Matrices.md",
-    "Real Analysis",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/Polar Decomposition.md",
-    "Linear Algebra/Linear Algebra/Matrices/Matrix Function.md",
-    "Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Spectral Theorem.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Projection.md",
-    "Linear Algebra/Linear Algebra/Linear Transformations/Adjoint.md",
-    "Abstract Algebra/Ring Theory/Ring Theory Basics and Definitions/Integral Domain.md",
-    "Abstract Algebra/Ring Theory/Polynomial Ring/Polynomial Ring.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Complexification.md",
-    "Linear Algebra/Linear Algebra/Vector Spaces/Subspaces/Projection Matrix.md",
-    "Linear Algebra/Linear Algebra/Matrix Factorizations/SVD/PCA/Eigenfaces.md"
+    "Real Analysis"
   ]
 }

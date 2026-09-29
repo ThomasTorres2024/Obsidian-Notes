@@ -93,3 +93,14 @@ We can conclude that our hash table has an $o(n)$ build size, and find min and f
 | Sorted Array        | $n\text{log}(n)$ | $\text{log}(n)$ | n             | $o(1)$  | $\text{log}(n)$ |
 | Direct Access Array | n                | 1               | 1             | n       | n               |
 | Hash Table          | n                | 1               | 1             | n       | n               |
+
+---
+# Example Hashing Functions
+Generally most hashing function we could write tend to be of poor quality and performance. 
+
+* Bad 
+	* Parity (evenness or oddness of a value)
+	* Sum (values tend to converge to the mean, [[Central Limit Theorem]])
+* Better Functions
+	* xor and add 
+	* word length folding 

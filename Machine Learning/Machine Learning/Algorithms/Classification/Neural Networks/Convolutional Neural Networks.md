@@ -9,6 +9,20 @@ Convolutional neural networks are a specific [[Neural Networks]] architecture th
 
 When we receive a single image, the image is actually a rank-3 tensor consisting of RGB channels. The image is run through an edge detection algorithm (in the video I am using for notes, we are using a "Sobel Edge Detector", the lecture notes from class appeared to have something else), and we output different layers from the image. The main idea is that we can output some new set of images with a different kernel. 
 
+For instance this would look like: 
+
+$$\begin{bmatrix}
+1 & 0 & \dots & \dots  \\
+-1 & 0 & \dots & \dots \\
+ \dots & \dots & \dots & \dots
+\end{bmatrix} \otimes  \begin{bmatrix}
+0 & 1 \\ -1 & 2 
+\end{bmatrix} \to  $$
+
+We take the "kernel" of an image, slide it over various portions of the image continually through the process of [[Convolution]], obtain an enhanced image, and then perform some information extraction. This is due to the fact that CNNs were very computationally expensive on normal images. 
+
+Modern CNNs are interested in learning how to create the kernels, and this procedure is a learnable one. 
+
 Often in our hidden layers we take smaller window sizes in order to save memory 
 
 After having converted the main image into these sub-images, we will use these sub-images as the features for our learning. We can then pass this onto a new layer, and perform the same operation there. 
@@ -75,3 +89,29 @@ NNs are pretty good at l
 We can think of this ting as an image encoder and decoder, where we take an input image and can prodivimg some vectors that represent the image, we can then decode it and see our reuskrs 
 # Connection to [[Toeplitz Matrix]] and [[Convolution]]
 In [[Convolutional Neural Networks]] we apply the operation of [[Convolution]], which makes use of [[Toeplitz Matrix]] to make more efficient. This is because image data is absolutely massive, and therefore we need a good way to handle it in order to make our operations efficient. Strang doesn't really explain it, but the idea here is that we only need to compute $n$ many weights as opposed to $n^2$ many weights. 
+
+---
+# Questions about CNNs
+
+### 1). What is the CNN operation?
+A mathematical operation implemented as a learnable filter to extract features from images. 
+
+### 2). Why are CNNs so effective? 
+
+For one we do not need to do any conversion of images to some smaller size. Say in our architecture we have some sliding image of size $5x5$ giving 25 total learnable parameters $+1$ from the bias, so $26$ each. Each gets their own respect activation function. Suppose we have $6$ such kernels, we would thus have $5 \times 5 \times 6+6=156$ total learnable parameters. Adding another such kernel would only be $26=25+1$ parameters, where $25$ come from the kernel again $1$ is the bias. 
+##### Why is this significant?
+For FFNs, when we tried to add a single neuron we added $51,200$ neurons, and here we added only $26$ for each. 
+
+---
+# Fundamentals of a CNN 
+
+### Overall Model
+With CNNs we apply many levels of various non linear activations, convolutions, maximum pooling etc operations, and then we obtain a __latent representation of the data that is easier to classify__ (transform the data that makes classes easily separable by boundaries or a line). We then feed the result through a [[FFN]] and predict it on some result. 
+### Why are we using a [[FFN]] at the end?
+FFNs are difficult to work with in train in the context of __complex__ FFNs, with too many layers or neurons. A complex model means too many trainable parameters.
+
+FFNs attached are generally a lot easier to work with on the processed images. 
+
+---
+# Why are CNNs not as effective for [[Natural Language Processing]]? 
+In CNNs, during the process of convolution, only a small total of the percent of the data is passed over. If we tried to proceed and summarize text in this manner, our model would fail. We call this quantity used the __receptive field__.

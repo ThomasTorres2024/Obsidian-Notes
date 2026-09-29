@@ -33,5 +33,5 @@ node[right] {$f(x)=\frac{1}{x}$};
 \end{tikzpicture}
 \end{document}
 ```
-Also we have that the set of [[Continuous Function]] is a subset of the set of [[Piecewise Continuous]] functions:
+Also we have that the set of [[Continuous Function (Class)]] is a subset of the set of [[Piecewise Continuous]] functions:
 $$C(I) \subset PC(I)$$

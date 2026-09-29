@@ -5,7 +5,7 @@ draft: "false"
 ---
 # Inner Product Spaces Introduction 
 
-The inner product can be thought of as a generalization of the standard dot product that is defined over $\mathbb{R}^n$, such that we can bring a lot of the nice concepts we work with in Euclidean geometry such as angles and lengths into other vector spaces. 
+The inner product can be thought of as a generalization of the standard  [[Dot Product]] that is defined over $\mathbb{R}^n$, such that we can bring a lot of the nice concepts we work with in Euclidean geometry such as angles and lengths into other vector spaces. 
 
 The standard inner product for $\vec{x},\vec{y},\vec{z} \in \mathcal{V}$ over the reals is given by: 
 
