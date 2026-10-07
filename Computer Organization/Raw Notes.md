@@ -220,3 +220,57 @@ You will get a __value moved error__. In most normal languages we would have two
 ---
 # Result 
 The result type in Rust, Result$<T,E>$ is either an Ok(T) or Err(E) type where E tends to be a string type. We 
+
+---
+# Traits 
+
+Traits in rust are a language feature that defines shared behavior across different types. These are similar to interfaces in other languages, but also contains other capabilities like default method implementation and generics. 
+
+Take the following Rust:
+
+```Rust
+
+pub trait Summary{
+	fn summarize(&self) -> String;
+}
+
+pub struct Tweet{
+	pub username: String,
+	pub content: String, 
+	pub reply: bool,
+	pub retweet:bool,
+}
+
+impl Summary for tweet{
+	fn summarize(&self) -> String{
+		format!("{}: {}",self.username, self.content)
+	}
+}
+
+```
+
+---
+# Iterators 
+* One important trait is that of an iterator.
+* An iterator allows us to express the notion that can be traversed or iterated over. 
+	* separates logic of how we visit from what we do 
+* Vecs are iterable 
+
+### Iterators as Traits:
+```Rust
+
+trait Iterator{
+	type Item; 
+	fn next(&mut self) -> Option<Self::Item>;
+}
+
+```
+* The key here is the next() function
+* We do not want to call next() directly always
+* Key Points:
+	* iter() iterates over &T
+	* iter_mut() iterated over &mut T
+	* into_iter()
+		* iterated over $T$ itself
+		* Since into_iter() takes self by value using a for loop to iterate over a collection consuems that collection 
+

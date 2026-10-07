@@ -13,7 +13,7 @@ This page is meant to be a summary and organizer of all of the details of the ei
 ### Methods for Single Eigen Values
 1. [[Power Iteration]]
 ### Methods for Some Eigen Values
-1. [[Bisection]]
+1. [[Linear Algebra/Linear Algebra/Eigen Values and Eigen Vectors/Eigen Value Computation/Numerical Methods for Computing Eigen Values/Methods for Computing n Eigen Values/Bisection]]
 ### Methods for All Eigen Values 
 1. [[QR Algorithm With Shifts]]
 2. [[QR Algorithm without Shifts]]
