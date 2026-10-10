@@ -20,6 +20,13 @@ For instance, If we feed a new image into our image prediction algorithm $x$, we
 
 We want to be able to discretize our function into the two binary categories we are trying to classify. We will take the value of our function $f(\vec{x})=\hat{y}$, and then feed it into a sign function, which basically assesses which side of the [[decision boundary]] we are on:
 $$\text{to determine the side of the boundary: } \text{sign}(f(\vec{x}))$$
+
+As an overview of Machine Learning classification we start with our input $X$. Sometimes we want to work in an embedding or some type of different/learnable transformation operation to convert input data into a __latent representation__ which is easier to classify. 
+
+For example if we had some kind of decision boundary that we are essentially converting data to 1d. 
+
+Sometimes we then pipe the output through a second model,  say a FFN, and then obtain a class label. 
+
 --- 
 # Test Set
 We need to be able to split our data-set into a training set, and a testing set. We need to ensure that the two will be separate so that our [[Classification]] Algorithm learns the pattern and does not learn the noise so that we may avoid [[overfitting]]:
