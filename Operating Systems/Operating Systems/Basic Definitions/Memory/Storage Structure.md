@@ -54,6 +54,6 @@ In Networking we round our bits because precision is super important there but h
 Instead of just having the Main Memory CPU/Volatile memory and the secondary storage we could have some operating systems that have a [[Cache Memory]], [[CD-ROM]], [[Blu-Ray]], [[magnetic tapes]], and so on. 
 
 ---
-# Storage Hiercarchy
+[[Memory Hierarchy]] 
 We can visualize the main types of memory and the hierarchy they live within:
 ![[Pasted image 20250907141608.png]]Registers, cache, main memory, and nonvolatile memory, uses semi conductor memory.

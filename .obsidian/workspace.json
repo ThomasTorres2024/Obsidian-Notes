@@ -11,10 +11,21 @@
             "id": "96d4d8a182f6746f",
             "type": "leaf",
             "state": {
+<<<<<<< HEAD
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph view"
+=======
+              "type": "markdown",
+              "state": {
+                "file": "Computer Organization/Caches/Cache Types/Direct-Mapped Caches.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Direct-Mapped Caches"
+>>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
             }
           }
         ]
@@ -76,8 +87,12 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 300,
     "collapsed": true
+=======
+    "width": 581.5220413208008
+>>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
   },
   "right": {
     "id": "b594f056a9f75c53",
@@ -198,6 +213,7 @@
   },
   "active": "96d4d8a182f6746f",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Secure Programming/Testing.md",
     "Secure Programming/Security Principles.md",
     "Secure Programming/Security Implementation.md",
@@ -244,5 +260,53 @@
     "Set Theory/Inductive Set.md",
     "Real Analysis/Real Number.md",
     "Operating Systems/Operating Systems/File Systems"
+=======
+    "Pasted image 20261017233506.png",
+    "Pasted image 20261017221434.png",
+    "Computer Organization/Caches/Cache.md",
+    "Computer Organization/Caches/Cache Types/Direct-Mapped Caches.md",
+    "Computer Organization/Caches/Cache Memory.md",
+    "Computer Organization/Caches/Cache Types",
+    "Pasted image 20261017220236.png",
+    "Pasted image 20261017220112.png",
+    "Computer Organization/Memory Layout.md",
+    "Pasted image 20261017180237.png",
+    "Pasted image 20261017175333.png",
+    "Computer Organization/Caches/Locality.md",
+    "Optimization/Algorithms/Search Algorithms/Conjugate Direction Methods/Conjugate Direction.md",
+    "Computer Organization/Caches/Memory Hierarchy.md",
+    "Pasted image 20261017162439.png",
+    "Operating Systems/Operating Systems/Basic Definitions/Memory/Storage Structure.md",
+    "Numerical Analysis/Interpolation/Divided Differences.md",
+    "Computer Organization/Caches",
+    "Secure Programming/Authentication.md",
+    "Secure Programming/Vulnerabilities.md",
+    "Secure Programming/Testing.md",
+    "Secure Programming/Security Principles.md",
+    "Secure Programming/Security Implementation.md",
+    "Secure Programming/Programming Languages vs Security.md",
+    "Secure Programming/Design Principles and Good Coding Practices.md",
+    "Secure Programming/Coding Practices.md",
+    "Numerical Analysis/Interpolation/Lagrange Polynomial.md",
+    "Pasted image 20261013161730.png",
+    "Pasted image 20261013143238.png",
+    "Numerical Analysis/Numerical Stability/Well-Conditioned.md",
+    "Numerical Analysis/Numerical Stability/Numerical Stability.md",
+    "Numerical Analysis/Numerical Stability/Ill-Conditioned.md",
+    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
+    "Numerical Analysis/Interpolation",
+    "Positional Encoding.md",
+    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models/Text Generation.md",
+    "Pasted image 20261013112019.png",
+    "Pasted image 20261013110457.png",
+    "Machine Learning/Machine Learning/Data/Dataset.md",
+    "Numerical Analysis/Algorithms/src/secants_method_demo.py",
+    "Numerical Analysis/Algorithms/src/newtons_method_demo.py",
+    "Numerical Analysis/Algorithms/Iterative Methods",
+    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models",
+    "Numerical Analysis/Algorithms/src/bisection_method_demo.py",
+    "Numerical Analysis/Algorithms/src/fixed_point_iteration_demo.py",
+    "Numerical Analysis/Algorithms/src"
+>>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
   ]
 }
