@@ -1,41 +1,24 @@
 {
   "main": {
-    "id": "6c4d9162a9102d1e",
+    "id": "1aa32c1ad71d2975",
     "type": "split",
     "children": [
       {
-        "id": "e91bc837a4a77d65",
+        "id": "af9366e634952433",
         "type": "tabs",
         "children": [
           {
-            "id": "96d4d8a182f6746f",
+            "id": "fc704c4ef26707b7",
             "type": "leaf",
             "state": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-=======
               "type": "markdown",
               "state": {
-                "file": "Computer Organization/Caches/Cache Types/Direct-Mapped Caches.md",
-=======
-              "type": "markdown",
-              "state": {
-                "file": "Secure Programming/Authentication.md",
->>>>>>> 74771fb (not sure what notes are on main pc)
+                "file": "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "Direct-Mapped Caches"
->>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
-=======
-              "title": "Authentication"
->>>>>>> 74771fb (not sure what notes are on main pc)
+              "title": "Transformer"
             }
           }
         ]
@@ -44,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d778c4c680b0f867",
+    "id": "9a7a1d6e3e72a9e4",
     "type": "split",
     "children": [
       {
-        "id": "ae421fdea97e44c7",
+        "id": "ca6e1b0e23f14875",
         "type": "tabs",
         "children": [
           {
-            "id": "6dce56c1ab7cf8e5",
+            "id": "14c2b1397118b0c1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -67,7 +50,7 @@
             }
           },
           {
-            "id": "906e855fb2d9b409",
+            "id": "f61d7b508e296678",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -75,20 +58,23 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "Search"
             }
           },
           {
-            "id": "92aae4eb7dc72e04",
+            "id": "af010b490c022b65",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -97,32 +83,24 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "width": 300,
-=======
-    "width": 428.2736282348633,
->>>>>>> 74771fb (not sure what notes are on main pc)
     "collapsed": true
-=======
-    "width": 581.5220413208008
->>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
   },
   "right": {
-    "id": "b594f056a9f75c53",
+    "id": "37fc603deb533e6f",
     "type": "split",
     "children": [
       {
-        "id": "7041d454c70c0833",
+        "id": "89423f2214145aab",
         "type": "tabs",
         "children": [
           {
-            "id": "812442e24da1a4c3",
+            "id": "56ed56ee167a2fca",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
+                "file": "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,25 +110,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Unitary Matrices"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "10511eca1c34f247",
+            "id": "f71811d2aae96f4a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
+                "file": "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Unitary Matrices"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "aea0a49fc3c57651",
+            "id": "460dc01c98aa4915",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -165,7 +143,7 @@
             }
           },
           {
-            "id": "c11f762880e17978",
+            "id": "cb6ec29eac9cb33d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -179,151 +157,48 @@
             }
           },
           {
-            "id": "253ca31282462d13",
+            "id": "f4f4345c7d8a7b04",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linear Algebra/Linear Algebra/Matrices/Special Matrices/Unitary Matrices.md",
+                "file": "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Unitary Matrices"
-            }
-          },
-          {
-            "id": "8131f2b22b374199",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "Secure Programming/Authentication.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "latex-ocr:LatexOCR": false,
-      "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "latex-ocr:LatexOCR": false
     }
   },
-  "active": "96d4d8a182f6746f",
+  "active": "fc704c4ef26707b7",
   "lastOpenFiles": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "Secure Programming/Testing.md",
-=======
->>>>>>> 74771fb (not sure what notes are on main pc)
-    "Secure Programming/Security Principles.md",
-    "Secure Programming/Testing.md",
-    "Secure Programming/Security Implementation.md",
-    "Secure Programming/Authentication.md",
-    "Pasted image 20261006153555.png",
-    "Pasted image 20261006130258.png",
-    "Pasted image 20261002145434.png",
-    "Pasted image 20261002144446.png",
-    "Pasted image 20261002140707.png",
-    "Pasted image 20261002133431.png",
-    "Pasted image 20261002125646.png",
-    "Pasted image 20261002123628.png",
-    "Pasted image 20261002122154.png",
-    "Pasted image 20260929132510.png",
-    "Numerical Analysis/Algorithms/src/secants_method_demo.py",
-    "Numerical Analysis/Algorithms/src/newtons_method_demo.py",
-    "Numerical Analysis/Algorithms/src/fixed_point_iteration_demo.py",
-    "Numerical Analysis/Algorithms/src/bisection_method_demo.py",
-    "Numerical Analysis/Algorithms/src",
-    "Numerical Analysis/Algorithms/Secant Method.md",
-    "Numerical Analysis/Algorithms/Newton's Method.md",
-    "Numerical Analysis/Algorithms/Method of False Position.md",
-    "Numerical Analysis/Algorithms/Fixed Point Iteration.md",
-    "Numerical Analysis/Algorithms/Fixed Point.md",
-    "Numerical Analysis/Algorithms/Error Analysis Iterative Methods.md",
-    "Numerical Analysis/Algorithms/Bisection Method.md",
-    "Numerical Analysis/Algorithms",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models/Text Generation.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models",
-    "Machine Learning/Machine Learning/Data/Generation.md",
-    "Machine Learning/Machine Learning/Data/Dataset.md",
-    "Geometry/Pythagorean Theorem.md",
-    "Graph Theory/Spectral Graph Theory/Matrices/Graph Laplacian Matrix.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Attention (Transformers).md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer.md",
-    "Probability/Probability/Linearity.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Softmax.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Multihead Attention.md",
-    "Untitled 4.base",
-    "Machine Learning/Machine Learning/Algorithms/Classification/Classification.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers",
-    "Set Theory/Integer.md",
-    "Set Theory/Inductive Set.md",
-    "Real Analysis/Real Number.md",
-    "Operating Systems/Operating Systems/File Systems"
-=======
-    "Pasted image 20261017233506.png",
-    "Pasted image 20261017221434.png",
-    "Computer Organization/Caches/Cache.md",
-    "Computer Organization/Caches/Cache Types/Direct-Mapped Caches.md",
-    "Computer Organization/Caches/Cache Memory.md",
-    "Computer Organization/Caches/Cache Types",
-    "Pasted image 20261017220236.png",
-    "Pasted image 20261017220112.png",
-    "Computer Organization/Memory Layout.md",
-    "Pasted image 20261017180237.png",
-    "Pasted image 20261017175333.png",
-    "Computer Organization/Caches/Locality.md",
-    "Optimization/Algorithms/Search Algorithms/Conjugate Direction Methods/Conjugate Direction.md",
-    "Computer Organization/Caches/Memory Hierarchy.md",
-    "Pasted image 20261017162439.png",
-    "Operating Systems/Operating Systems/Basic Definitions/Memory/Storage Structure.md",
-    "Numerical Analysis/Interpolation/Divided Differences.md",
-    "Computer Organization/Caches",
-    "Secure Programming/Authentication.md",
-    "Secure Programming/Vulnerabilities.md",
-    "Secure Programming/Testing.md",
-    "Secure Programming/Security Principles.md",
-    "Secure Programming/Security Implementation.md",
-    "Secure Programming/Programming Languages vs Security.md",
-    "Secure Programming/Design Principles and Good Coding Practices.md",
-    "Secure Programming/Coding Practices.md",
-    "Numerical Analysis/Interpolation/Lagrange Polynomial.md",
-    "Pasted image 20261013161730.png",
-    "Pasted image 20261013143238.png",
-    "Numerical Analysis/Numerical Stability/Well-Conditioned.md",
-    "Numerical Analysis/Numerical Stability/Numerical Stability.md",
-    "Numerical Analysis/Numerical Stability/Ill-Conditioned.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
-    "Numerical Analysis/Interpolation",
-    "Positional Encoding.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models/Text Generation.md",
-    "Pasted image 20261013112019.png",
-    "Pasted image 20261013110457.png",
-    "Machine Learning/Machine Learning/Data/Dataset.md",
-    "Numerical Analysis/Algorithms/src/secants_method_demo.py",
-    "Numerical Analysis/Algorithms/src/newtons_method_demo.py",
-    "Numerical Analysis/Algorithms/Iterative Methods",
-    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models",
-    "Numerical Analysis/Algorithms/src/bisection_method_demo.py",
-    "Numerical Analysis/Algorithms/src/fixed_point_iteration_demo.py",
-    "Numerical Analysis/Algorithms/src"
->>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
+    "Pasted image 20261019151313.png",
+    "Pasted image 20261019150936.png",
+    "Pasted image 20261019150843.png",
+    "Pasted image 20261019145418.png",
+    "Pasted image 20261019145044.png",
+    "Pasted image 20261019144634.png",
+    "Pasted image 20261019143951.png",
+    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer.md"
   ]
 }

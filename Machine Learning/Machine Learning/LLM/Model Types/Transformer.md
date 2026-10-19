@@ -271,4 +271,137 @@ We can add the additional changes as well like [[Positional Encoding]], layer no
 
 In some transformer architecture we do positional encoding at each layer. But for a lot of them, we only do it on the first. We are currently on the __encoder stack__ 
 
-For one we added a [[Positional Encoding]] layer before the [[Attention]] computation 
+For one we added a [[Positional Encoding]] layer before the [[Attention]] computation. 
+
+---
+# Big Idea
+
+We are feeding our original data through various layers of encoding in order to obtain a latent representation which is easy to do translation with. Part of the last Encoder Computation is fed into each of the decoders, the decoders then generate a translation in an __Auto Regressive Manner__. 
+
+In step one we pass through the entire sentence to be translated through the encoder. 
+
+![[Pasted image 20261019144634.png]]
+
+Once everything is fed through the, we feed the last latent $K,V$ representation of the entire sentence into the decoder architecture. 
+
+We should ask ourselves what does the decoder take as an inputs during training? It takes a translation of our sentence: 
+
+
+![[Pasted image 20261019145044.png]]
+
+Here we have a target output that we are expecting from our input. 
+
+```
+salloc -p gpu -t 08:00:00 --nodes=1  --gpus=v100:4 --mem=
+
+salloc -p gpu -t 08:00:00 gpus=rtx8000 --mem=50G
+
+unity-slurm-gpu-usage --sort free
+
+unity-slurm-gpu-usage -h
+```
+
+* What does the decoder architecture look like?
+* How is $K,V$ used in the encoders?
+
+---
+#### Decoder Architecture 
+
+We have a self attention computation alongside an "add and normalize" layer. 
+
+![[Pasted image 20261019145418.png]]
+
+### Encoder-Decoder Attention
+
+In the Decoder stack, we have $XW_0=Q$.  $Q$ here is the English we have translated, and $K,V$ are french encodings of the original french message. 
+
+Secondly, during this stage we have the normal attention computation:
+
+$$Z=\text{softmax}\left( \frac{QK^T}{\sqrt{ d_{k} }} \right)V$$
+
+Notice that we are interestingly mixing the French and English parts together. The way we have defined Attention is the "similarity between words", whereas here the attention we think of as the quantity $Z$ (that is the original self attention multiplied by $V$, also we did not mix words in different languages in our original). 
+
+Here this computation is known as "Cross-Attention" since we mix the two parts. 
+
+#### What does the decoder architecture look like?
+
+![[Pasted image 20261019150936.png]]
+
+We have a normal self attention, normalizing/adding, and then the cross attention. Lastly we have the feed forward neural network with some adding and normalization again. 
+
+Let us examine an example with $2$ encoders and and decoders and see the details of how data is processed:
+
+![[Pasted image 20261019151313.png]]
+
+---
+# Understanding Decoder Encoder Architecture 
+
+Let $a$ be the encoding dimension, we will have $3$ encoders $3$ decoders, with 1 head per layer. We want to examine the operations during training. 
+
+We have the following input and output:
+
+* $\text{Input}=$ Je Suis Etudiant
+* $\text{Output} =$ I am a student 
+
+$$\begin{align}
+3 \times 512  \xrightarrow{\text{Positional Encoding }\oplus } \boxed{\text{Encoder 1}}
+\end{align} \xrightarrow{} 3 \times 512 \text{ output} \\
+\longrightarrow  \boxed{\text{Encoder 2}} \xrightarrow{} 3 \times 512 \text{ output} \longrightarrow \boxed{\text{Encoder 3}} \longrightarrow K,V \in \mathbb{R}^{3 \times 512} $$
+On the last layer of the encoder we only care about getting $K,V$ not the output, which yields, taking in output $2$ from the second encoder layer $\text{Output}^{(2)}$ and $W_{K}^{(3)},W_{V}^{(3)}$ as weight matrices, we can obtain:
+
+$$K_{E}^{(3)}=\text{Output}^{(2)} \cdot W_{K}^{(3)}$$
+$$V_{E}^{(3)}=\text{Output}^{(2)} \cdot W_{V}^{(3)}$$
+Both of which are in $3 \times 512$ as we would expect.
+
+Now let us look at the decoder. If we look at what's going into decoder $1$ we have the following layout:
+
+$$\begin{align}
+K_{E}^3, V_{E}^3  \longrightarrow \boxed{\text{Decoder 1}} \longrightarrow  \\
+\begin{cases}
+\underbrace{x_{0} \longrightarrow \boxed{\text{Self Attention}}}_{{\text{Skip Connection } \oplus }  } \oplus  \longrightarrow 
+\end{cases}
+\end{align}$$
+
+(I Wrote this out on paper, TODO, write this down as mermaid diagram too)
+
+# Self Attention Computations:
+
+$$\begin{align}
+Q=X_{D} \cdot W_{QD}^{(1)} \\
+K=X_{D} \cdot W_{KD}^{(1)} \\
+V=X_{D} \cdot W_{VD}^{(1)} \\
+S = \text{Softmax}\left( \frac{QK^T}{\sqrt{ d_{k} }} \right) \cdot V \\
+A = \frac{QK^T}{\sqrt{ d_{k} }}
+\end{align}$$
+
+Let's write out the $S$ matrix:
+
+|         | (start) | i       | am      | a       | student |
+| ------- | ------- | ------- | ------- | ------- | ------- |
+| (start) | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+| i       | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+| am      | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+| a       | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+| student | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+This is the $A$ matrix, the self [[Attention]] component where $A \in  \mathbb{R}^{5 \times 5}$
+
+$V$ is the matrix which is given by the $V$ representation of the sentence "(Start) I am a student" where $V \in \mathbb{R}^{5 \times 512}$.
+
+We need to use masking in order to cover up words from seeing the words that we want to predict. We want to hide parts of the sequence in order for this to properly work as a translator. 
+
+If we feed in "start and I" into the matrix, we should not be able to see all of the other words. Going row by column 
+
+Start should be able to see start, but nothing else in the row since we want a translation. It should NOT depend on anything else.
+
+We can have a row for start with "I" since start came before. But "am", "a", and a student should all be $0$. 
+
+Going row by column, we should see that 
+ 
+|         | (start) | i       | am      | a       | student |
+| ------- | ------- | ------- | ------- | ------- | ------- |
+| (start) | $\dots$ | 0       | 0       | 0       | 0       |
+| i       | $\dots$ | $\dots$ | 0       | 0       | 0       |
+| am      | $\dots$ | $\dots$ | $\dots$ | 0       | 0       |
+| a       | $\dots$ | $\dots$ | $\dots$ | $\dots$ | 0       |
+| student | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
+We get a corresponding matrix where each row corresponds to a representation of the attention of the words and their $V$ representation where we only take in input from the words which have non-zero entries per row. 
