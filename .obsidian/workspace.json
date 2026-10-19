@@ -12,6 +12,7 @@
             "type": "leaf",
             "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
@@ -20,12 +21,21 @@
               "type": "markdown",
               "state": {
                 "file": "Computer Organization/Caches/Cache Types/Direct-Mapped Caches.md",
+=======
+              "type": "markdown",
+              "state": {
+                "file": "Secure Programming/Authentication.md",
+>>>>>>> 74771fb (not sure what notes are on main pc)
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Direct-Mapped Caches"
 >>>>>>> 9e0f7c4 (caching notes, lagrange polys, llm stuff)
+=======
+              "title": "Authentication"
+>>>>>>> 74771fb (not sure what notes are on main pc)
             }
           }
         ]
@@ -88,7 +98,11 @@
     ],
     "direction": "horizontal",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "width": 300,
+=======
+    "width": 428.2736282348633,
+>>>>>>> 74771fb (not sure what notes are on main pc)
     "collapsed": true
 =======
     "width": 581.5220413208008
@@ -185,7 +199,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Secure_Programming/Security Principles.md"
+                "file": "Secure Programming/Authentication.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -196,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,8 +227,12 @@
   "active": "96d4d8a182f6746f",
   "lastOpenFiles": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Secure Programming/Testing.md",
+=======
+>>>>>>> 74771fb (not sure what notes are on main pc)
     "Secure Programming/Security Principles.md",
+    "Secure Programming/Testing.md",
     "Secure Programming/Security Implementation.md",
     "Secure Programming/Authentication.md",
     "Pasted image 20261006153555.png",
