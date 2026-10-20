@@ -405,3 +405,92 @@ Going row by column, we should see that
 | a       | $\dots$ | $\dots$ | $\dots$ | $\dots$ | 0       |
 | student | $\dots$ | $\dots$ | $\dots$ | $\dots$ | $\dots$ |
 We get a corresponding matrix where each row corresponds to a representation of the attention of the words and their $V$ representation where we only take in input from the words which have non-zero entries per row. 
+
+---
+# 2. Encoder Decoder Attention
+
+Each decoder in the transformer architecture has 2 parts, self attention (normal, which uses masking the one we have seen so far). The second attention operation uses $K,V$ from french $Q$ from English. 
+
+Our input sentence here is "I am a Student", from which we can construct $Q$:
+$$Q= S \cdot W_{Q_{ED}}^{(1)}$$
+Since $S \in 5\times 512$ and $W_{Q_{ED}}^{(1)} \in 512 \times 512$  we obtain that $S \in 5 \times 512$ as well. Recall that $S$ is from the self attention part.
+
+For $K,V$ we also have that they are $3 \times 512$ where $3$ is the number of words in French in "Je Suis Etudiant". The French words are $3$ but the English translation is $5$ words. 
+
+When we do $QK^TV$ we get $QK^T \in 3 \times 5$ and then for $V \in 5 \times 512$  we get $3 \times 512$ for the whole matrix.  
+
+__Is Masking necessary here during this computation__? 
+Let us examine $Q\cdot K_{E}^T$ computation:
+
+$$\underbrace{  \begin{bmatrix}
+\dots \text{Start Q Rep} \dots  \\
+\dots  \text{I Q Rep} \dots  \\
+\dots \text{Am Q Rep} \dots \\
+\dots \text{A Q Rep} \dots \\ 
+\dots \text{Student Q Rep} \dots
+\end{bmatrix}}_{Q, Q \in 5 \times 512} \times \underbrace{  \begin{bmatrix}
+\dots \text{Je V  Rep} \dots  \\
+\dots  \text{Suis V Rep} \dots  \\
+\dots \text{Etudiant V Rep} \dots \\
+\end{bmatrix}^T}_{K, K \in 3 \times 512}$$
+Due to the transpose we have the col representations in $K$ instead of rows. Secondly, we have $5 \times 3$ attention matrix. We get the following output matrix: 
+
+|         | je      | suis    | etudiant |
+| ------- | ------- | ------- | -------- |
+| (start) | $\dots$ | ...     | ...      |
+| i       | $\dots$ | $\dots$ | ...      |
+| am      | $\dots$ | $\dots$ | $\dots$  |
+| a       | $\dots$ | $\dots$ | $\dots$  |
+| student | $\dots$ | $\dots$ | $\dots$  |
+Now we want to take $QK^T$ (above) and multiply it by $V$:
+
+$$QK^T \underbrace{\begin{bmatrix}
+\dots \text{je as } V\dots  \\
+\dots \text{suis as }V \dots \\
+\dots \text{estudiant as } V\dots
+\end{bmatrix}}_{V, V \in \mathbb{R}^{5 \times 512}}$$
+
+Since we are interested in producing English words we do __not need to hide any of the French words, so we do not need to mask them__. We are only interested in producing __English Words__ from this model.
+
+We can conclude that English words are based __solely__ off of French input, and not English. This means that we do not need to use Masking. 
+
+### Encoder-Decoder Architecture Questions about Masking in Translation
+
+- Consider the concept of masking in the Transformer. For translation do we need masking in the encoder layers? Do we need masking in the decoder layers? Why or why not.
+	- We do not need masking in the Encoder layers since we are not trying to predict the next word from some sequence of characters in the same language, whereas we do in the decoder since we want to generate output based on the input and get an understanding of where words are located
+	- Answer:
+		- For translation for the encoder we don't want to break up our original input sentence in the original language. The encoder is trying to make a meaningful representation of the sentence, so it should see the whole input, so we do __not use masking__.
+		- Decoder solution, decoder is auto regressive (which means one word at a time). Therefore we need masking. In theory we can make a decoder produce  sentence but this increases the number of trainable parameters significantly. 
+- Assume an embedding dimension of $512$ and one head per attention layer. Consider the Chinese sentence "Yuan Fen" which has an English translation of "unspoken fate brought us together". What will be the output dimensions of $K$ and $V$ for the encoder? What will be the dimension of $Q$ in the decoder? Would you be able to compute the cross attention, if so what are the dimensions? 
+	- 6 words counting the start token __IMPORTANT TO NOT LEAVE THIS OUT__
+	- $K,V \in 2 \times 512$. $Q \in 6 \times 512$. 
+	- We can compute the cross attention:
+	- $QK^T \in 6 \times 2$ and $(QK^T) \cdot V \in 6 \times 512$
+
+
+---
+# Training vs Inference in Encoder-Decoder
+
+### Training
+We have multiple training samples $(x,y)$. We give our model $x$ and have it learn to predict $y$. The full sentence for a training sample is passed in to the encoder. The full output $y$ is passed into the decoder and masking is used.
+
+### Inference 
+After the model has been trained we are given a sample $x'$ and we want our model to translate $x'$ to a different language. We continue to generate a word at a time until a stop token is reached. 
+
+We pass $K^T,V$ into each of the decoder layers. We compute a single word for the sentence "je ne sais quoi".
+ 
+![[Pasted image 20261019172247.png]]
+
+We take $K^T,V$ and then feed them into a decoder with a start token and the word we used: 
+
+![[Pasted image 20261019172454.png]]
+
+Then we get quality from the next word. We pass the words "indescrible quality" in, and get a stop token.
+
+![[Pasted image 20261019172544.png]]
+
+This means we are done with the translation. 
+
+# Takeaways from Attention is Al You Need
+- Most modern architectures __only really use an encoder or a decoder__ 
+- For example [[ChatGPT]] uses decoders and masking. 
