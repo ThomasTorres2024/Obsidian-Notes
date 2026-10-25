@@ -138,4 +138,117 @@ There are several algorithms for determining access:
 # Separation of Duty
 - System checks for conflicting roles 
 - System requires two distinct subjects of the same Role, or system requires two subjects of different Roles 
-	- 
+	- Purchaser cannot authorize a purchase greater than some amount
+	- Authorizer cannot be the purchaser 
+
+---
+# Designing an Authorization System
+
+- First Set of Questions:
+	- What are the subjects, operations, objects
+	- What policies need to be implemented
+	- How is the policy defined
+	- How is the policy redefined 
+	- Is delegation required 
+
+* Which system can implement tje Policy?
+	* Where is the Policy defined?
+	* Where is the Policy Enforced?
+	* How is the Policy enforced?
+
+
+### Evaluating an Authorization System
+* Steps required to reconfigure 
+* Support of least privilege 
+* Support of separation of duty
+* Number of relationships to create a policy
+* Adaptability to change 
+* Interoperability 
+* Testability
+* Performance
+* Detection of conflicts 
+
+---
+
+# Authorization Logging
+* Why log Authorization Activity?
+	* Compliance
+		* Regularatory requirements like HIPAA, GDPR, SOC 2
+	* Security Investigation
+		* Detect and investigate breaches
+	* Accountability
+		* Track who did what and when
+	* Anomaly Detection, Identity suspicious patterns
+	* Audit Trail: Prove system behavior for disputes
+
+### Authorization vs Authentication Logging
+* Authentication: Who are you
+* Authorization: What can you do (access grants denials operations)
+* Both are needed, but we give them separate log streams 
+
+#### Essential Authorization Log Fields:
+* Timestamp: [[ISO 8601 format]], [[UTC Timezone]], millisecond precision
+* User/Subject: UID, Username, ServiceAccount Name
+* Action: Specific Operation attempt, read write deletre publish
+* Resource: Object Identifier, type, and sensitive classification
+* Decision: ALLOW or DENY
+* Reason: Why access was denied
+
+### Context Information:
+* Source IP address and geolocation
+* Device/Client identifier
+* Session Id or request Correlation ID
+* Role(s) activate time of request 
+* Environment (dev/staging/prod)
+
+---
+# Where to store Authorization Logs?
+
+- Application Logs: local but vulnerable to tampering
+- Centralized logging: ELK stack, splunk, clouudwatch
+- Dedicate Audit Database: Immutable, append only tables 
+- Log Aggregation Service: Cloud provider (AWS Cloud Trail, Azure Monitor)
+
+
+### Log protection Requirements:
+* Immutability: Logs cannot be modified or deleted by users 
+* Integrity: Detect tampering, checksums, digital signatures
+* Retention: Follow compliance requirements often 1-7 years 
+* Access Control: Restric who can read logs (auditors compliance)
+* Encryption: Protect logs in transit and at rest
+* Resiliency: Multiple copies of logs to prevent loss; ideally in separate physical locations 
+
+### Where in the Code to Log? 
+* Before Check: Log the authorization request
+* After Decision: Log the agllow/deny decision
+* On Enforcement: Log when policy is actually applied
+* On Violation: Log suspicious or dangerous access patterns
+
+### Logging Info:
+* INFO: Successful authorization checks
+* WARN: Denied access attempts, policy near limits
+* ERROR: Authorization system failures, miscofngiruation
+* CRITICAL: Separation of duty violations, privilege escalation attempts 
+
+### Trade-offs:
+- Logging everything, audit completeness but high storage and performance 
+- Logging selectively performance gain but potential compliance gaps 
+
+---
+# Sensitive Data Handling 
+- What not to Log:
+	- Passwords, API keys, tokens, secrets
+	- Personal identifying information
+	- Payment card data, SSNs
+	- Medical or health information
+	- Content of the resource being accessed 
+
+* Logging Resources Access Safely:
+	* Log resource ID, not resource content 
+	* Example: Log User accessed Patient Record 12345, not details
+
+* Handling PII in logs
+	* React or hash identifiers in non sensitive logs
+	* Separate audit logs from application logs
+	* Encrypt logs containing PII
+	* Apply least privilege to log access 

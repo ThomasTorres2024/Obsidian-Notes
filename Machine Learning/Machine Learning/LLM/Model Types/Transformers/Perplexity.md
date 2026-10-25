@@ -211,7 +211,11 @@ So when $j(i)=32$, we are looking for the probability that its probability. We w
 
 How is the loss function we are training on related to our cross entropy? 
 
-$$\exp(\ell_{n})= \exp\left( -\frac{1}{N} \sum_{i=1}^N \log(p_{i,j(i)}) \right) = \exp\left( -\frac{1}{N} \log( (p(i,j(i)))^{1/n}) \right) = \prod_{i=1}^N (p_{i},j(i))^{-1/N} $$
+  $$\begin{align} \exp(\ell_{n})= \exp\left( -\frac{1}{N} \sum_{i=1}^N \log(p_{i,j(i)}) \right) = \exp\left( \sum_{i=1}^N\log( (p(i,j(i)))^{-1/n)}) \right)   \\= \prod_{i=1}^n e^{\log((p_{i,j(i)})^{-1/n} ) }  =
+\prod_{i=1}^N (p_{i,j(i)})^{-1/N} = \frac{1}{ \prod_{i=1}^N (p_{i,j(i)})^{1/n} } 
+\end{align}$$
+
+
 We can think of this overall as $e$ to the power of [[Cross Entropy]] is [[Perplexity]]. We generally __do not train on perplexity__, but we do use [[Cross Entropy]] as our value. 
 
 ---
