@@ -63,7 +63,55 @@ We want
 $$f_{x},f_{y},f_{z}=$$
 ---
 # Convolutional Neural Networks 
-Convolve means that we slide and filter over all spatial lcoations within our image, instead of each pixel having a weight, we learn the unit for each, and we "convolve" across the image. 
+
+Convolve means that we slide and filter over all spatial lcoations within our image, instead of each pixel having a weight, we learn the unit for each, and we "convolve" across the image. Mathematically we take some "kernel" some fixed grid sized of pixels, and then slide it across each section of the image where the kernel is some stride size. The [[Convolution]] operation used here is given in the following:
+
+$$f(t) * g(t) = \int_{-\infty}^\infty f(t- \tau )g(\tau)d \tau = \int_{-\infty}^\infty f(\tau) g(t-\tau)d \tau$$
+![[Pasted image 20261025134726.png]]
+
+We can think of the convolution as an accumulation o the intersection between the two functions. Similarly in CCNs we are making use of this operation:
+
+$$\begin{align}
+\underbrace{\begin{bmatrix}
+\textcolor{red}{\begin{bmatrix}
+1 & 0 \\
+-1 & 0
+\end{bmatrix}} & \begin{matrix}
+-2 & 1  \\
+1  & 2
+\end{matrix} \\ \begin{matrix}
+0 & 2  \\
+1 & 0
+\end{matrix} & \begin{matrix}
+1 & 0  \\
+0 & 1
+\end{matrix}
+\end{bmatrix}}_{\text{Input Image}} \otimes \underbrace{ \textcolor{blue}{\begin{bmatrix}
+0 & 1  \\
+-1 & 2
+\end{bmatrix}} }_{\text{Kernel}} = \underbrace{\begin{bmatrix}
+1 & &  \\
+& & & \\
+& & &
+\end{bmatrix}}_{\text{Output}} \\
+\text{Output}(0,0) = 1 \cdot 0 + 1 \cdot 0 + -1 \cdot -1 + 2 \cdot 0 = 1
+\end{align}$$Note that for the convolution process we are actually using the [[Hadamard Product]]. We slide the window on the in input image over by $1$ to the end to the right, below, and so on until we full fill out our output:
+
+![[Pasted image 20261025135639.png]]
+#### Why is the [[Convolution]] operation relevant to image classification?
+
+When we convovle the image with kernels we can produced enhanced versions of the image. These enhanced versions are much easier to work with during image classification than the raw image originally:
+
+![[Pasted image 20261025135945.png]]
+
+In summary kernels are convolved with images to produce different enhancements. 
+
+---
+# Image Processing
+
+Previously we would take in some raw image data, manually find a kernel, and then enhance the image and extract features _manually_. We would feed it into a machine learning algorithm and then obtain a class label during the [[Classification]] stage.
+
+The reason why we handled images this was due to the limited amount of compute power at the time, which has obviously ballooned in present years. 
 
 "Stride", we step by $n$ when we convolve 
 If we have a 300x300 image, and we have $n=3$, how many times are we going to be looking at the image based on this, we should be able to look at the image 100 times, vertically, and 100 times horizontally, giving us a total of $100^2=100,000$ different ways to look at it. 
@@ -96,11 +144,60 @@ In [[Convolutional Neural Networks]] we apply the operation of [[Convolution]], 
 ### 1). What is the CNN operation?
 A mathematical operation implemented as a learnable filter to extract features from images. 
 
-### 2). Why are CNNs so effective? 
+### 2). Why are CNNs so effective on images? 
+
+In the convolution operation, weights of the filter are __learnable parameters__. This allows a model to learn how to extract importan features from the image itself. 
 
 For one we do not need to do any conversion of images to some smaller size. Say in our architecture we have some sliding image of size $5x5$ giving 25 total learnable parameters $+1$ from the bias, so $26$ each. Each gets their own respect activation function. Suppose we have $6$ such kernels, we would thus have $5 \times 5 \times 6+6=156$ total learnable parameters. Adding another such kernel would only be $26=25+1$ parameters, where $25$ come from the kernel again $1$ is the bias. 
+
+Adding in parameters is fairly efficient too. 
 ##### Why is this significant?
 For FFNs, when we tried to add a single neuron we added $51,200$ neurons, and here we added only $26$ for each. 
+
+---
+### Example
+
+Let's say we are using a CNN on text classification. And that we have the following $100$ word sentence that we have embedded. Let us follow this through the model:
+
+$$\begin{bmatrix}
+w_{1} \text{ one hot} \\
+w_{2} \text{ one hot} \\
+\dots \\
+w_{100} \text{ one hot}
+\end{bmatrix}_{100 \times 20,501} \cdot W_{20,501 \times 512} = \text{Embedding}_{100 \times 512}$$ 
+The number of unique words in the dataset is $20,501$. The input is $100$ words for each document being classified and the embedding dimension is $512$. For one, unlike in a FFN we do __not need to flatten the input__. For the sake of argument we will treat the text like an image of size $100 \times 512$.
+
+We have some number of kernels. Let us suppose we have $6$ kernels, each of which does some operation on the image independently in $5\times 5$ size. Each square has $25$ learnable parameters, plus a bias. 
+
+![[Pasted image 20261025141320.png]]
+
+We convolve the image and obtain some resulting output. We feed them into an [[activation function]].
+
+#### Model Architecture Questions
+
+* How many learnable parameters are in the input layer?
+	* We have $6$ kernels, each of which is of size $5 \times 5$. Each parameter in the kernel is trainable. Each kernel has its own bias. So we have $(5^2)\cdot 6 + 6=156$ model parameters.  
+	
+* If we add another kernel how many parameters will be added?
+	* We add $5 \times 5$ parameters for the sliding window and then $1$ for the bias, so $26$. 
+
+* Why is this significant?
+	* Cost for FFNs for adding a single neuron was massive, here we are just adding $26$ neurons. 
+
+---
+# Example CNN Architecture 
+
+![[Pasted image 20261025141800.png]]
+
+
+We can this of the convolution layers and pooling layers as a means to simply produce a __latent representation of the data__, that is a representation that is much easier to classify. We then take the outputs produced that we vectorize them and cocatenate them, and feed them into a FFN. More abstractly our model can be thought of as:
+
+$$\begin{bmatrix}
+\text{Image}
+\end{bmatrix} \xrightarrow{\text{Convolve}} \text{Latent Representation} \xrightarrow{\text{Flatten to 1D}} \text{FFN} \to \text{Classification} $$
+
+We are essentially looking for data in our architecture wherein we can easily separate the classes data than would be done otherwise if we  tried to classify the image as is. The FFN at the end of the model is meant to be an easier to classify variant of the model, so we avoid difficult training issues. The latent data is also in a form that is generally easier to learn. 
+
 
 ---
 # Fundamentals of a CNN 
@@ -114,4 +211,30 @@ FFNs attached are generally a lot easier to work with on the processed images.
 
 ---
 # Why are CNNs not as effective for [[Natural Language Processing]]? 
+
+We should first examine why it is so effective for images to begin with. Say we had a kernel with an image of a soccer ball $S$, and some image $I$. Say there is some soccer ball portion baked into Image $I$ in the bottom right hand corner. I will denote its pixels by $S_{2}$. If we convolved over the whole thing, we would see the highest output in the convolution process in the bottom righthand corner of the model:
+
+$$\underbrace{\begin{bmatrix}
+\dots & \dots & \dots \\
+\dots & \dots & \dots \\
+\dots & \dots & S_{2}
+\end{bmatrix}}_{\text{Image}} \otimes  S_{1} \xrightarrow{\text{Convolution}} \begin{bmatrix}
+\dots  & \dots & \dots \\
+\dots & \dots & \dots \\
+\dots & \dots & \text{Highest Output}
+
+\end{bmatrix} $$
+We would have the highest output where the two items would overlap. This useed to be a good method for image identification a long time ago. 
+
+#### How are we going about processing the information in the image?
+
+We can think about this operation of [[Convolution]] as a torch in a dark room. We overall do not have much access to every part of the image at once. We only have context for a small portion at each time. This is baked into the fact of how the window shifts and moves around. We never look at the image in its whole. 
+
+We can think of this idea as a __receptive field__, which is the size of the input used in computing the output. We only look at pieces of the image in total. 
+
 In CNNs, during the process of convolution, only a small total of the percent of the data is passed over. If we tried to proceed and summarize text in this manner, our model would fail. We call this quantity used the __receptive field__.
+
+### Why is a small receptive field bad in NLP?
+
+Generally when we are lookng at some very small and selective window of text, we need to have the entire context is order to adequately represent and give a good summary about it. For instance even in a story during the start and the end of it it is very different. We would not have an effective mechanism in order to process text. We cannot gain a good understanding of the text from isolated pieces of text. 
+

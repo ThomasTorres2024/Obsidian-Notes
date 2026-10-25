@@ -8,7 +8,7 @@ It turns out that we can construct for some sentence with $n$ words, we can prod
 ---
 # What is the issue in text generation?
 
-A model generally has a lot of redundant inputs. We want some way to speed up a forward pass. For instance in "hello there how are you", regardless of what we feed a [[Machine Learning/Machine Learning/LLM/Model Types/Transformer|Transformer]], the representation of hello there, hello there how, and so forth will all represent hello in much the same way. 
+A model generally has a lot of redundant inputs. We want some way to speed up a forward pass. For instance in "hello there how are you", regardless of what we feed a [[Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer|Transformer]], the representation of hello there, hello there how, and so forth will all represent hello in much the same way. 
 
 For both the $Q,K,V$ matrices it should be apparent that the representation of hello is always independent from the others. In the sentences, "hello" and "hello there how are you", the representations of hello in both the $Q.K,V$ computations will be _identical_. 
 

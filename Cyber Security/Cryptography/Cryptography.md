@@ -34,37 +34,55 @@ Very susceptible to frequency analysis, easily broken (also easy to brute force
  The key takeaway from this algorithm is that we should have a high [[Entropy]] in our algorithm, and that __any one byte should not give away others__ in the system. 
 ### [[Symmetric Key Encryption]]
 
-[[Symmetric Key Encryption]] algorithms are a set of Algorithms which 
+[[Symmetric Key Encryption]] algorithms are a set of Algorithms which require that both parties use the same key to encrypt and decrypt messages. The main challenge is sending the key over safely. 
 
-
-(1)
-
-Primitive building blocks operations that build these things can be constructed in different ways. 
-
----
-(6) ciphers
-
-Simplest possible [[Cryptography]] is substitution cypher like the ceasar cipher, [[Rot13]] (special since half of 26), symmetrical operation, since rotating again gets you back to the original. Generally easy to break due to the number of spaces given, can match words easily 
-
-We want a high [[Entropy]] output, should look like garbage and not give our resu;ts away.
+*  [[Block Cipher]]s
+	* [[ECB (Electronic Codebook)]]
+	* [[CBC (Cipher Block Chaining)]]
+	* [[CFB (Cipher Feedback)]]
+	* [[OFB (Output Feedback)]]
+	* [[CTR (Counter)]]
+* [[One-Time Pad]]
+* [[Stream Cipher]]s 
 
 ---
+# Bit Flipping Protection 
 
-(7)
+In some cipher modes bit flipping in the cipher stream may make some changes to predictable bits in plaintext. In order to safe guard against this we use message authentication codes (MAC) to check that data is unaltered. 
 
-These are all symmetric keys where the key to encrypt and decrypt is equal.
+An Encrypt-then-MAC check needs two keys. MAC must be unforgeable. We for this we have the following:
+$$(c=F(m,k_{1}), M=H(m,k_{2}) )$$
+The reciever can check integrity of the message before decryption. Bit flipping can be protected against using [[Hashing]] to check authenticity of the message. 
 
-$m$ is the message in plain text, $F$ is the encryption function, $F^{-1}$ is the decryption function, $k$ is the pre-shared key (everyone has one), and $c$ is the Cipher text:
-$$\begin{align}
-c=F(m,k) \\
-m=F^{-1}(c,k) \\
-m=F(F^{-1}(c,k),k)
-\end{align}$$
-18
-Theoretical model of perfect secrecy, a key model 
+It is __particularly important to do Encrypt-and-MAC__ and __not__ MAC-then-Encrypt. The former order produces a MAC version of the text, and the second version encrypts our verification of the text. 
 
-19
-Bit flipping can be protected against using [[Hashing]] to check authenticity of the message. 
+Briefly used in SSL and TLS. 
+
+---
+# Authenticated Encryption with Associated Data (AEAD)
+
+One primitive provides confidentiality and integrity. 
+
+$$(c,t)=\text{Seal}(m,k,n,A)$$
+Here $n$ is some nonce and $A$ is associated data. $A$ is authenticated information, but it is not encrypted, such as packet headers. 
+
+Open returns $m$ if the tag $t$ verifies, and fails else. 
+
+There are a few common structions for this:
+* [[AES-GCM]] AES in counter made a GHASH based authenticator
+* [[ChaCha20-Poly1305]] [[Stream Cipher]] authenticator, fast without AES hardware 
+
+---
+# [[Asymmetric Key Encryption]]
+
+Approach to encryption wherein two linked keys are used, a public key and a private key. Public key can be used to encrypt content, and the private key can be used to decrypt our messages. 
+
+Two common algorithms for this topic are [[RSA]] and [[ECC]]. 
+
+[[Asymmetric Key Encryption]] gives us authentication.
+
+
+
 
 ---
 

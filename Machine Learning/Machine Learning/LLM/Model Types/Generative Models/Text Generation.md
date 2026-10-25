@@ -5,7 +5,7 @@ tags:
   - Generative_AI
 draft: "False"
 ---
-# [[Machine Learning/Machine Learning/LLM/Model Types/Transformer|Transformer]] Classification
+# [[Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer|Transformer]] Classification
 
 Text generation is essentially a reverse process of encoding numbers. The word encoding approach used here is the [[One Hot Encoding]] process, followed by multiplication of an embedding layer. How is this process reversed?
 

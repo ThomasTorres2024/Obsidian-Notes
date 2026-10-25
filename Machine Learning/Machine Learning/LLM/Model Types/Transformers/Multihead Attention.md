@@ -7,6 +7,8 @@ draft: "False"
 ---
 # Multihead Attention
 
+We want to build a [[Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer|Transformer]] which uses [[Attention (Transformers)]] across multiple heads. 
+
 Let us construct a [[Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer|Transformer]] with the following architecture. Assuming the following, we have a dictionary size of $50,000$, an embedding size of $d=512$, and $L=1024$ is our __sequence length__ (number of words the model can process at one time). 
 
 We want to begin by converting each word to a number through the process of [[One Hot Encoding]], "hello" $\to$ gets converted to some vector $x$ in $1 \times 50,000$. We then take an embedding matrix, $W \in \mathbb{R}^{50,000 \times 512}$. 
@@ -29,18 +31,48 @@ Let us recount the simplified singlehead attention on a single layer:
 
 5.  $A= Q \times K^T \in \mathbb{R}^{1024 \times 1024}$
 6. $\text{out}=A \cdot V \in \mathbb{R}^{1024 \times 512}$
+7. Keep computing this through each layer.  
 
 ---
 # Introduction to Multiheaded Transformers 
 
-Let us assume that we want $8$ heads. We have $512$ features in total. One of the reasons we are interested in doing this is to increase total model complexity. By adding more layers we can also increase the complexity, but these computations cannot be done in parallel whereas the heads and partitioning of the matrices can be done in parallel quite easily since every head is independent from one another in terms of computation.
+Let us assume that we want $8$ heads. We have $512$ features in total. One of the reasons we are interested in doing this is to __increase total model complexity__. By adding more layers we can also increase the complexity, but these computations cannot be done in parallel whereas the __heads and partitioning of the matrices can be done in parallel__ quite easily since every head is independent from one another in terms of computation.
 
-We can choose to work only on the first $64$ features instead, since each head now works on $64$ features. 
+In the multiheaded attention style we for sure get more parameters at the end through $W_{0}$ thast would have not ocurred before hand. 
 
-Through this model, we will have that $W_{K}^{(1)},W_{Q}^{(1)},W_{V}^{(1)} \in \mathbb{R}^{64 \times 64}$. We will also have a new set of $Q^{(1)},K^{(1)},V^{(1)}$ which will be in $\mathbb{R}^{1024 \times 64}$ together. 
+We can choose to work only on the first $64$ features instead, since each head now works on $64$ features. Now that the data is split up into $8 \times 8$ chunks, we can do normal $Q,K,V$ operations on them but with smaller chunks.
 
-We have a corresponding set of weight, attention, out and $Q,K,V$ type matrices for each layer. 
+Through this model, we will have that $W_{K}^{(1)},W_{Q}^{(1)},W_{V}^{(1)} \in \mathbb{R}^{64 \times 64}$. We will also have a new set of $Q^{(1)},K^{(1)},V^{(1)}$ which will be in $\mathbb{R}^{1024 \times 64}$ together:
 
-Once we have computed the respective outputs from each layer, we then take them and compress them into a single matrix at the end of size $\mathbb{R}^{1024 \times 512}$, which is the size of out originally in the singleheaded transformer. 
+$$\begin{align}
+X^{(1)} \in \mathbb{R}^{1024 \times 64 } \longrightarrow \begin{cases}
+ Q^{(1)}=X^{(1)}W_{Q}^{(1)} \\
+ K^{(1)}=X^{(1)}W_{K}^{(1)} \\
+ V^{(1)}=X^{(1)}W_{V}^{(1)} 
+\end{cases} \longrightarrow A^{(1)}=Q \cdot (K^{(1)})^T \quad \longrightarrow \text{out}^{(1)}=A^{(1)}V^{(1)} \in 1024 \times 64 \\
+ \vdots \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad   \quad \quad \quad \quad \quad \quad \quad \quad  \quad \quad   \vdots \quad \quad  \quad \quad  \quad \quad  \quad \quad \quad \quad \quad \quad \quad \quad  \quad \quad  \quad \quad \quad \quad   \vdots \\
 
-We want to slice column wise for our words, otherwise they would be only going row by row and we would still have to deal with the issue of __words being processed independently__ where we lose context inbetween each word. 
+X^{(8)} \in \mathbb{R}^{1024 \times 64 } \longrightarrow \begin{cases}
+ Q^{(8)}=X^{(1)}W_{Q}^{(8)} \\
+ K^{(8)}=X^{(1)}W_{K}^{(8)} \\
+ V^{(8)}=X^{(1)}W_{V}^{(8)} 
+\end{cases} \longrightarrow A^{(2)}=Q \cdot (K^{(8)})^T \quad \longrightarrow \text{out}^{(8)}=A^{(8)}V^{(8)} \in 1024 \times 64
+\end{align} $$
+
+We have a corresponding set of weight, attention, out and $Q,K,V$ type matrices for each layer. They all have the same dimensions for each head. 
+
+Once we have computed the respective outputs from each layer, we then take them and compress them into a single matrix at the end of size $\mathbb{R}^{1024 \times 512}$, which is the size of out originally in the singleheaded transformer. Note that $W_{0} \in 512 \times 512$, another learnable matrix at the very end. This is where we get out real output
+
+$$\text{out }_{1024 \times 512} = \begin{bmatrix}
+\text{out}^{(1)} \\
+\text{out}^{(2)} \\
+\text{out}^{(3)} \\
+\text{out}^{(4)} \\
+\vdots \\
+\text{out}^{(8)}
+\end{bmatrix}_{1024 \times 512} \cdot W_{0} $$
+
+
+Everything that we have which is learnable so far consists of all of the different $Q,K,V$ type matrices, the embedding matrix is also learnable, and the $W_{0}$ matrix is too.  
+
+We want to slice column wise for our words, otherwise they would be only going row by row and we would still have to deal with the issue of __words being processed independently__ where we lose context inbetween each word. So we must split column wise. 
