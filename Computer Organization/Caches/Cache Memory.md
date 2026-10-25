@@ -54,3 +54,16 @@ Here is a summary of the above data:
 # Practice Problems 
 
 ![[Pasted image 20261017220112.png]]
+
+---
+# Cache Storage
+
+We have two portions of the cache we want to examine the I-Cache (instruction) and the D-Cache (Data)
+
+The cache reserves a portion for Data (in a memory layout this is the data, stack/heap, environment level variables, and script) and we have an instruction cache which is difficult to work with do to [[Branching]] and access in a program isn't really something sequential. Most modern [[CPU]] development is interested in branch prediction. 
+
+If we get a branch prediction wrong for the Instruction Cache, the CPU will idle until instructions can be fetched from a [[Cache]] or possibly main memory. 
+
+---
+# Function [[Inlining]]
+

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secure Programming/Authorization.md",
+                "file": "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/CFB (Cipher Feedback).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Authorization"
+              "title": "CFB (Cipher Feedback)"
             }
           }
         ]
@@ -56,7 +56,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 473.13086700439453,
     "collapsed": true
   },
   "right": {
@@ -192,20 +192,45 @@
   },
   "active": "fc704c4ef26707b7",
   "lastOpenFiles": [
-    "Secure Programming/Security Implementation.md",
-    "Secure Programming/Authorization.md",
-    "Machine Learning/Machine Learning/Pasted image 20251015172552.png",
+    "Pasted image 20261024181910.png",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/CBC (Cipher Block Chaining).md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/CFB (Cipher Feedback).md",
+    "Pasted image 20261024180842.png",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/ECB (Electronic Codebook).md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/Block Cipher.md",
+    "Pasted image 20261024180635.png",
+    "Pasted image 20261024180448.png",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/OFB (Output Feedback).md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes/CTR (Counter).md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Block Cipher Modes",
+    "Cyber Security/Cryptography/Cryptography.md",
+    "Cyber Security/Authentication.md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key/Symmetric Key Encryption.md",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Symmetric Key",
+    "Cyber Security/Cryptography/Cryptography Algorithms/Substitution Cipher.md",
+    "Cyber Security/Cryptography/Cryptography Algorithms",
+    "Cyber Security/Cryptography",
     "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Perplexity.md",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformer.md",
+    "Machine Learning/Machine Learning/Performance Metrics/Cross Entropy.md",
+    "Probability/Probability/Probability Functions/Conditionality Probability.md",
+    "Pasted image 20261024151618.png",
+    "Pasted image 20261024151427.png",
+    "Machine Learning/Machine Learning/LLM/Token.md",
+    "Machine Learning/Machine Learning/Algorithms/Optimization/Gradient Descent.md",
+    "Machine Learning/Machine Learning/Algorithms/Regression/Linear Regression.md",
+    "Machine Learning/Machine Learning/Algorithms/Regression/Logistic Regression.md",
+    "Machine Learning/Machine Learning/Algorithms/Regression/Multinomial Logistic Regression.md",
+    "Machine Learning/Machine Learning/LLM/Model Types/Generative Models/Text Generation.md",
+    "Functional Analysis/Hilbert Spaces/Hilbert Space.md",
+    "Probability/Probability/Probability Functions/Discrete Distributions/Poisson Distribution.md",
+    "Abstract Algebra/Group Theory/Special Groups/Special Linear Group.md",
+    "Numerical Analysis/Interpolation/Chebyshev Polynomial.md",
+    "Computer Organization/Caches/Cache Memory.md",
+    "Computer Organization/Caches/Inlining.md",
+    "Machine Learning/Machine Learning/Pasted image 20251015172552.png",
     "Pasted image 20261019172544.png",
     "Pasted image 20261019172454.png",
     "Pasted image 20261019172247.png",
-    "Pasted image 20261019151313.png",
-    "Pasted image 20261019150936.png",
-    "Pasted image 20261019150843.png",
-    "Pasted image 20261019145418.png",
-    "Pasted image 20261019145044.png",
-    "Pasted image 20261019144634.png",
-    "Machine Learning/Machine Learning/LLM/Model Types/Transformers/Transformer.md"
+    "Pasted image 20261019151313.png"
   ]
 }

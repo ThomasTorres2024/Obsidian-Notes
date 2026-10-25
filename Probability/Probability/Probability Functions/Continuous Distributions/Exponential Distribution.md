@@ -28,7 +28,7 @@ Basically, if we have already waited $s$ minutes, and have to wait through $t$ m
 
 We can start by considering the [[Survival Function]]
 $$\mathbb{P}[X \geq s]= 1-\mathbb{P}[X \leq s]=e^{-\lambda s}$$
-Then looking at the memorylness property and applying [[Conditionality Probability, Independence, and Trees]]:
+Then looking at the memorylness property and applying [[Conditionality Probability]]:
 $$\mathbb{P}[X\geq s+t | x \geq  s] = \frac{\mathbb{P}[X \geq s +t]}{\mathbb{P}[X \geq s]} = \frac{e^{-\lambda(s+t)}}{e^{-\lambda s}} = e^{-\lambda t} = \mathbb{P}[X \geq t]$$
 The [[Exponential Distribution]] is the ONLY [[Memoryless]] distribution. We can use this property to solve things like $\mathbb{E}[X | X > a]$. Using [[Linearity]] we can write:
 $$\mathbb{E}[X | X > a ] = a + \mathbb{E}[X - a | X > a ]= a + \frac{1}{\lambda}$$

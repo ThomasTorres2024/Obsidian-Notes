@@ -59,6 +59,7 @@ The row wise program works better since we scan memory row wise, and the second 
 # Summary 
 
 - Programs that reference the same variables tend to have a higher temporal locality
+	- Good example of this are iterators in loops, some value we tend to frequently iterate upon
 
 - Programs with stride-$k$ reference patterns, the smaller the stride, the smaller the stride the better the spatial locality. Programs with stride-1 reference patterns have good spatial locality (higher chance of reading in nearby data), whereas programs that tend to hop on around memory with large strides have poor spatial locality 
 
