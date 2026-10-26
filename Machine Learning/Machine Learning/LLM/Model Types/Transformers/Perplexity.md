@@ -9,6 +9,12 @@ draft: "False"
 
 The following shows two methods for the derivation of the [[Perplexity]] metric. It allows us to score the confidence of some sequence of [[Token]]s by an LLM. We can interpret [[Perplexity]] as  metric which tells us the inverse geometric mean of the conditional probability of $n$ words produced. 
 
+Via the information theory perspective we have that [[Perplexity]] is [[Cross Entropy]] $\ell_{n}$ to the power of $e$, namely:
+$$\text{Perplexity}(W)=e^{\ell_{n}}
+
+$$
+---
+
 ### Conditional Probability and [[Baye's Rule]]
 
 $$P(A|B) = \frac{P(A \cap B)}{P(B)} $$

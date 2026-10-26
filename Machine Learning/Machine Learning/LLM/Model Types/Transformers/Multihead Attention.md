@@ -38,6 +38,8 @@ Let us recount the simplified singlehead attention on a single layer:
 
 Let us assume that we want $8$ heads. We have $512$ features in total. One of the reasons we are interested in doing this is to __increase total model complexity__. By adding more layers we can also increase the complexity, but these computations cannot be done in parallel whereas the __heads and partitioning of the matrices can be done in parallel__ quite easily since every head is independent from one another in terms of computation.
 
+When we do multiheaded computation, each head gets its own set of features to work with and do computations on. For instance the first $Q^{(1)}$ goes off of the first $64$ features, $Q^{(2)}$ $65 \to 128$, $Q^{(8)}$ on the last $64$. Practically all of this is stored as a single Matrix. 
+
 In the multiheaded attention style we for sure get more parameters at the end through $W_{0}$ thast would have not ocurred before hand. 
 
 We can choose to work only on the first $64$ features instead, since each head now works on $64$ features. Now that the data is split up into $8 \times 8$ chunks, we can do normal $Q,K,V$ operations on them but with smaller chunks.
@@ -76,3 +78,54 @@ $$\text{out }_{1024 \times 512} = \begin{bmatrix}
 Everything that we have which is learnable so far consists of all of the different $Q,K,V$ type matrices, the embedding matrix is also learnable, and the $W_{0}$ matrix is too.  
 
 We want to slice column wise for our words, otherwise they would be only going row by row and we would still have to deal with the issue of __words being processed independently__ where we lose context inbetween each word. So we must split column wise. 
+
+---
+# Multiheaded Attention Practically
+
+In practice we do not need separate head matrix multiplications for $Q,K,V$. Instead, we stack the head weight natrices together, so $W_{Q}$ is a combination of all of the $W_{Q}$ head matrices:
+
+$$W_{Q}= \begin{bmatrix}
+W_{Q}^{(1)} & W_{Q}^{(2)} & \dots &  W_{Q}^{(H)}
+\end{bmatrix}_{d \times hd_{k}} : d_{k} = \frac{d}{h} $$
+
+$$ \begin{align}
+Q = X W_{Q} = \begin{bmatrix}
+\dots \text{word}_{1} \dots \\
+\dots \text{word}_{2} \dots \\  
+\vdots \\
+\vdots \\
+\dots \text{word}_{n} \dots
+\end{bmatrix}
+\end{align} \cdot \begin{bmatrix} \\
+
+\text{weight matrix}  \\
+ \\
+
+\end{bmatrix} =\begin{bmatrix}
+\dots \text{Q embedding word}_{1} \dots \\
+\dots \text{Q embedding word}_{2} \dots \\ \\
+\vdots \\  
+\dots \text{Q embedding word}_{n} \dots
+\end{bmatrix}
+
+$$
+
+From this we can obtain the $Q$ head matrices, $Q_{1},Q_{2},\dots Q_{n}$ by splitting them up by the features per head count:
+
+$$Q^{(1)} = \begin{bmatrix}
+\dots \text{first } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\dots \text{first } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\vdots \\  
+\dots \text{first } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\end{bmatrix} \quad \dots \quad Q^{(8)} = \begin{bmatrix}
+\dots \text{last } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\dots \text{last } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\vdots \\  
+\dots \text{last } d_{k}  \text{ Q embedding word}_{2}  \dots \\
+\end{bmatrix}  $$
+
+Conceptually, the heads each operate on their own respective features and do their own computation and output. Then, their values are passed out through the layer. It turns out that this concptually is the exact same thing as doing the overall $X\cdot W_{Q}$ multiplication (just a giant product) in practice. 
+
+Once we have our $Q$, we need to use the __individiual parts of $Q$ for future computations.__  We will proceed with each head computation after obtaining $K_{1},\dots K_{8}$ and $V_{1},\dots,V_{8}$. 
+
+In the original paper, we only work on the different features _after_ we have our $Q,K,V$. Some vision transformers split on the datamatrix we receive as input $X$, though this is not standard. 
